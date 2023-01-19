@@ -1,7 +1,7 @@
 <script lang="ts">
 	import HomeBg from '$lib/components/canvas/HomeBG.svelte';
 	import Container from '$lib/components/global/layout/Container.svelte';
-	import NavTop from '@lib/components/global/nav/NavTop.svelte';
+	import NavTop from '$lib/components/global/nav/NavTop.svelte';
 </script>
 
 <main>

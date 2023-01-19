@@ -20,13 +20,13 @@
 					.split(';')
 					.map((v) => v.split('='))
 					.reduce((acc, v) => {
-						console.log(v[0].trim());
 						acc[decodeURIComponent(v[0].trim())] = decodeURIComponent(v[1].trim());
 						return acc;
 					}, {});
 				cookieTheme = cookies.siteTheme;
 			}
-			if (!cookieTheme) document.cookie = `siteTheme=${newTheme};max-age=31536000;path="/"`;
+			if (!cookieTheme)
+				document.cookie = `siteTheme=${newTheme};max-age=31536000;path="/";SameSite=Strict;Secure`;
 		</script>
 		%sveltekit.head%
 	</head>

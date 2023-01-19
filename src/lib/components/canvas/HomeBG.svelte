@@ -68,7 +68,7 @@
 <div class="absolute w-screen h-screen overflow-hidden" aria-hidden="true">
 	<div class="relative w-full h-full">
 		<canvas bind:this={canvas} class="absolute top-0 left-0" />
-		<div class="absolute top-0 bottom-0 left-0 right-0 backdrop-blur" />
+		<div class="absolute top-0 bottom-0 left-0 right-0 backdrop-blur-lg" />
 		<div
 			class="absolute top-0 left-0 w-full h-full mix-blend-overlay hidden invisible dark:block dark:visible"
 			style:background-image="url('texture/grain-dark.png')"
