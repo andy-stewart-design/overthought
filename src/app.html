@@ -2,16 +2,31 @@
 <html lang="en" data-theme="">
 	<head>
 		<meta charset="utf-8" />
-		<link rel="icon" href="%sveltekit.assets%/favicon.png" />
+		<link rel="icon" href="%sveltekit.assets%/favicon.png" sizes="any" />
+		<link rel="icon" href="%sveltekit.assets%/favicon.svg" type="image/svg+xml" />
 		<meta name="viewport" content="width=device-width" />
 		<script>
-			let documentTheme = document.documentElement.dataset.theme;
-			if (documentTheme === '') {
+			const documentTheme = document.documentElement.dataset.theme;
+			let newTheme;
+			if (documentTheme === 'system') {
 				const dark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-				dark
-					? (document.documentElement.dataset.theme = 'dark')
-					: (document.documentElement.dataset.theme = 'light');
+				dark ? (newTheme = 'dark') : (newTheme = 'light');
+				document.documentElement.dataset.theme = newTheme;
 			}
+			let cookieTheme = null;
+			const cookiesRaw = document.cookie;
+			if (cookiesRaw) {
+				const cookies = document.cookie
+					.split(';')
+					.map((v) => v.split('='))
+					.reduce((acc, v) => {
+						console.log(v[0].trim());
+						acc[decodeURIComponent(v[0].trim())] = decodeURIComponent(v[1].trim());
+						return acc;
+					}, {});
+				cookieTheme = cookies.siteTheme;
+			}
+			if (!cookieTheme) document.cookie = `siteTheme=${newTheme};max-age=31536000;path="/"`;
 		</script>
 		%sveltekit.head%
 	</head>

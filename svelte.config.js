@@ -14,7 +14,12 @@ const config = {
 	],
 
 	kit: {
-		adapter: adapter()
+		adapter: adapter(),
+		alias: {
+			'@lib': './src/lib',
+			'@globals': './src/lib/components/global',
+			'@svg': './src/lib/svg'
+		}
 	}
 };
 

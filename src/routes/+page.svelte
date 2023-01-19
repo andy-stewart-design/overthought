@@ -1,44 +1,22 @@
 <script lang="ts">
-	import { appTheme } from '$lib/stores/theme';
-	import { onMount } from 'svelte';
-
-	type ThemeOptions = 'dark' | 'light';
-
-	function setTheme(newTheme: ThemeOptions) {
-		$appTheme = newTheme;
-		document.documentElement.dataset.theme = $appTheme;
-		document.cookie = `siteTheme=${$appTheme};max-age=31536000;path="/"`;
-	}
-
-	onMount(() => {
-		let cookieTheme: ThemeOptions | null = null;
-		const cookiesRaw = document.cookie;
-		if (cookiesRaw) {
-			const cookies: any = document.cookie
-				.split(';')
-				.map((v) => v.split('='))
-				.reduce((acc, v) => {
-					// @ts-expect-error
-					acc[decodeURIComponent(v[0].trim())] = decodeURIComponent(v[1].trim());
-					return acc;
-				}, {});
-			cookieTheme = cookies.siteTheme as ThemeOptions;
-		}
-		if (!cookieTheme) document.cookie = `siteTheme=${$appTheme};max-age=31536000;path="/"`;
-	});
+	import HomeBg from '$lib/components/canvas/HomeBG.svelte';
+	import Container from '$lib/components/global/layout/Container.svelte';
+	import NavTop from '@lib/components/global/nav/NavTop.svelte';
 </script>
 
 <main>
-	<button on:click={() => setTheme($appTheme === 'dark' ? 'light' : 'dark')}>{$appTheme}</button>
-	<h1>Color Tokens</h1>
-	<ul>
-		<li>foreground</li>
-		<li>surface</li>
-		<li>background</li>
-	</ul>
-	<ul>
-		<li>primary</li>
-		<li>accents (01-05)</li>
-		<li>background</li>
-	</ul>
+	<HomeBg />
+	<NavTop />
+	<Container py="xl">
+		<section class="relative max-w-4xl mx-auto">
+			<h1 class="font-[450] text-4xl md:text-5xl !leading-[1.2] text-gray-400 text-foreground/70">
+				<span class="text-foreground">Andy Stewart</span>
+				designs future-focused visual systems — often for screens, sometimes not. He is currently the
+				Digital Creative Director at
+				<a href="https://turnstyle.studio/" target="_blank" rel="noreferrer" class="text-foreground"
+					>Turnstyle</a
+				>.
+			</h1>
+		</section>
+	</Container>
 </main>

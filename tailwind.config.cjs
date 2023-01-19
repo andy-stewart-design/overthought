@@ -1,7 +1,14 @@
+/** @type {import('tailwindcss').Config} */
+const defaultTheme = require('tailwindcss/defaultTheme');
+
 const config = {
 	content: ['./src/**/*.{html,js,svelte,ts}'],
 
 	theme: {
+		fontFamily: {
+			sans: ['Andy Sans', ...defaultTheme.fontFamily.sans],
+			mono: ['Andy mono', ...defaultTheme.fontFamily.mono]
+		},
 		extend: {
 			colors: {
 				foreground: 'rgb(var(--foreground) / <alpha-value>)',
@@ -22,6 +29,19 @@ const config = {
 					800: 'rgb(var(--gray-800) / <alpha-value>)',
 					900: 'rgb(var(--gray-900) / <alpha-value>)'
 				}
+			},
+			opacity: {
+				15: '.15'
+			},
+			screens: {
+				xs: '480px',
+				'supports-hover': { raw: '(hover: hover)' }
+			},
+			spacing: {
+				18: '4.5rem',
+				22: '5.5rem',
+				30: '7.5rem',
+				34: '7.5rem'
 			}
 		}
 	},
