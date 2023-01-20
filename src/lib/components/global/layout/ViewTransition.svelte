@@ -8,13 +8,15 @@
 	afterNavigate(() => disableScrollHandling());
 </script>
 
-{#key pathname}
-	<div
-		in:fly={{ duration: 300, delay: 600, y: 40, opacity: 0, easing: sineOut }}
-		out:fly={{ duration: 300, y: -40, opacity: 0, easing: cubicIn }}
-		on:outroend={() => window.scrollTo(0, 0)}
-		class="relative row-span-full	col-span-full"
-	>
-		<slot />
-	</div>
-{/key}
+<div class="grid">
+	{#key pathname}
+		<div
+			in:fly={{ duration: 300, delay: 600, y: 40, opacity: 0, easing: sineOut }}
+			out:fly={{ duration: 300, y: -40, opacity: 0, easing: cubicIn }}
+			on:outroend={() => window.scrollTo(0, 0)}
+			class="relative row-span-full	col-span-full"
+		>
+			<slot />
+		</div>
+	{/key}
+</div>
