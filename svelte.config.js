@@ -16,7 +16,7 @@ const config = {
 	kit: {
 		adapter: adapter(),
 		alias: {
-			'@lib': './src/lib',
+			'@content': './src/lib/content',
 			'@globals': './src/lib/components/global',
 			'@svg': './src/lib/svg'
 		}

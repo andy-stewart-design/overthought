@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 const defaultTheme = require('tailwindcss/defaultTheme');
+const plugin = require('tailwindcss/plugin');
 
 const config = {
 	content: ['./src/**/*.{html,js,svelte,ts}'],
@@ -10,6 +11,9 @@ const config = {
 			mono: ['Andy mono', ...defaultTheme.fontFamily.mono]
 		},
 		extend: {
+			borderWidth: {
+				1.5: '1.5px'
+			},
 			colors: {
 				foreground: 'rgb(var(--foreground) / <alpha-value>)',
 				'surface-high': 'rgb(var(--surface-high) / <alpha-value>)',
@@ -31,7 +35,8 @@ const config = {
 				}
 			},
 			opacity: {
-				15: '.15'
+				15: '.15',
+				85: '.85'
 			},
 			screens: {
 				xs: '480px',
@@ -46,7 +51,11 @@ const config = {
 		}
 	},
 
-	plugins: []
+	plugins: [
+		plugin(({ addVariant }) => {
+			addVariant('active', '.active&');
+		})
+	]
 };
 
 module.exports = config;

@@ -1,13 +1,11 @@
 <script lang="ts">
 	import HomeBg from '$lib/components/canvas/HomeBG.svelte';
-	import Container from '$lib/components/global/layout/Container.svelte';
-	import NavTop from '$lib/components/global/nav/NavTop.svelte';
+	import Container from '@globals/layout/Container.svelte';
 </script>
 
-<main>
+<main class="bg-background">
 	<HomeBg />
-	<NavTop />
-	<Container py="xl">
+	<Container py="xl" class="min-h-screen">
 		<section class="relative max-w-4xl mx-auto">
 			<h1 class="font-[450] text-4xl md:text-5xl !leading-[1.2] text-gray-400 text-foreground/70">
 				<span class="text-foreground">Andy Stewart</span>
