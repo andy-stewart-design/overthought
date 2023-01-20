@@ -1,4 +1,4 @@
-export const introBullets = ['Experience', 'Expertise', 'Tools', 'Interests'];
+export const introBullets = ['Experience', 'Expertise', 'Approach', 'Interests'];
 
 export const skills = [
 	'Digital Strategy',

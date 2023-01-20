@@ -60,16 +60,16 @@
 						experiences, and an eye for recognizing and resolving challenging business problems.
 					</p>
 					<div class="flex gap-4 pt-1">
-						<a href="/about/uses" data-sveltekit-preload-data="hover">
+						<a href="/about/uses" data-sveltekit-preload-data="hover" class="group">
 							<div
-								class="text-base text-foreground border border-foreground/20 py-1 px-2.5 rounded"
+								class="text-base text-foreground border border-foreground/20 py-1 px-2.5 rounded transition-colors duration-200 ease-out group-hover:border-foreground"
 							>
 								<span class="block pb-px">Full Resume</span>
 							</div>
 						</a>
-						<a href="/about/uses" data-sveltekit-preload-data="hover">
+						<a href="/about/uses" data-sveltekit-preload-data="hover" class="group">
 							<div
-								class="text-base text-foreground border border-foreground/20 py-1 px-2.5 rounded"
+								class="text-base text-foreground border border-foreground/20 py-1 px-2.5 rounded transition-colors duration-200 ease-out group-hover:border-foreground"
 							>
 								<span class="block pb-px">What I’m Up to Now</span>
 							</div>
@@ -99,9 +99,9 @@
 							{/each}
 						</ul>
 						<div class="pt-1">
-							<a href="/about/uses" data-sveltekit-preload-data="hover">
+							<a href="/about/uses" data-sveltekit-preload-data="hover" class="group">
 								<div
-									class="inline-block text-base text-foreground border border-foreground/20 py-1 px-2.5 rounded"
+									class="inline-block text-base text-foreground border border-foreground/20 py-1 px-2.5 rounded transition-colors duration-200 ease-out group-hover:border-foreground"
 								>
 									<span class="block pb-px">Complete List</span>
 								</div>

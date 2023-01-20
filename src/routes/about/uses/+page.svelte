@@ -9,7 +9,7 @@
 <main class="bg-background">
 	<Container py="xl">
 		<section class="flex flex-col gap-12">
-			<div class="flex flex-col gap-4 w-full max-w-3xl mx-auto border-b border-foreground/10 pb-10">
+			<div class="flex flex-col gap-4 w-full max-w-3xl mx-auto border-b border-foreground/20 pb-10">
 				<h3 class="font-medium text-xs">Uses</h3>
 				<h2 class="text-lg">
 					Curious about how I do my work? This list is a living document of the hardware, software,
@@ -28,7 +28,7 @@
 						<div class="flex flex-col xs:flex-row gap-6 items-start">
 							<a class="group shrink-0 w-16 text-foreground" href={toolset.link}>
 								<div
-									class="relative bg-surface-low p-3 rounded-xl border-b-1.5 border-foreground/10 overflow-hidden transition-transform duration-500 ease-out-cubic group-hover:-translate-y-1"
+									class="relative bg-surface-low p-3 rounded-xl border-b-1.5 border-foreground/15 overflow-hidden transition-transform duration-500 ease-out-cubic group-hover:-translate-y-1"
 								>
 									{#if toolset.inlineLogo}
 										{@html toolset.logo}
@@ -42,11 +42,11 @@
 							</a>
 							<div class="grow flex flex-col gap-6 pt-1">
 								{#each toolset.tools as tool}
-									<div class="flex flex-col gap-2 border-b border-foreground/10 pb-6">
+									<div class="flex flex-col gap-2 border-b border-foreground/20 pb-6">
 										<div class="flex items-center gap-3">
 											<h2 class="font-medium text-xl">{tool.name}</h2>
 											<span
-												class="font-medium text-xs text-foreground/50 border border-foreground/20 py-0.5 px-1 rounded"
+												class="font-medium text-xs text-foreground/60 border border-foreground/20 py-0.5 px-1 rounded"
 											>
 												{tool.category}
 											</span>
