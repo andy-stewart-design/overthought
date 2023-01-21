@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { afterNavigate, disableScrollHandling } from '$app/navigation';
-	import { fly } from 'svelte/transition';
-	import { cubicIn, sineOut } from 'svelte/easing';
+	import { fade } from 'svelte/transition';
+	import { sineOut } from 'svelte/easing';
 
 	export let pathname: string;
 
@@ -10,8 +10,8 @@
 
 {#key pathname}
 	<div
-		in:fly={{ duration: 300, delay: 600, y: 40, opacity: 0, easing: sineOut }}
-		out:fly={{ duration: 300, y: -40, opacity: 0, easing: cubicIn }}
+		in:fade={{ duration: 300, delay: 600, easing: sineOut }}
+		out:fade={{ duration: 300, easing: sineOut }}
 		on:outroend={() => window.scrollTo(0, 0)}
 		class="relative row-span-full	col-span-full"
 	>
