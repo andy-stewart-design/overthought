@@ -54,7 +54,14 @@ const config = {
 	plugins: [
 		plugin(({ addVariant }) => {
 			addVariant('active', '.active&');
-		})
+		}),
+		({ addUtilities }) => {
+			addUtilities({
+				'.border-light': {
+					'@apply border-foreground/20': {}
+				}
+			});
+		}
 	]
 };
 

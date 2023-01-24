@@ -14,6 +14,7 @@
 	let inc = 0;
 
 	function setCanvas() {
+		if (!canvas) return;
 		windowWidth = window.innerWidth;
 		windowHeight = window.innerHeight;
 		canvas.style.width = windowWidth + 'px';

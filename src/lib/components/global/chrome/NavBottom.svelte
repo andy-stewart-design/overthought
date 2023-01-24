@@ -24,7 +24,7 @@
 </script>
 
 <nav
-	class="fixed bottom-8 left-1/2 -translate-x-1/2 p-1.5 bg-surface-low/50 backdrop-blur rounded-full z-40 shadow-xl before:border before:border-1 before:border-foreground/15 before:absolute before:-top-px before:-left-px before:-right-px before:-bottom-px before:rounded-full"
+	class="fixed bottom-8 left-1/2 -translate-x-1/2 p-1.5 bg-surface-low/50 backdrop-blur rounded-full z-40 shadow-xl before:border before:border-1 before:border-light before:absolute before:-top-px before:-left-px before:-right-px before:-bottom-px before:rounded-full"
 >
 	<ul class="flex gap-1">
 		{#each links as link}

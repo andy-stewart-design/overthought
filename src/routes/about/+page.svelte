@@ -60,22 +60,22 @@
 						experiences, and an eye for recognizing and resolving challenging business problems.
 					</p>
 					<div class="flex gap-4 pt-1">
-						<a href="/about/uses" data-sveltekit-preload-data="hover" class="group">
+						<a href="/about/cv" data-sveltekit-preload-data="hover" class="group">
 							<div
-								class="text-base text-foreground border border-foreground/20 py-1 px-2.5 rounded transition-colors duration-200 ease-out group-hover:border-foreground"
+								class="text-base text-foreground border border-light py-1 px-2.5 rounded transition-colors duration-200 ease-out group-hover:border-foreground"
 							>
 								<span class="block pb-px">Full Resume</span>
 							</div>
 						</a>
 						<a href="/about/uses" data-sveltekit-preload-data="hover" class="group">
 							<div
-								class="text-base text-foreground border border-foreground/20 py-1 px-2.5 rounded transition-colors duration-200 ease-out group-hover:border-foreground"
+								class="text-base text-foreground border border-light py-1 px-2.5 rounded transition-colors duration-200 ease-out group-hover:border-foreground"
 							>
 								<span class="block pb-px">What I’m Up to Now</span>
 							</div>
 						</a>
 					</div>
-					<div class="grid gap-5 border-t border-foreground/20 mt-3 pt-8">
+					<div class="grid gap-5 border-t border-light mt-3 pt-8">
 						<h4 class="font-medium text-xs tracking-wide">Select Skills + Services</h4>
 						<ul class="grid grid-cols-2 gap-y-2">
 							{#each skills as skill}
@@ -87,7 +87,7 @@
 							{/each}
 						</ul>
 					</div>
-					<div class="flex flex-col gap-5 border-t border-foreground/20 mt-3 pt-8">
+					<div class="flex flex-col gap-5 border-t border-light mt-3 pt-8">
 						<h4 class="font-medium text-xs tracking-wide">Select Tools</h4>
 						<ul class="grid grid-cols-2 gap-y-2">
 							{#each tools as tool}
@@ -101,7 +101,7 @@
 						<div class="pt-1">
 							<a href="/about/uses" data-sveltekit-preload-data="hover" class="group">
 								<div
-									class="inline-block text-base text-foreground border border-foreground/20 py-1 px-2.5 rounded transition-colors duration-200 ease-out group-hover:border-foreground"
+									class="inline-block text-base text-foreground border border-light py-1 px-2.5 rounded transition-colors duration-200 ease-out group-hover:border-foreground"
 								>
 									<span class="block pb-px">Complete List</span>
 								</div>
