@@ -84,7 +84,7 @@
 				years: ['2020', 'Now'],
 				location: 'Seattle, WA',
 				summary:
-					'Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, officiis omnis. Voluptatem ratione tempora eum, distinctio deleniti debitis.'
+					"Over the past couple of years, I've lead the charge for our team to adopt Figma for all digital projects. As part of this effort, I facillitated regular workshops with our team—some of whom were familiar with Sketch, but some of whom were still designing sites in Illustrator—to talk about Figma and responsive design more broadly."
 			},
 			{
 				role: 'Design Instructor',
@@ -93,7 +93,7 @@
 				years: ['2018', '2022'],
 				location: 'Seattle, WA',
 				summary:
-					'Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, officiis omnis. Voluptatem ratione tempora eum, distinctio deleniti debitis.'
+					"I've been involved with SVC for almost as long as I've been in Seattle, and began teaching classes there on visual and UI design in 2018."
 			},
 			{
 				role: 'Silkscreen Instructor',
