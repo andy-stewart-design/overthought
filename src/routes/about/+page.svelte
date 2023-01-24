@@ -60,7 +60,7 @@
 						experiences, and an eye for recognizing and resolving challenging business problems.
 					</p>
 					<div class="flex gap-4 pt-1">
-						<a href="/about/uses" data-sveltekit-preload-data="hover" class="group">
+						<a href="/about/cv" data-sveltekit-preload-data="hover" class="group">
 							<div
 								class="text-base text-foreground border border-light py-1 px-2.5 rounded transition-colors duration-200 ease-out group-hover:border-foreground"
 							>
