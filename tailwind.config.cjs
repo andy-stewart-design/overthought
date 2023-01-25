@@ -58,7 +58,7 @@ const config = {
 		({ addUtilities }) => {
 			addUtilities({
 				'.border-light': {
-					'@apply border-foreground/20': {}
+					'@apply border-foreground/15': {}
 				}
 			});
 		}

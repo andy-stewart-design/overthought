@@ -1,5 +1,6 @@
 <script lang="ts">
 	import Container from '@globals/layout/Container.svelte';
+	import { tools, skills } from '$lib/content/about';
 
 	interface WorkExperience {
 		role: string;
@@ -93,7 +94,7 @@
 				years: ['2018', '2022'],
 				location: 'Seattle, WA',
 				summary:
-					"I've been involved with SVC for almost as long as I've been in Seattle, and began teaching classes there on visual and UI design in 2018."
+					"I've been involved with SVC for almost as long as I've been in Seattle, and began teaching classes there on visual and UI design in 2018. I enjoy working closely with students, helping them to internalize concepts through a mix of lecture, discussion, and hands-on assignments."
 			},
 			{
 				role: 'Silkscreen Instructor',
@@ -213,27 +214,29 @@
 
 <Container py="xl" class="bg-background">
 	<main class="grid gap-12 font-[375] max-w-3xl mx-auto">
-		<header class="flex gap-8 items-center">
+		<header class="flex gap-x-8 items-center">
 			<div class="w-28 h-28 bg-surface-high rounded-full" />
-			<div class="grid gap-1">
-				<h1 class="font-medium text-2xl">Andy Stewart</h1>
-				<h2>Strategy, Design + Frontend Development with an Eye for Detail</h2>
+			<div class="grid gap-2">
+				<h1 class="font-medium text-3xl">Andy Stewart</h1>
+				<h2>Strategy, design + frontend development with an eye for detail</h2>
 				<p class="opacity-60">Seattle, WA</p>
 			</div>
 		</header>
-		<section class="grid gap-8">
+
+		<section class="grid gap-6">
 			<h3 class="font-[400] text-sm">About</h3>
-			<div>
+			<div class="text-lg leading-normal">
 				Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, officiis omnis.
 				Voluptatem ratione tempora eum, distinctio deleniti debitis.
 			</div>
 		</section>
+
 		<section class="grid gap-8">
 			{#each professionalExperiences as exp}
 				<h3 class="font-[400] text-sm">{exp.category}</h3>
 				{#each exp.positions as job}
 					<div class="grid grid-cols-4 mb-2">
-						<div class="opacity-60">
+						<div class="font-medium opacity-60 slashed-zero">
 							{#if job.years.length > 1}
 								{job.years[0]}-{job.years[1]}
 							{:else}
@@ -249,12 +252,71 @@
 									{job.company}
 								{/if}
 							</h4>
-							<p class="opacity-60">{job.location}</p>
+							<p class="font-medium opacity-60">{job.location}</p>
 							<p>{job.summary}</p>
 						</div>
 					</div>
 				{/each}
 			{/each}
+		</section>
+
+		<section class="grid gap-8">
+			<h3 class="font-[400] text-sm">Education</h3>
+			<div class="grid grid-cols-4 mb-2">
+				<div class="font-medium opacity-60 slashed-zero">2011-2013</div>
+				<div class="grid gap-2 col-span-3">
+					<h4 class="font-medium">Graphic Design — The Portfolio Center</h4>
+					<p class="font-medium opacity-60">Atlanta, GA</p>
+				</div>
+			</div>
+			<div class="grid grid-cols-4 mb-2">
+				<div class="font-medium opacity-60 slashed-zero">2006-2010</div>
+				<div class="grid gap-2 col-span-3">
+					<h4 class="font-medium">B.A. English + Comm. Studies — Furman University</h4>
+					<p class="font-medium opacity-60">Greenville, SC</p>
+				</div>
+			</div>
+			<!-- <ul class="grid gap-y-6">
+				<li>
+					<p class="font-medium">Portfolio Center</p>
+					<p>Graphic Design</p>
+					<p>Atlanta, GA</p>
+					<p>2011-2013</p>
+				</li>
+				<li>
+					<p class="font-medium">Furman University</p>
+					<p>Bachelor of Arts</p>
+					<p>English + Comm. Studies</p>
+					<p>Greenville, SC</p>
+					<p>2006-2010</p>
+				</li>
+			</ul> -->
+		</section>
+
+		<section class="grid gap-8">
+			<h3 class="font-[400] text-sm">Select Skills</h3>
+			<ul class="grid grid-cols-4 gap-y-2">
+				{#each skills as skill}
+					<li
+						class="relative text-foreground pl-5 before:absolute before:top-0 before:left-0 before:content-['↘'] before:text-foreground/60"
+					>
+						{skill}
+					</li>
+				{/each}
+			</ul>
+		</section>
+
+		<section class="grid gap-8">
+			<h3 class="font-[400] text-sm">Select Tools</h3>
+			<ul class="grid grid-cols-4 gap-y-2">
+				{#each tools as tool}
+					<li
+						class="relative text-foreground pl-5 before:absolute before:top-0 before:left-0 before:content-['↘'] before:text-foreground/60"
+					>
+						{tool}
+					</li>
+				{/each}
+			</ul>
 		</section>
 	</main>
 </Container>
