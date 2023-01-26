@@ -94,7 +94,7 @@
 				years: ['2018', '2022'],
 				location: 'Seattle, WA',
 				summary:
-					"I've been involved with SVC for almost as long as I've been in Seattle, and began teaching classes there on visual and UI design in 2018. I enjoy working closely with students, helping them to internalize concepts through a mix of lecture, discussion, and hands-on assignments."
+					"I've been involved with SVC for almost as long as I've been in Seattle, and began teaching classes there on visual and UI design in 2018. I enjoy working closely with students, helping them internalize concepts through a mix of lecture, discussion, hands-on assignments, and critiques."
 			},
 			{
 				role: 'Silkscreen Instructor',
@@ -103,7 +103,7 @@
 				years: ['2016', '2018'],
 				location: 'Seattle, WA',
 				summary:
-					'Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, officiis omnis. Voluptatem ratione tempora eum, distinctio deleniti debitis.'
+					'My first foray into teaching was actually through screen printing. I loved being able to show people, especially those of use used to staring at screens all day, how to roll up their sleeves and sling ink around.'
 			}
 		]
 	};
@@ -307,7 +307,9 @@
 		</section>
 
 		<section class="grid gap-8">
-			<h3 class="font-[400] text-sm">Select Tools</h3>
+			<h3 class="font-[400] text-sm">
+				Select Tools <a href="/about/uses" class="ml-2 opacity-60">See All</a>
+			</h3>
 			<ul class="grid grid-cols-4 gap-y-2">
 				{#each tools as tool}
 					<li
