@@ -40,7 +40,7 @@
 				</div>
 			</div>
 			<div>
-				<div class="grid gap-5 content-start text-lg text-foreground/85">
+				<div class="grid gap-5 content-start text-lg text-foreground/85 pb-8">
 					<p>
 						Hi, I'm Andy, a designer working at the intersection of brand and technology. I'm
 						currently the Digital Creative Director at Turnstyle, a small-yet-mighty creative studio

@@ -12,6 +12,8 @@
 		raf: number;
 	let amount = 10;
 	let inc = 0;
+	let time = Date.now();
+	console.log(time);
 
 	function setCanvas() {
 		if (!canvas) return;
@@ -42,7 +44,12 @@
 			ctx.ellipse(posX, canvasHeight / 2 - offsetY, radius, radius, 0, 0, 2 * Math.PI);
 			ctx.fill();
 		}
-		inc += 0.0375;
+		const currentTime = Date.now();
+		const deltaTime = currentTime - time;
+		time = currentTime;
+		// console.log(deltaTime);
+
+		inc += 0.002 * deltaTime;
 		raf = requestAnimationFrame(animate);
 	}
 
