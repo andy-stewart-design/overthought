@@ -47,7 +47,6 @@
 		const currentTime = Date.now();
 		const deltaTime = currentTime - time;
 		time = currentTime;
-		// console.log(deltaTime);
 
 		inc += 0.002 * deltaTime;
 		raf = requestAnimationFrame(animate);
