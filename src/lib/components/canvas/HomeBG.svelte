@@ -13,7 +13,8 @@
 	let amount = 10;
 	let inc = 0;
 	let time = Date.now();
-	console.log(time);
+	let hue = 200;
+	let hueDirection = 1;
 
 	function setCanvas() {
 		if (!canvas) return;
@@ -34,7 +35,7 @@
 			const offsetY = sinVal * (canvasHeight / 2);
 			let opacity = 1.0 - Math.abs(sinVal) / 1.5;
 			let radius = (gridX / 1.5) * (1 - Math.abs(sinVal) / 2);
-			ctx.fillStyle = `hsl(${220 + i * 6 + inc * 4} 100% 50% / ${opacity})`;
+			ctx.fillStyle = `hsl(${hue + i * 6} 100% 50% / ${opacity})`;
 			ctx.beginPath();
 			ctx.ellipse(posX, canvasHeight / 2 + offsetY, radius, radius, 0, 0, 2 * Math.PI);
 			ctx.fill();
@@ -47,8 +48,11 @@
 		const currentTime = Date.now();
 		const deltaTime = currentTime - time;
 		time = currentTime;
-
 		inc += 0.002 * deltaTime;
+		if (hue < 200 || hue > 320) hueDirection = hueDirection * -1;
+		console.log(hue);
+
+		hue = hue + (inc / 50) * hueDirection;
 		raf = requestAnimationFrame(animate);
 	}
 
