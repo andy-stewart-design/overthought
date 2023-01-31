@@ -50,9 +50,7 @@
 		time = currentTime;
 		inc += 0.002 * deltaTime;
 		if (hue < 200 || hue > 320) hueDirection = hueDirection * -1;
-		console.log(hue);
-
-		hue = hue + (inc / 50) * hueDirection;
+		hue = hue + 0.2 * hueDirection;
 		raf = requestAnimationFrame(animate);
 	}
 

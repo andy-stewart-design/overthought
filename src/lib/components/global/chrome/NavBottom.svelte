@@ -30,7 +30,7 @@
 		{#each links as link}
 			<li class="group relative">
 				<div
-					class="absolute top-0 left-0 w-full h-full bg-foreground rounded-full opacity-0 transition-opacity ease-out group-hover:opacity-10 active:opacity-100 group-hover:active:opacity-100"
+					class="absolute top-0 left-0 w-full h-full bg-foreground/90 rounded-full opacity-0 transition-opacity ease-out group-hover:opacity-10 active:opacity-100 group-hover:active:opacity-100"
 					class:active={activePath === link.href}
 					aria-hidden="true"
 				/>

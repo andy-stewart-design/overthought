@@ -67,7 +67,7 @@
 								<span class="block pb-px">Full Resume</span>
 							</div>
 						</a>
-						<a href="/about/uses" data-sveltekit-preload-data="hover" class="group">
+						<a href="/about/now" data-sveltekit-preload-data="hover" class="group">
 							<div
 								class="text-base text-foreground border border-light py-1 px-2.5 rounded transition-colors duration-200 ease-out group-hover:border-foreground"
 							>
