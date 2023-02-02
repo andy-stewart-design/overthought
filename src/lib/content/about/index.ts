@@ -20,8 +20,12 @@ export const tools = [
 	'Illustrator',
 	'Photoshop',
 	'After Effects',
+	'HTML/CSS/JS',
 	'Svelte',
 	'Tailwind',
 	'Typescript',
-	'P5.js'
+	'P5.js',
+	'Three.js',
+	'VSCode',
+	'Github'
 ];
