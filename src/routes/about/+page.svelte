@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { tools, skills, introBullets } from '$lib/content/about';
+	import Button from '@globals/Button.svelte';
 	import Container from '@globals/layout/Container.svelte';
 </script>
 
@@ -60,20 +61,8 @@
 						experiences, and an eye for recognizing and resolving challenging business problems.
 					</p>
 					<div class="flex gap-4 pt-1">
-						<a href="/about/cv" data-sveltekit-preload-data="hover" class="group">
-							<div
-								class="text-base text-foreground border border-light py-1 px-2.5 rounded transition-colors duration-200 ease-out group-hover:border-foreground"
-							>
-								<span class="block pb-px">Full Resume</span>
-							</div>
-						</a>
-						<a href="/about/now" data-sveltekit-preload-data="hover" class="group">
-							<div
-								class="text-base text-foreground border border-light py-1 px-2.5 rounded transition-colors duration-200 ease-out group-hover:border-foreground"
-							>
-								<span class="block pb-px">What I’m Up to Now</span>
-							</div>
-						</a>
+						<Button href="/about/cv">Full Resume</Button>
+						<Button href="/about/now">What I’m Up to Now</Button>
 					</div>
 					<div class="grid gap-5 border-t border-light mt-3 pt-8">
 						<h4 class="font-medium text-xs tracking-wide">Select Skills + Services</h4>

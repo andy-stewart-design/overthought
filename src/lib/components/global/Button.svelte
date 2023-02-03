@@ -1,9 +1,17 @@
 <script lang="ts">
+	import { clsx } from 'neutral-ui/utils';
+	type Sizes = 'sm' | 'lg';
+
+	export let size: Sizes = 'sm';
+	export let href: string;
 </script>
 
-<a href="/about/now" data-sveltekit-preload-data="hover" class="group">
+<a {href} data-sveltekit-preload-data="hover" class="group">
 	<div
-		class="text-base text-foreground border border-light py-1 px-2.5 rounded transition-colors duration-200 ease-out group-hover:border-foreground"
+		class={clsx(
+			'text-base text-foreground border border-light rounded transition-colors duration-200 ease-out group-hover:border-foreground',
+			size === 'sm' && 'py-1 px-2.5'
+		)}
 	>
 		<span class="block pb-px"><slot /></span>
 	</div>

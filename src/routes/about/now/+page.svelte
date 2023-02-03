@@ -30,10 +30,10 @@
 </script>
 
 <main class="bg-background">
-	<Container pt="xl" pb="md" class="grid gap-6">
+	<Container pt="xl" pb="sm" class="grid gap-16">
 		<div class="flex justify-between items-end">
-			<h1 class="text-8xl md:text-9xl">Now</h1>
-			<h6 class="font-[450] text-sm pb-[13px]">updated: 01/30/2023</h6>
+			<h1 class="text-8xl md:text-9xl">Currently</h1>
+			<h6 class="font-[450] text-sm pb-[13px]">updated: 02/02/2023</h6>
 		</div>
 		<p class="text-xl text-foreground/85 max-w-xl">
 			A short list of things I'm currently working on, learning, and doing. If it hasn't been
