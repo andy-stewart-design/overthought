@@ -29,8 +29,8 @@
 	];
 </script>
 
-<main class="bg-background">
-	<Container pt="xl" pb="sm" class="grid gap-16">
+<Container as="main" py="xl" class="grid gap-8 bg-background">
+	<header class="grid gap-16 bg-background">
 		<div class="flex justify-between items-end">
 			<h1 class="text-8xl md:text-9xl">Currently</h1>
 			<h6 class="font-[450] text-sm pb-[13px]">updated: 02/02/2023</h6>
@@ -39,8 +39,8 @@
 			A short list of things I'm currently working on, learning, and doing. If it hasn't been
 			updated in a while, let me know.
 		</p>
-	</Container>
-	<Container pb="xl" class="grid grid-cols-2 gap-8">
+	</header>
+	<section class="grid grid-cols-2 gap-8">
 		{#each activities as activity}
 			<div class="grid gap-4 content-start border border-light rounded-2xl p-6">
 				<img class="w-full mb-2" src={activity.image} alt="" width="1920" height="1080" />
@@ -50,5 +50,5 @@
 				</p>
 			</div>
 		{/each}
-	</Container>
-</main>
+	</section>
+</Container>

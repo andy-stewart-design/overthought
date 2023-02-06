@@ -1,6 +1,8 @@
 <script lang="ts">
 	type PaddingValue = 'xs' | 'sm' | 'md' | 'lg' | 'xl' | 'none';
+	type ElementOptions = 'div' | 'section' | 'main' | 'article' | 'header';
 
+	export let as: ElementOptions = 'div';
 	export let py: PaddingValue | null = 'sm';
 	export let pt: PaddingValue | null = null;
 	export let pb: PaddingValue | null = null;
@@ -15,7 +17,8 @@
 	if (!isPaddingEqual) py = null;
 </script>
 
-<div
+<svelte:element
+	this={as}
 	class={`${$$props.class}`}
 	class:pad-x={!pxNone}
 	class:py-0={isPaddingEqual && py === 'none'}
@@ -38,7 +41,7 @@
 	class:pb-30={pb === 'xl'}
 >
 	<slot />
-</div>
+</svelte:element>
 
 <style lang="postcss">
 	.pad-x {

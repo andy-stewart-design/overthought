@@ -219,7 +219,7 @@ export const toolData: { [key: string]: ToolSet[] } = {
 					name: 'Apple Macbook Pro (2015)',
 					category: 'Computer',
 					descr:
-						'I tend to hang on to hardware for as long as possible, which is why I’m typing these words on a 2015 Macbook Pro, which still runs surprisingly well. However, I am looking to upgrade my personal laptop this year. The computer that I use for my agency work is a 2019 Macbook Pro.'
+						'I tend to hang on to hardware for as long as possible, which is why, until recently, my personal computer was a 2015 Macbook Pro. In January, I upgraded to one of the new 16" M2 Macbooks, which definitely lives up to the hype—and unlike my work computer (2019 Macbook), thankfully doesn’t have a touchbar.'
 				},
 				{
 					name: 'iPhone 14 Pro',
@@ -229,8 +229,9 @@ export const toolData: { [key: string]: ToolSet[] } = {
 				},
 				{
 					name: 'iPad Pro',
-					category: 'Smart Phone',
-					descr: 'lorem ipsum'
+					category: 'Tablet',
+					descr:
+						'I bought an iPad pro when I was working as an independent designer and doing a larger amount of illustration in my day-to-day work. Now, honestly, I use it mostly for reading or quickly sketching out an idea.'
 				},
 				{
 					name: 'AirPods Pro',
