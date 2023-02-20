@@ -7,6 +7,7 @@
 
 <Container class="absolute top-0 left-0 flex justify-between items-center w-screen z-50">
 	<a href="/" class="relative w-11" class:pointer-events-none={$page.url.pathname === '/'}>
+		<p class="sr-only">Andy's logo</p>
 		{@html andyLogo}
 	</a>
 	<!-- <ThemeToggle /> -->

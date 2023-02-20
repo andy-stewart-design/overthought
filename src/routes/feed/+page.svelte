@@ -43,6 +43,7 @@
 					activeIndex = project.index;
 					isOverlayActive = true;
 				}}
+				label={`${project.client} | ${project.title}`}
 			>
 				<div class="bg-surface-low rounded-2xl overflow-hidden shadow-lg">
 					{#if project.mediaType === 'image' && project.thumbnailImage}
