@@ -56,8 +56,8 @@
 				/>
 				<svg viewBox="0 0 24 24" width="24" height="24" class="relative">
 					<g
-						class="fill-foreground transition-colors ease-out"
-						class:fill-background={isSettingsActive}
+						class="fill-foreground transition-colors ease-out active:fill-background"
+						class:active={isSettingsActive}
 					>
 						<circle cx="4" cy="12" r="2" />
 						<circle cx="12" cy="12" r="2" />
