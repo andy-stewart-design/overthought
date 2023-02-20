@@ -47,7 +47,7 @@
 				>
 			</li>
 		{/each}
-		<li class="relative border-l border-light pl-2 ml-1">
+		<li class="relative border-l border-light pl-1">
 			<Button class="group relative p-3" on:click={() => (isSettingsActive = !isSettingsActive)}>
 				<div
 					class="absolute top-0 left-0 w-full h-full bg-foreground/90 rounded-full opacity-0 transition-opacity ease-out group-hover:opacity-10 active:opacity-100 group-hover:active:opacity-100"
