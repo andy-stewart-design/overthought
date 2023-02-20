@@ -1,4 +1,5 @@
 <script lang="ts">
+	import Image from '$lib/components/media/Image.svelte';
 	import { tools, skills, introBullets } from '$lib/content/about';
 	import Button from '@globals/Button.svelte';
 	import Container from '@globals/layout/Container.svelte';
@@ -30,9 +31,11 @@
 	>
 		<div>
 			<div class="sticky top-8 flex flex-col gap-2 lg:h-[calc(100vh-8rem)]">
-				<img
+				<Image
+					cloud
 					class="aspect-[4/3] object-cover object-top rounded-2xl opacity-90 lg:aspect-[none] lg:grow"
-					src="/img/about/andy-stewart-portrait.webp"
+					src="/about/andy-headshot.jpg"
+					sizes={[800, 1200]}
 					alt="The designer Andy Stewart throwing playing cards into the air"
 				/>
 				<div class="flex items-center gap-2 text-foreground">

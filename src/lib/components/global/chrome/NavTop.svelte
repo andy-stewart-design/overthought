@@ -9,5 +9,5 @@
 	<a href="/" class="relative w-11" class:pointer-events-none={$page.url.pathname === '/'}>
 		{@html andyLogo}
 	</a>
-	<ThemeToggle />
+	<!-- <ThemeToggle /> -->
 </Container>

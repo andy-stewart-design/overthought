@@ -1,5 +1,6 @@
 <script lang="ts">
 	import '$lib/styles/app.postcss';
+	import 'neutral-ui/base.css';
 	import NavTop from '@globals/chrome/NavTop.svelte';
 	import Footer from '@globals/chrome/Footer.svelte';
 	import NavBottom from '@globals/chrome/NavBottom.svelte';
