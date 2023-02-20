@@ -3,6 +3,8 @@
 import { client } from '$lib/utils/sanity';
 import type { PageServerLoad } from './$types';
 
+export const prerender = true;
+
 export interface FeedImage {
 	src: string;
 	width: string;
