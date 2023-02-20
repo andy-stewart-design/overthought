@@ -5,7 +5,6 @@
 	import Container from '@globals/layout/Container.svelte';
 	import Image from '$lib/components/media/Image.svelte';
 	import Video from '$lib/components/media/Video.svelte';
-	import { urlFor } from '$lib/utils/sanity';
 	import { focusTrap } from '$lib/actions/focusTrap';
 	import type { PageData } from './$types';
 
@@ -63,7 +62,7 @@
 							class="aspect-square"
 							width={project.thumbnailVideo.poster.width}
 							height={project.thumbnailVideo.poster.height}
-							poster={urlFor(project.thumbnailVideo.poster.src).width(800).auto('format').url()}
+							poster={`${project.thumbnailVideo.poster.src}?w=${800}&auto=format`}
 							autoplay
 							muted
 							loop
@@ -151,10 +150,7 @@
 									class="absolute top-0 left-0 w-full h-full object-contain z-10"
 									width={activeProject.thumbnailVideo.poster.width}
 									height={activeProject.thumbnailVideo.poster.height}
-									poster={urlFor(activeProject.thumbnailVideo.poster.src)
-										.width(1600)
-										.auto('format')
-										.url()}
+									poster={`${activeProject.thumbnailVideo.poster.src}?w=${1600}&auto=format`}
 									autoplay
 									muted
 									loop
