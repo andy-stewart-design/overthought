@@ -29,7 +29,7 @@
 	}
 
 	function animate() {
-		if (!ctx) return;
+		if (!ctx || !canvas.width) return;
 		ctx.clearRect(0, 0, canvas.width, canvas.height);
 		for (let i = 0; i < amount; i++) {
 			const sinVal = Math.sin(inc + i / 2.5);
@@ -45,6 +45,7 @@
 			let pos_y = is_vertical ? pos_block : pos_inline;
 			let opacity = 1.0 - Math.abs(sinVal) / 1.5;
 			let radius = (grid_block / radius_offset) * (1 - Math.abs(sinVal) / 2);
+
 			ctx.fillStyle = `hsl(${hue + i * 6} 100% 50% / ${opacity})`;
 			ctx.beginPath();
 			ctx.ellipse(pos_x, pos_y, radius, radius, 0, 0, 2 * Math.PI);

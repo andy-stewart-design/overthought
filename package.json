@@ -34,7 +34,7 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"@sanity/client": "^5.2.1",
+		"@sanity/client": "^5.2.2",
 		"@sanity/image-url": "^1.0.2",
 		"neutral-ui": "^0.3.4"
 	}

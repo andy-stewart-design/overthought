@@ -35,7 +35,7 @@
 					cloud
 					class="aspect-[4/3] object-cover object-top rounded-2xl opacity-90 lg:aspect-[none] lg:grow"
 					src="/about/andy-headshot.jpg"
-					sizes={[800, 1200]}
+					imageWidths={[800, 1200]}
 					alt="The designer Andy Stewart throwing playing cards into the air"
 				/>
 				<div class="flex items-center gap-2 text-foreground">

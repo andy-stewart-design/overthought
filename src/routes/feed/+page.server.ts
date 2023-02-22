@@ -1,5 +1,3 @@
-// @ts-nocheck
-
 import { client } from '$lib/utils/sanity';
 import type { PageServerLoad } from './$types';
 
@@ -83,14 +81,14 @@ export const load: PageServerLoad = async () => {
             }),
         }`);
 
-		const chronData = data.sort((a, b) => new Date(b.date) - new Date(a.date));
+		const chronData = data.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 
 		const cleanData = chronData.map((project, index) => {
 			project.projectType = project.projectType.split('-').join(' ');
 			return { ...project, index };
 		});
 
-		return cleanData.reverse();
+		return cleanData;
 	};
 
 	return {

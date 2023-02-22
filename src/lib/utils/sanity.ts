@@ -18,7 +18,7 @@ export const client = createClient({
 export function setSrc(slug: string, sizes: number | number[]) {
 	if (typeof sizes !== 'number') {
 		// const URLs = sizes.map((width) => urlFor(slug).width(width).auto('format').url());
-		const URLs = sizes.map((width) => `${slug}?w=${width}&auto=format`);
+		const URLs = sizes.map((width) => `${slug}?w=${width}&auto=format ${width}w`);
 		return URLs.join(', ');
 	} else {
 		// return urlFor(slug).width(sizes).auto('format').url();

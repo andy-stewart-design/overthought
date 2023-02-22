@@ -2,13 +2,15 @@
 	// TODO: set up for SVGs
 	import { setSrc } from '$lib/utils/sanity';
 	import { setCloudSrc } from '$lib/utils/cloudinary';
+	import { setSizes } from '$lib/utils/images';
 
 	type ImageLoading = 'eager' | 'lazy';
 
-	export let sanity = false;
-	export let cloud = false;
 	export let src: string;
-	export let sizes: number | number[] = 1200;
+	export let sanity = src.includes('cdn.sanity.io');
+	export let cloud = false;
+	export let imageWidths: number | number[] = 1200;
+	export let sizes: string | ((string | number)[] | string)[] = '100vw';
 	export let alt: string;
 	export let width = '1080';
 	export let height = '1080';
@@ -17,14 +19,15 @@
 
 	let classname: string = '';
 	let defaultSize: number;
-	if (typeof sizes !== 'number' && sizes.length) defaultSize = sizes.slice(-1)[0];
+	if (typeof imageWidths !== 'number' && imageWidths.length) defaultSize = imageWidths.slice(-1)[0];
 </script>
 
 {#if sanity}
-	{#if typeof sizes !== 'number'}
+	{#if typeof imageWidths !== 'number'}
 		<img
 			src={setSrc(src, defaultSize)}
-			srcset={setSrc(src, sizes)}
+			srcset={setSrc(src, imageWidths)}
+			sizes={setSizes(sizes)}
 			class={classname}
 			{width}
 			{height}
@@ -32,13 +35,14 @@
 			{loading}
 		/>
 	{:else}
-		<img src={setSrc(src, sizes)} class={classname} {width} {height} {alt} {loading} />
+		<img src={setSrc(src, imageWidths)} class={classname} {width} {height} {alt} {loading} />
 	{/if}
 {:else if cloud}
-	{#if typeof sizes !== 'number'}
+	{#if typeof imageWidths !== 'number'}
 		<img
 			src={setCloudSrc(src, defaultSize)}
-			srcset={setCloudSrc(src, sizes)}
+			srcset={setCloudSrc(src, imageWidths)}
+			sizes={setSizes(sizes)}
 			class={classname}
 			{width}
 			{height}
@@ -46,7 +50,7 @@
 			{loading}
 		/>
 	{:else}
-		<img src={setCloudSrc(src, sizes)} class={classname} {width} {height} {alt} {loading} />
+		<img src={setCloudSrc(src, imageWidths)} class={classname} {width} {height} {alt} {loading} />
 	{/if}
 {:else}
 	<img {src} class={classname} {width} {height} {alt} {loading} />

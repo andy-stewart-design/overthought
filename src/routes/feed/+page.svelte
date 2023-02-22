@@ -37,7 +37,7 @@
 		pb="xl"
 		class="grid grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-x-4 gap-y-6"
 	>
-		{#each projects as project (project.id)}
+		{#each projects as project, index (project.id)}
 			<Button
 				on:click={() => {
 					activeIndex = project.index;
@@ -48,13 +48,14 @@
 				<div class="bg-surface-low rounded-2xl overflow-hidden shadow-lg">
 					{#if project.mediaType === 'image' && project.thumbnailImage}
 						<Image
-							sanity
 							src={project.thumbnailImage.src}
-							sizes={800}
+							imageWidths={[600, 800, 1200]}
+							sizes={[[1024, '50vw'], [1536, '33vw'], '25vw']}
 							class="aspect-square"
 							alt={project.thumbnailImage.alt}
 							width={project.thumbnailImage.width}
 							height={project.thumbnailImage.height}
+							loading={index > 3 ? 'lazy' : 'eager'}
 						/>
 					{:else if project.mediaType === 'video' && project.thumbnailVideo}
 						<Video
@@ -83,8 +84,8 @@
 		out:fade={{ duration: 400, easing: cubicOut, delay: 300 }}
 		use:focusTrap={{
 			escapeCallback: closeOverlay,
-			arrowLeftCallback: incActiveImage,
-			arrowRightCallback: decActiveImage
+			arrowLeftCallback: decActiveImage,
+			arrowRightCallback: incActiveImage
 		}}
 	>
 		<Container as="div" py="md" class="flex">
@@ -112,9 +113,8 @@
 						{#if activeProject.mediaType === 'image'}
 							{#if activeProject.featuredImage && activeProject.featuredImage.src}
 								<Image
-									sanity
 									src={activeProject.featuredImage.src}
-									sizes={1600}
+									imageWidths={1600}
 									class="absolute top-0 left-0 w-full h-full object-contain z-10"
 									alt={activeProject.featuredImage.alt}
 									width={activeProject.featuredImage.width}
@@ -122,9 +122,8 @@
 								/>
 							{:else if activeProject.thumbnailImage && activeProject.thumbnailImage.src}
 								<Image
-									sanity
 									src={activeProject.thumbnailImage.src}
-									sizes={1600}
+									imageWidths={1600}
 									class="absolute top-0 left-0 w-full h-full object-contain z-10"
 									alt={activeProject.thumbnailImage.alt}
 									width={activeProject.thumbnailImage.width}

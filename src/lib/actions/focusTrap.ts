@@ -5,8 +5,8 @@ interface Props {
 	arrowRightCallback?: () => void | null;
 }
 
-export const focusTrap = (node: HTMLElement, props: Props) => {
-	let { targetNode, escapeCallback, arrowLeftCallback, arrowRightCallback } = props;
+export const focusTrap = (node: HTMLElement, props?: Props) => {
+	let targetNode = props?.targetNode;
 	if (!targetNode) targetNode = node;
 	const focusableEls: NodeListOf<HTMLElement> = targetNode.querySelectorAll(
 		'a:not(.hidden, .pointer-events-none), button:not([disabled])'
@@ -27,15 +27,15 @@ export const focusTrap = (node: HTMLElement, props: Props) => {
 		} else if (e.key === 'Tab' && document.activeElement === lastFocusableEl) {
 			e.preventDefault();
 			firstFocusableEl.focus();
-		} else if (escapeCallback && e.key === 'Escape') {
+		} else if (props?.escapeCallback && e.key === 'Escape') {
 			e.preventDefault();
-			escapeCallback();
-		} else if (arrowLeftCallback && e.key === 'ArrowLeft') {
+			props.escapeCallback();
+		} else if (props?.arrowLeftCallback && e.key === 'ArrowLeft') {
 			e.preventDefault();
-			arrowLeftCallback();
-		} else if (arrowRightCallback && e.key === 'ArrowRight') {
+			props.arrowLeftCallback();
+		} else if (props?.arrowRightCallback && e.key === 'ArrowRight') {
 			e.preventDefault();
-			arrowRightCallback();
+			props.arrowRightCallback();
 		}
 	};
 	window.addEventListener('keydown', handleKeydown);
