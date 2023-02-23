@@ -114,7 +114,7 @@
 							{#if activeProject.featuredImage && activeProject.featuredImage.src}
 								<Image
 									src={activeProject.featuredImage.src}
-									imageWidths={1600}
+									imageWidths={[800, 1200, 1600, 2000]}
 									class="absolute top-0 left-0 w-full h-full object-contain z-10"
 									alt={activeProject.featuredImage.alt}
 									width={activeProject.featuredImage.width}
@@ -123,7 +123,7 @@
 							{:else if activeProject.thumbnailImage && activeProject.thumbnailImage.src}
 								<Image
 									src={activeProject.thumbnailImage.src}
-									imageWidths={1600}
+									imageWidths={[800, 1200, 1600, 2000]}
 									class="absolute top-0 left-0 w-full h-full object-contain z-10"
 									alt={activeProject.thumbnailImage.alt}
 									width={activeProject.thumbnailImage.width}

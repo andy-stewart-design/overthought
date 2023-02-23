@@ -18,6 +18,7 @@ const config = {
 		alias: {
 			'@content': './src/lib/content',
 			'@globals': './src/lib/components/global',
+			'@routes': './src/routes',
 			'@svg': './src/lib/svg'
 		}
 	}

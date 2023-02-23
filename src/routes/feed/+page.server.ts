@@ -33,53 +33,53 @@ export interface FeedProject {
 export const load: PageServerLoad = async () => {
 	const getData = async () => {
 		const data: FeedProject[] = await client.fetch(`*[_type == "feed"]{
-            "id": _id,
-            client,
-            projectType,
-            "title": project,
-            mediaType,
-            date,
-            ...select(mediaType == 'image' => {
-                "thumbnailImage": {
-                    "src": thumbnailImage.asset->url,
-                    "originalFilename": thumbnailImage.asset -> originalFilename,
-                    "width": thumbnailImage.asset->.metadata.dimensions.width,
-                    "height": thumbnailImage.asset->.metadata.dimensions.height,
-                    "ratio": thumbnailImage.asset->.metadata.dimensions.aspectRatio,
-                    "alt": thumbnailImage.alt,
-                },
-                "featuredImage": {
-                    "src": featuredImage.asset->url,
-                    "originalFilename": featuredImage.asset -> originalFilename,
-                    "width": featuredImage.asset->.metadata.dimensions.width,
-                    "height": featuredImage.asset->.metadata.dimensions.height,
-                    "ratio": featuredImage.asset->.metadata.dimensions.aspectRatio,
-                    "alt": featuredImage.alt,
-                },
-            }),
-            ...select(mediaType == 'video' => {
-                "thumbnailVideo": {
-                    "src": thumbnailVideo.link,
-                    "poster": {
-                        "src": thumbnailVideo.poster.asset->url,
-                        "originalFilename": thumbnailVideo.poster.asset -> originalFilename,
-                        "width": thumbnailVideo.poster.asset->.metadata.dimensions.width,
-                        "height": thumbnailVideo.poster.asset->.metadata.dimensions.height,
-                        "ratio": thumbnailVideo.poster.asset->.metadata.dimensions.aspectRatio,
-                    },
-                },
-                "featuredVideo": {
-                    "src": featuredVideo.link,
-                    "poster": {
-                        "src": featuredVideo.poster.asset->url,
-                        "originalFilename": featuredVideo.poster.asset -> originalFilename,
-                        "width": featuredVideo.poster.asset->.metadata.dimensions.width,
-                        "height": featuredVideo.poster.asset->.metadata.dimensions.height,
-                        "ratio": featuredVideo.poster.asset->.metadata.dimensions.aspectRatio,
-                    },
-                },
-            }),
-        }`);
+			"id": _id,
+			client,
+			projectType,
+			"title": project,
+			mediaType,
+			date,
+			...select(mediaType == 'image' => {
+				"thumbnailImage": {
+					"src": thumbnailImage.asset->url,
+					"originalFilename": thumbnailImage.asset -> originalFilename,
+					"width": thumbnailImage.asset->.metadata.dimensions.width,
+					"height": thumbnailImage.asset->.metadata.dimensions.height,
+					"ratio": thumbnailImage.asset->.metadata.dimensions.aspectRatio,
+					"alt": thumbnailImage.alt,
+				},
+				"featuredImage": {
+					"src": featuredImage.asset->url,
+					"originalFilename": featuredImage.asset -> originalFilename,
+					"width": featuredImage.asset->.metadata.dimensions.width,
+					"height": featuredImage.asset->.metadata.dimensions.height,
+					"ratio": featuredImage.asset->.metadata.dimensions.aspectRatio,
+					"alt": featuredImage.alt,
+				},
+			}),
+			...select(mediaType == 'video' => {
+				"thumbnailVideo": {
+					"src": thumbnailVideo.link,
+					"poster": {
+						"src": thumbnailVideo.poster.asset->url,
+						"originalFilename": thumbnailVideo.poster.asset -> originalFilename,
+						"width": thumbnailVideo.poster.asset->.metadata.dimensions.width,
+						"height": thumbnailVideo.poster.asset->.metadata.dimensions.height,
+						"ratio": thumbnailVideo.poster.asset->.metadata.dimensions.aspectRatio,
+					},
+				},
+				"featuredVideo": {
+					"src": featuredVideo.link,
+					"poster": {
+						"src": featuredVideo.poster.asset->url,
+						"originalFilename": featuredVideo.poster.asset -> originalFilename,
+						"width": featuredVideo.poster.asset->.metadata.dimensions.width,
+						"height": featuredVideo.poster.asset->.metadata.dimensions.height,
+						"ratio": featuredVideo.poster.asset->.metadata.dimensions.aspectRatio,
+					},
+				},
+			}),
+		}`);
 
 		const chronData = data.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 
