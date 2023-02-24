@@ -30,7 +30,7 @@ export interface FeedProject {
 	date: string;
 }
 
-export const load: PageServerLoad = async () => {
+export const load: PageServerLoad = async ({ setHeaders }) => {
 	const getData = async () => {
 		const data: FeedProject[] = await client.fetch(`*[_type == "feed"]{
 			"id": _id,
@@ -90,6 +90,10 @@ export const load: PageServerLoad = async () => {
 
 		return cleanData;
 	};
+
+	setHeaders({
+		'Cache-Control': 'max-age=3600'
+	});
 
 	return {
 		projects: getData()
