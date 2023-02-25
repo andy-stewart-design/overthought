@@ -138,6 +138,7 @@
 									class="absolute top-0 left-0 w-full h-full object-contain z-10"
 									width={activeProject.featuredVideo.poster.width}
 									height={activeProject.featuredVideo.poster.height}
+									poster={`${activeProject.featuredVideo.poster.src}?w=${1600}&auto=format`}
 									autoplay
 									muted
 									loop
