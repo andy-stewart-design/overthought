@@ -15,6 +15,7 @@
 	export let width = '1080';
 	export let height = '1080';
 	export let loading: ImageLoading = 'eager';
+	export let blur = false;
 	export { classname as class };
 
 	let classname: string = '';
@@ -25,8 +26,8 @@
 {#if sanity}
 	{#if typeof imageWidths !== 'number'}
 		<img
-			src={setSrc(src, defaultSize)}
-			srcset={setSrc(src, imageWidths)}
+			src={setSrc(src, defaultSize, blur)}
+			srcset={setSrc(src, imageWidths, blur)}
 			sizes={setSizes(sizes)}
 			class={classname}
 			{width}
@@ -35,7 +36,7 @@
 			{loading}
 		/>
 	{:else}
-		<img src={setSrc(src, imageWidths)} class={classname} {width} {height} {alt} {loading} />
+		<img src={setSrc(src, imageWidths, blur)} class={classname} {width} {height} {alt} {loading} />
 	{/if}
 {:else if cloud}
 	{#if typeof imageWidths !== 'number'}

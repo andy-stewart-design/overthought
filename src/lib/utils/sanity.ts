@@ -15,10 +15,12 @@ export const client = createClient({
 // 	return src;
 // }
 
-export function setSrc(slug: string, sizes: number | number[]) {
+export function setSrc(slug: string, sizes: number | number[], blur = false) {
 	if (typeof sizes !== 'number') {
 		// const URLs = sizes.map((width) => urlFor(slug).width(width).auto('format').url());
-		const URLs = sizes.map((width) => `${slug}?w=${width}&auto=format ${width}w`);
+		const URLs = sizes.map(
+			(width) => `${slug}?w=${width}&auto=format${blur ? '&blur=200' : ''} ${width}w`
+		);
 		return URLs.join(', ');
 	} else {
 		// return urlFor(slug).width(sizes).auto('format').url();

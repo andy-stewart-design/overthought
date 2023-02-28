@@ -3,13 +3,14 @@
 	import { cubicOut, quadIn } from 'svelte/easing';
 	import { Button } from 'neutral-ui';
 	import Container from '@globals/layout/Container.svelte';
-	import Image from '$lib/components/media/Image.svelte';
+	// import Image from '$lib/components/media/Image.svelte';
 	import Video from '$lib/components/media/Video.svelte';
 	import { focusTrap } from '$lib/actions/focusTrap';
 	import type { PageData } from './$types';
 
 	export let data: PageData;
 	const { projects } = data;
+	console.log(projects);
 
 	let isOverlayActive = false;
 	let activeIndex = 0;
@@ -46,8 +47,8 @@
 				label={`${project.client} | ${project.title}`}
 			>
 				<div class="bg-surface-low rounded-2xl overflow-hidden shadow-lg">
-					{#if project.mediaType === 'image' && project.thumbnailImage}
-						<Image
+					{#if project.mediaType === 'image' && project.thumbnailImage && project.srcSets}
+						<!-- <Image
 							src={project.thumbnailImage.src}
 							imageWidths={[600, 800, 1200]}
 							sizes={[[1024, '50vw'], [1536, '33vw'], '25vw']}
@@ -56,6 +57,15 @@
 							width={project.thumbnailImage.width}
 							height={project.thumbnailImage.height}
 							loading={index > 3 ? 'lazy' : 'eager'}
+						/> -->
+						<img
+							class="aspect-square"
+							src={project.thumbnailImage.src}
+							srcset={project.srcSets.feed}
+							sizes="(max-width: 1024) 50vw, (max-width: 1536) 33vw, 25vw"
+							alt={project.thumbnailImage.alt}
+							width={project.thumbnailImage.width}
+							height={project.thumbnailImage.height}
 						/>
 					{:else if project.mediaType === 'video' && project.thumbnailVideo}
 						<Video
@@ -110,8 +120,8 @@
 						in:fade|local={{ duration: 300, easing: cubicOut }}
 						out:fade|local={{ duration: 300, easing: cubicOut }}
 					>
-						{#if activeProject.mediaType === 'image'}
-							{#if activeProject.featuredImage && activeProject.featuredImage.src}
+						{#if activeProject.mediaType === 'image' && activeProject.thumbnailImage}
+							<!-- {#if activeProject.featuredImage && activeProject.featuredImage.src}
 								<Image
 									src={activeProject.featuredImage.src}
 									imageWidths={[800, 1200, 1600, 2000]}
@@ -128,6 +138,15 @@
 									alt={activeProject.thumbnailImage.alt}
 									width={activeProject.thumbnailImage.width}
 									height={activeProject.thumbnailImage.height}
+								/>
+							{/if} -->
+							{#if activeProject.srcSets && activeProject.srcSets.overlay}
+								<img
+									class="absolute top-0 left-0 w-full h-full object-contain z-10"
+									src={activeProject.thumbnailImage.src}
+									srcset={activeProject.srcSets.overlay}
+									sizes="100vw"
+									alt={activeProject.thumbnailImage.alt}
 								/>
 							{/if}
 						{:else if activeProject.mediaType === 'video'}

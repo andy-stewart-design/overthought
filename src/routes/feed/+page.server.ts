@@ -1,5 +1,6 @@
 import { client } from '$lib/utils/sanity';
 import type { PageServerLoad } from './$types';
+import { setSrc } from '$lib/utils/sanity';
 
 export const prerender = true;
 
@@ -85,7 +86,21 @@ export const load: PageServerLoad = async ({ setHeaders }) => {
 
 		const cleanData = chronData.map((project, index) => {
 			project.projectType = project.projectType.split('-').join(' ');
-			return { ...project, index };
+			let srcSets;
+			if (project.mediaType === 'image' && project.thumbnailImage?.src) {
+				let feedImageSrcSet: string | undefined = undefined;
+				let overlayImageSrcSet: string | undefined = undefined;
+
+				feedImageSrcSet = setSrc(project.thumbnailImage.src, [600, 800, 1200]);
+				if (project.featuredImage?.src) {
+					overlayImageSrcSet = setSrc(project.featuredImage.src, [800, 1200, 1600, 2000]);
+				} else {
+					overlayImageSrcSet = setSrc(project.thumbnailImage.src, [800, 1200, 1600, 2000]);
+				}
+				srcSets = { feed: feedImageSrcSet, overlay: overlayImageSrcSet };
+			}
+
+			return { ...project, index, srcSets };
 		});
 
 		return cleanData;
