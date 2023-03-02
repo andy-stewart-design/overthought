@@ -27,3 +27,33 @@ export function setSrc(slug: string, sizes: number | number[], blur = false) {
 		return `${slug}?w=${sizes}&auto=format`;
 	}
 }
+
+export const feed_query = `*[_type == "feed"]{
+	"id": _id,
+	client,
+	"title": project,
+	date,
+	projectType,
+	"mediaType": upper(mediaType),
+	...select(mediaType == 'image' => {
+		"src": {
+			"feed": thumbnailImage.asset->url,
+			"overlay": coalesce(featuredImage.asset->url, thumbnailImage.asset->url),
+		},
+		"srcSet": {
+			"feed": thumbnailImage.asset->url,
+			"overlay": coalesce(featuredImage.asset->url, thumbnailImage.asset->url),
+		},
+		"alt": thumbnailImage.alt,
+	}),
+	...select(mediaType == 'video' => {
+		"src": {
+			"feed": thumbnailVideo.link,
+			"overlay": coalesce(featuredVideo.link, thumbnailVideo.link),
+		},
+		"poster": {
+			"feed": thumbnailVideo.poster.asset->url,
+			"overlay": coalesce(featuredVideo.poster.asset->url, thumbnailVideo.poster.asset->url),
+		},
+	}),
+}`;

@@ -1,109 +1,69 @@
-import { client } from '$lib/utils/sanity';
+import { client, feed_query, setSrc } from '$lib/utils/sanity';
 import type { PageServerLoad } from './$types';
-import { setSrc } from '$lib/utils/sanity';
 
 export const prerender = true;
 
-export interface FeedImage {
-	src: string;
-	width: string;
-	height: string;
-	ratio: string;
-	alt: string;
+export const config = {
+	isr: {
+		expiration: 60
+	}
+};
+
+interface FeedMediaSource {
+	feed: string;
+	overlay: string;
 }
 
-export interface FeedVideo {
-	src: string;
-	poster: FeedImage;
-}
-
-export interface FeedProject {
+interface FeedMedia {
 	index?: number;
 	id: string;
 	client: string;
-	projectType: string;
 	title: string;
-	mediaType: 'image' | 'video';
-	featuredImage?: FeedImage;
-	thumbnailImage?: FeedImage;
-	featuredVideo?: FeedVideo;
-	thumbnailVideo?: FeedVideo;
 	date: string;
+	projectType: string;
+	src: FeedMediaSource;
+}
+
+export interface FeedImage extends FeedMedia {
+	mediaType: 'IMAGE';
+	srcSet: FeedMediaSource;
+	alt: string;
+}
+
+export interface FeedVideo extends FeedMedia {
+	mediaType: 'VIDEO';
+	poster: FeedMediaSource;
 }
 
 export const load: PageServerLoad = async ({ setHeaders }) => {
 	const getData = async () => {
-		const data: FeedProject[] = await client.fetch(`*[_type == "feed"]{
-			"id": _id,
-			client,
-			projectType,
-			"title": project,
-			mediaType,
-			date,
-			...select(mediaType == 'image' => {
-				"thumbnailImage": {
-					"src": thumbnailImage.asset->url,
-					"originalFilename": thumbnailImage.asset -> originalFilename,
-					"width": thumbnailImage.asset->.metadata.dimensions.width,
-					"height": thumbnailImage.asset->.metadata.dimensions.height,
-					"ratio": thumbnailImage.asset->.metadata.dimensions.aspectRatio,
-					"alt": thumbnailImage.alt,
-				},
-				"featuredImage": {
-					"src": featuredImage.asset->url,
-					"originalFilename": featuredImage.asset -> originalFilename,
-					"width": featuredImage.asset->.metadata.dimensions.width,
-					"height": featuredImage.asset->.metadata.dimensions.height,
-					"ratio": featuredImage.asset->.metadata.dimensions.aspectRatio,
-					"alt": featuredImage.alt,
-				},
-			}),
-			...select(mediaType == 'video' => {
-				"thumbnailVideo": {
-					"src": thumbnailVideo.link,
-					"poster": {
-						"src": thumbnailVideo.poster.asset->url,
-						"originalFilename": thumbnailVideo.poster.asset -> originalFilename,
-						"width": thumbnailVideo.poster.asset->.metadata.dimensions.width,
-						"height": thumbnailVideo.poster.asset->.metadata.dimensions.height,
-						"ratio": thumbnailVideo.poster.asset->.metadata.dimensions.aspectRatio,
-					},
-				},
-				"featuredVideo": {
-					"src": featuredVideo.link,
-					"poster": {
-						"src": featuredVideo.poster.asset->url,
-						"originalFilename": featuredVideo.poster.asset -> originalFilename,
-						"width": featuredVideo.poster.asset->.metadata.dimensions.width,
-						"height": featuredVideo.poster.asset->.metadata.dimensions.height,
-						"ratio": featuredVideo.poster.asset->.metadata.dimensions.aspectRatio,
-					},
-				},
-			}),
-		}`);
+		const data: (FeedImage | FeedVideo)[] = await client.fetch(feed_query);
 
-		const chronData = data.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+		const chronological_data = data.sort(
+			(a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
+		);
 
-		const cleanData = chronData.map((project, index) => {
+		return chronological_data.map((project, index): FeedImage | FeedVideo => {
 			project.projectType = project.projectType.split('-').join(' ');
-			let srcSets;
-			if (project.mediaType === 'image' && project.thumbnailImage?.src) {
-				let feedImageSrcSet: string | undefined = undefined;
-				let overlayImageSrcSet: string | undefined = undefined;
 
-				feedImageSrcSet = setSrc(project.thumbnailImage.src, [600, 800, 1200]);
-				if (project.featuredImage?.src) {
-					overlayImageSrcSet = setSrc(project.featuredImage.src, [800, 1200, 1600, 2000]);
-				} else {
-					overlayImageSrcSet = setSrc(project.thumbnailImage.src, [800, 1200, 1600, 2000]);
-				}
-				srcSets = { feed: feedImageSrcSet, overlay: overlayImageSrcSet };
+			if (project.mediaType === 'IMAGE') {
+				project.src.feed = setSrc(project.src.feed, 1200);
+				project.src.overlay = setSrc(project.src.overlay, 2000);
+
+				project.srcSet.feed = setSrc(project.srcSet.feed, [600, 800, 1200]);
+				project.srcSet.overlay = setSrc(project.srcSet.overlay, [800, 1200, 1600, 2000]);
+			} else if (project.mediaType === 'VIDEO') {
+				const cloudName = 'v1676297405';
+				const cloudSrc = `https://res.cloudinary.com/andystewartdesign/video/upload/f_auto,q_auto/${cloudName}`;
+
+				project.src.feed = cloudSrc + project.src.feed;
+				project.src.overlay = cloudSrc + project.src.overlay;
+				project.poster.feed = setSrc(project.poster.feed, 1920);
+				project.poster.overlay = setSrc(project.poster.feed, 1920);
 			}
 
-			return { ...project, index, srcSets };
+			return { ...project, index };
 		});
-
-		return cleanData;
 	};
 
 	// setHeaders({

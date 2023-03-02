@@ -3,14 +3,11 @@
 	import { cubicOut, quadIn } from 'svelte/easing';
 	import { Button } from 'neutral-ui';
 	import Container from '@globals/layout/Container.svelte';
-	// import Image from '$lib/components/media/Image.svelte';
-	import Video from '$lib/components/media/Video.svelte';
 	import { focusTrap } from '$lib/actions/focusTrap';
 	import type { PageData } from './$types';
 
 	export let data: PageData;
 	const { projects } = data;
-	console.log(projects);
 
 	let isOverlayActive = false;
 	let activeIndex = 0;
@@ -38,48 +35,39 @@
 		pb="xl"
 		class="grid grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-x-4 gap-y-6"
 	>
-		{#each projects as project, index (project.id)}
+		{#each projects as project (project.id)}
 			<Button
 				on:click={() => {
-					activeIndex = project.index;
+					if (project.index) activeIndex = project.index;
 					isOverlayActive = true;
 				}}
 				label={`${project.client} | ${project.title}`}
 			>
 				<div class="bg-surface-low rounded-2xl overflow-hidden shadow-lg">
-					{#if project.mediaType === 'image' && project.thumbnailImage && project.srcSets}
-						<!-- <Image
-							src={project.thumbnailImage.src}
-							imageWidths={[600, 800, 1200]}
-							sizes={[[1024, '50vw'], [1536, '33vw'], '25vw']}
-							class="aspect-square"
-							alt={project.thumbnailImage.alt}
-							width={project.thumbnailImage.width}
-							height={project.thumbnailImage.height}
-							loading={index > 3 ? 'lazy' : 'eager'}
-						/> -->
+					{#if project.mediaType === 'IMAGE'}
 						<img
 							class="aspect-square"
-							src={project.thumbnailImage.src}
-							srcset={project.srcSets.feed}
+							src={project.src.feed}
+							srcset={project.srcSet.feed}
 							sizes="(max-width: 1024) 50vw, (max-width: 1536) 33vw, 25vw"
-							alt={project.thumbnailImage.alt}
-							width={project.thumbnailImage.width}
-							height={project.thumbnailImage.height}
+							alt={project.alt}
+							width="1080"
+							height="1080"
 						/>
-					{:else if project.mediaType === 'video' && project.thumbnailVideo}
-						<Video
-							cloud
-							src={project.thumbnailVideo.src}
+					{:else if project.mediaType === 'VIDEO'}
+						<video
 							class="aspect-square"
-							width={project.thumbnailVideo.poster.width}
-							height={project.thumbnailVideo.poster.height}
-							poster={`${project.thumbnailVideo.poster.src}?w=${800}&auto=format`}
+							width="1080"
+							height="1080"
+							poster={project.poster.feed}
 							autoplay
 							muted
 							loop
 							playsinline
-						/>
+						>
+							<source src={project.src.feed} type="video/mp4" />
+							Sorry, your browser doesn't support embedded videos.
+						</video>
 					{/if}
 				</div>
 			</Button>
@@ -120,63 +108,30 @@
 						in:fade|local={{ duration: 300, easing: cubicOut }}
 						out:fade|local={{ duration: 300, easing: cubicOut }}
 					>
-						{#if activeProject.mediaType === 'image' && activeProject.thumbnailImage}
-							<!-- {#if activeProject.featuredImage && activeProject.featuredImage.src}
-								<Image
-									src={activeProject.featuredImage.src}
-									imageWidths={[800, 1200, 1600, 2000]}
-									class="absolute top-0 left-0 w-full h-full object-contain z-10"
-									alt={activeProject.featuredImage.alt}
-									width={activeProject.featuredImage.width}
-									height={activeProject.featuredImage.height}
-								/>
-							{:else if activeProject.thumbnailImage && activeProject.thumbnailImage.src}
-								<Image
-									src={activeProject.thumbnailImage.src}
-									imageWidths={[800, 1200, 1600, 2000]}
-									class="absolute top-0 left-0 w-full h-full object-contain z-10"
-									alt={activeProject.thumbnailImage.alt}
-									width={activeProject.thumbnailImage.width}
-									height={activeProject.thumbnailImage.height}
-								/>
-							{/if} -->
-							{#if activeProject.srcSets && activeProject.srcSets.overlay}
+						{#if activeProject.mediaType === 'IMAGE'}
+							{#if activeProject.srcSet && activeProject.srcSet.overlay}
 								<img
 									class="absolute top-0 left-0 w-full h-full object-contain z-10"
-									src={activeProject.thumbnailImage.src}
-									srcset={activeProject.srcSets.overlay}
+									src={activeProject.src.overlay}
+									srcset={activeProject.srcSet.overlay}
 									sizes="100vw"
-									alt={activeProject.thumbnailImage.alt}
+									alt={activeProject.alt}
 								/>
 							{/if}
-						{:else if activeProject.mediaType === 'video'}
-							{#if activeProject.featuredVideo && activeProject.featuredVideo.src}
-								<Video
-									cloud
-									src={activeProject.featuredVideo.src}
-									class="absolute top-0 left-0 w-full h-full object-contain z-10"
-									width={activeProject.featuredVideo.poster.width}
-									height={activeProject.featuredVideo.poster.height}
-									poster={`${activeProject.featuredVideo.poster.src}?w=${1600}&auto=format`}
-									autoplay
-									muted
-									loop
-									playsinline
-								/>
-							{:else if activeProject.thumbnailVideo && activeProject.thumbnailVideo.src}
-								<Video
-									cloud
-									src={activeProject.thumbnailVideo.src}
-									class="absolute top-0 left-0 w-full h-full object-contain z-10"
-									width={activeProject.thumbnailVideo.poster.width}
-									height={activeProject.thumbnailVideo.poster.height}
-									poster={`${activeProject.thumbnailVideo.poster.src}?w=${1600}&auto=format`}
-									autoplay
-									muted
-									loop
-									playsinline
-								/>
-							{/if}
+						{:else if activeProject.mediaType === 'VIDEO'}
+							<video
+								class="absolute top-0 left-0 w-full h-full object-contain z-10"
+								width="1080"
+								height="1080"
+								poster={activeProject.poster.feed}
+								autoplay
+								muted
+								loop
+								playsinline
+							>
+								<source src={activeProject.src.overlay} type="video/mp4" />
+								Sorry, your browser doesn't support embedded videos.
+							</video>
 						{/if}
 					</div>
 				{/key}
