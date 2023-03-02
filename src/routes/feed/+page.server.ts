@@ -59,7 +59,7 @@ export const load: PageServerLoad = async ({ setHeaders }) => {
 				project.src.feed = cloudSrc + project.src.feed;
 				project.src.overlay = cloudSrc + project.src.overlay;
 				project.poster.feed = setSrc(project.poster.feed, 1920);
-				project.poster.overlay = setSrc(project.poster.feed, 1920);
+				project.poster.overlay = setSrc(project.poster.overlay, 1920);
 			}
 
 			return { ...project, index };
