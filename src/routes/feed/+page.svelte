@@ -123,7 +123,7 @@
 								class="absolute top-0 left-0 w-full h-full object-contain z-10"
 								width="1080"
 								height="1080"
-								poster={activeProject.poster.feed}
+								poster={activeProject.poster.overlay}
 								autoplay
 								muted
 								loop
