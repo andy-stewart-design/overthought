@@ -38,7 +38,8 @@
 		{#each projects as project (project.id)}
 			<Button
 				on:click={() => {
-					if (project.index) activeIndex = project.index;
+					if (project.index === undefined) return;
+					activeIndex = project.index;
 					isOverlayActive = true;
 				}}
 				label={`${project.client} | ${project.title}`}
