@@ -3,11 +3,11 @@ import type { PageServerLoad } from './$types';
 
 export const prerender = true;
 
-export const config = {
-	isr: {
-		expiration: 60 * 60 * 24
-	}
-};
+// export const config = {
+// 	isr: {
+// 		expiration: 60 * 60 * 24
+// 	}
+// };
 
 interface FeedMediaSource {
 	feed: string;
@@ -66,9 +66,9 @@ export const load: PageServerLoad = async ({ setHeaders }) => {
 		});
 	};
 
-	// setHeaders({
-	// 	'Cache-Control': 'max-age=3600'
-	// });
+	setHeaders({
+		'Cache-Control': 'max-age=60'
+	});
 
 	return {
 		projects: getData()
