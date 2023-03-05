@@ -7,6 +7,7 @@
 		<meta name="viewport" content="width=device-width" />
 		<script>
 			const documentTheme = document.documentElement.dataset.theme;
+			console.log('from the blocking script:', documentTheme);
 			let newTheme;
 			if (documentTheme === 'system') {
 				const dark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
