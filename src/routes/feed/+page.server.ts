@@ -35,7 +35,7 @@ export interface FeedVideo extends FeedMedia {
 	poster: FeedMediaSource;
 }
 
-export const load: PageServerLoad = async ({ setHeaders, locals }) => {
+export const load: PageServerLoad = async ({ setHeaders }) => {
 	const getData = async () => {
 		const data: (FeedImage | FeedVideo)[] = await client.fetch(feed_query);
 
@@ -71,8 +71,6 @@ export const load: PageServerLoad = async ({ setHeaders, locals }) => {
 	});
 
 	return {
-		projects: getData(),
-		// @ts-expect-error
-		theme: locals.theme
+		projects: getData()
 	};
 };
