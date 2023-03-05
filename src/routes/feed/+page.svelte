@@ -7,7 +7,7 @@
 	import type { PageData } from './$types';
 
 	export let data: PageData;
-	const { projects } = data;
+	const { projects, theme } = data;
 
 	let isOverlayActive = false;
 	let activeIndex = 0;
@@ -29,6 +29,7 @@
 <main class="bg-background">
 	<Container as="header" pt="hero" pb="lg" class="grid lg:grid-cols-2 lg:gap-10">
 		<h1 class="text-8xl md:text-9xl">Feed</h1>
+		{theme}
 	</Container>
 	<Container
 		as="section"
