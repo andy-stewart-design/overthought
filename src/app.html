@@ -26,8 +26,7 @@
 					}, {});
 				cookieTheme = cookies.siteTheme;
 			}
-			if (!cookieTheme)
-				document.cookie = `siteTheme=${newTheme};max-age=31536000;path="/";SameSite=Strict;Secure`;
+			if (!cookieTheme) document.cookie = `siteTheme=${newTheme};max-age=31536000;path="/";`;
 		</script>
 		%sveltekit.head%
 	</head>

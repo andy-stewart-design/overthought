@@ -4,6 +4,7 @@ import type { Handle } from '@sveltejs/kit';
 export const handle: Handle = async ({ event, resolve }) => {
 	// get the stored theme cookie, if it exists
 	const savedTheme = event.cookies.get('siteTheme') as ThemeOption | undefined;
+	const cookieTest = event.cookies.get('cookieType');
 	// if there isn't a theme cookie, set theme to system
 	const theme = savedTheme !== undefined ? savedTheme : 'system';
 	// set the theme store in $lib/stores/theme.ts

@@ -31,7 +31,7 @@ export function setTheme(newTheme: ThemeOption) {
 	appTheme.set(newTheme);
 	const unsubscribe = appTheme.subscribe((theme) => {
 		document.documentElement.dataset.theme = theme;
-		document.cookie = `siteTheme=${theme};max-age=31536000;path="/";SameSite=Strict;Secure`;
+		document.cookie = `siteTheme=${theme};max-age=31536000;path="/";`;
 	});
 	unsubscribe();
 }
