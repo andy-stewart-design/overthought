@@ -66,10 +66,6 @@ export const load: PageServerLoad = async ({ setHeaders }) => {
 		});
 	};
 
-	setHeaders({
-		'Cache-Control': 'max-age=60'
-	});
-
 	return {
 		projects: getData()
 	};
