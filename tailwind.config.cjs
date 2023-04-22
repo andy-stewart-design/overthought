@@ -49,12 +49,15 @@ const config = {
 				34: '7.5rem'
 			},
 			transitionTimingFunction: {
-				'in-expo': 'cubic-bezier(0.95, 0.05, 0.795, 0.035)',
-				'out-expo': 'cubic-bezier(0.19, 1, 0.22, 1)',
-				'in-out-expo': 'cubic-bezier(0.87, 0, 0.13, 1)',
-				'in-cubic': 'cubic-bezier(0.32, 0, 0.67, 0)',
-				'out-cubic': 'cubic-bezier(0.33, 1, 0.68, 1)',
-				'in-out-cubic': 'cubic-bezier(0.65, 0, 0.35, 1)'
+				'in-2': 'cubic-bezier(0.32, 0, 0.67, 0)',
+				'out-2': 'cubic-bezier(0.33, 1, 0.68, 1)',
+				'in-out-2': 'cubic-bezier(0.65, 0, 0.35, 1)',
+				'in-3': 'cubic-bezier(0.5, 0, 0.75, 0)',
+				'out-3': 'cubic-bezier(0.25, 1, 0.5, 1)',
+				'in-out-3': 'cubic-bezier(0.76, 0, 0.24, 1)',
+				'in-5': 'cubic-bezier(0.95, 0.05, 0.795, 0.035)',
+				'out-5': 'cubic-bezier(0.19, 1, 0.22, 1)',
+				'in-out-5': 'cubic-bezier(0.87, 0, 0.13, 1)'
 			}
 		}
 	},
@@ -66,7 +69,10 @@ const config = {
 		({ addUtilities }) => {
 			addUtilities({
 				'.border-light': {
-					'@apply border-foreground/15': {}
+					'@apply border-foreground/10': {}
+				},
+				'.border-xlt': {
+					'@apply border-foreground/5': {}
 				}
 			});
 		}
