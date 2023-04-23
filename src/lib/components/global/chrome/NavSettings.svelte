@@ -1,38 +1,42 @@
 <script lang="ts">
-	import { Button } from 'neutral-ui';
-	import { appTheme, setTheme } from '$lib/stores/theme';
-	import { fade } from 'svelte/transition';
-	import { cubicOut } from 'svelte/easing';
+	// import { Button } from 'neutral-ui';
+	// import { appTheme } from '$lib/stores/theme';
+	// import { fade } from 'svelte/transition';
+	// import { cubicOut } from 'svelte/easing';
 	import { focusTrap } from '$lib/actions/focusTrap';
+	import { enhance, type SubmitFunction } from '$app/forms';
+	import { page } from '$app/stores';
 
 	export let active: boolean;
 
 	const closeOverlay = () => {
 		active = false;
 	};
+
+	const submitThemeUpdate: SubmitFunction = ({ action }) => {
+		const theme = action.searchParams.get('theme');
+
+		if (theme) document.documentElement.setAttribute('data-theme', theme);
+	};
 </script>
 
 <div
-	class="invisible opacity-0 absolute bottom-16 right-1/2 translate-x-1/2 -translate-y-4 w-64 p-4 bg-white text-black rounded-xl shadow-lg transition-all duration-[400ms] ease-out-expo active:visible active:opacity-100 active:translate-y-0"
+	class="invisible absolute bottom-16 right-1/2 w-32 -translate-y-4 translate-x-1/2 rounded-md bg-white p-1 text-black opacity-0 shadow-lg transition-all duration-[400ms] ease-out-5 active:visible active:translate-y-0 active:opacity-100"
 	class:active
 	use:focusTrap={{ escapeCallback: closeOverlay }}
 >
-	<div class="grid gap-2">
-		<div class="text-xs">Theme</div>
-		<Button
-			on:click={() => setTheme($appTheme === 'dark' ? 'light' : 'dark')}
-			label="Set color theme"
-			class="flex items-center gap-2"
+	<form method="POST" use:enhance={submitThemeUpdate} class="grid gap-1">
+		<button
+			class="rounded px-2 py-1 text-left text-base font-medium group-data-[theme=system]/document:bg-gray-900 group-data-[theme=system]/document:text-gray-100"
+			formaction="/?/setTheme&theme=system&redirect={$page.url.pathname}">System</button
 		>
-			<div class="w-8 h-8 bg-black/20 rounded-full" />
-			<div class="grid">
-				{#key $appTheme}
-					<span
-						transition:fade={{ duration: 200, easing: cubicOut }}
-						class="block row-span-full col-span-full capitalize">{$appTheme}</span
-					>
-				{/key}
-			</div>
-		</Button>
-	</div>
+		<button
+			class="rounded px-2 py-1 text-left text-base font-medium group-data-[theme=light]/document:bg-gray-900 group-data-[theme=light]/document:text-gray-100"
+			formaction="/?/setTheme&theme=light&redirect={$page.url.pathname}">Light</button
+		>
+		<button
+			class="rounded px-2 py-1 text-left text-base font-medium group-data-[theme=dark]/document:bg-gray-900 group-data-[theme=dark]/document:text-gray-100"
+			formaction="/?/setTheme&theme=dark&redirect={$page.url.pathname}">Dark</button
+		>
+	</form>
 </div>

@@ -5,10 +5,14 @@ export interface FeedPost {
 	img?: {
 		src: string;
 		alt: string;
+		width?: number;
+		height?: number;
 	};
 	video?: {
 		src: string;
 		poster: string;
+		width?: number;
+		height?: number;
 	};
 	link?: {
 		text: string;

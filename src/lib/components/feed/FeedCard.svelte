@@ -7,15 +7,21 @@
 	export let content: FeedPost;
 	export let index = 0;
 	export let observe: Action = () => {};
+
+	let ref: HTMLElement;
+
+	let test: boolean;
+	$: test && ref && console.log(ref, test);
 </script>
 
 <div
-	class="grid gap-7 w-full min-h-[400px] bg-surface-low/70 border-b border-light data-[hidden]:opacity-0 data-[hidden]:translate-y-12 transition-all duration-700 ease-out-3 py-12"
+	class="grid min-h-[400px] w-full gap-7 border-b bg-background/70 py-12 transition-all duration-700 ease-out-3 border-light last-of-type:border-b-0 data-[hidden]:translate-y-12 data-[hidden]:opacity-0"
 	use:observe
+	bind:this={ref}
 >
 	<div class="flex items-baseline px-8">
-		<h2 class="grow inline-block font-semibold text-3xl">{content.title}</h2>
-		<span class="font-medium text-sm opacity-60 text-right">{content.date}</span>
+		<h2 class="inline-block grow text-3xl font-semibold">{content.title}</h2>
+		<span class="text-right text-sm font-medium opacity-60">{content.date}</span>
 	</div>
 	{#if content.img}
 		<Image
@@ -24,6 +30,8 @@
 			src={content.img.src}
 			imageWidths={1600}
 			alt={content.img.alt}
+			width={`${content.img.width}` ?? 1920}
+			height={`${content.img.height}` ?? 1080}
 			loading={index > 3 ? 'lazy' : 'eager'}
 		/>
 	{:else if content.video}
@@ -34,18 +42,20 @@
 			src={content.video.src}
 			poster={content.video.poster}
 			posterSize={1200}
+			width={`${content.video.width}` ?? 1920}
+			height={`${content.video.height}` ?? 1080}
 		/>
 	{/if}
 	<div class="grid gap-7 px-8">
-		<p class="text-lg">
+		<p class="text-lg tracking-wide">
 			{@html content.body}
 		</p>
 		{#if content.link || content.categories}
-			<div class="flex gap-2 items-baseline border-t border-light pt-7">
+			<div class="flex items-baseline gap-2 border-t pt-7 border-light">
 				{#if content.link}
 					<a
 						href={content.link.href}
-						class="font-semibold text-xl"
+						class="text-xl font-semibold"
 						target={content.link.external ? '_blank' : '_self'}
 						>{content.link.text}
 						{#if content.link.external}
@@ -54,7 +64,7 @@
 					</a>
 				{/if}
 				{#if content.categories}
-					<div class="grow flex gap-2 justify-end">
+					<div class="flex grow justify-end gap-2 text-right text-sm font-medium opacity-60">
 						{#each content.categories as category, index}
 							<span>{category}</span>
 							{#if index < content.categories.length - 1}

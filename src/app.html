@@ -1,36 +1,13 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="">
+<html lang="en" data-theme="" class="group/document">
 	<head>
 		<meta charset="utf-8" />
 		<link rel="icon" href="%sveltekit.assets%/favicon.png" sizes="any" />
 		<link rel="icon" href="%sveltekit.assets%/favicon.svg" type="image/svg+xml" />
 		<meta name="viewport" content="width=device-width" />
-		<script>
-			const documentTheme = document.documentElement.dataset.theme;
-			console.log('from the blocking script:', documentTheme);
-			let newTheme;
-			if (documentTheme === 'system') {
-				const dark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-				dark ? (newTheme = 'dark') : (newTheme = 'light');
-				document.documentElement.dataset.theme = newTheme;
-			}
-			let cookieTheme = null;
-			const cookiesRaw = document.cookie;
-			if (cookiesRaw) {
-				const cookies = document.cookie
-					.split(';')
-					.map((v) => v.split('='))
-					.reduce((acc, v) => {
-						acc[decodeURIComponent(v[0].trim())] = decodeURIComponent(v[1].trim());
-						return acc;
-					}, {});
-				cookieTheme = cookies.siteTheme;
-			}
-			if (!cookieTheme) document.cookie = `siteTheme=${newTheme};max-age=31536000;path="/";`;
-		</script>
 		%sveltekit.head%
 	</head>
-	<body data-sveltekit-preload-data="hover" class="text-foreground bg-background">
+	<body data-sveltekit-preload-data="hover" class="bg-background text-foreground">
 		<div style="display: contents">%sveltekit.body%</div>
 	</body>
 </html>

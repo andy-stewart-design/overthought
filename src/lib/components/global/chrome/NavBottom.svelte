@@ -10,7 +10,7 @@
 
 	const links: NavLinks[] = [
 		{ href: '/', text: 'Home' },
-		{ href: '/feed', text: 'Feed' },
+		// { href: '/feed', text: 'Feed' },
 		// { href: '/work', text: 'Work' },
 		// { href: '/posts', text: 'Posts' },
 		{ href: '/about', text: 'About' }
@@ -28,18 +28,18 @@
 </script>
 
 <nav
-	class="fixed bottom-8 left-1/2 -translate-x-1/2 p-1.5 bg-surface-low/50 backdrop-blur rounded-full z-40 shadow-xl before:border before:border-1 before:border-light before:absolute before:-top-px before:-left-px before:-right-px before:-bottom-px before:rounded-full"
+	class="before:border-1 fixed bottom-8 left-1/2 z-40 -translate-x-1/2 rounded-full bg-surface-low/50 p-1.5 shadow-xl backdrop-blur before:absolute before:-bottom-px before:-left-px before:-right-px before:-top-px before:rounded-full before:border before:border-light"
 >
-	<ul class="flex gap-1 items-center">
+	<ul class="flex items-center gap-1">
 		{#each links as link}
 			<li class="group relative">
 				<div
-					class="absolute top-0 left-0 w-full h-full bg-foreground/90 rounded-full opacity-0 transition-opacity ease-out group-hover:opacity-10 active:opacity-100 group-hover:active:opacity-100"
+					class="absolute left-0 top-0 h-full w-full rounded-full bg-foreground/90 opacity-0 transition-opacity ease-out group-hover:opacity-10 active:opacity-100 group-hover:active:opacity-100"
 					class:active={activePath === link.href}
 					aria-hidden="true"
 				/>
 				<a
-					class="relative block font-medium select-none py-3 px-5 transition-colors active:text-background"
+					class="relative block select-none px-5 py-3 font-medium transition-colors active:text-background"
 					class:active={activePath === link.href}
 					class:pointer-events-none={$page.url.pathname === link.href}
 					href={link.href}
@@ -47,14 +47,14 @@
 				>
 			</li>
 		{/each}
-		<li class="relative border-l border-light pl-1">
+		<li class="relative border-l pl-1 border-light">
 			<Button
 				class="group relative p-3"
 				label="More settings"
 				on:click={() => (isSettingsActive = !isSettingsActive)}
 			>
 				<div
-					class="absolute top-0 left-0 w-full h-full bg-foreground/90 rounded-full opacity-0 transition-opacity ease-out group-hover:opacity-10 active:opacity-100 group-hover:active:opacity-100"
+					class="absolute left-0 top-0 h-full w-full rounded-full bg-foreground/90 opacity-0 transition-opacity ease-out group-hover:opacity-10 active:opacity-100 group-hover:active:opacity-100"
 					class:active={isSettingsActive}
 					aria-hidden="true"
 				/>

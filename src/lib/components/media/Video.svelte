@@ -41,10 +41,12 @@
 	{#if controls}
 		<button
 			on:click={() => (paused = !paused)}
-			class="flex justify-start p-4 items-end absolute top-0 left-0 right-0 bottom-0 opacity-0 group-hover:opacity-100 transition-opacity ease-out-3"
+			class="absolute bottom-0 left-0 right-0 top-0 flex items-end justify-start p-6 opacity-0 transition-opacity duration-500 ease-out-3 group-hover:opacity-100"
 			class:opacity-100={paused}
 		>
-			<div class="bg-black/75 border border-light p-4 w-16 rounded-full">
+			<div
+				class="relative w-16 rounded-full border bg-black/75 p-4 transition-transform duration-500 ease-out-3 border-light group-hover:scale-125"
+			>
 				{@html controlsIcon}
 			</div>
 		</button>

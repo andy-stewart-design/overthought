@@ -1,4 +1,4 @@
-<script lang="ts">
+<!-- <script lang="ts">
 	import { Button } from 'neutral-ui';
 	import { appTheme, setTheme } from '$lib/stores/theme';
 	import contrast from '@svg/contrast.svg?raw';
@@ -10,4 +10,4 @@
 	label="Set color theme"
 >
 	{@html contrast}
-</Button>
+</Button> -->

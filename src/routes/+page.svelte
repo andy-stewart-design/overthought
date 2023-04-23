@@ -12,56 +12,51 @@
 
 	const posts: FeedPost[] = [
 		{
-			title: 'Carbon Direct Website',
-			body: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, laborum! Temporibus ipsum,
-			voluptatum amet autem doloribus ducimus culpa soluta, sit consectetur voluptas est ab dicta
-			qui voluptates nisi quibusdam delectus!`,
+			title: 'Carbon Direct Navigation',
+			body: `For the team modal on Carbon Direct's sites, we wanted to leverage the best parts of single- and multi-page apps. When a team member's card is clicked, we intercept the navigation, update the URL bar, and open a modal displaying their profile without reloading the page. When the modal is closed, the previous URL is restored and, because we never left the page, we're able to seamlessly return the user to the exact spot they left off.`,
 			date: `${month} ${day}`,
-			img: {
-				src: '/work/carbon-direct/CrabonDirect-DesktopScreens_wckacf.jpg',
-				alt: 'This is alt text'
+			video: {
+				src: '/work/carbon-direct/CarbonDirect-Mobile.mp4',
+				poster: '/work/carbon-direct/CarbonDirect-Mobile-Poster.jpg',
+				width: 1920,
+				height: 1080
 			},
 			categories: ['Case Study', 'Web Design']
 		},
 		{
 			title: 'GLY Page Transitions',
-			body: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, laborum! Temporibus ipsum,
-			voluptatum amet autem doloribus ducimus culpa soluta, sit consectetur voluptas est ab dicta
-			qui voluptates nisi quibusdam delectus!`,
+			body: `I've personally trended towards simpler, quicker page transitions recently, but the ones on GLY's site are one of the features that people comment on most. I think it's the quick pop of color you get as the page animates off combined with the fact that the entrance animations happen relatively quickly.`,
 			date: `${month} ${day}`,
 			video: {
-				src: '/work/GLY/GLY-PageTransitions.mp4',
-				poster: '/work/GLY/GLY-PageTransitions-Poster.jpg'
+				src: '/work/gly/GLY-PageTransitions.mp4',
+				poster: '/work/gly/GLY-PageTransitions-Poster.jpg',
+				width: 1920,
+				height: 1080
 			},
-			link: {
-				text: 'See Project',
-				href: '/'
-			},
+
 			categories: ['Case Study', 'Web Design']
 		},
 		{
 			title: 'GLY Web Mobile',
-			body: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, laborum! Temporibus ipsum,
-			voluptatum amet autem doloribus ducimus culpa soluta, sit consectetur voluptas est ab dicta
-			qui voluptates nisi quibusdam delectus!`,
+			body: `There's always a handful of modules where the responsive design approach isn't immediately obvious. Take the "Constructive Optimism" component for example—you have a circle centered inside a div that in turn has text centered inside of it. Part of what makes it visually interesting is having two sides of the circle cropped off the screen at all times. It took a bit of wrangling to make sure that we were always cropping either the top and bottom or left and right, depending on the screen size.`,
 			date: `${month} ${day}`,
 			img: {
-				src: '/work/GLY/GLY-Web-Mobile.jpg',
-				alt: 'Mobile screenshots of the GLY website'
-			},
-			link: {
-				text: 'See Project',
-				href: '/'
+				src: '/work/gly/GLY-Web-Mobile.jpg',
+				alt: 'Mobile screenshots of the GLY website',
+				width: 1920,
+				height: 1080
 			},
 			categories: ['Case Study', 'Web Design']
 		},
 		{
 			title: 'Get Some Ipsum',
-			body: `I published my first Figma plugin—a simple, flexible lorem ipsum generator. It irons out some of the issues I have with other, similar plugins. Specifically, it has a bunch of custom logic to make sure that you end up with sentences that look more like proper sentences.`,
+			body: `This is my first Figma plugin—a simple, flexible lorem ipsum generator. It smoothes out some of the issues I have with other, similar plugins. Specifically, it runs through a bunch of custom logic before outputting the result to make sure that you end up with ipsum that look more like proper sentences (insofar as a dead language can look like English).`,
 			date: `${month} ${day}`,
 			img: {
-				src: '/work/Figma/GetSomeIpsum-CoverArt.jpg',
-				alt: 'Mobile screenshots of the GLY website'
+				src: '/work/figma/GetSomeIpsum-CoverArt.jpg',
+				alt: 'Mobile screenshots of the GLY website',
+				width: 1920,
+				height: 960
 			},
 			link: {
 				text: 'Check it out',
@@ -73,15 +68,24 @@
 	];
 </script>
 
-<Observer let:observe>
-	<main class="bg-background">
+<Observer let:observe let:activeTitle>
+	<main class="grid grid-cols-12 gap-x-8 border-b bg-background border-light">
 		<!-- <HomeBg /> -->
-		<Container as="section" pt="none" pb="xl" class="min-h-screen max-w-[800px] mx-auto">
+		<div class="col-span-4">
+			<Container class="sticky top-0 min-h-screen" pt="xl">
+				<p>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam sunt magni, cumque
+					quisquam in dolorem facere dignissimos earum, vel labore officia? Veniam maiores eligendi
+					sunt possimus consequuntur illum magnam tempora?
+				</p>
+			</Container>
+		</div>
+		<Container as="section" pt="none" pb="none" pxNone class="col-span-8 min-h-screen">
 			<div class="border-l border-r border-light">
 				<div
-					class="sticky top-0 py-7 px-2 z-50 bg-surface-low/70 backdrop-blur-md border-b border-light"
+					class="sticky top-0 z-50 flex h-20 items-center border-b bg-background/70 px-2 py-7 backdrop-blur-md border-light"
 				>
-					<h1 class="font-medium text-sm text-center">Andy Stewart · Design + Technology</h1>
+					<h1 class="grow text-center text-sm font-medium">{activeTitle}</h1>
 				</div>
 				{#each new Array(10) as _, index}
 					<FeedCard content={posts[index % posts.length]} {observe} {index} />

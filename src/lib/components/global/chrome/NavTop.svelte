@@ -5,7 +5,7 @@
 	import Container from '@globals/layout/Container.svelte';
 </script>
 
-<Container class="absolute top-0 left-0 flex justify-between items-center w-screen z-50">
+<Container class="absolute left-0 top-0 z-50 flex w-screen items-center justify-between">
 	<a href="/" class="relative w-11" class:pointer-events-none={$page.url.pathname === '/'}>
 		<p class="sr-only">Andy's logo</p>
 		{@html andyLogo}
