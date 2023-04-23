@@ -1,7 +1,7 @@
 import { client, feed_query, setSrc } from '$lib/utils/sanity';
 import type { PageServerLoad } from './$types';
 
-export const prerender = true;
+// export const prerender = true;
 
 // export const config = {
 // 	isr: {
@@ -35,7 +35,7 @@ export interface FeedVideo extends FeedMedia {
 	poster: FeedMediaSource;
 }
 
-export const load: PageServerLoad = async ({ setHeaders }) => {
+export const load: PageServerLoad = async () => {
 	const getData = async () => {
 		const data: (FeedImage | FeedVideo)[] = await client.fetch(feed_query);
 
