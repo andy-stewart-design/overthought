@@ -8,20 +8,18 @@
 	export let index = 0;
 	export let observe: Action = () => {};
 
-	let ref: HTMLElement;
-
-	let test: boolean;
-	$: test && ref && console.log(ref, test);
+	const date = new Date(content.date);
+	const month = date.toLocaleString('default', { month: 'short' });
+	const day = date.getDate();
 </script>
 
 <div
 	class="grid min-h-[400px] w-full gap-7 border-b bg-background/70 py-12 transition-all duration-700 ease-out-3 border-light last-of-type:border-b-0 data-[hidden]:translate-y-12 data-[hidden]:opacity-0"
 	use:observe
-	bind:this={ref}
 >
 	<div class="flex items-baseline px-8">
-		<h2 class="inline-block grow text-3xl font-semibold">{content.title}</h2>
-		<span class="text-right text-sm font-medium opacity-60">{content.date}</span>
+		<h2 class="inline-block grow text-4xl font-semibold">{content.title}</h2>
+		<span class="text-right text-sm font-medium opacity-60">{`${month} ${day}`}</span>
 	</div>
 	{#if content.img}
 		<Image
@@ -36,15 +34,18 @@
 		/>
 	{:else if content.video}
 		<Video
-			cloud
 			muted
-			controls
+			loop
 			src={content.video.src}
 			poster={content.video.poster}
 			posterSize={1200}
 			width={`${content.video.width}` ?? 1920}
 			height={`${content.video.height}` ?? 1080}
 		/>
+		<!-- <video class="object-cover object-top" muted controls>
+			<source src={`${cloudSrc}${content.video.src}`} type="video/mp4" />
+			Sorry, your browser doesn't support embedded videos.
+		</video> -->
 	{/if}
 	<div class="grid gap-7 px-8">
 		<p class="text-lg tracking-wide">

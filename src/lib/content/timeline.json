@@ -1,0 +1,92 @@
+{
+	"entries": [
+		{
+			"title": "Squiggler App",
+			"body": "This personal project began as conversation with a corworker about a tool we wish we had for a branding project. We wanted a way to generatively create SVG squiggles that we could manipulate across different axes like sharpness, flow, size, etc. Developing it required me a lot of research into the technical details of how SVG paths are drawn and the math behind sin waves.",
+			"date": "05/06/2023",
+			"video": {
+				"src": "/work/development/squiggler.mp4",
+				"poster": "/work/development/squiggler-poster.jpg",
+				"width": 1920,
+				"height": 1080
+			},
+			"link": {
+				"text": "Check it out",
+				"href": "https://www.squiggler.app/",
+				"external": true
+			},
+			"categories": ["Web App", "Development"]
+		},
+		{
+			"title": "AllStock Figma Plugin",
+			"body": "I always found it annoying that if you wanted to look for a stock image without leaving Figma, you had to choose a plugin specific to a single stock image resource. AllStock is a one-stop shop for finding and using high-quality images inside of your Figma projects, allowing you to browse popular free libraries like Unsplash, Pexels, and Pixabay all at the same time. Built with Svelte, Tailwind, and Typescript.",
+			"date": "05/06/2023",
+			"img": {
+				"src": "/work/figma/AllStock-CoverArt.jpg",
+				"alt": "Promo image for a Figma plugin that searches stock image sites like Unsplash, Pexels, and Pixabay.",
+				"width": 1920,
+				"height": 960
+			},
+			"link": {
+				"text": "Check it out",
+				"href": "https://www.figma.com/community/plugin/1235675201027690011/AllStock",
+				"external": true
+			},
+			"categories": ["Figma", "Development"]
+		},
+		{
+			"title": "Carbon Direct Navigation",
+			"body": "For the team modal on Carbon Direct's sites, we wanted to leverage the best parts of single- and multi-page app experiences. When a team member's card is clicked, we intercept the navigation, update the URL bar, and open a modal displaying their profile without reloading the page. When the modal is closed, the previous URL is restored and, because we never left the page, we're able to seamlessly return the user to the exact spot they left off.",
+			"date": "05/01/2023",
+			"video": {
+				"src": "/work/carbon-direct/CarbonDirect-Mobile.mp4",
+				"poster": "/work/carbon-direct/CarbonDirect-Mobile-Poster.jpg",
+				"width": 1920,
+				"height": 1080
+			},
+			"categories": ["Case Study", "Web Design"]
+		},
+		{
+			"title": "GLY Page Transitions",
+			"body": "I've personally trended towards simpler, quicker page transitions recently, but the ones on GLY's site are one of the features that people comment on most. I think it's the quick pop of color you get as the page animates off combined with the fact that the entrance animations happen relatively quickly.",
+			"date": "04/29/2023",
+			"video": {
+				"src": "/work/gly/GLY-PageTransitions.mp4",
+				"poster": "/work/gly/GLY-PageTransitions-Poster.jpg",
+				"width": 1920,
+				"height": 1080
+			},
+
+			"categories": ["Case Study", "Web Design"]
+		},
+		{
+			"title": "Get Some Ipsum Figma Plugin",
+			"body": "This is my first Figma plugin—a simple, flexible lorem ipsum generator. It smoothes out some of the issues I have with other, similar plugins. Specifically, it runs through a bunch of custom logic before outputting the result to make sure that you end up with ipsum that look more like proper sentences (insofar as a dead language can look like English).",
+			"date": "04/23/2023",
+			"img": {
+				"src": "/work/figma/GetSomeIpsum-CoverArt.jpg",
+				"alt": "Mobile screenshots of the GLY website",
+				"width": 1920,
+				"height": 960
+			},
+			"link": {
+				"text": "Check it out",
+				"href": "https://www.figma.com/community/plugin/1225446981019698507/Get-Some-Ipsum",
+				"external": true
+			},
+			"categories": ["Figma", "Development"]
+		},
+		{
+			"title": "GLY Web Mobile",
+			"body": "There's always a handful of modules where the responsive design approach isn't immediately obvious. Take the 'Constructive Optimism' component for example—you have a circle centered inside a div that in turn has text centered inside of it. Part of what makes it visually interesting is having two sides of the circle cropped off the screen at all times. It took a bit of wrangling to make sure that we were always cropping either the top and bottom or left and right, depending on the screen size.",
+			"date": "04/18/2023",
+			"img": {
+				"src": "/work/gly/GLY-Web-Mobile.jpg",
+				"alt": "Mobile screenshots of the GLY website",
+				"width": 1920,
+				"height": 1080
+			},
+			"categories": ["Case Study", "Web Design"]
+		}
+	]
+}

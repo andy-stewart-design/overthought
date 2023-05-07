@@ -22,7 +22,7 @@
 			if (!entry.isIntersecting && entry.boundingClientRect.y > rootMarginHeight) {
 				el.dataset.hidden = 'true';
 			} else {
-				console.log(el.querySelector('h2')?.innerHTML, entry.intersectionRatio);
+				// console.log(el.querySelector('h2')?.innerHTML, entry.intersectionRatio);
 				delete el.dataset.hidden;
 				if (entry.intersectionRatio >= 0.6) {
 					activeTitle = el.querySelector('h2')?.innerHTML ?? '';

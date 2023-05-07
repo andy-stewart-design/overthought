@@ -5,9 +5,9 @@
 </script>
 
 <footer>
-	<div class="h-[75vh]" />
+	<div class="h-screen" />
 	<div class="sticky bottom-0 -z-10 h-0">
-		<div class="absolute bottom-0 h-[75vh] w-full bg-surface-high dark:bg-surface-low">
+		<div class="absolute bottom-0 h-screen w-full bg-surface-high dark:bg-surface-low">
 			<Container class="flex h-full flex-col justify-center" pb="sm">
 				<div class="flex grow items-center">
 					<p class="grow text-center text-5xl text-white">Thanks for stopping by</p>

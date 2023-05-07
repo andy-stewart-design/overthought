@@ -1,19 +1,18 @@
 <script lang="ts">
 	import '$lib/styles/app.postcss';
-	// import 'neutral-ui/base.css';
 	import NavTop from '@globals/chrome/NavTop.svelte';
 	import Footer from '@globals/chrome/Footer.svelte';
 	import NavBottom from '@globals/chrome/NavBottom.svelte';
 	import ViewTransition from '@globals/layout/ViewTransition.svelte';
-	import type { LayoutData } from './$types';
+	import type { LayoutServerData } from './$types';
 	import Container from '@globals/layout/Container.svelte';
 
-	export let data: LayoutData;
+	export let data: LayoutServerData;
 </script>
 
+<NavTop theme={data.theme} />
 <NavBottom />
 <ViewTransition pathname={data.pathname}>
-	<NavTop />
 	<slot />
 	<Footer />
 </ViewTransition>

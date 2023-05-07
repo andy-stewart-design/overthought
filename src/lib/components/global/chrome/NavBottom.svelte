@@ -9,7 +9,7 @@
 	}
 
 	const links: NavLinks[] = [
-		{ href: '/', text: 'Home' },
+		{ href: '/', text: 'Feed' },
 		// { href: '/feed', text: 'Feed' },
 		// { href: '/work', text: 'Work' },
 		// { href: '/posts', text: 'Posts' },
@@ -47,7 +47,7 @@
 				>
 			</li>
 		{/each}
-		<li class="relative border-l pl-1 border-light">
+		<!-- <li class="relative border-l pl-1 border-light">
 			<Button
 				class="group relative p-3"
 				label="More settings"
@@ -70,6 +70,6 @@
 				</svg>
 			</Button>
 			<NavSettings bind:active={isSettingsActive} />
-		</li>
+		</li> -->
 	</ul>
 </nav>
