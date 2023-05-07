@@ -1,0 +1,9 @@
+<svg width="16" height="16" viewBox="0 0 16 16">
+	<path
+		d="M14 8C13 9 10 10 8 8C6 6 7 3 8 2C4.5 2 2 4.76853 2 8C2 11.3137 4.68629 14 8 14C11.2315 14 14 11.5 14 8Z"
+		stroke="currentColor"
+		stroke-width="1.5"
+		fill="none"
+		stroke-linejoin="round"
+	/>
+</svg>

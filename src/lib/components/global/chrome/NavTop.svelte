@@ -1,7 +1,9 @@
 <script lang="ts">
 	import { page } from '$app/stores';
 	import andyLogo from '@svg/andy-logo.svg?raw';
-	import ThemeToggle from './ThemeToggle.svelte';
+	import system from '@svg/theme-system.svg?raw';
+	import light from '@svg/theme-light.svg?raw';
+	import dark from '@svg/theme-dark.svg?raw';
 	import Container from '@globals/layout/Container.svelte';
 	import { Listbox, ListboxButton, ListboxOptions, ListboxOption } from 'neutral-ui';
 
@@ -30,7 +32,11 @@
 		themeInternal = theme;
 	};
 	let listboxValue = theme;
-	let options = ['system', 'light', 'dark'];
+	let options = [
+		{ name: 'system', icon: system },
+		{ name: 'light', icon: light },
+		{ name: 'dark', icon: dark }
+	];
 </script>
 
 <Container
@@ -43,24 +49,19 @@
 	</a>
 
 	<Listbox bind:value={listboxValue} on:change={() => setTheme(listboxValue)}>
-		<ListboxButton class="capitalize">{listboxValue ?? ''}</ListboxButton>
+		<ListboxButton class="font-medium capitalize">{listboxValue ?? ''}</ListboxButton>
 		<ListboxOptions
-			class="absolute right-0 mt-2 w-32 border border-black/5 bg-surface-mid py-1 shadow-lg focus:outline-0"
+			class="absolute right-0 mt-2 w-32 rounded border border-foreground/10 bg-surface-mid py-1 shadow-lg focus:outline-0"
 		>
-			{#each options as option, i}
+			{#each options as option}
 				<ListboxOption
-					value={option}
-					class="group flex items-center gap-2 px-4 py-2 text-sm capitalize hover:bg-black/10 data-[active=true]:bg-black data-[active=true]:text-white"
+					value={option.name}
+					class="group flex items-center gap-2 px-4 py-2 text-sm font-medium capitalize hover:bg-black/10 data-[active=true]:bg-foreground data-[active=true]:text-background"
 				>
-					<span class="opacity-0 group-data-[selected=true]:opacity-100">
-						<svg viewBox="0 0 16 16" width="12" height="12">
-							<path d="M2 9 L6 13 L14 5" stroke="currentColor" fill="none" stroke-width="1.5" />
-						</svg>
-					</span>
-					{option}
+					{@html option.icon}
+					{option.name}
 				</ListboxOption>
 			{/each}
 		</ListboxOptions>
 	</Listbox>
-	<!-- <ThemeToggle /> -->
 </Container>

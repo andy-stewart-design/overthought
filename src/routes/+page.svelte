@@ -4,16 +4,7 @@
 	import Container from '@globals/layout/Container.svelte';
 	import Observer from '@globals/layout/Observer.svelte';
 	import timeline from '@content/timeline.json';
-	import type { FeedPost } from '$lib/types/feed';
-	import { enhance, type SubmitFunction } from '$app/forms';
 	import Image from '$lib/components/media/Image.svelte';
-
-	// const date = new Date();
-	// const foo = '04/06/2023';
-
-	// const month = date.toLocaleString('default', { month: 'short' });
-	// const day = date.getDate();
-	// console.log(new Date(foo));
 </script>
 
 <Observer let:observe>
@@ -45,11 +36,6 @@
 		</div>
 		<div class="relative col-span-8 min-h-screen border-l border-r border-light">
 			<Container as="section" pxNone pt="none" pb="none" class="">
-				<!-- <div
-					class="sticky top-0 z-50 flex h-20 items-center border-b bg-background/70 px-2 py-7 backdrop-blur-md border-light"
-				>
-					<h1 class="grow text-center text-sm font-medium">{activeTitle}</h1>
-				</div> -->
 				{#each timeline.entries as entry, index}
 					<FeedCard content={entry} {observe} {index} />
 				{/each}
