@@ -1,8 +1,8 @@
 <script lang="ts">
-	import type { Action } from 'svelte/action';
 	import Image from '../media/Image.svelte';
-	import type { FeedPost } from '$lib/types/feed';
 	import Video from '../media/Video.svelte';
+	import type { Action } from 'svelte/action';
+	import type { FeedPost } from '$lib/types/feed';
 
 	export let content: FeedPost;
 	export let index = 0;
@@ -25,7 +25,7 @@
 		<Image
 			cloud
 			class="object-cover object-top"
-			src={content.img.src}
+			src=""
 			imageWidths={1600}
 			alt={content.img.alt}
 			width={`${content.img.width}` ?? 1920}
@@ -36,8 +36,8 @@
 		<Video
 			muted
 			loop
-			src={content.video.src}
-			poster={content.video.poster}
+			src=""
+			poster=""
 			posterSize={1200}
 			width={`${content.video.width}` ?? 1920}
 			height={`${content.video.height}` ?? 1080}
