@@ -1,5 +1,5 @@
 <script lang="ts">
-	import HomeBg from '$lib/components/canvas/HomeBG.svelte';
+	// import HomeBg from '$lib/components/canvas/HomeBG.svelte';
 	import FeedCard from '$lib/components/feed/FeedCard.svelte';
 	import Container from '@globals/layout/Container.svelte';
 	import Observer from '@globals/layout/Observer.svelte';
