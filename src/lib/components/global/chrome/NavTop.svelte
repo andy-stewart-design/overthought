@@ -8,7 +8,6 @@
 	import { Listbox, ListboxButton, ListboxOptions, ListboxOption } from 'neutral-ui';
 
 	export let theme: string;
-	let themeInternal = theme;
 
 	function getCookie(name: string) {
 		const allCookies = document.cookie.split('; ');
@@ -26,11 +25,9 @@
 
 	const setTheme = (theme: string) => {
 		document.documentElement.setAttribute('data-theme', theme);
-		console.log('Before:', getCookie('colorTheme'));
 		setCookie('colorTheme', theme, 365);
-		console.log('After:', getCookie('colorTheme'));
-		themeInternal = theme;
 	};
+
 	let listboxValue = theme;
 	let options = [
 		{ name: 'system', icon: system },

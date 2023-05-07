@@ -28,7 +28,7 @@
 </script>
 
 <nav
-	class="before:border-1 fixed bottom-8 left-1/2 z-40 -translate-x-1/2 rounded-full bg-surface-low/50 p-1.5 shadow-xl backdrop-blur before:absolute before:-bottom-px before:-left-px before:-right-px before:-top-px before:rounded-full before:border before:border-light"
+	class="before:border-1 fixed bottom-8 left-1/2 z-40 -translate-x-1/2 rounded-full bg-surface-mid/60 p-1.5 shadow-xl backdrop-blur before:absolute before:-bottom-px before:-left-px before:-right-px before:-top-px before:rounded-full before:border before:border-light"
 >
 	<ul class="flex items-center gap-1">
 		{#each links as link}
