@@ -25,7 +25,7 @@
 		<Image
 			cloud
 			class="object-cover object-top"
-			src=""
+			src={content.img.src}
 			imageWidths={1600}
 			alt={content.img.alt}
 			width={`${content.img.width}` ?? 1920}
@@ -36,8 +36,8 @@
 		<Video
 			muted
 			loop
-			src=""
-			poster=""
+			src={content.video.src}
+			poster={content.video.poster}
 			posterSize={1200}
 			width={`${content.video.width}` ?? 1920}
 			height={`${content.video.height}` ?? 1080}
