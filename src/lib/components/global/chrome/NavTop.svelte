@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { page } from '$app/stores';
 	import andyLogo from '@svg/andy-logo.svg?raw';
+	import contrast from '@svg/contrast.svg?raw';
 	import system from '@svg/theme-system.svg?raw';
 	import light from '@svg/theme-light.svg?raw';
 	import dark from '@svg/theme-dark.svg?raw';
@@ -46,14 +47,14 @@
 	</a>
 
 	<Listbox bind:value={listboxValue} on:change={() => setTheme(listboxValue)}>
-		<ListboxButton class="font-medium capitalize">{listboxValue ?? ''}</ListboxButton>
+		<ListboxButton class="font-medium capitalize">{@html contrast}</ListboxButton>
 		<ListboxOptions
-			class="absolute right-0 mt-2 w-32 rounded border border-foreground/10 bg-surface-mid py-1 shadow-lg focus:outline-0"
+			class="absolute right-0 mt-1 w-32 origin-top-right scale-50 rounded border border-foreground/10 bg-surface-mid py-1 opacity-0 shadow-lg transition-all duration-300 ease-out-5 focus:outline-0 data-[state=open]:scale-100 data-[state=open]:opacity-100"
 		>
 			{#each options as option}
 				<ListboxOption
 					value={option.name}
-					class="group flex items-center gap-2 px-4 py-2 text-sm font-medium capitalize hover:bg-black/10 data-[active=true]:bg-foreground data-[active=true]:text-background"
+					class="group flex items-center gap-2 px-4 py-2 text-sm font-medium capitalize hover:bg-black/10 data-[active=true]:bg-foreground/20 data-[selected=true]:!bg-foreground data-[selected=true]:!text-background"
 				>
 					{@html option.icon}
 					{option.name}

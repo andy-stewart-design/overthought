@@ -37,6 +37,6 @@
 	"dependencies": {
 		"@sanity/client": "^6.0.1",
 		"@sanity/image-url": "^1.0.2",
-		"neutral-ui": "^0.4.9"
+		"neutral-ui": "^0.5.0"
 	}
 }
