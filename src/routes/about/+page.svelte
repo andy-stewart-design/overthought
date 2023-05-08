@@ -6,11 +6,11 @@
 </script>
 
 <main class="bg-background">
-	<Container as="header" pt="xl" pb="lg" class="grid lg:grid-cols-2 lg:gap-10">
+	<Container as="header" py="lg" class="grid border-b border-light lg:grid-cols-2 lg:gap-10">
 		<h1 class="text-8xl md:text-9xl">About</h1>
 		<div class="flex flex-row-reverse justify-end sm:justify-between">
 			<h2 class="text-8xl md:text-9xl">Me</h2>
-			<div class="pt-3 md:pt-5 pr-6">
+			<div class="pr-6 pt-3 md:pt-5">
 				{#each introBullets as text}
 					<div class="flex items-center gap-1.5">
 						<svg width="12" height="12" viewBox="0 0 12 12" aria-hidden="true">
@@ -23,32 +23,26 @@
 			</div>
 		</div>
 	</Container>
-	<Container
+	<!-- <Container
 		as="section"
 		pt="none"
 		pb="xl"
-		class="flex flex-col-reverse lg:grid lg:grid-cols-2 gap-10"
-	>
+		class="flex flex-col-reverse gap-10 lg:grid lg:grid-cols-2"
+	> -->
+	<div class="flex flex-col-reverse lg:grid lg:grid-cols-2">
 		<div>
-			<div class="sticky top-8 flex flex-col gap-2 lg:h-[calc(100vh-8rem)]">
+			<div class="sticky top-20 flex flex-col lg:h-[calc(100vh-4.5rem)]">
 				<Image
 					cloud
-					class="aspect-[4/3] object-cover object-top rounded-2xl opacity-90 lg:aspect-[none] lg:grow"
+					class="aspect-[4/3] object-cover object-top opacity-90 lg:aspect-[none] lg:grow"
 					src="/about/andy-headshot.jpg"
 					imageWidths={[800, 1200]}
 					alt="The designer Andy Stewart throwing playing cards into the air"
 				/>
-				<div class="flex items-center gap-2 text-foreground">
-					<svg width="12" height="12" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
-						<path d="M1 6L5 2L9 6" stroke="currentColor" stroke-width="1.5" fill="none" />
-						<path d="M11 10H5V2.5" stroke="currentColor" stroke-width="1.5" fill="none" />
-					</svg>
-					<p>Not a Magician</p>
-				</div>
 			</div>
 		</div>
-		<div>
-			<div class="grid gap-5 content-start text-lg text-foreground/85 pb-8">
+		<Container py="md">
+			<div class="grid content-start gap-5 text-lg text-foreground/85">
 				<p>
 					Hi, I'm Andy, a designer working at the intersection of brand and technology. I'm
 					currently the Digital Creative Director at Turnstyle, a small-yet-mighty creative studio
@@ -69,26 +63,26 @@
 				</p>
 				<div class="flex gap-4 pt-1">
 					<Button link href="/about/cv">Full Resume</Button>
-					<Button link href="/about/now">What I’m Up to Now</Button>
+					<!-- <Button link href="/about/now">What I’m Up to Now</Button> -->
 				</div>
-				<div class="grid gap-5 border-t border-light mt-3 pt-8">
-					<h4 class="font-medium text-xs tracking-wide">Select Skills + Services</h4>
+				<div class="mt-3 grid gap-5 border-t pt-8 border-light">
+					<h4 class="text-xs font-medium tracking-wide">Select Skills + Services</h4>
 					<ul class="grid grid-cols-2 gap-y-2">
 						{#each skills as skill}
 							<li
-								class="relative text-foreground pl-5 before:absolute before:top-0 before:left-0 before:content-['↘'] before:text-foreground/75"
+								class="relative pl-5 text-foreground before:absolute before:left-0 before:top-0 before:text-foreground/75 before:content-['↘']"
 							>
 								{skill}
 							</li>
 						{/each}
 					</ul>
 				</div>
-				<div class="flex flex-col gap-5 border-t border-light mt-3 pt-8">
-					<h4 class="font-medium text-xs tracking-wide">Select Tools</h4>
+				<div class="mt-3 flex flex-col gap-5 border-t pt-8 border-light">
+					<h4 class="text-xs font-medium tracking-wide">Select Tools</h4>
 					<ul class="grid grid-cols-2 gap-y-2">
 						{#each tools as tool}
 							<li
-								class="relative text-foreground pl-5 before:absolute before:top-0 before:left-0 before:content-['↘'] before:text-foreground/75"
+								class="relative pl-5 text-foreground before:absolute before:left-0 before:top-0 before:text-foreground/75 before:content-['↘']"
 							>
 								{tool}
 							</li>
@@ -99,6 +93,7 @@
 					</div>
 				</div>
 			</div>
-		</div>
-	</Container>
+		</Container>
+	</div>
+	<!-- </Container> -->
 </main>

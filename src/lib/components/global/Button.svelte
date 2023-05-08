@@ -10,8 +10,8 @@
 {#if link}
 	<a {href} data-sveltekit-preload-data="hover" class="group">
 		<div
-			class={'text-base text-foreground border border-light rounded transition-colors duration-200 ease-out group-hover:border-foreground' +
-				(size === 'sm' && 'py-1 px-2.5')}
+			class={'rounded border text-base text-foreground transition-colors duration-200 ease-out border-light group-hover:border-foreground ' +
+				(size === 'sm' && 'px-2.5 py-1')}
 		>
 			<span class="block pb-px"><slot /></span>
 		</div>

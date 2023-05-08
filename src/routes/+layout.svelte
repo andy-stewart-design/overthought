@@ -15,7 +15,7 @@
 
 <svelte:head>
 	<title>{$page.data.meta?.title ?? fallbackTitle}</title>
-	<title>{$page.data.meta?.description ?? fallbackDescription}</title>
+	<meta name="description" content={$page.data.meta?.description ?? fallbackDescription} />
 </svelte:head>
 
 <NavTop theme={data.theme} />

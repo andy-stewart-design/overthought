@@ -17,10 +17,10 @@
 						cloud
 						src="/about/andy-headshot-square.jpg"
 						alt="Headshot"
-						class="h-18 w-18 rounded-full bg-surface-mid"
+						class="h-16 w-16 rounded-full bg-surface-mid"
 					/>
-					<div class="grid gap-1.5">
-						<h2 class="inline-block grow text-4xl font-semibold">Andy Stewart</h2>
+					<div class="grid gap-1">
+						<h2 class="inline-block grow text-3xl font-semibold">Andy Stewart</h2>
 						<h3 class="text-sm font-medium uppercase tracking-widest opacity-65">
 							Design + Technology
 						</h3>
