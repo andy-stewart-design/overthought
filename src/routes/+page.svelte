@@ -8,10 +8,10 @@
 </script>
 
 <Observer let:observe>
-	<main class="grid grid-cols-12 border-b bg-background border-light">
+	<main class="border-b bg-background border-light lg:grid lg:grid-cols-12">
 		<!-- <HomeBg /> -->
-		<div class="relative col-span-4">
-			<Container class="sticky top-20 grid gap-y-5 py-12" py="none">
+		<div class="relative border-b border-light lg:col-span-5 xl:col-span-4">
+			<Container py="md" class="grid gap-y-5 lg:sticky lg:top-20">
 				<div class="flex gap-5">
 					<Image
 						cloud
@@ -34,12 +34,10 @@
 				</p>
 			</Container>
 		</div>
-		<div class="relative col-span-8 min-h-screen border-l border-r border-light">
-			<Container as="section" pxNone pt="none" pb="none" class="">
-				{#each timeline.entries as entry, index}
-					<FeedCard content={entry} {observe} {index} />
-				{/each}
-			</Container>
+		<div class="relative min-h-screen border-l border-r border-light lg:col-span-7 xl:col-span-8">
+			{#each timeline.entries as entry, index}
+				<FeedCard content={entry} {observe} {index} />
+			{/each}
 		</div>
 	</main>
 </Observer>

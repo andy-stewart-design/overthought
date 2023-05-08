@@ -10,13 +10,6 @@
 
 	export let theme: string;
 
-	function getCookie(name: string) {
-		const allCookies = document.cookie.split('; ');
-		const cookie = allCookies.filter((c) => c.includes(name));
-		if (cookie.length === 1) return cookie[0].split('=')[1];
-		return null;
-	}
-
 	function setCookie(cName: string, cValue: string, expDays: number) {
 		let date = new Date();
 		date.setTime(date.getTime() + expDays * 24 * 60 * 60 * 1000);
@@ -29,7 +22,7 @@
 		setCookie('colorTheme', theme, 365);
 	};
 
-	let listboxValue = theme;
+	let internalTheme = theme;
 	let options = [
 		{ name: 'system', icon: system },
 		{ name: 'light', icon: light },
@@ -46,15 +39,18 @@
 		{@html andyLogo}
 	</a>
 
-	<Listbox bind:value={listboxValue} on:change={() => setTheme(listboxValue)}>
-		<ListboxButton class="font-medium capitalize">{@html contrast}</ListboxButton>
+	<Listbox bind:value={internalTheme} on:change={() => setTheme(internalTheme)}>
+		<ListboxButton class="font-medium capitalize">
+			<p class="sr-only">Theme select</p>
+			{@html contrast}
+		</ListboxButton>
 		<ListboxOptions
-			class="absolute right-0 mt-1 w-32 origin-top-right scale-50 rounded border border-foreground/10 bg-surface-mid py-1 opacity-0 shadow-lg transition-all duration-300 ease-out-5 focus:outline-0 data-[state=open]:scale-100 data-[state=open]:opacity-100"
+			class="absolute right-0 mt-1 w-32 origin-top-right scale-50 rounded border border-foreground/10 bg-surface-mid py-1 opacity-0 shadow-lg transition-none ease-out-5 focus:outline-0 data-[state=open]:scale-100 data-[state=open]:opacity-100 data-[state=open]:transition-all data-[state=open]:duration-500 data-[state=open]:ease-out-5"
 		>
 			{#each options as option}
 				<ListboxOption
 					value={option.name}
-					class="group flex items-center gap-2 px-4 py-2 text-sm font-medium capitalize hover:bg-black/10 data-[active=true]:bg-foreground/20 data-[selected=true]:!bg-foreground data-[selected=true]:!text-background"
+					class="group flex items-center gap-2 px-4 py-2 text-sm font-medium capitalize data-[active=true]:bg-foreground/10 data-[active=true]:data-[selected=true]:bg-foreground data-[selected=true]:bg-foreground data-[active=true]:data-[selected=true]:text-background data-[selected=true]:text-background"
 				>
 					{@html option.icon}
 					{option.name}

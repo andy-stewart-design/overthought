@@ -3,6 +3,7 @@
 	import Video from '../media/Video.svelte';
 	import type { Action } from 'svelte/action';
 	import type { FeedPost } from '$lib/types/feed';
+	import Container from '@globals/layout/Container.svelte';
 
 	export let content: FeedPost;
 	export let index = 0;
@@ -14,13 +15,15 @@
 </script>
 
 <div
-	class="grid min-h-[400px] w-full gap-7 border-b bg-background/70 py-12 transition-all duration-700 ease-out-3 border-light last-of-type:border-b-0 data-[hidden]:translate-y-12 data-[hidden]:opacity-0"
+	class="border-b bg-background/70 transition-all duration-700 ease-out-3 border-light last-of-type:border-b-0 data-[hidden]:translate-y-12 data-[hidden]:opacity-0"
 	use:observe
 >
-	<div class="flex items-baseline px-8">
-		<h2 class="inline-block grow text-4xl font-semibold">{content.title}</h2>
-		<span class="text-right text-sm font-medium opacity-60">{`${month} ${day}`}</span>
-	</div>
+	<Container py="md">
+		<div class="flex items-baseline">
+			<h2 class="inline-block grow text-4xl font-semibold">{content.title}</h2>
+			<span class="text-right text-sm font-medium opacity-60">{`${month} ${day}`}</span>
+		</div>
+	</Container>
 	{#if content.img}
 		<Image
 			cloud
@@ -47,7 +50,7 @@
 			Sorry, your browser doesn't support embedded videos.
 		</video> -->
 	{/if}
-	<div class="grid gap-7 px-8">
+	<Container py="md" class="grid gap-7">
 		<p class="text-lg tracking-wide">
 			{@html content.body}
 		</p>
@@ -76,5 +79,5 @@
 				{/if}
 			</div>
 		{/if}
-	</div>
+	</Container>
 </div>
