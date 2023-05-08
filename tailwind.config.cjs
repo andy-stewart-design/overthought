@@ -44,6 +44,7 @@ const config = {
 			},
 			opacity: {
 				15: '.15',
+				65: '.65',
 				85: '.85'
 			},
 			screens: {

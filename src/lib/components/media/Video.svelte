@@ -29,7 +29,6 @@
 		class={className}
 		bind:paused
 		{muted}
-		{controls}
 		{autoplay}
 		{width}
 		{height}
@@ -38,17 +37,21 @@
 		poster={poster && setCloudSrc(poster, posterSize)}
 	>
 		<source src={cloudSrc} type="video/mp4" />
+		<track kind="captions" />
 		Sorry, your browser doesn't support embedded videos.
 	</video>
-	<button
-		on:click={() => (paused = !paused)}
-		class="absolute bottom-0 left-0 right-0 top-0 flex items-end justify-start p-6 opacity-0 transition-opacity duration-500 ease-out-3 group-hover:opacity-100"
-		class:opacity-100={paused}
-	>
-		<div
-			class="relative w-16 rounded-full border bg-black/75 p-4 transition-transform duration-500 ease-out-3 border-light group-hover:scale-125"
+	{#if controls}
+		<button
+			on:click={() => (paused = !paused)}
+			class="absolute bottom-0 left-0 right-0 top-0 flex items-end justify-start p-6 opacity-0 transition-opacity duration-500 ease-out-3 group-hover:opacity-100"
+			class:opacity-100={paused}
 		>
-			{@html controlsIcon}
-		</div>
-	</button>
+			<p class="sr-only">Video controls</p>
+			<div
+				class="relative w-16 rounded-full border bg-white/80 p-4 text-black shadow-xl transition-transform duration-500 ease-out-3 border-light group-hover:scale-125"
+			>
+				{@html controlsIcon}
+			</div>
+		</button>
+	{/if}
 </div>

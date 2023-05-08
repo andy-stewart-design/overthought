@@ -21,7 +21,7 @@
 	<Container py="md">
 		<div class="flex items-baseline">
 			<h2 class="inline-block grow text-4xl font-semibold">{content.title}</h2>
-			<span class="text-right text-sm font-medium opacity-60">{`${month} ${day}`}</span>
+			<span class="text-right text-sm font-medium opacity-65">{`${month} ${day}`}</span>
 		</div>
 	</Container>
 	{#if content.img}
@@ -39,16 +39,14 @@
 		<Video
 			muted
 			loop
+			playsinline
+			controls
 			src={content.video.src}
 			poster={content.video.poster}
 			posterSize={1200}
 			width={`${content.video.width}` ?? 1920}
 			height={`${content.video.height}` ?? 1080}
 		/>
-		<!-- <video class="object-cover object-top" muted controls>
-			<source src={`${cloudSrc}${content.video.src}`} type="video/mp4" />
-			Sorry, your browser doesn't support embedded videos.
-		</video> -->
 	{/if}
 	<Container py="md" class="grid gap-7">
 		<p class="text-lg tracking-wide">
@@ -68,7 +66,7 @@
 					</a>
 				{/if}
 				{#if content.categories}
-					<div class="flex grow justify-end gap-2 text-right text-sm font-medium opacity-60">
+					<div class="flex grow justify-end gap-2 text-right text-sm font-medium opacity-65">
 						{#each content.categories as category, index}
 							<span>{category}</span>
 							{#if index < content.categories.length - 1}

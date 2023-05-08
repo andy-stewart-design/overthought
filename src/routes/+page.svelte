@@ -3,8 +3,8 @@
 	import FeedCard from '$lib/components/feed/FeedCard.svelte';
 	import Container from '@globals/layout/Container.svelte';
 	import Observer from '@globals/layout/Observer.svelte';
-	import timeline from '@content/timeline.json';
 	import Image from '$lib/components/media/Image.svelte';
+	import timeline from '@content/timeline.json';
 </script>
 
 <Observer let:observe>
@@ -21,7 +21,7 @@
 					/>
 					<div class="grid gap-1.5">
 						<h2 class="inline-block grow text-4xl font-semibold">Andy Stewart</h2>
-						<h3 class="text-sm font-medium uppercase tracking-widest opacity-70">
+						<h3 class="text-sm font-medium uppercase tracking-widest opacity-65">
 							Design + Technology
 						</h3>
 					</div>
