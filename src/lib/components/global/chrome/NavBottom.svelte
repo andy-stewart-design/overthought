@@ -10,8 +10,8 @@
 
 	const links: NavLinks[] = [
 		{ href: '/', text: 'Feed' },
+		{ href: '/projects', text: 'Work' },
 		// { href: '/feed', text: 'Feed' },
-		// { href: '/work', text: 'Work' },
 		// { href: '/posts', text: 'Posts' },
 		{ href: '/about', text: 'About' }
 	];

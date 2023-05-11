@@ -1,6 +1,6 @@
 <script lang="ts">
 	// import HomeBg from '$lib/components/canvas/HomeBG.svelte';
-	import FeedCard from '$lib/components/feed/FeedCard.svelte';
+	import FeedCard from '$lib/components/cards/FeedCard.svelte';
 	import Container from '@globals/layout/Container.svelte';
 	import Observer from '@globals/layout/Observer.svelte';
 	import Image from '$lib/components/media/Image.svelte';
@@ -12,25 +12,23 @@
 		<!-- <HomeBg /> -->
 		<div class="relative border-b border-light lg:col-span-5 xl:col-span-4">
 			<Container py="md" class="grid gap-y-5 lg:sticky lg:top-20">
-				<div class="flex gap-5">
+				<div class="flex items-center gap-4">
 					<Image
 						cloud
 						src="/about/andy-headshot-square.jpg"
 						alt="Headshot"
-						class="h-16 w-16 rounded-full bg-surface-mid"
+						class="h-14 w-14 rounded-full bg-surface-mid"
 					/>
-					<div class="grid gap-1">
-						<h2 class="inline-block grow text-3xl font-semibold">Andy Stewart</h2>
-						<h3 class="text-sm font-medium uppercase tracking-widest opacity-65">
-							Design + Technology
-						</h3>
+					<div class="flex flex-col items-start justify-start gap-1">
+						<h2 class="text-2xl font-semibold leading-none">Andy Stewart</h2>
+						<h3 class="text-sm font-medium opacity-65">Design + Technology</h3>
 					</div>
 				</div>
 				<p>
-					I work at the intersection of brand and technology designing future-focused visual systems
-					— often for screens, sometimes not. I'm currently the Digital Creative Director at
-					Turnstyle, a small-yet-mighty creative studio in Seattle, where I help bring life to
-					brands through strategic, thoughtful design.
+					Hi, I'm Andy. I'm a designer working at the intersection of brand and technology to
+					develop future-focused visual systems — often for screens, sometimes not. I'm currently
+					the Digital Creative Director at Turnstyle, a small-yet-mighty creative studio in Seattle,
+					where I help bring life to brands through strategic, thoughtful design.
 				</p>
 			</Container>
 		</div>

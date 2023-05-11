@@ -74,11 +74,12 @@ const config = {
 	plugins: [
 		plugin(({ addVariant }) => {
 			addVariant('active', '.active&');
+			addVariant('can-hover', '@media (hover: hover) {body &}');
 		}),
 		({ addUtilities }) => {
 			addUtilities({
 				'.border-light': {
-					'@apply border-foreground/10': {}
+					'@apply border-foreground/15': {}
 				},
 				'.border-xlt': {
 					'@apply border-foreground/5': {}

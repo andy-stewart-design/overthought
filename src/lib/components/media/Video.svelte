@@ -48,9 +48,11 @@
 		>
 			<p class="sr-only">Video controls</p>
 			<div
-				class="relative w-16 rounded-full border bg-white/80 p-4 text-black shadow-xl transition-transform duration-500 ease-out-3 border-light group-hover:scale-125"
+				class="relative flex h-16 w-16 items-center justify-center rounded-full border bg-white/80 text-black shadow-xl transition-transform duration-500 ease-out-3 border-light group-hover:scale-125"
 			>
-				{@html controlsIcon}
+				<span class="ml-1 block w-8">
+					{@html controlsIcon}
+				</span>
 			</div>
 		</button>
 	{/if}

@@ -6,29 +6,20 @@
 </script>
 
 <main class="bg-background">
-	<Container as="header" py="lg" class="grid border-b border-light lg:grid-cols-2 lg:gap-10">
-		<h1 class="text-8xl md:text-9xl">About</h1>
+	<Container as="header" py="lg" class="grid border-b border-light lg:grid-cols-2 lg:gap-16">
+		<h1 class="text-8xl uppercase md:text-9xl">About</h1>
 		<div class="flex flex-row-reverse justify-end sm:justify-between">
-			<h2 class="text-8xl md:text-9xl">Me</h2>
+			<h2 class="text-8xl uppercase md:text-9xl">Me</h2>
 			<div class="pr-6 pt-3 md:pt-5">
 				{#each introBullets as text}
-					<div class="flex items-center gap-1.5">
-						<svg width="12" height="12" viewBox="0 0 12 12" aria-hidden="true">
-							<path d="M1 6L5 10L9 6" stroke="currentColor" stroke-width="1.5" fill="none" />
-							<path d="M11 2H5V9.5" stroke="currentColor" stroke-width="1.5" fill="none" />
-						</svg>
-						<h3 class="text-sm leading-[1.35] md:text-base md:leading-normal">{text}</h3>
-					</div>
+					<h3 class="text-sm leading-[1.35] md:text-base md:leading-normal">
+						<span class="mr-1">↙</span>
+						{text}
+					</h3>
 				{/each}
 			</div>
 		</div>
 	</Container>
-	<!-- <Container
-		as="section"
-		pt="none"
-		pb="xl"
-		class="flex flex-col-reverse gap-10 lg:grid lg:grid-cols-2"
-	> -->
 	<div class="flex flex-col-reverse lg:grid lg:grid-cols-2">
 		<div>
 			<div class="sticky top-20 flex flex-col lg:h-[calc(100vh-4.5rem)]">
@@ -41,7 +32,7 @@
 				/>
 			</div>
 		</div>
-		<Container py="md">
+		<Container py="md" pb="lg">
 			<div class="grid content-start gap-5 text-lg text-foreground/85">
 				<p>
 					Hi, I'm Andy, a designer working at the intersection of brand and technology. I'm
@@ -95,5 +86,4 @@
 			</div>
 		</Container>
 	</div>
-	<!-- </Container> -->
 </main>

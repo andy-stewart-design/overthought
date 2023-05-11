@@ -20,7 +20,7 @@
 >
 	<Container py="md">
 		<div class="flex items-baseline">
-			<h2 class="inline-block grow text-4xl font-semibold">{content.title}</h2>
+			<h2 class="inline-block grow text-4xl font-semibold uppercase">{content.title}</h2>
 			<span class="text-right text-sm font-medium opacity-65">{`${month} ${day}`}</span>
 		</div>
 	</Container>
