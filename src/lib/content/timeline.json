@@ -2,7 +2,7 @@
 	"entries": [
 		{
 			"title": "Squiggler App",
-			"body": "This personal project began as conversation with a corworker about a tool we wish we had for a branding project. We wanted a way to generatively create SVG squiggles that we could manipulate across different axes like sharpness, flow, size, etc. Developing it required me a lot of research into the technical details of how SVG paths are drawn and the math behind sin waves.",
+			"body": "This personal project began as conversation with a corworker about a tool we wish we had for a branding project. We wanted a way to generatively create SVG squiggles that we could manipulate across different axes like sharpness, flow, size, etc. Developing it required a lot of mind-bending research into the technical details of how SVG paths are drawn and the math behind sin waves, but the result is a simple and easy-to-use single-purpose app.",
 			"date": "05/06/2023",
 			"video": {
 				"src": "/work/development/squiggler.mp4",
@@ -19,7 +19,7 @@
 		},
 		{
 			"title": "AllStock Figma Plugin",
-			"body": "I always found it annoying that if you wanted to look for a stock image without leaving Figma, you had to choose a plugin specific to a single stock image resource. AllStock is a one-stop shop for finding and using high-quality images inside of your Figma projects, allowing you to browse popular free libraries like Unsplash, Pexels, and Pixabay all at the same time. Built with Svelte, Tailwind, and Typescript.",
+			"body": "I have always found it frustrating that if you want to look for a stock image without leaving Figma, you have to choose a plugin specific to a single stock image resource. AllStock is a one-stop shop for finding and using high-quality images inside of your Figma projects, allowing you to browse popular free libraries like Unsplash, Pexels, and Pixabay all at the same time. Built with Svelte, Tailwind, and Typescript.",
 			"date": "05/06/2023",
 			"img": {
 				"src": "/work/figma/AllStock-CoverArt.jpg",

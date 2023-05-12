@@ -40,7 +40,7 @@
 	</a>
 
 	<Listbox bind:value={internalTheme} on:change={() => setTheme(internalTheme)}>
-		<ListboxButton class="font-medium capitalize">
+		<ListboxButton class="-mr-3 p-3 font-medium capitalize">
 			<p class="sr-only">Theme select</p>
 			{@html contrast}
 		</ListboxButton>

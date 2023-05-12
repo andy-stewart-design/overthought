@@ -20,7 +20,7 @@
 >
 	<Container py="md">
 		<div class="flex items-baseline">
-			<h2 class="inline-block grow text-4xl font-semibold uppercase">{content.title}</h2>
+			<h2 class="inline-block grow text-4xl font-medium uppercase">{content.title}</h2>
 			<span class="text-right text-sm font-medium opacity-65">{`${month} ${day}`}</span>
 		</div>
 	</Container>
@@ -49,7 +49,7 @@
 		/>
 	{/if}
 	<Container py="md" class="grid gap-7">
-		<p class="text-lg tracking-wide">
+		<p class="tracking-wide md:text-lg">
 			{@html content.body}
 		</p>
 		{#if content.link || content.categories}

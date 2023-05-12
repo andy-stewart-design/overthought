@@ -24,7 +24,7 @@
 						<h3 class="text-sm font-medium opacity-65">Design + Technology</h3>
 					</div>
 				</div>
-				<p>
+				<p class="md:text-lg lg:text-base">
 					Hi, I'm Andy. I'm a designer working at the intersection of brand and technology to
 					develop future-focused visual systems — often for screens, sometimes not. I'm currently
 					the Digital Creative Director at Turnstyle, a small-yet-mighty creative studio in Seattle,
