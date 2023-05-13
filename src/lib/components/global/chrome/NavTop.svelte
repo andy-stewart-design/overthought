@@ -39,23 +39,47 @@
 		{@html andyLogo}
 	</a>
 
-	<Listbox bind:value={internalTheme} on:change={() => setTheme(internalTheme)}>
-		<ListboxButton class="-mr-3 p-3 font-medium capitalize">
-			<p class="sr-only">Theme select</p>
-			{@html contrast}
-		</ListboxButton>
-		<ListboxOptions
-			class="absolute right-0 mt-1 w-32 origin-top-right scale-50 rounded border border-foreground/10 bg-surface-mid py-1 opacity-0 shadow-lg transition-none ease-out-5 focus:outline-0 data-[state=open]:scale-100 data-[state=open]:opacity-100 data-[state=open]:transition-all data-[state=open]:duration-500 data-[state=open]:ease-out-5"
+	<div class="-mr-3 flex items-center">
+		<a
+			href="mailto:andy.stewart1170@gmail.com"
+			class="rounded-full bg-transparent p-3 transition-colors can-hover:hover:bg-foreground/10"
 		>
-			{#each options as option}
-				<ListboxOption
-					value={option.name}
-					class="group flex items-center gap-2 px-4 py-2 text-sm font-medium capitalize data-[active=true]:bg-foreground/10 data-[active=true]:data-[selected=true]:bg-foreground data-[selected=true]:bg-foreground data-[active=true]:data-[selected=true]:text-background data-[selected=true]:text-background"
-				>
-					{@html option.icon}
-					{option.name}
-				</ListboxOption>
-			{/each}
-		</ListboxOptions>
-	</Listbox>
+			<svg
+				width="20"
+				height="20"
+				viewBox="0 0 20 20"
+				fill="none"
+				xmlns="http://www.w3.org/2000/svg"
+			>
+				<path d="M2 3H18V16H2V3Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round" />
+				<path
+					d="M10 8L3 3H17L10 8Z"
+					fill="currentColor"
+					stroke="currentColor"
+					stroke-width="2"
+					stroke-linejoin="round"
+				/>
+			</svg>
+		</a>
+
+		<Listbox bind:value={internalTheme} on:change={() => setTheme(internalTheme)}>
+			<ListboxButton class="rounded-full bg-transparent p-3 transition-colors can-hover:hover:bg-foreground/10 font-medium capitalize">
+				<p class="sr-only">Theme select</p>
+				{@html contrast}
+			</ListboxButton>
+			<ListboxOptions
+				class="absolute right-0 mt-1 w-32 origin-top-right scale-50 rounded border border-foreground/10 bg-surface-mid py-1 opacity-0 shadow-lg transition-none ease-out-5 focus:outline-0 data-[state=open]:scale-100 data-[state=open]:opacity-100 data-[state=open]:transition-all data-[state=open]:duration-500 data-[state=open]:ease-out-5"
+			>
+				{#each options as option}
+					<ListboxOption
+						value={option.name}
+						class="group flex items-center gap-2 px-4 py-2 text-sm font-medium capitalize data-[active=true]:bg-foreground/10 data-[active=true]:data-[selected=true]:bg-foreground data-[selected=true]:bg-foreground data-[active=true]:data-[selected=true]:text-background data-[selected=true]:text-background"
+					>
+						{@html option.icon}
+						{option.name}
+					</ListboxOption>
+				{/each}
+			</ListboxOptions>
+		</Listbox>
+	</div>
 </Container>

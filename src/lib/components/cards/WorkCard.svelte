@@ -7,11 +7,13 @@
 		summary: string;
 		tags: string[];
 		year: number;
+		status: string;
 		img: {
 			src: string;
 			alt: string;
 		};
-		link?: {
+		link?: string;
+		external?: {
 			text: string;
 			href: string;
 		};
@@ -26,23 +28,27 @@
 	data-grid={grid}
 >
 	<div class="group relative bg-surface-mid">
-		<Image class="aspect-[4/5] object-cover" src={project.img.src} alt={project.img.alt} />
-		<Container py="md" pt="sm" class="absolute left-0 top-2">
-			<ul class="flex gap-2 pt-2">
-				{#each project.tags as tag}
-					<li
-						class="rounded-full bg-black/30 px-2.5 pb-1 pt-[3px] text-sm font-medium outline outline-gray-100/15 backdrop-blur"
-					>
-						{tag}
-					</li>
-				{/each}
-			</ul>
-		</Container>
+		<Image
+			cloud
+			class={'aspect-[4/5] object-cover'}
+			src={project.img.src}
+			alt={project.img.alt}
+			imageWidths={[800, 1200]}
+			sizes={[['769px', '50vh'], ['100vh']]}
+		/>
 		{#if project.link}
-			<Container py="none" class="absolute bottom-8 left-0">
+			<a
+				href={`/projects/${project.link}`}
+				class="absolute bottom-0 left-0 right-0 top-0 transition-colors hover:bg-black/50"
+			>
+				<span class="sr-only">View Project</span>
+			</a>
+		{/if}
+		{#if project.external}
+			<Container py="none" class="pointer-events-none absolute bottom-8 left-0">
 				<a
-					href={project.link.href}
-					class="flex items-center gap-3 border border-gray-100/15 bg-black/30 px-5 py-4 font-medium backdrop-blur transition-opacity can-hover:opacity-0 can-hover:group-hover:opacity-100"
+					href={project.external.href}
+					class="pointer-events-auto flex items-center gap-3 border border-gray-100/15 bg-black/30 px-5 py-4 font-medium backdrop-blur transition-all hover:bg-white/60 hover:text-black can-hover:opacity-0 can-hover:group-hover:opacity-100"
 				>
 					<svg width="16" height="16" viewBox="0 0 16 16">
 						<path
@@ -53,18 +59,38 @@
 							fill="none"
 						/>
 					</svg>
-					{project.link.text}
+					{project.external.text}
 				</a>
 			</Container>
 		{/if}
+		<Container py="md" pt="sm" class="pointer-events-none absolute left-0 top-2">
+			<ul class="flex gap-2 pt-2">
+				{#each project.tags as tag}
+					<li
+						class="rounded-full bg-black/30 px-2.5 pb-1 pt-[3px] text-sm font-medium outline outline-gray-100/15 backdrop-blur"
+					>
+						{tag}
+					</li>
+				{/each}
+			</ul>
+		</Container>
 	</div>
 	<Container py="md" pb="lg" class="space-y-5">
 		<h4 class="text-sm font-medium slashed-zero tabular-nums opacity-65">
-			{project.year} <span class="mx-1">·</span> Coming Soon
+			{project.year} <span class="mx-1">·</span>
+			{project.status}
 		</h4>
-		<h3 class="text-3xl">
-			<span class="uppercase">{project.client}</span>{` ${project.summary}`}
-		</h3>
+		{#if project.link}
+			<a href={`/projects/${project.link}`} class="block">
+				<h3 class="text-3xl">
+					<span class="uppercase">{project.client}</span>{` ${project.summary}`}
+				</h3>
+			</a>
+		{:else}
+			<h3 class="text-3xl">
+				<span class="uppercase">{project.client}</span>{` ${project.summary}`}
+			</h3>
+		{/if}
 	</Container>
 </div>
 

@@ -7,14 +7,14 @@
 <footer>
 	<div class="h-screen" />
 	<div class="sticky bottom-0 -z-10 h-0">
-		<div class="absolute bottom-0 h-screen w-full bg-blue-600">
+		<div class="absolute bottom-0 h-screen w-full bg-surface-mid">
 			<Container class="flex h-full flex-col justify-center" pb="sm">
 				<div class="flex grow items-center">
-					<p class="grow text-center text-5xl text-white">Thanks for stopping by</p>
+					<p class="grow text-center text-5xl">Thanks for stopping by</p>
 				</div>
 				<div class="flex justify-between pb-3">
 					<p>©{year}</p>
-					<p>Contact</p>
+					<a href="mailto:andy.stewart1170@gmail.com">Contact</a>
 				</div>
 			</Container>
 		</div>
