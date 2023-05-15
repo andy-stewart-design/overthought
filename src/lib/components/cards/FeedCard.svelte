@@ -19,9 +19,9 @@
 	use:observe
 >
 	<Container py="md">
-		<div class="flex items-baseline">
-			<h2 class="inline-block grow text-4xl font-medium uppercase">{content.title}</h2>
-			<span class="text-right text-sm font-medium opacity-65">{`${month} ${day}`}</span>
+		<div class="flex flex-col gap-3 sm:flex-row sm:items-baseline">
+			<h2 class="inline-block grow text-4xl font-medium">{content.title}</h2>
+			<span class="text-sm font-medium opacity-65 sm:text-right">{`${month} ${day}`}</span>
 		</div>
 	</Container>
 	{#if content.img}

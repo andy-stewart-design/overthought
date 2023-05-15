@@ -40,7 +40,7 @@ const projects = [
 			src: '/work/gly/GLY-WorkCard.jpg',
 			alt: 'lorem ipsum'
 		},
-		// link: 'gly',
+		link: 'gly',
 		external: {
 			text: 'View Site',
 			href: 'https://www.gly.com/'

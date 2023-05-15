@@ -75,6 +75,7 @@ const config = {
 		plugin(({ addVariant }) => {
 			addVariant('active', '.active&');
 			addVariant('can-hover', '@media (hover: hover) {body &}');
+			addVariant('cannot-hover', '@media (hover: none) {body &}');
 		}),
 		({ addUtilities }) => {
 			addUtilities({

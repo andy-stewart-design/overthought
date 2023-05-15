@@ -1,5 +1,6 @@
 <script lang="ts">
 	import Image from '$lib/components/media/Image.svelte';
+	import Button from '@globals/Button.svelte';
 	import Container from '@globals/layout/Container.svelte';
 
 	interface Project {
@@ -39,22 +40,22 @@
 		{#if project.link}
 			<a
 				href={`/projects/${project.link}`}
-				class="absolute bottom-0 left-0 right-0 top-0 transition-colors hover:bg-black/50"
+				class="absolute bottom-0 left-0 right-0 top-0 flex items-center justify-center bg-black/50 text-xl font-medium opacity-0 transition-opacity hover:opacity-100 cannot-hover:hidden"
 			>
-				<span class="sr-only">View Project</span>
+				<span>View Project</span>
 			</a>
 		{/if}
 		{#if project.external}
-			<Container py="none" class="pointer-events-none absolute bottom-8 left-0">
+			<Container py="none" class="pointer-events-none absolute bottom-4 left-0 md:bottom-8">
 				<a
 					href={project.external.href}
-					class="pointer-events-auto flex items-center gap-3 border border-gray-100/15 bg-black/30 px-5 py-4 font-medium backdrop-blur transition-all hover:bg-white/60 hover:text-black can-hover:opacity-0 can-hover:group-hover:opacity-100"
+					class=" pointer-events-auto flex items-center gap-3 rounded border border-gray-100/15 bg-black/30 px-5 py-4 font-medium backdrop-blur transition-all hover:bg-white/60 hover:text-black focus-visible:opacity-100 can-hover:opacity-0 can-hover:group-hover:opacity-100 cannot-hover:hidden"
 				>
 					<svg width="16" height="16" viewBox="0 0 16 16">
 						<path
 							d="M13 12V3H4M12.5 3.5L3 13"
 							stroke="currentColor"
-							stroke-width="1.5"
+							stroke-width="1.75"
 							stroke-linejoin="round"
 							fill="none"
 						/>
@@ -75,7 +76,7 @@
 			</ul>
 		</Container>
 	</div>
-	<Container py="md" pb="lg" class="space-y-5">
+	<Container py="md" pb="lg" class="grid gap-5">
 		<h4 class="text-sm font-medium slashed-zero tabular-nums opacity-65">
 			{project.year} <span class="mx-1">·</span>
 			{project.status}
@@ -90,6 +91,26 @@
 			<h3 class="text-3xl">
 				<span class="uppercase">{project.client}</span>{` ${project.summary}`}
 			</h3>
+		{/if}
+		{#if project.link || project.external}
+			<div class="mt-2 flex gap-6 can-hover:hidden">
+				{#if project.link}
+					<Button link href={`/projects/${project.link}`}>View Project</Button>
+				{/if}
+				{#if project.external}
+					<a href={project.external.href} class="flex items-center gap-1.5 font-medium">
+						{project.external.text}
+						<svg width="16" height="16" viewBox="0 0 16 16">
+							<path
+								d="M12 12V4H4M11.5 4.5L3 13"
+								stroke="currentColor"
+								stroke-width="1.75"
+								stroke-linejoin="round"
+							/>
+						</svg>
+					</a>
+				{/if}
+			</div>
 		{/if}
 	</Container>
 </div>

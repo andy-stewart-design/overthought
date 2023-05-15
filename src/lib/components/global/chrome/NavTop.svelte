@@ -31,7 +31,7 @@
 </script>
 
 <Container
-	class="sticky left-0 top-0 z-50 flex h-20 w-screen items-center justify-between border-b bg-background/50 backdrop-blur-md border-light"
+	class="sticky left-0 top-0 z-50 flex h-20 w-screen items-center justify-between overflow-hidden border-b bg-background/50 backdrop-blur-md border-light"
 	py="none"
 >
 	<a href="/" class="relative w-11" class:pointer-events-none={$page.url.pathname === '/'}>
@@ -63,7 +63,9 @@
 		</a>
 
 		<Listbox bind:value={internalTheme} on:change={() => setTheme(internalTheme)}>
-			<ListboxButton class="rounded-full bg-transparent p-3 transition-colors can-hover:hover:bg-foreground/10 font-medium capitalize">
+			<ListboxButton
+				class="rounded-full bg-transparent p-3 font-medium capitalize transition-colors can-hover:hover:bg-foreground/10"
+			>
 				<p class="sr-only">Theme select</p>
 				{@html contrast}
 			</ListboxButton>
