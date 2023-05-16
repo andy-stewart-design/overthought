@@ -2,7 +2,7 @@
 	"entries": [
 		{
 			"title": "Squiggler App",
-			"body": "This personal project began as conversation with a corworker about a tool we wish we had for a branding project. We wanted a way to generatively create SVG squiggles that we could manipulate across different axes like sharpness, flow, size, etc. Developing it required a lot of mind-bending research into the technical details of how SVG paths are drawn and the math behind sin waves, but the result is a simple and easy-to-use single-purpose app.",
+			"body": "This personal project began as conversation with a coworker about a tool we wish we had for a branding project. We wanted a way to generatively create SVG squiggles that we could manipulate across different axes like sharpness, flow, size, etc. Developing it required a lot of mind-bending research into the technical details of how SVG paths are drawn and the math behind sin waves, but the result is a simple and easy-to-use single-purpose app.",
 			"date": "05/06/2023",
 			"video": {
 				"src": "/work/development/squiggler.mp4",
