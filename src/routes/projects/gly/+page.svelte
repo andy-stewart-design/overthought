@@ -9,7 +9,7 @@
 </script>
 
 <main class="border-b bg-background border-light lg:grid lg:grid-cols-12">
-	<div class="relative border-b border-light lg:col-span-5 xl:col-span-4">
+	<div class="relative border-b border-light lg:col-span-5 lg:border-b-0 xl:col-span-4">
 		<Container py="md" pb="xl" class="grid gap-y-5 lg:sticky lg:top-20">
 			<ul class="flex gap-2 text-sm font-medium">
 				<li>Web Design</li>
@@ -70,6 +70,14 @@
 				controls
 				src="https://res.cloudinary.com/andystewartdesign/video/upload/v1684160862/work/gly/GLY-Web-VideoModal.mp4"
 				poster="/work/gly/GLY-VideoModal-Poster.jpg"
+				class="rounded-lg"
+			/>
+			<Image
+				cloud
+				src="/work/gly/GLY-Web-Nav.jpg"
+				imageWidths={[800, 1200, 1920]}
+				sizes={[['769px', '50vh'], ['100vh']]}
+				alt="kjnj"
 				class="rounded-lg"
 			/>
 			<!-- <Image

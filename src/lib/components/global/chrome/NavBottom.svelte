@@ -1,7 +1,8 @@
 <script lang="ts">
 	import { page } from '$app/stores';
-	import { Button } from 'neutral-ui';
-	import NavSettings from './NavSettings.svelte';
+	import { isFooterActive, footerVisibility } from './Footer.svelte';
+	// import { Button } from 'neutral-ui';
+	// import NavSettings from './NavSettings.svelte';
 
 	interface NavLinks {
 		href: string;
@@ -16,7 +17,7 @@
 		{ href: '/about', text: 'About' }
 	];
 
-	let isSettingsActive = false;
+	// let isSettingsActive = false;
 
 	function getActivePath(path: string) {
 		const slug = path.split('/').slice(0, 2).join('/');
@@ -28,7 +29,8 @@
 </script>
 
 <nav
-	class="before:border-1 fixed bottom-8 left-1/2 z-40 -translate-x-1/2 rounded-full bg-surface-mid/60 p-1.5 shadow-xl backdrop-blur before:absolute before:-bottom-px before:-left-px before:-right-px before:-top-px before:rounded-full before:border before:border-light"
+	class="before:border-1 fixed bottom-8 left-1/2 z-40 -translate-x-1/2 rounded-full bg-surface-high/50 p-1.5 shadow-xl backdrop-blur transition-transform duration-300 ease-out-3 before:absolute before:-bottom-px before:-left-px before:-right-px before:-top-px before:rounded-full before:border before:border-light"
+	style:transform={$footerVisibility > 0.5 ? 'translate(-50%, 200%)' : 'translate(-50%, 0)'}
 >
 	<ul class="flex items-center gap-1">
 		{#each links as link}

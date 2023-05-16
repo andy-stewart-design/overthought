@@ -21,6 +21,8 @@
 <NavTop theme={data.theme} />
 <NavBottom />
 <ViewTransition pathname={data.pathname}>
-	<slot />
+	<div class="relative z-10">
+		<slot />
+	</div>
 	<Footer />
 </ViewTransition>

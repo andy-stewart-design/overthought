@@ -14,8 +14,6 @@
 
 	$: rootMarginHeight = browser ? window.innerHeight + offsetBot : 0;
 
-	let activeTitle = '';
-
 	const observerCallback = (entries: IntersectionObserverEntry[]) => {
 		entries.forEach((entry) => {
 			const el = entry.target as HTMLElement;
@@ -24,9 +22,6 @@
 			} else {
 				// console.log(el.querySelector('h2')?.innerHTML, entry.intersectionRatio);
 				delete el.dataset.hidden;
-				if (entry.intersectionRatio >= 0.6) {
-					activeTitle = el.querySelector('h2')?.innerHTML ?? '';
-				}
 			}
 		});
 	};
@@ -43,4 +38,4 @@
 		});
 </script>
 
-<slot {observe} {activeTitle} />
+<slot {observe} />
