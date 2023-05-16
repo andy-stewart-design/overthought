@@ -11,7 +11,7 @@
 	<main class="border-b bg-background border-light lg:grid lg:grid-cols-12">
 		<!-- <HomeBg /> -->
 		<div class="relative border-b border-light lg:col-span-5 lg:border-b-0 xl:col-span-4">
-			<Container py="md" pb="xl" class="grid gap-y-5 lg:sticky lg:top-20">
+			<Container py="md" pb="xl" class="grid gap-y-5 !pb-10 !pt-10 lg:sticky lg:top-20 lg:!pb-30">
 				<div class="flex items-center gap-4">
 					<Image
 						cloud

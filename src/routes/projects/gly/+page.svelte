@@ -6,15 +6,19 @@
 	import Container from '@globals/layout/Container.svelte';
 	import Image from '$lib/components/media/Image.svelte';
 	import Video from '$lib/components/media/Video.svelte';
+	import Button from '@globals/Button.svelte';
 </script>
 
 <main class="border-b bg-background border-light lg:grid lg:grid-cols-12">
 	<div class="relative border-b border-light lg:col-span-5 lg:border-b-0 xl:col-span-4">
-		<Container py="md" pb="xl" class="grid gap-y-5 lg:sticky lg:top-20">
+		<Container py="none" class="grid gap-y-5 !pb-10 !pt-10 lg:sticky lg:top-20 lg:!pb-30">
 			<ul class="flex gap-2 text-sm font-medium">
-				<li>Web Design</li>
-				<li>·</li>
-				<li>Digital Strategy</li>
+				<li class="group list-inside list-['·'] first-of-type:list-none">
+					<span class="pl-2 group-first-of-type:p-0">Web Design</span>
+				</li>
+				<li class="group list-inside list-['·'] first-of-type:list-none">
+					<span class="pl-2 group-first-of-type:p-0">Digital Strategy</span>
+				</li>
 			</ul>
 			<h1 class="text-3xl font-semibold">
 				GLY is a general contractor building resilient, future-ready projects in the PNW
@@ -26,11 +30,14 @@
 				construction and provide them with a modern, dynamic platform to establish credibility,
 				demonstrate leadership within the industry, and attract talent.
 			</p>
-			<div class="border-t pt-5 font-medium border-light">
+			<div class="mt-3 border-t pt-5 font-medium border-light">
 				<span class="opacity-65">Agency:</span> Turnstyle
 			</div>
 			<div class="border-t pt-5 font-medium border-light">
 				<span class="opacity-65">Development:</span> R.J. LaCount
+			</div>
+			<div class="mt-4">
+				<Button link href="https://www.gly.com/">View Live Site</Button>
 			</div>
 		</Container>
 	</div>
@@ -68,7 +75,7 @@
 			/>
 			<Video
 				controls
-				src="https://res.cloudinary.com/andystewartdesign/video/upload/v1684160862/work/gly/GLY-Web-VideoModal.mp4"
+				src="/work/gly/GLY-Web-VideoModal.mp4"
 				poster="/work/gly/GLY-VideoModal-Poster.jpg"
 				class="rounded-lg"
 			/>

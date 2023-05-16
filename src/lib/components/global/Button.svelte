@@ -8,7 +8,7 @@
 </script>
 
 {#if link}
-	<a {href} data-sveltekit-preload-data="hover" class="group">
+	<a {href} data-sveltekit-preload-data="hover" class="group inline-block">
 		<div
 			class={'inline-block rounded border text-base font-medium text-foreground transition-colors duration-200 ease-out border-light group-hover:border-foreground ' +
 				(size === 'sm' && 'px-2.5 py-1')}

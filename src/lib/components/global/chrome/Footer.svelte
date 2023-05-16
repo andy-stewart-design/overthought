@@ -1,5 +1,4 @@
 <script context="module">
-	export const isFooterActive = writable(false);
 	export const footerVisibility = writable(0);
 </script>
 
@@ -25,13 +24,9 @@
 		entries.forEach((entry) => {
 			if (entry.isIntersecting) {
 				footerOpacity = entry.intersectionRatio > 0.95 ? 1 : entry.intersectionRatio;
-				$isFooterActive = true;
 				$footerVisibility = entry.intersectionRatio > 0.95 ? 1 : entry.intersectionRatio;
-				console.log($isFooterActive, footerOpacity);
 			} else {
-				$isFooterActive = false;
 				$footerVisibility = 0;
-				console.log($isFooterActive, footerOpacity);
 			}
 		});
 	};

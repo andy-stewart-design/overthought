@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { page } from '$app/stores';
-	import { isFooterActive, footerVisibility } from './Footer.svelte';
+	import { footerVisibility } from './Footer.svelte';
 	// import { Button } from 'neutral-ui';
 	// import NavSettings from './NavSettings.svelte';
 

@@ -40,16 +40,17 @@
 		{#if project.link}
 			<a
 				href={`/projects/${project.link}`}
-				class="absolute bottom-0 left-0 right-0 top-0 flex items-center justify-center bg-black/50 text-xl font-medium opacity-0 transition-opacity hover:opacity-100 cannot-hover:hidden"
+				class="group absolute bottom-0 left-0 right-0 top-0 flex items-center justify-center bg-black/50 text-xl font-medium opacity-0 transition-opacity focus-within:opacity-100 hover:opacity-100 focus:outline-none cannot-hover:hidden"
 			>
-				<span>View Project</span>
+				<span class="rounded border border-gray-100 bg-black/30 px-5 py-4 font-medium backdrop-blur"
+					>View Project</span
+				>
 			</a>
-		{/if}
-		{#if project.external}
-			<Container py="none" class="pointer-events-none absolute bottom-4 left-0 md:bottom-8">
+		{:else if project.external}
+			<Container py="none" class="absolute bottom-4 left-0 md:bottom-8">
 				<a
 					href={project.external.href}
-					class=" pointer-events-auto flex items-center gap-3 rounded border border-gray-100/15 bg-black/30 px-5 py-4 font-medium backdrop-blur transition-all hover:bg-white/60 hover:text-black focus-visible:opacity-100 can-hover:opacity-0 can-hover:group-hover:opacity-100 cannot-hover:hidden"
+					class="flex items-center gap-3 rounded border border-gray-100/15 bg-black/30 px-5 py-4 font-medium backdrop-blur transition-all hover:bg-white/60 hover:text-black focus-visible:opacity-100 can-hover:opacity-0 can-hover:hover:border-gray-100/60 can-hover:group-hover:opacity-100 cannot-hover:hidden"
 				>
 					<svg width="16" height="16" viewBox="0 0 16 16">
 						<path
@@ -65,10 +66,10 @@
 			</Container>
 		{/if}
 		<Container py="md" pt="sm" class="pointer-events-none absolute left-0 top-2">
-			<ul class="flex gap-2 pt-2">
+			<ul class="flex flex-wrap gap-2 pt-2">
 				{#each project.tags as tag}
 					<li
-						class="rounded-full bg-black/30 px-2.5 pb-1 pt-[3px] text-sm font-medium outline outline-gray-100/15 backdrop-blur"
+						class="rounded-full bg-black/30 px-2.5 pb-1 pt-[3px] text-sm font-medium text-gray-100 outline outline-gray-100/15 backdrop-blur"
 					>
 						{tag}
 					</li>

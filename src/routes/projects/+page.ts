@@ -32,7 +32,7 @@ const projects = [
 	{
 		client: 'GLY',
 		summary:
-			'is a general contractor building resilient, future-ready communities in the Pacific Northwest',
+			'is a general contractor building resilient, future-ready projects in the Pacific Northwest',
 		tags: ['Web Design', 'Digital Strategy'],
 		year: 2022,
 		status: 'Case Study Coming Soon',

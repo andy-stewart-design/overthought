@@ -2,6 +2,11 @@
 	type PaddingValue = 'xs' | 'sm' | 'md' | 'lg' | 'xl' | 'none' | 'hero';
 	type ElementOptions = 'div' | 'section' | 'main' | 'article' | 'header';
 
+	export { className as class };
+
+	let className: string | undefined = '';
+	if (className === '') className = undefined;
+
 	export let as: ElementOptions = 'div';
 	export let py: PaddingValue | null = 'sm';
 	export let pt: PaddingValue | null = null;
@@ -19,7 +24,7 @@
 
 <svelte:element
 	this={as}
-	class={`${$$props.class} py-`}
+	class={className}
 	class:pad-x={!pxNone}
 	class:py-0={isPaddingEqual && py === 'none'}
 	class:py-2={isPaddingEqual && py === 'xs'}
