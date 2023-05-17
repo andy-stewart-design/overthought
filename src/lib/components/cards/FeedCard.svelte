@@ -52,30 +52,31 @@
 		<p class="tracking-wide md:text-lg">
 			{@html content.body}
 		</p>
-		{#if content.link || content.categories}
-			<div class="flex items-baseline gap-2 border-t pt-7 border-light">
-				{#if content.link}
-					<a
-						href={content.link.href}
-						class="text-xl font-semibold"
-						target={content.link.external ? '_blank' : '_self'}
-						>{content.link.text}
-						{#if content.link.external}
-							<span class="pl-1">↗</span>
+		<div class="flex items-baseline gap-2 border-t pt-7 border-light">
+			{#if content.link}
+				<a
+					href={content.link.href}
+					class="text-xl font-semibold"
+					target={content.link.external ? '_blank' : ''}
+				>
+					{content.link.text}
+					{#if content.link.external}
+						<span class="pl-1">↗</span>
+					{:else}
+						<span class="pl-1">→</span>
+					{/if}
+				</a>
+			{/if}
+			{#if content.categories}
+				<div class="flex grow justify-end gap-2 text-right text-sm font-medium opacity-65">
+					{#each content.categories as category, index}
+						<span>{category}</span>
+						{#if index < content.categories.length - 1}
+							<span>·</span>
 						{/if}
-					</a>
-				{/if}
-				{#if content.categories}
-					<div class="flex grow justify-end gap-2 text-right text-sm font-medium opacity-65">
-						{#each content.categories as category, index}
-							<span>{category}</span>
-							{#if index < content.categories.length - 1}
-								<span>·</span>
-							{/if}
-						{/each}
-					</div>
-				{/if}
-			</div>
-		{/if}
+					{/each}
+				</div>
+			{/if}
+		</div>
 	</Container>
 </div>

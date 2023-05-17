@@ -28,13 +28,31 @@
 				region's most respected locally-owned general contractors. We designed and built their new
 				website from the ground up to elevate and celebrate their outcomes-minded approach to
 				construction and provide them with a modern, dynamic platform to establish credibility,
-				demonstrate leadership within the industry, and attract talent.
+				demonstrate leadership within their industry, and attract talent.
 			</p>
-			<div class="mt-3 border-t pt-5 font-medium border-light">
+			<div class="mt-3 grid grid-cols-[72px_1fr] border-t pt-5 font-medium border-light">
+				<span class="opacity-65">Scope:</span>
+				<!-- Responsive Design · UI/UX · Prototyping · Art Direction -->
+				<ul class="flex flex-wrap gap-x-2">
+					<li class="group after:content-['·'] last-of-type:after:content-none">
+						<span class="pr-2 group-last-of-type:p-0">Responsive Design</span>
+					</li>
+					<li class="group after:content-['·'] last-of-type:after:content-none">
+						<span class="pr-2 group-last-of-type:p-0">UI/UX</span>
+					</li>
+					<li class="group after:content-['·'] last-of-type:after:content-none">
+						<span class="pr-2 group-last-of-type:p-0">Prototyping</span>
+					</li>
+					<li class="group after:content-['·'] last-of-type:after:content-none">
+						<span class="pr-2 group-last-of-type:p-0">Art Direction</span>
+					</li>
+				</ul>
+			</div>
+			<div class="grid grid-cols-[72px_1fr] border-t pt-5 font-medium border-light">
 				<span class="opacity-65">Agency:</span> Turnstyle
 			</div>
-			<div class="border-t pt-5 font-medium border-light">
-				<span class="opacity-65">Development:</span> R.J. LaCount
+			<div class="grid grid-cols-[72px_1fr] border-t pt-5 font-medium border-light">
+				<span class="opacity-65">Dev:</span> R.J. LaCount
 			</div>
 			<div class="mt-4">
 				<Button link href="https://www.gly.com/">View Live Site</Button>

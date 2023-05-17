@@ -1,6 +1,23 @@
 {
 	"entries": [
 		{
+			"title": "Teague Website 2023",
+			"body": "Last week, we relaunched the website for our friends over at Teague, one of the coolest design consultancies in the biz. This was an interesting project because it was more evolution then revolution. We launched a previous version of their site 4+ years ago. Rather than throwing that work out and starting over, a lot of our time was spent rethinking and reimaging our original designs to make them streamlined, more resilient, and more flexible.",
+			"date": "05/15/2023",
+			"video": {
+				"src": "/work/teague/Teague-2023-Mobile.mp4",
+				"poster": "/work/teague/Teague-2023-Mobile.jpg",
+				"width": 1920,
+				"height": 1080
+			},
+			"link": {
+				"text": "Check it out",
+				"href": "https://teague.com/",
+				"external": true
+			},
+			"categories": ["Case Study", "Web Design"]
+		},
+		{
 			"title": "Squiggler App",
 			"body": "This personal project began as conversation with a coworker about a tool we wish we had for a branding project. We wanted a way to generatively create SVG squiggles that we could manipulate across different axes like sharpness, flow, size, etc. Developing it required a lot of mind-bending research into the technical details of how SVG paths are drawn and the math behind sin waves, but the result is a simple and easy-to-use single-purpose app.",
 			"date": "05/06/2023",
@@ -56,7 +73,11 @@
 				"width": 1920,
 				"height": 1080
 			},
-
+			"link": {
+				"text": "Check it out",
+				"href": "/projects/gly",
+				"external": false
+			},
 			"categories": ["Case Study", "Web Design"]
 		},
 		{
@@ -85,6 +106,11 @@
 				"alt": "Mobile screenshots of the GLY website",
 				"width": 1920,
 				"height": 1080
+			},
+			"link": {
+				"text": "Check it out",
+				"href": "/projects/gly",
+				"external": false
 			},
 			"categories": ["Case Study", "Web Design"]
 		}

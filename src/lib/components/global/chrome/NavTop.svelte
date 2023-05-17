@@ -77,7 +77,7 @@
 					{@html contrast}
 				</ListboxButton>
 				<ListboxOptions
-					class="absolute right-0 mt-1 w-32 origin-top-right scale-50 rounded border border-foreground/10 bg-surface-mid py-1 opacity-0 shadow-lg transition-none ease-out-5 focus:outline-0 data-[state=open]:scale-100 data-[state=open]:opacity-100 data-[state=open]:transition-all data-[state=open]:duration-500 data-[state=open]:ease-out-5"
+					class="absolute right-2 mt-1 w-32 origin-top-right scale-50 rounded border border-foreground/10 bg-surface-mid py-1 opacity-0 shadow-lg transition-none ease-out-5 focus:outline-0 data-[state=open]:scale-100 data-[state=open]:opacity-100 data-[state=open]:transition-all data-[state=open]:duration-500 data-[state=open]:ease-out-5 md:right-0"
 				>
 					{#each options as option}
 						<ListboxOption

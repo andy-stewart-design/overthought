@@ -48,9 +48,9 @@
 		>
 			<p class="sr-only">Video controls</p>
 			<div
-				class="relative flex h-16 w-16 items-center justify-center rounded-full border bg-white/80 text-black shadow-xl transition-transform duration-500 ease-out-3 border-light group-hover:scale-125"
+				class="relative flex h-14 w-14 items-center justify-center rounded-full border bg-white/80 text-black shadow-xl transition-transform duration-500 ease-out-3 border-light group-hover:scale-125 md:h-16 md:w-16"
 			>
-				<span class="ml-1 block w-8">
+				<span class="block w-8" class:ml-1={paused}>
 					{@html controlsIcon}
 				</span>
 			</div>

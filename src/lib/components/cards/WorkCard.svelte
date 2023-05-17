@@ -66,12 +66,12 @@
 			</Container>
 		{/if}
 		<Container py="md" pt="sm" class="pointer-events-none absolute left-0 top-2">
-			<ul class="flex flex-wrap gap-2 pt-2">
+			<ul class="flex flex-wrap gap-1 pt-2">
 				{#each project.tags as tag}
 					<li
-						class="rounded-full bg-black/30 px-2.5 pb-1 pt-[3px] text-sm font-medium text-gray-100 outline outline-gray-100/15 backdrop-blur"
+						class="overflow-hidden rounded-full border border-gray-100/15 text-sm font-medium text-gray-100 backdrop-blur"
 					>
-						{tag}
+						<span class="inline-block bg-black/30 px-2.5 pb-1 pt-[3px]">{tag}</span>
 					</li>
 				{/each}
 			</ul>
