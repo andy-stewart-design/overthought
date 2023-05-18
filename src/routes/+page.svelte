@@ -32,9 +32,7 @@
 				</p>
 			</Container>
 		</div>
-		<div
-			class="relative min-h-screen border-light sm:border-l sm:border-r lg:col-span-7 xl:col-span-8"
-		>
+		<div class="relative min-h-screen border-light lg:col-span-7 lg:border-l xl:col-span-8">
 			{#each timeline.entries as entry, index}
 				<FeedCard content={entry} {observe} {index} />
 			{/each}

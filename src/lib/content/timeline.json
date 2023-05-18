@@ -1,8 +1,25 @@
 {
 	"entries": [
 		{
+			"title": "Portfolio 2020",
+			"body": "Today, I officially switched my domain over to the website you're seeing now. I'm posting this in memory of the previous version of my portfolio. It wasn't much, but I do really enjoy the op-art eyeball animation I managed to pull off with a simple SVG and GSAP. RIP, little buddy. You were here for a good time and, to be honest, a longer time than I intended.",
+			"date": "05/17/2023",
+			"video": {
+				"src": "/work/development/Portfolio-2020.mp4",
+				"poster": "/work/development/Portfolio-2020-Poster.jpg",
+				"width": 1920,
+				"height": 1080
+			},
+			"link": {
+				"text": "Check it out",
+				"href": "https://andy-stewart-2020.netlify.app/",
+				"external": true
+			},
+			"categories": ["Creative Coding", "GSAP"]
+		},
+		{
 			"title": "Teague Website 2023",
-			"body": "Last week, we relaunched the website for our friends over at Teague, one of the coolest design consultancies in the biz. This was an interesting project because it was more evolution then revolution. We launched a previous version of their site 4+ years ago. Rather than throwing that work out and starting over, a lot of our time was spent rethinking and reimaging our original designs to make them streamlined, more resilient, and more flexible.",
+			"body": "Last week, we relaunched the website for our friends over at Teague, one of the coolest design consultancies in the biz. This was an interesting project because it was more evolution then revolution. We launched a previous version of their site 4+ years ago. Rather than throwing that work out and starting over, We spent much of our time rethinking and reimaging our original designs to make them more streamlined, resilient, and flexible.",
 			"date": "05/15/2023",
 			"video": {
 				"src": "/work/teague/Teague-2023-Mobile.mp4",
