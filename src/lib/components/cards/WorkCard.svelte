@@ -13,10 +13,10 @@
 			src: string;
 			alt: string;
 		};
-		link?: string;
-		external?: {
+		link?: {
 			text: string;
 			href: string;
+			external: boolean;
 		};
 	}
 
@@ -37,19 +37,10 @@
 			imageWidths={[800, 1200]}
 			sizes={[['769px', '50vh'], ['100vh']]}
 		/>
-		{#if project.link}
-			<a
-				href={`/projects/${project.link}`}
-				class="group absolute bottom-0 left-0 right-0 top-0 flex items-center justify-center bg-black/50 text-xl font-medium opacity-0 transition-opacity focus-within:opacity-100 hover:opacity-100 focus:outline-none cannot-hover:hidden"
-			>
-				<span class="rounded border border-gray-100 bg-black/30 px-5 py-4 font-medium backdrop-blur"
-					>View Project</span
-				>
-			</a>
-		{:else if project.external}
+		{#if project.link?.external}
 			<Container py="none" class="absolute bottom-4 left-0 md:bottom-8">
 				<a
-					href={project.external.href}
+					href={project.link.href}
 					class="flex items-center gap-3 rounded border border-gray-100/15 bg-black/30 px-5 py-4 font-medium backdrop-blur transition-all hover:bg-white/60 hover:text-black focus-visible:opacity-100 can-hover:opacity-0 can-hover:hover:border-gray-100/60 can-hover:group-hover:opacity-100 cannot-hover:hidden"
 				>
 					<svg width="16" height="16" viewBox="0 0 16 16">
@@ -61,9 +52,16 @@
 							fill="none"
 						/>
 					</svg>
-					{project.external.text}
+					{project.link.text}
 				</a>
 			</Container>
+		{:else if project.link}
+			<a
+				href={`/projects/${project.link.href}`}
+				class="group absolute bottom-0 left-0 right-0 top-0 flex items-center justify-center bg-black/50 text-xl font-medium opacity-0 backdrop-blur transition-opacity focus-within:opacity-100 hover:opacity-100 focus:outline-none cannot-hover:hidden"
+			>
+				<span class="rounded border border-gray-100 px-5 py-4 font-medium">View Project</span>
+			</a>
 		{/if}
 		<Container py="md" pt="sm" class="pointer-events-none absolute left-0 top-2">
 			<ul class="flex flex-wrap gap-1 pt-2">
@@ -83,7 +81,7 @@
 			{project.status}
 		</h4>
 		{#if project.link}
-			<a href={`/projects/${project.link}`} class="block">
+			<a href={`/projects/${project.link.href}`} class="block hover:opacity-60 transition-opacity">
 				<h3 class="text-3xl">
 					<span class="uppercase">{project.client}</span>{` ${project.summary}`}
 				</h3>
@@ -93,14 +91,14 @@
 				<span class="uppercase">{project.client}</span>{` ${project.summary}`}
 			</h3>
 		{/if}
-		{#if project.link || project.external}
+		{#if project.link}
 			<div class="mt-2 flex gap-6 can-hover:hidden">
 				{#if project.link}
-					<Button link href={`/projects/${project.link}`}>View Project</Button>
+					<Button link href={`/projects/${project.link.href}`}>View Project</Button>
 				{/if}
-				{#if project.external}
-					<a href={project.external.href} class="flex items-center gap-1.5 font-medium">
-						{project.external.text}
+				{#if project.link.external}
+					<a href={project.link.href} class="flex items-center gap-1.5 font-medium">
+						{project.link.text}
 						<svg width="16" height="16" viewBox="0 0 16 16">
 							<path
 								d="M12 12V4H4M11.5 4.5L3 13"

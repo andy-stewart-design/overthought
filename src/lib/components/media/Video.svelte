@@ -16,7 +16,7 @@
 	export let posterSize = 1200;
 	export { className as class };
 
-	let paused = true;
+	let paused = !autoplay;
 	let className: string = '';
 	let cloudName = 'v1676297405';
 	let cloudSrc = `https://res.cloudinary.com/andystewartdesign/video/upload/f_auto,q_auto/${cloudName}${src}`;
@@ -29,9 +29,9 @@
 		class={className}
 		bind:paused
 		{muted}
-		{autoplay}
 		{width}
 		{height}
+		{autoplay}
 		{loop}
 		{playsinline}
 		poster={poster && setCloudSrc(poster, posterSize)}
