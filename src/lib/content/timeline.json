@@ -1,6 +1,23 @@
 {
 	"entries": [
 		{
+			"title": "Vulcan Real Estate Launch",
+			"body": "The new Vulcan Real Estate brand and website officially launched earlier this weekand I couldn't be more excited for Josh, Deron, and the rest of the VRE team. They were a joy to collaborate with over the past year-and-change and worked diligently to shepherd this project through to completion.",
+			"date": "05/30/2023",
+			"video": {
+				"src": "/work/vulcan-real-estate/VRE-Home-Desktop.mp4",
+				"poster": "/work/vulcan-real-estate/VRE-Home-Desktop-Poster.jpg",
+				"width": 1920,
+				"height": 1080
+			},
+			"link": {
+				"text": "View Case Study",
+				"href": "/projects/vulcan-real-estate",
+				"external": false
+			},
+			"categories": ["Brand Identity", "Web Design"]
+		},
+		{
 			"title": "Portfolio 2020",
 			"body": "Today, I officially switched my domain over to the website you're seeing now. I'm posting this in memory of the previous version of my portfolio. It wasn't much, but I do really enjoy the op-art eyeball animation I managed to pull off with a simple SVG and GSAP. RIP, little buddy. You were here for a good time and, to be honest, a longer time than I intended.",
 			"date": "05/17/2023",
