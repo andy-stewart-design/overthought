@@ -6,7 +6,7 @@
 	export let data: PageData;
 </script>
 
-<main class="bg-background">
+<main class="bg-background max-w-[1800px] mx-auto">
 	<Container as="header" py="lg" class="grid border-b uppercase tracking-tighter border-light">
 		<h1 class="text-8xl md:text-9xl">Recent Work</h1>
 	</Container>

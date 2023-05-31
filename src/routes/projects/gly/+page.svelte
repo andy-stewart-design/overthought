@@ -9,7 +9,7 @@
 	import Button from '@globals/Button.svelte';
 </script>
 
-<main class="border-b bg-background border-light lg:grid lg:grid-cols-12">
+<main class="border-b bg-background border-light lg:grid lg:grid-cols-12 max-w-[1800px] mx-auto">
 	<div class="relative border-b border-light lg:col-span-5 lg:border-b-0 xl:col-span-4">
 		<Container py="none" class="grid gap-y-5 !pb-10 !pt-10 lg:sticky lg:top-20 lg:!pb-30">
 			<ul class="flex gap-2 text-sm font-medium">
