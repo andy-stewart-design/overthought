@@ -1,14 +1,14 @@
 /** @type {import('tailwindcss').Config} */
-const defaultTheme = require('tailwindcss/defaultTheme');
-const plugin = require('tailwindcss/plugin');
+import { fontFamily, spacing } from 'tailwindcss/defaultTheme';
+import plugin from 'tailwindcss/plugin';
 
 const config = {
 	content: ['./src/**/*.{html,js,svelte,ts}'],
 
 	theme: {
 		fontFamily: {
-			sans: ['Andy Sans', ...defaultTheme.fontFamily.sans],
-			mono: ['Andy mono', ...defaultTheme.fontFamily.mono]
+			sans: ['Andy Sans', ...fontFamily.sans],
+			mono: ['Andy mono', ...fontFamily.mono]
 		},
 		screens: {
 			xs: '480px',
@@ -55,7 +55,13 @@ const config = {
 				18: '4.5rem',
 				22: '5.5rem',
 				30: '7.5rem',
-				34: '7.5rem'
+				34: '7.5rem',
+				xs: spacing[2],
+				sm: spacing[4],
+				md: spacing[10],
+				lg: spacing[20],
+				xl: spacing[30],
+				hero: spacing[64]
 			},
 			transitionTimingFunction: {
 				'in-2': 'cubic-bezier(0.32, 0, 0.67, 0)',
@@ -84,6 +90,9 @@ const config = {
 				},
 				'.border-xlt': {
 					'@apply border-foreground/5': {}
+				},
+				'.px-app': {
+					'@apply px-2 md:px-8': {}
 				}
 			});
 		}

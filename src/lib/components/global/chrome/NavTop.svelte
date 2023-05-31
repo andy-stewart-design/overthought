@@ -32,10 +32,11 @@
 </script>
 
 <div
-	class="sticky left-0 top-0 z-50 border-b bg-background/50 backdrop-blur-md transition-transform duration-500 ease-out-3 border-light"
+	class="sticky left-0 top-0 z-50 bg-background/50 backdrop-blur-md border-b transition-transform duration-500 ease-out-3 border-light"
 	style:transform={$footerVisibility > 0.5 ? 'translate(0, -110%)' : 'translate(0, 0)'}
 >
-	<Container class="flex h-20 w-screen items-center justify-between" py="none">
+	<div class="flex h-20 items-center w-screen justify-between px-app">
+		<!-- <Container class="flex h-20 w-screen items-center justify-between" py="none"> -->
 		<a href="/" class="relative w-11" class:pointer-events-none={$page.url.pathname === '/'}>
 			<p class="sr-only">Andy's logo</p>
 			{@html andyLogo}
@@ -91,5 +92,6 @@
 				</ListboxOptions>
 			</Listbox>
 		</div>
-	</Container>
+		<!-- </Container> -->
+	</div>
 </div>
