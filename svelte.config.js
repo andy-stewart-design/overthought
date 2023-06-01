@@ -1,6 +1,6 @@
-import preprocess from 'svelte-preprocess';
-import adapter from '@sveltejs/adapter-auto';
-import { vitePreprocess } from '@sveltejs/kit/vite';
+import preprocess from "svelte-preprocess";
+import adapter from "@sveltejs/adapter-auto";
+import { vitePreprocess } from "@sveltejs/kit/vite";
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -9,19 +9,19 @@ const config = {
 	preprocess: [
 		vitePreprocess(),
 		preprocess({
-			postcss: true
-		})
+			postcss: true,
+		}),
 	],
 
 	kit: {
 		adapter: adapter(),
 		alias: {
-			'@content': './src/lib/content',
-			'@globals': './src/lib/components/global',
-			'@routes': './src/routes',
-			'@svg': './src/lib/svg'
-		}
-	}
+			"@content": "./src/lib/content",
+			"@globals": "./src/lib/components/global",
+			"@routes": "./src/routes",
+			"@svg": "./src/lib/svg",
+		},
+	},
 };
 
 export default config;

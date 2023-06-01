@@ -1,6 +1,5 @@
 <script lang="ts">
-	// TODO: Move GLY to JSON file
-	// TODO: Update image sizes specification on components
+	// TODO: Update image sizes specs
 
 	import Image from "$lib/components/media/Image.svelte";
 	import Video from "$lib/components/media/Video.svelte";
@@ -14,18 +13,19 @@
 	<div class="mx-auto max-w-screen-3xl lg:grid lg:grid-cols-12">
 		<div class="relative border-b border-light lg:col-span-5 lg:border-b-0 xl:col-span-4">
 			<div class="grid gap-y-5 pb-md pt-md px-app lg:sticky lg:top-20 lg:pb-xl">
+				<a href="/projects" class="font-medium transition-opacity hover:opacity-60">← All Projects</a>
 				<h1 class="text-3xl font-semibold">
-					{data.metadata.client}
-					{data.content.headline}
+					{data.client}
+					{data.headline}
 				</h1>
 				<p>
-					{data.content.description}
+					{data.description}
 				</p>
 				<div class="mt-3 grid grid-cols-[72px_1fr] border-t pt-5 font-medium border-light">
 					<span class="opacity-65">Scope:</span>
 					<ul class="flex flex-wrap gap-x-2">
-						{#if data.content.scope}
-							{#each data.content.scope as service}
+						{#if data.scope}
+							{#each data.scope as service}
 								<li class="group after:content-['·'] last-of-type:after:content-none">
 									<span class="pr-2 group-last-of-type:p-0">{service}</span>
 								</li>
@@ -33,13 +33,13 @@
 						{/if}
 					</ul>
 				</div>
-				{#if data.content.partners}
-					{#each data.content.partners as partner}
+				{#if data.partners}
+					{#each data.partners as partner}
 						<div class="grid grid-cols-[72px_1fr] border-t pt-5 font-medium border-light">
 							<span class="capitalize opacity-65">{partner.type}:</span>
 							<div>
 								{#if partner.href}
-									<a href={partner.href} target="_blank">
+									<a href={partner.href} target="_blank" class="transition-opacity hover:opacity-60">
 										{partner.name} <span class="font-normal">↗</span>
 									</a>
 								{:else}
@@ -49,16 +49,16 @@
 						</div>
 					{/each}
 				{/if}
-				{#if data.content.liveLink}
+				{#if data.liveLink}
 					<div class="mt-4">
-						<Button link href={data.content.liveLink}>View Live Site</Button>
+						<Button link href={data.liveLink}>View Live Site</Button>
 					</div>
 				{/if}
 			</div>
 		</div>
 		<div class="relative grid min-h-screen gap-y-8 lg:col-span-7 xl:col-span-8">
 			<div class="grid gap-y-5 pb-xl pt-md px-app">
-				{#each data.content.media as media}
+				{#each data.media as media}
 					{#if media.type === "image"}
 						<Image
 							cloud

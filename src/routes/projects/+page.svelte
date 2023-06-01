@@ -1,8 +1,8 @@
 <script lang="ts">
 	import WorkCard from "$lib/components/cards/WorkCard.svelte";
-	import type { PageData } from "./$types";
+	import type { PageServerData } from "./$types";
 
-	export let data: PageData;
+	export let data: PageServerData;
 </script>
 
 <main class="bg-background">

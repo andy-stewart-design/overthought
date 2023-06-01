@@ -36,6 +36,59 @@
 					"external": false
 				},
 				"featured": true
+			},
+			"content": {
+				"headline": "builds resilient, future-ready projects in the PNW",
+				"description": "Rooted in the Pacific Northwest’s culture of innovation and creativity, GLY is one of the region's most respected locally-owned general contractors. We designed and built their new website from the ground up to elevate and celebrate their outcomes-minded approach to construction and provide them with a modern, dynamic platform to establish credibility, demonstrate leadership within their industry, and attract talent.",
+				"scope": ["Responsive Design", "UI/UX", "Prototyping", "Art Direction"],
+				"partners": [
+					{
+						"type": "Agency",
+						"name": "Turnstyle",
+						"href": "https://turnstyle.studio/"
+					},
+					{
+						"type": "Dev",
+						"name": "R.J. LaCount",
+						"href": "https://rjlacount.com/"
+					}
+				],
+				"liveLink": "https://www.gly.com/",
+				"media": [
+					{
+						"type": "video",
+						"src": "/work/gly/GLY-PageTransitions.mp4",
+						"poster": "/work/gly/GLY-PageTransitions-Poster.jpg",
+						"autoplay": false
+					},
+					{
+						"type": "image",
+						"src": "/work/gly/GLY-Web-Home.jpg",
+						"alt": "The first five modules on the GLY homepage"
+					},
+					{
+						"type": "image",
+						"src": "/work/gly/GLY-Web-Mobile.jpg",
+						"alt": "A row of mobile screenshots showing off the design of the GLY Website"
+					},
+
+					{
+						"type": "image",
+						"src": "/work/gly/GLY-Web-Desktop.jpg",
+						"alt": "Close up shot of a water bottle with the new Vulcan Real Estate Logo"
+					},
+					{
+						"type": "video",
+						"src": "/work/gly/GLY-Web-VideoModal.mp4",
+						"poster": "/work/gly/GLY-VideoModal-Poster.jpg",
+						"autoplay": false
+					},
+					{
+						"type": "image",
+						"src": "/work/gly/GLY-Web-Nav.jpg",
+						"alt": "Detail view of the nav menu overlay on the GLY website"
+					}
+				]
 			}
 		},
 		{
