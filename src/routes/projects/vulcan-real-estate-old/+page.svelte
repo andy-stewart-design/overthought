@@ -3,7 +3,6 @@
 	// TODO: Image alt text
 	// TODO: Update image sizes specification on components
 
-	import Container from "@globals/layout/Container.svelte";
 	import Image from "$lib/components/media/Image.svelte";
 	import Video from "$lib/components/media/Video.svelte";
 	import Button from "@globals/Button.svelte";

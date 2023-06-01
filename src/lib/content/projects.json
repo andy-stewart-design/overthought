@@ -1,0 +1,213 @@
+{
+	"entries": [
+		{
+			"metadata": {
+				"client": "Teague",
+				"summary": "is a design consultancy turning human aspiration into products and experiences",
+				"tags": ["Web Design", "Digital Strategy"],
+				"year": 2023,
+				"status": "Case Study Coming Soon",
+				"img": {
+					"src": "/work/teague/Teague-WorkCard.jpg",
+					"alt": "lorem ipsum"
+				},
+				"link": {
+					"text": "View Site",
+					"href": "teague",
+					"external": true
+				},
+				"featured": true
+			}
+		},
+		{
+			"metadata": {
+				"client": "GLY",
+				"summary": "is a general contractor building resilient, future-ready projects in the Pacific Northwest",
+				"tags": ["Web Design", "Digital Strategy"],
+				"year": 2022,
+				"status": "Case Study",
+				"img": {
+					"src": "/work/gly/GLY-WorkCard.jpg",
+					"alt": "lorem ipsum"
+				},
+				"link": {
+					"text": "View Project",
+					"href": "gly",
+					"external": false
+				},
+				"featured": true
+			}
+		},
+		{
+			"metadata": {
+				"client": "Vulcan Real Estate",
+				"summary": "is working to ensure positive outcomes for all",
+				"tags": ["Visual Identity", "Web Design"],
+				"year": 2023,
+				"status": "Case Study",
+				"link": {
+					"text": "View Project",
+					"href": "vulcan-real-estate",
+					"external": false
+				},
+				"img": {
+					"src": "/work/vulcan-real-estate/VRE-WorkCard.jpg",
+					"alt": "lorem ipsum"
+				},
+				"featured": false
+			},
+			"content": {
+				"headline": "develops imaginative spaces that propel human progress",
+				"description": "A brainchild of Microsoft co-founder Paul Allen and the engine behind Seattle's vibrant South Lake Union neighborhood, Vulcan Real Estate is one of the Pacific Northwest’s most respected developers. After Allen’s passing, the team at Vulcan saw a need to reposition themselves in the market and reimagine their vision for the future. Alongside our partners at Stoke Strategy and Metric Media, we helped breathe new life into Vulcan’s brand with a revitalized strategy, visual identity, and website.",
+				"scope": ["Visual Identity", "Web Design", "UI/UX", "Prototyping", "Art Direction"],
+				"partners": [
+					{
+						"type": "Agency",
+						"name": "Turnstyle",
+						"href": "https://turnstyle.studio/"
+					},
+					{
+						"type": "Dev",
+						"name": "Metric Media",
+						"href": "https://www.metricmedia.com/"
+					}
+				],
+				"liveLink": "https://vulcanrealestate.com/",
+				"media": [
+					{
+						"type": "image",
+						"src": "/work/vulcan-real-estate/VRE-Logo-Primary.png",
+						"alt": "The primary logo for the redesigned Vulcan Real Estate visual identity"
+					},
+					{
+						"type": "image",
+						"src": "/work/vulcan-real-estate/VRE-Logo-Comparison.png",
+						"alt": "Side-by-side comparison of the old and new Vulcan Real Estate logos"
+					},
+					{
+						"type": "video",
+						"src": "/work/vulcan-real-estate/VRE-Logo-Animation.mp4",
+						"poster": "/work/vulcan-real-estate/VRE-Logo-Animation-Poster.jpg",
+						"autoplay": true
+					},
+					{
+						"type": "image",
+						"src": "/work/vulcan-real-estate/VRE-WaterBottle.jpg",
+						"alt": "Close up shot of a water bottle with the new Vulcan Real Estate Logo"
+					},
+					{
+						"type": "image",
+						"src": "/work/vulcan-real-estate/VRE-BusinessCards.jpg",
+						"alt": "The front and back of Vulcan Real Estate's business cards on a two-tone emerald background"
+					},
+					{
+						"type": "image",
+						"src": "/work/vulcan-real-estate/VRE-Guidelines.jpg",
+						"alt": "Several pages from the Vulcan Real Estate brand guidelines arranged in a grid"
+					},
+					{
+						"type": "video",
+						"src": "/work/vulcan-real-estate/VRE-Home-Desktop.mp4",
+						"poster": "/work/vulcan-real-estate/VRE-Home-Desktop-Poster.jpg",
+						"autoplay": false
+					},
+					{
+						"type": "image",
+						"src": "/work/vulcan-real-estate/VRE-Mobile-Collage.jpg",
+						"alt": "A row of mobile screenshots showing off the design of the Vulcan Real Estate Website"
+					},
+					{
+						"type": "image",
+						"src": "/work/vulcan-real-estate/VRE-Home-Desktop-Collage.jpg",
+						"alt": "A grid of desktop screenshots showing off the design of the Vulcan Real Estate Website"
+					}
+				]
+			}
+		},
+		{
+			"metadata": {
+				"client": "Squiggler",
+				"summary": "is a generative design tool for creating SVG waves and squiggles",
+				"tags": ["Development", "UI Design"],
+				"year": 2022,
+				"status": "Case Study Coming Soon",
+				"img": {
+					"src": "/work/development/Squiggler-WorkCard.jpg",
+					"alt": "lorem ipsum"
+				},
+				"link": {
+					"text": "View App",
+					"href": "https://www.squiggler.app/",
+					"external": true
+				},
+				"featured": false
+			}
+		},
+		{
+			"metadata": {
+				"client": "AllStock",
+				"summary": "is a Figma plugin that simplifies browsing free image libraries",
+				"tags": ["Figma Plugin", "Development"],
+				"year": 2023,
+				"status": "Case Study Coming Soon",
+				"img": {
+					"src": "/work/figma/AllStock-WorkCard.jpg",
+					"alt": "lorem ipsum"
+				},
+				"link": {
+					"text": "View Plugin",
+					"href": "https://www.figma.com/community/plugin/1235675201027690011/AllStock",
+					"external": true
+				},
+				"featured": false
+			}
+		},
+		{
+			"metadata": {
+				"client": "Carbon Direct",
+				"summary": "is working to make climate science more actionable at scale",
+				"tags": ["Identity", "Web Design", "Creative Coding"],
+				"year": 2022,
+				"status": "Case Study Coming Soon",
+				"img": {
+					"src": "/work/carbon-direct/CarbonDirect-WorkCard.jpg",
+					"alt": "lorem ipsum"
+				},
+				"featured": false
+			}
+		},
+		{
+			"metadata": {
+				"client": "Get Some Ipsum",
+				"summary": "is a Figma plugin for generating better placeholder text",
+				"tags": ["Figma Plugin", "Development"],
+				"year": 2023,
+				"status": "Case Study Coming Soon",
+				"img": {
+					"src": "/work/figma/GetSomeIpsum-WorkCard.jpg",
+					"alt": "lorem ipsum"
+				},
+				"link": {
+					"text": "View Plugin",
+					"href": "https://www.figma.com/community/plugin/1225446981019698507/Get-Some-Ipsum",
+					"external": true
+				},
+				"featured": false
+			}
+		},
+		{
+			"metadata": {
+				"client": "Cipher News",
+				"summary": "is a climate-focused publication covering the transition to net-zero",
+				"tags": ["Product Design", "User Experience"],
+				"year": 2023,
+				"status": "Work in Progress",
+				"img": {
+					"src": "/work/cipher/Cipher-WorkCard.jpg",
+					"alt": "lorem ipsum"
+				},
+				"featured": false
+			}
+		}
+	]
+}

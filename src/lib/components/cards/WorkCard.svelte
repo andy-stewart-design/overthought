@@ -1,7 +1,6 @@
 <script lang="ts">
-	import Image from '$lib/components/media/Image.svelte';
-	import Button from '@globals/Button.svelte';
-	import Container from '@globals/layout/Container.svelte';
+	import Image from "$lib/components/media/Image.svelte";
+	import Button from "@globals/Button.svelte";
 
 	interface Project {
 		client: string;
@@ -31,14 +30,14 @@
 	<div class="group relative bg-surface-mid">
 		<Image
 			cloud
-			class={'aspect-[4/5] object-cover'}
+			class={"aspect-[4/5] object-cover"}
 			src={project.img.src}
 			alt={project.img.alt}
 			imageWidths={[800, 1200]}
-			sizes={[['769px', '50vh'], ['100vh']]}
+			sizes={[["769px", "50vh"], ["100vh"]]}
 		/>
 		{#if project.link?.external}
-			<Container py="none" class="absolute bottom-4 left-0 md:bottom-8">
+			<div class="absolute bottom-4 left-0 px-app md:bottom-8">
 				<a
 					href={project.link.href}
 					class="flex items-center gap-3 rounded border border-gray-100/15 bg-black/30 px-5 py-4 font-medium backdrop-blur transition-all hover:bg-white/60 hover:text-black focus-visible:opacity-100 can-hover:opacity-0 can-hover:hover:border-gray-100/60 can-hover:group-hover:opacity-100 cannot-hover:hidden"
@@ -54,7 +53,7 @@
 					</svg>
 					{project.link.text}
 				</a>
-			</Container>
+			</div>
 		{:else if project.link}
 			<a
 				href={`/projects/${project.link.href}`}
@@ -63,7 +62,7 @@
 				<span class="rounded border border-gray-100 px-5 py-4 font-medium">View Project</span>
 			</a>
 		{/if}
-		<Container py="md" pt="sm" class="pointer-events-none absolute left-0 top-2">
+		<div class="pointer-events-none absolute left-0 top-2 pb-md pt-sm px-app">
 			<ul class="flex flex-wrap gap-1 pt-2">
 				{#each project.tags as tag}
 					<li
@@ -73,15 +72,15 @@
 					</li>
 				{/each}
 			</ul>
-		</Container>
+		</div>
 	</div>
-	<Container py="md" pb="lg" class="grid gap-5">
+	<div class="grid gap-5 pb-lg pt-md px-app">
 		<h4 class="text-sm font-medium slashed-zero tabular-nums opacity-65">
 			{project.year} <span class="mx-1">·</span>
 			{project.status}
 		</h4>
-		{#if project.link}
-			<a href={`/projects/${project.link.href}`} class="block hover:opacity-60 transition-opacity">
+		{#if project.link && !project.link.external}
+			<a href={`/projects/${project.link.href}`} class="block transition-opacity hover:opacity-60">
 				<h3 class="text-3xl">
 					<span class="uppercase">{project.client}</span>{` ${project.summary}`}
 				</h3>
@@ -100,31 +99,11 @@
 					<a href={project.link.href} class="flex items-center gap-1.5 font-medium">
 						{project.link.text}
 						<svg width="16" height="16" viewBox="0 0 16 16">
-							<path
-								d="M12 12V4H4M11.5 4.5L3 13"
-								stroke="currentColor"
-								stroke-width="1.75"
-								stroke-linejoin="round"
-							/>
+							<path d="M12 12V4H4M11.5 4.5L3 13" stroke="currentColor" stroke-width="1.75" stroke-linejoin="round" />
 						</svg>
 					</a>
 				{/if}
 			</div>
 		{/if}
-	</Container>
+	</div>
 </div>
-
-<!-- <Image  
-			class="absolute left-0 top-0 h-full w-full object-cover"
-			src={'https://res.cloudinary.com/andystewartdesign/image/upload/v1683777476/work/gly/GLY-WorkCard-BG.jpg'}
-			alt={project.img.alt}
-		/>
-		<div
-			class="relative w-4/5 overflow-hidden rounded-3xl border-[10px] border-gray-100/40 shadow-2xl"
-		>
-			<Image
-				class="rounded-lg"
-				src="https://res.cloudinary.com/andystewartdesign/image/upload/v1683776795/work/gly/GLY-Home-Hero.jpg"
-				alt="lknl"
-			/>
-		</div> -->
