@@ -11,7 +11,7 @@ export const load: PageServerLoad = ({ params }) => {
 
 	if (!project) {
 		throw error(404, {
-			message: "Not found",
+			message: "Project not found.",
 		});
 	}
 
@@ -19,7 +19,7 @@ export const load: PageServerLoad = ({ params }) => {
 
 	if (!content) {
 		throw error(404, {
-			message: "Not found",
+			message: "There was an error loading that project.",
 		});
 	}
 
