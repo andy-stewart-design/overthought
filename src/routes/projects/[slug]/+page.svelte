@@ -51,7 +51,7 @@
 				{/if}
 				{#if data.liveLink}
 					<div class="mt-4">
-						<Button link href={data.liveLink}>View Live Site</Button>
+						<Button link external href={data.liveLink}>View Live Site <span class="font-normal">↗</span></Button>
 					</div>
 				{/if}
 			</div>
