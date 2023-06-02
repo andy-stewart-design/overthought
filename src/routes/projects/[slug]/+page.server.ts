@@ -10,8 +10,16 @@ export const load: PageServerLoad = ({ params }) => {
 	const [project] = projects.filter((p) => p.metadata.link?.href === slug);
 
 	if (!project) {
+		const fallbackProjects = projects
+			.filter((p) => {
+				if (p.metadata.client === "GLY") return true;
+				if (p.metadata.client === "Vulcan Real Estate") return true;
+			})
+			.map((p) => p.metadata);
+
 		throw error(404, {
 			message: "Project not found.",
+			projects: fallbackProjects,
 		});
 	}
 

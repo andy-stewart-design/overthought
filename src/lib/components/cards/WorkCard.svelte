@@ -92,9 +92,6 @@
 		{/if}
 		{#if project.link}
 			<div class="mt-2 flex gap-6 can-hover:hidden">
-				{#if project.link}
-					<Button link href={`/projects/${project.link.href}`}>View Project</Button>
-				{/if}
 				{#if project.link.external}
 					<a href={project.link.href} class="flex items-center gap-1.5 font-medium">
 						{project.link.text}
@@ -102,6 +99,8 @@
 							<path d="M12 12V4H4M11.5 4.5L3 13" stroke="currentColor" stroke-width="1.75" stroke-linejoin="round" />
 						</svg>
 					</a>
+				{:else}
+					<Button link href={`/projects/${project.link.href}`}>View Project</Button>
 				{/if}
 			</div>
 		{/if}
