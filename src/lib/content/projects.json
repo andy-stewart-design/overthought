@@ -292,6 +292,12 @@
 					},
 					{
 						"type": "image",
+						"src": "/work/carbon-direct/CarbonDirect-BusinessCards.jpg",
+						"alt": "The front and back of Carbon Direct's business cards sitting on two cement hexagons",
+						"cloud": true
+					},
+					{
+						"type": "image",
 						"src": "/work/carbon-direct/CarbonDirect-SocialPosts.jpg",
 						"alt": "Carbon Direct instagram posts",
 						"cloud": true
