@@ -64,18 +64,21 @@
 					{
 						"type": "image",
 						"src": "/work/gly/GLY-Web-Home.jpg",
-						"alt": "The first five modules on the GLY homepage"
+						"alt": "The first five modules on the GLY homepage",
+						"cloud": true
 					},
 					{
 						"type": "image",
 						"src": "/work/gly/GLY-Web-Mobile.jpg",
-						"alt": "A row of mobile screenshots showing off the design of the GLY Website"
+						"alt": "A row of mobile screenshots showing off the design of the GLY Website",
+						"cloud": true
 					},
 
 					{
 						"type": "image",
 						"src": "/work/gly/GLY-Web-Desktop.jpg",
-						"alt": "Close up shot of a water bottle with the new Vulcan Real Estate Logo"
+						"alt": "Close up shot of a water bottle with the new Vulcan Real Estate Logo",
+						"cloud": true
 					},
 					{
 						"type": "video",
@@ -86,7 +89,8 @@
 					{
 						"type": "image",
 						"src": "/work/gly/GLY-Web-Nav.jpg",
-						"alt": "Detail view of the nav menu overlay on the GLY website"
+						"alt": "Detail view of the nav menu overlay on the GLY website",
+						"cloud": true
 					}
 				]
 			}
@@ -130,12 +134,14 @@
 					{
 						"type": "image",
 						"src": "/work/vulcan-real-estate/VRE-Logo-Primary.png",
-						"alt": "The primary logo for the redesigned Vulcan Real Estate visual identity"
+						"alt": "The primary logo for the redesigned Vulcan Real Estate visual identity",
+						"cloud": true
 					},
 					{
 						"type": "image",
 						"src": "/work/vulcan-real-estate/VRE-Logo-Comparison.png",
-						"alt": "Side-by-side comparison of the old and new Vulcan Real Estate logos"
+						"alt": "Side-by-side comparison of the old and new Vulcan Real Estate logos",
+						"cloud": true
 					},
 					{
 						"type": "video",
@@ -146,17 +152,20 @@
 					{
 						"type": "image",
 						"src": "/work/vulcan-real-estate/VRE-WaterBottle.jpg",
-						"alt": "Close up shot of a water bottle with the new Vulcan Real Estate Logo"
+						"alt": "Close up shot of a water bottle with the new Vulcan Real Estate Logo",
+						"cloud": true
 					},
 					{
 						"type": "image",
 						"src": "/work/vulcan-real-estate/VRE-BusinessCards.jpg",
-						"alt": "The front and back of Vulcan Real Estate's business cards on a two-tone emerald background"
+						"alt": "The front and back of Vulcan Real Estate's business cards on a two-tone emerald background",
+						"cloud": true
 					},
 					{
 						"type": "image",
 						"src": "/work/vulcan-real-estate/VRE-Guidelines.jpg",
-						"alt": "Several pages from the Vulcan Real Estate brand guidelines arranged in a grid"
+						"alt": "Several pages from the Vulcan Real Estate brand guidelines arranged in a grid",
+						"cloud": true
 					},
 					{
 						"type": "video",
@@ -167,12 +176,14 @@
 					{
 						"type": "image",
 						"src": "/work/vulcan-real-estate/VRE-Mobile-Collage.jpg",
-						"alt": "A row of mobile screenshots showing off the design of the Vulcan Real Estate Website"
+						"alt": "A row of mobile screenshots showing off the design of the Vulcan Real Estate Website",
+						"cloud": true
 					},
 					{
 						"type": "image",
 						"src": "/work/vulcan-real-estate/VRE-Home-Desktop-Collage.jpg",
-						"alt": "A grid of desktop screenshots showing off the design of the Vulcan Real Estate Website"
+						"alt": "A grid of desktop screenshots showing off the design of the Vulcan Real Estate Website",
+						"cloud": true
 					}
 				]
 			}
@@ -218,7 +229,7 @@
 		{
 			"metadata": {
 				"client": "Carbon Direct",
-				"summary": "is working to make climate science more actionable at scale",
+				"summary": "is working to make climate science actionable at scale",
 				"tags": ["Identity", "Web Design", "Creative Coding"],
 				"year": 2022,
 				"status": "Case Study Coming Soon",
@@ -226,7 +237,102 @@
 					"src": "/work/carbon-direct/CarbonDirect-WorkCard.jpg",
 					"alt": "lorem ipsum"
 				},
+				"link": {
+					"text": "View Project",
+					"href": "carbon-direct",
+					"external": false
+				},
 				"featured": false
+			},
+			"content": {
+				"headline": "is standing on the shoulders of science",
+				"description": "Carbon Direct is a purpose-driven carbon management enabling organizations to reduce, remove, and utilize their emissions. No longer a scrappy startup, they needed a brand and digital presence that better communicated the scale and capabilities of their company and matched their approach to business — intelligent, dynamic, and distinctive.",
+				"scope": ["Visual Identity", "Web Design", "UI/UX", "Prototyping", "Art Direction"],
+				"partners": [
+					{
+						"type": "Agency",
+						"name": "Turnstyle",
+						"href": "https://turnstyle.studio/"
+					},
+					{
+						"type": "Dev",
+						"name": "Christine Hager"
+					}
+				],
+				"media": [
+					{
+						"type": "image",
+						"src": "https://res.cloudinary.com/andystewartdesign/image/upload/v1685713502/work/carbon-direct/CarbonDirect-Logo.svg",
+						"alt": "The primary logo for the redesigned Carbon Direct visual identity",
+						"cloud": false
+					},
+					{
+						"type": "image",
+						"src": "https://res.cloudinary.com/andystewartdesign/image/upload/v1685713917/work/carbon-direct/CarbonDirect-Logo-BeforeAfter.svg",
+						"alt": "Before-and-after comparison of Carbon Direct's logo",
+						"cloud": false
+					},
+					{
+						"type": "video",
+						"src": "/work/carbon-direct/CarbonDirect-LogoAnimation.mp4",
+						"poster": "/work/carbon-direct/CarbonDirect-LogoAnimation-Poster.jpg",
+						"autoplay": true
+					},
+					{
+						"type": "image",
+						"src": "/work/carbon-direct/CarbonDirect-ColorPalette.png",
+						"alt": "Carbon Direct's color palette",
+						"cloud": true
+					},
+					{
+						"type": "image",
+						"src": "/work/carbon-direct/CarbonDirect-ShirtGraphic.jpg",
+						"alt": "A dyptic of a generative graphic and a t-shirt that says 'Reduce, Remove, Repeat'",
+						"cloud": true
+					},
+					{
+						"type": "image",
+						"src": "/work/carbon-direct/CarbonDirect-SocialPosts.jpg",
+						"alt": "Carbon Direct instagram posts",
+						"cloud": true
+					},
+					{
+						"type": "image",
+						"src": "https://res.cloudinary.com/andystewartdesign/image/upload/v1685712003/work/carbon-direct/CarbonDirect-Icons.svg",
+						"alt": "Carbon Direct's icon system",
+						"cloud": false
+					},
+					{
+						"type": "video",
+						"src": "/work/carbon-direct/CarbonDirect-HomeScroll.mp4",
+						"poster": "/work/carbon-direct/CarbonDirect-HomeScroll-Poster.jpg",
+						"autoplay": false
+					},
+					{
+						"type": "image",
+						"src": "/work/carbon-direct/CarbonDirect-Desktop-Pages.jpg",
+						"alt": "The hero and first module of two pages from the Carbon Direct website",
+						"cloud": true
+					},
+					{
+						"type": "image",
+						"src": "/work/carbon-direct/CarbonDirect-Desktop-Collage.jpg",
+						"alt": "A grid of desktop screenshots showing off the design of the Carbon Direct Website",
+						"cloud": true
+					},
+					{
+						"type": "video",
+						"src": "/work/carbon-direct/CarbonDirect-Mobile-Prototypes.mp4",
+						"poster": "/work/carbon-direct/CarbonDirect-Mobile-Prototypes-Poster.jpg",
+						"autoplay": false
+					},
+					{
+						"type": "image",
+						"src": "/work/carbon-direct/CarbonDirect-Mobile-Collage.jpg",
+						"alt": "A grid of mobile screenshots showing off the design of the Carbon Direct Website",
+						"cloud": true
+					}
+				]
 			}
 		},
 		{

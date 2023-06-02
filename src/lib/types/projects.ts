@@ -26,6 +26,7 @@ export interface CaseStudyMedia {
 export interface CaseStudyImage extends CaseStudyMedia {
 	type: "image";
 	alt: string;
+	cloud: boolean;
 }
 
 export interface CaseStudyVideo extends CaseStudyMedia {

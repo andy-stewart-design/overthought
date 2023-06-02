@@ -61,7 +61,7 @@
 				{#each data.media as media}
 					{#if media.type === "image"}
 						<Image
-							cloud
+							cloud={media.cloud}
 							src={media.src}
 							alt={media.alt ?? ""}
 							imageWidths={[800, 1200, 1920]}
