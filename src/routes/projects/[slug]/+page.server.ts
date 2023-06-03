@@ -14,6 +14,7 @@ export const load: PageServerLoad = ({ params }) => {
 			.filter((p) => {
 				if (p.metadata.client === "GLY") return true;
 				if (p.metadata.client === "Vulcan Real Estate") return true;
+				if (p.metadata.client === "Carbon Direct") return true;
 			})
 			.map((p) => p.metadata);
 

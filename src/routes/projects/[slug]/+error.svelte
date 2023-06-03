@@ -12,7 +12,7 @@
 		</h2>
 	</div>
 	{#if $page.error?.projects}
-		<div class="mx-auto grid max-w-screen-3xl md:grid-cols-2">
+		<div class="mx-auto grid max-w-screen-3xl md:grid-cols-2 lg:grid-cols-3">
 			{#each $page.error.projects as project}
 				<WorkCard {project} />
 			{/each}
