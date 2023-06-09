@@ -12,11 +12,74 @@
 					"alt": "lorem ipsum"
 				},
 				"link": {
-					"text": "View Site",
+					"text": "View Project",
 					"href": "teague",
-					"external": true
+					"external": false
 				},
 				"featured": true
+			},
+			"content": {
+				"headline": "develops beautiful solutions to complex problems",
+				"description": "Teague is a design and innovation company that combines technological expertise with a deep understanding of human behavior. Leveraging previously completed branding and positioning work, we helped them design and build a website that could serve as the bold, new entry point to their philosophy, portfolio, and approach. Key goals of the design process included expressing Teague's differentiated point of view, grounding the brand narrative in client needs and value, and projecting their vision of a better future in a clear, digestible form.",
+				"scope": ["Responsive Design", "UI/UX", "Prototyping", "Art Direction"],
+				"partners": [
+					{
+						"type": "Agency",
+						"name": "Turnstyle",
+						"href": "https://turnstyle.studio/"
+					},
+					{
+						"type": "Dev",
+						"name": "R.J. LaCount",
+						"href": "https://rjlacount.com/"
+					}
+				],
+				"liveLink": "https://teague.com/",
+				"media": [
+					{
+						"type": "video",
+						"src": "/work/teague/Teague-Home-Scroll.mp4",
+						"poster": "/work/teague/Teague-Home-Scroll-Poster.jpg",
+						"autoplay": false
+					},
+					{
+						"type": "video",
+						"src": "/work/teague/Teague-Work-Hover.mp4",
+						"poster": "/work/teague/Teague-Work-Hover-Poster.jpg",
+						"autoplay": true
+					},
+					{
+						"type": "image",
+						"src": "/work/teague/Teague-AboutPage.jpg",
+						"alt": "The about page design for the Teague website",
+						"cloud": true
+					},
+					{
+						"type": "video",
+						"src": "/work/teague/Teague-Mobile.mp4",
+						"poster": "/work/teague/Teague-Mobile-Poster.jpg",
+						"autoplay": false
+					},
+					{
+						"type": "image",
+						"src": "/work/teague/Teague-ProjectPage.jpg",
+						"alt": "The case study template design for the Teague website",
+						"cloud": true
+					},
+					{
+						"type": "video",
+						"src": "/work/teague/Teague-Desktop-Screens.mp4",
+						"poster": "/work/teague/Teague-Desktop-Screens-Poster.jpg",
+						"autoplay": true
+					},
+
+					{
+						"type": "image",
+						"src": "/work/teague/Teague-DesktopCollage.jpg",
+						"alt": "A grid of desktop screenshots showing off the design of the Teague Website",
+						"cloud": true
+					}
+				]
 			}
 		},
 		{
