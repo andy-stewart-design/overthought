@@ -1,8 +1,25 @@
 {
 	"entries": [
 		{
+			"title": "Amazon Devices Icons",
+			"body": "Throughout my time at Turnstyle, I have drawn—or managed the drawing of—over a 1,000 icons for the Amazon Devices design group. During my first year with the agency, the Amazon team engaged us to redefine and redraw their icon system from the ground up. Since then we've continued to expand the set as needed, month-by-month, icon-by-icon. One of my parting gifts to the Turnstyle team was an internal web app for browsing and downloading icons from the set to hopefully make managing the project easier moving forward.",
+			"date": "06/13/2023",
+			"img": {
+				"src": "/work/development/Amazon-Device-Icons.jpg",
+				"alt": "A web repository for the Amazon Decives icon set",
+				"width": 1920,
+				"height": 1080
+			},
+			"link": {
+				"text": "View Case Study",
+				"href": "/projects/vulcan-real-estate",
+				"external": false
+			},
+			"categories": ["Development", "Icon Design"]
+		},
+		{
 			"title": "Vulcan Real Estate Launch",
-			"body": "The new Vulcan Real Estate brand and website officially launched earlier this weekand I couldn't be more excited for Josh, Deron, and the rest of the VRE team. They were a joy to collaborate with over the past year-and-change and worked diligently to shepherd this project through to completion.",
+			"body": "The new Vulcan Real Estate brand and website officially launched earlier this weekand I couldn't be more excited for Josh, Deron, and the rest of the Vulcan team. They were a joy to collaborate with over the past year-and-change and worked diligently to shepherd this project through to completion.",
 			"date": "05/30/2023",
 			"video": {
 				"src": "/work/vulcan-real-estate/VRE-Home-Desktop.mp4",
@@ -45,9 +62,9 @@
 				"height": 1080
 			},
 			"link": {
-				"text": "Check it out",
-				"href": "https://teague.com/",
-				"external": true
+				"text": "View Case Study",
+				"href": "/projects/teague",
+				"external": false
 			},
 			"categories": ["Case Study", "Web Design"]
 		},
@@ -94,6 +111,11 @@
 				"poster": "/work/carbon-direct/CarbonDirect-Mobile-Poster.jpg",
 				"width": 1920,
 				"height": 1080
+			},
+			"link": {
+				"text": "View Case Study",
+				"href": "/projects/carbon-direct",
+				"external": false
 			},
 			"categories": ["Case Study", "Web Design"]
 		},
