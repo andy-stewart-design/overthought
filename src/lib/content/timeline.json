@@ -1,6 +1,18 @@
 {
 	"entries": [
 		{
+			"title": "AI Music Recommendations",
+			"body": "I've been playing around with and building interfaces on top of LLMs for the past several weeks. This is a basic proof of concept leveraging Spotify and Open AI's APIs to offer music recommendations based on a user-provided artist. Surprisingly, its recommendations are generally pretty good and it only infrequently makes up artists who don't exist—which I can usually catch by cross-checking results with Spotify. Now that I've got the basic functionality worked out, I want to further push and develop the UX/UI into something more interesting and delightful.",
+			"date": "06/21/2023",
+			"video": {
+				"src": "/work/development/ListenHear-230622.mp4",
+				"poster": "/work/development/ListenHear-230622-Poster.jpg",
+				"width": 1920,
+				"height": 1080
+			},
+			"categories": ["Development", "AI", "React"]
+		},
+		{
 			"title": "Amazon Devices Icons",
 			"body": "Throughout my time at Turnstyle, I have drawn—or managed the drawing of—over a 1,000 icons for the Amazon Devices design group. During my first year with the agency, the Amazon team engaged us to redefine and redraw their icon system from the ground up. Since then we've continued to expand the set as needed, month-by-month, icon-by-icon. One of my parting gifts to the Turnstyle team was an internal web app for browsing and downloading icons from the set to hopefully make managing the project easier moving forward.",
 			"date": "06/13/2023",
