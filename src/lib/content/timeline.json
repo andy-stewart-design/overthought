@@ -1,6 +1,18 @@
 {
 	"entries": [
 		{
+			"title": "Generative Sketches",
+			"body": "As it turns out, math is fun. I wish someone had told me in school that you can use trig to create pretty pictures. I would have been way more interested. These are a couple of simple sketches I made on a plane ride from Seattle to Jacksonville. Whether it's basic addition, subtraction, and division, probabilities, or the undulations of waveforms, Math is the engine that drives everything in these compositions, from motion to color distribution.",
+			"date": "07/03/2023",
+			"video": {
+				"src": "/work/development/Generative-230705.mp4",
+				"poster": "/work/development/Generative-230705-Poster.jpg",
+				"width": 1920,
+				"height": 1080
+			},
+			"categories": ["Generative", "P5.js"]
+		},
+		{
 			"title": "AI Music Recommendations",
 			"body": "I've been playing around with and building interfaces on top of LLMs for the past several weeks. This is a basic proof of concept leveraging Spotify and Open AI's APIs to offer music recommendations based on a user-provided artist. Surprisingly, its recommendations are generally pretty good and it only infrequently makes up artists who don't exist—which I can usually catch by cross-checking results with Spotify. Now that I've got the basic functionality worked out, I want to further push and develop the UX/UI into something more interesting and delightful.",
 			"date": "06/21/2023",
