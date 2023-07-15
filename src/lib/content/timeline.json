@@ -1,6 +1,23 @@
 {
 	"entries": [
 		{
+			"title": "Thinking About Tokens",
+			"body": "Semantic v. Primitive. If you've read through Figma's Variables playground file, you saw these two terms a lot. But in my opinion, they were never clearly defined. Here's my take: the difference between primitive and semantic design tokens is as simple as the difference between What and How. Primitive tokens define a literal attribute (what something is) where semantic tokens describe an intended function (how something should be used).",
+			"date": "07/12/2023",
+			"img": {
+				"src": "/work/figma/Figma-Variable-Primitive-Semantic.jpg",
+				"alt": "A web repository for the Amazon Decives icon set",
+				"width": 1920,
+				"height": 1080
+			},
+			"link": {
+				"text": "Read More",
+				"href": "https://www.linkedin.com/posts/andystewartdesign_design-designsystem-designtokens-activity-7084546877378990080-J05s?utm_source=share&utm_medium=member_desktop",
+				"external": true
+			},
+			"categories": ["Figma", "Design Sytems"]
+		},
+		{
 			"title": "Generative Sketches",
 			"body": "As it turns out, math is fun. I wish someone had told me in school that you can use trig to create pretty pictures. I would have been way more interested. These are a couple of simple sketches I made on a plane ride from Seattle to Jacksonville. Whether it's basic addition, subtraction, and division, probabilities, or the undulations of waveforms, Math is the engine that drives everything in these compositions, from motion to color distribution.",
 			"date": "07/03/2023",
