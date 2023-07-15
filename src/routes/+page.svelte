@@ -19,14 +19,25 @@
 						/>
 						<div class="flex flex-col items-start justify-start gap-1">
 							<h2 class="text-2xl font-semibold leading-none">Andy Stewart</h2>
-							<h3 class="text-sm font-medium opacity-65">Design + Technology</h3>
+							<h3 class="text-base font-medium opacity-65">Design + Code</h3>
 						</div>
 					</div>
-					<p class="md:text-lg lg:text-base">
-						Hi, I'm Andy. I'm a designer working at the intersection of brand and technology to develop future-focused
-						visual systems — often for screens, sometimes not. I'm currently the Digital Creative Director at Turnstyle,
-						a small-yet-mighty creative studio in Seattle, where I help bring life to brands through strategic,
+					<p class="text-foreground/90 md:text-lg lg:text-base">
+						Hi, I'm Andy. I'm a product designer working at the intersection of brand and technology to develop
+						future-focused visual systems — often for screens, sometimes not.
+					</p>
+					<p class="text-foreground/90 md:text-lg lg:text-base">
+						I was most recently the Digital Creative Director at <a
+							class="font-bold text-foreground"
+							href="https://turnstyle.studio/"
+							target="_blank">Turnstyle</a
+						>, a full-service creative studio in Seattle, where I helped bring life to brands through strategic,
 						thoughtful design.
+					</p>
+					<p class="text-foreground/90 md:text-lg lg:text-base">
+						I'm currently available for hire. If you would like to discuss opportunities to collaborate or the types of
+						roles I'm looking for, please
+						<a class="font-bold text-foreground" href="mailto:andy.stewart1170@gmail.com">reach out</a>.
 					</p>
 				</div>
 			</div>
