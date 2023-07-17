@@ -26,16 +26,16 @@
 					<div class="flex flex-col items-start gap-6 xs:flex-row">
 						<a class="group w-16 shrink-0 text-foreground" href={toolset.link}>
 							<div
-								class="ease-out-cubic relative overflow-hidden rounded-xl border-b-1.5 bg-surface-low p-3 transition-transform duration-500 border-light group-hover:-translate-y-1"
+								class="relative overflow-hidden rounded-xl border-b-2 border-foreground/20 bg-white p-3 transition-transform duration-500 ease-out-3 group-hover:-translate-y-1.5 group-data-[theme=dark]/document:bg-surface-mid group-data-[theme=system]/document:bg-white dark:group-data-[theme=system]/document:bg-surface-mid"
 							>
+								<div
+									class="absolute left-0 top-0 h-full w-full rounded-xl border border-white bg-gradient-to-b from-black to-transparent opacity-5 transition-opacity group-hover:opacity-0 group-data-[theme=dark]/document:from-white group-data-[theme=system]/document:from-black group-data-[theme=dark]/document:group-hover:opacity-20 dark:group-data-[theme=system]/document:from-white dark:group-data-[theme=system]/document:group-hover:opacity-20"
+								/>
 								{#if toolset.inlineLogo}
 									{@html toolset.logo}
 								{:else}
-									<img src={`/img/uses/${toolset.logo}`} alt={`${toolset.brand} logo`} />
+									<img class="relative" src={`/img/uses/${toolset.logo}`} alt={`${toolset.brand} logo`} />
 								{/if}
-								<div
-									class="ease-out-cubic absolute left-0 top-0 h-full w-full bg-gradient-to-b from-blue-500 to-transparent opacity-30 mix-blend-overlay transition-opacity duration-500 group-hover:opacity-90 dark:from-foreground dark:opacity-10 dark:mix-blend-normal dark:group-hover:opacity-25"
-								/>
 							</div>
 						</a>
 						<div class="flex grow flex-col gap-6 pt-1">

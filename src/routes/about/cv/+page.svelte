@@ -2,28 +2,32 @@
 	import type { PageData } from "./$types";
 
 	export let data: PageData;
-	const { professionalExperiences, proofPoints } = data;
+	const { professionalExperiences, proofPoints, references } = data;
 </script>
 
-<main class="bg-background py-xl font-[375]">
+<main class="bg-background py-lg font-[375] px-app">
 	<div class="mx-auto grid max-w-3xl gap-12">
-		<header class="grid gap-y-4 sm:grid-cols-5 sm:items-center sm:gap-x-8">
+		<header class="grid gap-y-6 sm:grid-cols-5 sm:items-center sm:gap-x-8 md:gap-y-4">
 			<div class="aspect-square h-28 w-28 overflow-hidden rounded-full bg-surface-high">
 				<img src="/img/about/andy-crop.jpeg" alt="A headshot of Andy Stewart" />
 			</div>
-			<div class="grid gap-2 sm:col-span-4">
-				<h1 class="text-3xl font-medium">Andy Stewart</h1>
-				<h2>Strategy, design + frontend development with an eye for detail</h2>
-				<p class="opacity-[0.65]">Seattle, WA</p>
+			<div class="grid gap-5 sm:col-span-4 md:gap-3">
+				<h1 class="text-4xl font-medium">
+					Andy Stewart <span class="block opacity-60 xs:ml-2 xs:inline">Design + Code</span>
+				</h1>
+				<h2 class="text-xl">
+					A product designer working to make technology feel more human through compelling brands and clear interfaces
+				</h2>
+				<!-- <p class="opacity-[0.65]">Seattle, WA</p> -->
 			</div>
 		</header>
 
 		<section class="grid gap-6">
 			<h3 class="text-sm font-[400]">About</h3>
-			<div class="text-lg leading-normal">
-				Hi, I'm Andy, a designer working at the intersection of brand and technology. I have a decade of experience in
-				helping brands realize even the most vague of ideas across a variety of touchpoints, from identities to digital
-				experiences. My work is defined by a love of aesthetics, technology, and delightful experiences, and an eye for
+			<div class="leading-normal md:text-lg">
+				Hi, I'm Andy, a designer working at the intersection of brand and technology. For over a decade, I've helped
+				companies turn ideas into experiences across a variety of media and touchpoints, from visual identities to
+				websites. My work is defined by a love of aesthetics, technology, and delightful interactions, and an eye for
 				recognizing and resolving challenging business problems.
 			</div>
 		</section>
@@ -43,16 +47,26 @@
 							{/if}
 						</div>
 						<div class="grid gap-2 sm:col-span-4">
-							<h4 class="font-medium">
-								{job.role} —
-								{#if job.link}
-									<a href={job.link}>{job.company} <span class="opacity-[0.65]">↗</span></a>
-								{:else}
-									{job.company}
-								{/if}
-							</h4>
-							<p class="font-[400] opacity-[0.65]">{job.location}</p>
-							{#if job.summary}
+							<div>
+								<h4 class="font-medium">
+									{job.role} —
+									{#if job.link}
+										<a href={job.link}>{job.company} <span class="opacity-[0.65]">↗</span></a>
+									{:else}
+										{job.company}
+									{/if}
+								</h4>
+								<p class="font-[400] opacity-[0.65]">{job.location}</p>
+							</div>
+							{#if job.summary && typeof job.summary === "object"}
+								{#each job.summary as bullet}
+									<p
+										class="relative md:before:absolute md:before:-left-5 md:before:top-0 md:before:opacity-50 md:before:content-['↘']"
+									>
+										{bullet}
+									</p>
+								{/each}
+							{:else if job.summary}
 								<p>{job.summary}</p>
 							{/if}
 						</div>
@@ -61,6 +75,20 @@
 				<div class="border-b border-light" />
 			{/each}
 		</section>
+
+		<section class="space-y-6">
+			<h3 class="text-sm font-[400]">References</h3>
+			{#each references as reference}
+				<div class="space-y-2">
+					<p class="relative before:absolute before:left-0 before:top-0 before:-translate-x-full before:content-['“']">
+						{reference.quote}”
+					</p>
+					<p class=" opacity-[0.65]">{reference.author}, {reference.company}, {reference.title}</p>
+				</div>
+			{/each}
+		</section>
+
+		<div class="border-b border-light" />
 
 		{#each proofPoints as list, index}
 			<section class="grid gap-8">
