@@ -86,7 +86,7 @@ export const teaching: ProfessionalExperiences = {
 	category: "Teaching",
 	positions: [
 		{
-			role: "Figma Guru",
+			role: "Figma Onboarding",
 			company: "Turnstyle",
 			link: "https://turnstyle.studio/",
 			years: ["2020", "2023"],
