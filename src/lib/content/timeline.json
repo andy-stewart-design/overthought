@@ -1,12 +1,24 @@
 {
 	"entries": [
 		{
+			"title": "Look Back: Illustrations",
+			"body": "Although it has been a smaller part of my workload recently, there was a time when being an illustrator was a big part of my identity as a designer. Gig posters were some of the first visual works that I remember getting excited about as a kid, so it feels like a natural progression that I would eventually design and print them myself.",
+			"date": "07/18/2023",
+			"img": {
+				"src": "/work/illustration/Illustration-Overview.jpg",
+				"alt": "A grid of poster and illustrations completed over the course of several years.",
+				"width": 1920,
+				"height": 1080
+			},
+			"categories": ["Illustration", "Screen Printing"]
+		},
+		{
 			"title": "Thinking About Tokens",
 			"body": "Semantic v. Primitive. If you've read through Figma's Variables playground file, you saw these two terms a lot. But in my opinion, they were never clearly defined. Here's my take: the difference between primitive and semantic design tokens is as simple as the difference between What and How. Primitive tokens define a literal attribute (what something is) where semantic tokens describe an intended function (how something should be used).",
 			"date": "07/12/2023",
 			"img": {
 				"src": "/work/figma/Figma-Variable-Primitive-Semantic.jpg",
-				"alt": "A web repository for the Amazon Decives icon set",
+				"alt": "An explanation of the distinction between semantic and primitive design tokens.",
 				"width": 1920,
 				"height": 1080
 			},
