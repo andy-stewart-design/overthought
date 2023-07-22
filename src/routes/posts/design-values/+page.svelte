@@ -43,12 +43,12 @@
 			return on their investment. All these concerns do not neatly align—they must be weighed and balanced.
 		</p>
 		<p>
-			Separating signal from noise when it comes to design inputs often feels like trying to find a path through a
-			thicket. Instead of only focusing on feedback for an isolated feature or phase, I’m experienced with playing the
-			role of facilitator, receiving inputs from all relevant stakeholders and working to synthesize them into discrete,
-			actionable workflows.
+			Separating signal from noise when it comes to design inputs often feels like trying to cut a path through a
+			thicket. As an alternative to focusing on feedback for an isolated feature or phase, I’m experienced with playing
+			the role of facilitator, receiving inputs from all relevant stakeholders and working to synthesize them into
+			discrete, actionable workflows.
 		</p>
-		<h2>Working Closer to the Metal</h2>
+		<h2>Leaning Into the Medium</h2>
 		<p>
 			Figma is a triumph of design and engineering. It’s also a pile of abstractions. Auto layout is a partial
 			implementation of the Flexbox API. Figma Variables are a quirky mashup of CSS Custom Properties and Javascript

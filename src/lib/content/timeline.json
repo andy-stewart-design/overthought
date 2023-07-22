@@ -1,6 +1,18 @@
 {
 	"entries": [
 		{
+			"title": "Typography Tokens",
+			"body": "Typography is one of the more deceptively complex elements in a design system. While we often talk about them as existing at the lowest level of our systems, they are in fact made up of an even more ganular set of tokens for attributes like font family, weight, size, etc. Each of the individual styles in this system, for example, are built from one of 3 families, 4 weights, 14 sizes, 5 amounts of leading, and 3 amounts of tracking.",
+			"date": "07/22/2023",
+			"img": {
+				"src": "/work/cipher/Cipher-TypographyTokens-01.jpg",
+				"alt": "Documentation for the type styles from a recently completed design system.",
+				"width": 1920,
+				"height": 1080
+			},
+			"categories": ["Design Sytems", "Typography"]
+		},
+		{
 			"title": "Look Back: Illustration",
 			"body": "Although it has been a smaller part of my workload recently, there was a time when being an illustrator was a big part of my identity as a designer. Gig posters were some of the first visual works that I remember getting excited about as a kid, so it feels like a natural progression that I would eventually design and print them myself.",
 			"date": "07/18/2023",
@@ -13,7 +25,7 @@
 			"categories": ["Illustration", "Screen Printing"]
 		},
 		{
-			"title": "Thinking About Tokens",
+			"title": "Semantic V. Primitive",
 			"body": "Semantic v. Primitive. If you've read through Figma's Variables playground file, you saw these two terms a lot. But in my opinion, they were never clearly defined. Here's my take: the difference between primitive and semantic design tokens is as simple as the difference between What and How. Primitive tokens define a literal attribute (what something is) where semantic tokens describe an intended function (how something should be used).",
 			"date": "07/12/2023",
 			"img": {
