@@ -160,6 +160,20 @@
 		},
 		{
 			"metadata": {
+				"client": "Cipher News",
+				"summary": "is a climate-focused publication covering the transition to net-zero",
+				"tags": ["Product Design", "User Experience"],
+				"year": 2023,
+				"status": "Work in Progress",
+				"img": {
+					"src": "/work/cipher/Cipher-WorkCard.jpg",
+					"alt": "lorem ipsum"
+				},
+				"featured": false
+			}
+		},
+		{
+			"metadata": {
 				"client": "Vulcan Real Estate",
 				"summary": "is working to ensure positive outcomes for all",
 				"tags": ["Visual Identity", "Web Design"],
@@ -249,25 +263,6 @@
 						"cloud": true
 					}
 				]
-			}
-		},
-		{
-			"metadata": {
-				"client": "Squiggler",
-				"summary": "is a generative design tool for creating SVG waves and squiggles",
-				"tags": ["Development", "UI Design"],
-				"year": 2022,
-				"status": "Case Study Coming Soon",
-				"img": {
-					"src": "/work/development/Squiggler-WorkCard.jpg",
-					"alt": "lorem ipsum"
-				},
-				"link": {
-					"text": "View App",
-					"href": "https://www.squiggler.app/",
-					"external": true
-				},
-				"featured": false
 			}
 		},
 		{
@@ -406,6 +401,25 @@
 		},
 		{
 			"metadata": {
+				"client": "Squiggler",
+				"summary": "is a generative design tool for creating SVG waves and squiggles",
+				"tags": ["Development", "UI Design"],
+				"year": 2022,
+				"status": "Case Study Coming Soon",
+				"img": {
+					"src": "/work/development/Squiggler-WorkCard.jpg",
+					"alt": "lorem ipsum"
+				},
+				"link": {
+					"text": "View App",
+					"href": "https://www.squiggler.app/",
+					"external": true
+				},
+				"featured": false
+			}
+		},
+		{
+			"metadata": {
 				"client": "Get Some Ipsum",
 				"summary": "is a Figma plugin for generating better placeholder text",
 				"tags": ["Figma Plugin", "Development"],
@@ -419,20 +433,6 @@
 					"text": "View Plugin",
 					"href": "https://www.figma.com/community/plugin/1225446981019698507/Get-Some-Ipsum",
 					"external": true
-				},
-				"featured": false
-			}
-		},
-		{
-			"metadata": {
-				"client": "Cipher News",
-				"summary": "is a climate-focused publication covering the transition to net-zero",
-				"tags": ["Product Design", "User Experience"],
-				"year": 2023,
-				"status": "Work in Progress",
-				"img": {
-					"src": "/work/cipher/Cipher-WorkCard.jpg",
-					"alt": "lorem ipsum"
 				},
 				"featured": false
 			}

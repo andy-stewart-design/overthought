@@ -3,9 +3,9 @@
 </script>
 
 <script lang="ts">
-	import { browser } from '$app/environment';
-	import Container from '$lib/components/global/layout/Container.svelte';
-	import { writable } from 'svelte/store';
+	import { browser } from "$app/environment";
+	import Container from "$lib/components/global/layout/Container.svelte";
+	import { writable } from "svelte/store";
 
 	let ref: HTMLElement;
 	let footerOpacity = 0;
@@ -17,7 +17,7 @@
 
 	const observerOptions: IntersectionObserverInit = {
 		rootMargin: `${offsetTop}px 0px ${offsetBot}px 0px`,
-		threshold
+		threshold,
 	};
 
 	const observerCallback = (entries: IntersectionObserverEntry[]) => {
@@ -38,12 +38,31 @@
 </script>
 
 <footer bind:this={ref} class="relative z-0" style:opacity={footerOpacity}>
-	<div class="h-screen" />
+	<div class="h-[80vh]" />
 	<div class="sticky bottom-0 h-0">
-		<div class="absolute bottom-0 h-screen w-full bg-surface-mid">
+		<div class="absolute bottom-0 h-[80vh] w-full bg-surface-mid">
 			<Container class="flex h-full flex-col justify-center" pb="sm">
-				<div class="flex grow items-center">
-					<p class="grow text-center text-5xl">Thanks for stopping by</p>
+				<div class="flex grow items-center justify-center">
+					<button
+						on:click={() => {
+							window.scrollTo({
+								top: 0,
+								behavior: "smooth",
+							});
+						}}
+						class="flex items-center gap-4 md:gap-8 portrait:flex-col landscape:flex-row"
+					>
+						<div class="flex h-32 w-32 items-center justify-center rounded-full border border-light">
+							<svg width="80" height="80" viewBox="0 0 80 80" fill="none" class="text-foreground">
+								<path d="M40 16V64" stroke="currentColor" fill="none" stroke-width="6" />
+								<path d="M16 40L40 16L64 40" stroke="currentColor" fill="none" stroke-width="6" />
+							</svg>
+						</div>
+						<div class="space-y-1">
+							<p class="text-4xl md:text-5xl portrait:text-center landscape:text-left">Thanks for scrolling</p>
+							<p class="text-4xl md:text-5xl portrait:text-center landscape:text-left">Back to top</p>
+						</div>
+					</button>
 				</div>
 				<div class="flex justify-between pb-3">
 					<p>©{year}</p>

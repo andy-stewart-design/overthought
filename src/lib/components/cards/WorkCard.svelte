@@ -37,12 +37,14 @@
 			sizes={[["769px", "50vh"], ["100vh"]]}
 		/>
 		{#if project.link?.external}
-			<div class="absolute bottom-4 left-0 px-app md:bottom-8">
-				<a
-					href={project.link.href}
-					class="flex items-center gap-3 rounded border border-gray-100/15 bg-black/30 px-5 py-4 font-medium backdrop-blur transition-all hover:bg-white/60 hover:text-black focus-visible:opacity-100 can-hover:opacity-0 can-hover:hover:border-gray-100/60 can-hover:group-hover:opacity-100 cannot-hover:hidden"
-				>
-					<svg width="16" height="16" viewBox="0 0 16 16">
+			<a
+				href={project.link.href}
+				target="_blank"
+				class="group absolute bottom-0 left-0 right-0 top-0 flex items-center justify-center bg-black/50 text-xl font-medium opacity-0 backdrop-blur-sm transition-opacity focus-within:opacity-100 hover:opacity-100 focus:outline-none cannot-hover:hidden"
+			>
+				<span
+					class="flex items-center gap-2 rounded border border-gray-100 bg-black/30 px-5 py-4 font-medium text-white"
+					>See More <svg width="16" height="16" viewBox="0 0 16 16" class="mt-1">
 						<path
 							d="M13 12V3H4M12.5 3.5L3 13"
 							stroke="currentColor"
@@ -50,16 +52,15 @@
 							stroke-linejoin="round"
 							fill="none"
 						/>
-					</svg>
-					{project.link.text}
-				</a>
-			</div>
+					</svg></span
+				>
+			</a>
 		{:else if project.link}
 			<a
 				href={`/projects/${project.link.href}`}
-				class="group absolute bottom-0 left-0 right-0 top-0 flex items-center justify-center bg-black/50 text-xl font-medium opacity-0 backdrop-blur transition-opacity focus-within:opacity-100 hover:opacity-100 focus:outline-none cannot-hover:hidden"
+				class="group absolute bottom-0 left-0 right-0 top-0 flex items-center justify-center bg-black/50 text-xl font-medium opacity-0 backdrop-blur-sm transition-opacity focus-within:opacity-100 hover:opacity-100 focus:outline-none cannot-hover:hidden"
 			>
-				<span class="rounded border border-gray-100 px-5 py-4 font-medium">View Project</span>
+				<span class="rounded border border-gray-100 bg-black/30 px-5 py-4 font-medium text-white">View Case Study</span>
 			</a>
 		{/if}
 		<div class="pointer-events-none absolute left-0 top-2 pb-md pt-sm px-app">
@@ -79,7 +80,13 @@
 			{project.year} <span class="mx-1">·</span>
 			{project.status}
 		</h4>
-		{#if project.link && !project.link.external}
+		{#if project.link?.external}
+			<a href={project.link.href} target="_blank" class="block transition-opacity hover:opacity-60">
+				<h3 class="text-3xl">
+					<span class="uppercase">{project.client}</span>{` ${project.summary}`}
+				</h3>
+			</a>
+		{:else if project.link}
 			<a href={`/projects/${project.link.href}`} class="block transition-opacity hover:opacity-60">
 				<h3 class="text-3xl">
 					<span class="uppercase">{project.client}</span>{` ${project.summary}`}
@@ -92,16 +99,13 @@
 		{/if}
 		{#if project.link}
 			<div class="mt-2 flex gap-6 can-hover:hidden">
-				{#if project.link.external}
-					<a href={project.link.href} class="flex items-center gap-1.5 font-medium">
-						{project.link.text}
-						<svg width="16" height="16" viewBox="0 0 16 16">
-							<path d="M12 12V4H4M11.5 4.5L3 13" stroke="currentColor" stroke-width="1.75" stroke-linejoin="round" />
-						</svg>
-					</a>
-				{:else}
-					<Button link href={`/projects/${project.link.href}`}>View Project</Button>
-				{/if}
+				<Button
+					link
+					external={project.link.external}
+					href={project.link.external ? project.link.href : `/projects/${project.link.href}`}
+				>
+					{project.link.external ? "See More" : "View Project"}
+				</Button>
 			</div>
 		{/if}
 	</div>
