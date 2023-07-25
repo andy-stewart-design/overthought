@@ -45,9 +45,9 @@
 </script>
 
 <footer bind:this={ref} class="relative z-0" style:opacity={footerOpacity}>
-	<div class="h-[80vh]" />
+	<div class="h-screen md:h-[80vh]" />
 	<div class="sticky bottom-0 h-0">
-		<div class="absolute bottom-0 h-[80vh] w-full bg-surface-mid">
+		<div class="absolute bottom-0 h-screen w-full bg-surface-mid md:h-[80vh]">
 			<Container class="relative flex h-full flex-col pb-md pt-md md:grid md:grid-cols-3 md:pt-xl">
 				<div class="md:flex md:items-end">
 					<button
@@ -60,9 +60,11 @@
 						</svg>
 					</button>
 				</div>
-				<div class="md:pt-none flex grow flex-col justify-between pt-sm md:col-span-2">
+				<div class="md:pt-none flex grow flex-col justify-between pt-md md:col-span-2 md:pt-0">
 					<div class="space-y-12">
-						<p class="max-w-3xl text-4xl leading-snug text-foreground md:text-5xl md:leading-[1.2]">
+						<p
+							class="max-w-xl text-3xl leading-snug text-foreground xs:text-4xl md:max-w-3xl md:text-5xl md:leading-[1.2]"
+						>
 							Thank you for scrolling! <span class="text-foreground/60">Want to chat?</span>
 							<a href="mailto:andy.stewart1170@gmail.com" class="transition-opacity hover:opacity-60">Reach out</a>.
 							<span class="text-foreground/60">Tired of being at the bottom?</span>
