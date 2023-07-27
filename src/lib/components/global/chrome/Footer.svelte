@@ -73,7 +73,7 @@
 						<div class="space-y-4">
 							<p class="text-sm font-medium opacity-65">Follow Me</p>
 							<div class="space-x-3 text-lg font-medium">
-								<a href="https://codepen.io/andyandyandyoh">Codepen</a>
+								<a href="https://codepen.io/andystewartdesign">Codepen</a>
 								<a href="https://github.com/andy-stewart-design">Github</a>
 								<a href="https://twitter.com/spinbutton">Twitter</a>
 								<a href="https://www.instagram.com/andystewartdesign/">Instagram</a>
