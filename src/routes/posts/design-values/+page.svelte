@@ -44,9 +44,9 @@
 		</p>
 		<p>
 			Separating signal from noise when it comes to design inputs often feels like trying to cut a path through a
-			thicket. As an alternative to focusing on feedback for an isolated feature or phase, I’m experienced with playing
-			the role of facilitator, receiving inputs from all relevant stakeholders and working to synthesize them into
-			discrete, actionable workflows.
+			thicket. In addition to being able to focus on feedback for an isolated feature or phase, I’m experienced with
+			playing the role of facilitator, receiving inputs from all relevant stakeholders and working to synthesize them
+			into discrete, actionable workflows.
 		</p>
 		<h2>Leaning Into the Medium</h2>
 		<p>
