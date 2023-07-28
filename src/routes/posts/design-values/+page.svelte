@@ -6,7 +6,7 @@
 		</section> -->
 		<h1 class="text-5xl font-medium leading-[1.2]">What is a product if not a big stack of compromises?</h1>
 		<p>
-			As product people, we’re often required to resolve disparities between two opposing forces—between what is
+			As product designers, we’re often required to resolve disparities between two opposing forces—between what is
 			theoretically and technically possible, between the needs of internal stakeholders and external users, between the
 			blue-sky idea and the boots-on-the-ground implementation. If you work in software, this reality is likely a source
 			of your anxiety and sadness, a creature lurking in your closet.
