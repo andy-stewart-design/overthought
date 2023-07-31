@@ -63,7 +63,7 @@ export const toolData: { [key: string]: ToolSet[] } = {
 					name: "After Effects",
 					category: "Motion Design",
 					descr:
-						'Motion design is one area where Adobe still seems to have a firm grip on the market, despite the obvious cruft that AE has developed after so many years on the market. If you’re interested in learning motion desing in the context of After Effects, I highly suggest the <a href="">Motion 4</a> plugin, which smooths out some of the apps sharper edges. Fable app—the up-and-coming browser-based motion design tool—is also worth a look.',
+						'Motion design is one area where Adobe still seems to have a firm grip on the market, despite the obvious cruft that AE has developed after so many years. If you’re interested in learning motion design in the context of After Effects, I highly suggest the <a href="">Motion 4</a> plugin, which smooths out some of the apps sharper edges. Fable app—which is angling to be the Figma of motion design—is also worth a look.',
 				},
 			],
 		},
@@ -134,7 +134,7 @@ export const toolData: { [key: string]: ToolSet[] } = {
 					name: "Sveltekit",
 					category: "Fullstack Framework",
 					descr:
-						"I learned Svelte in the context of Sveltekit and, as such, I sometimes lost track of where one ended and the began. Now, though, I can see that whereas Svelte mostly enables me do things I know how to do more quickly and elegantly, Sveltekit has helped me become more confident working with servers, fetching data, and other traditionally-backend tasks.",
+						"I learned Svelte in the context of Sveltekit and, as such, I sometimes lost track of where one ended and the other began. Now, though, I can see that whereas Svelte mostly enables me do things on the front end more quickly and elegantly, Sveltekit has helped me become more confident working with servers, fetching data, and other traditionally-backend tasks.",
 				},
 			],
 		},
@@ -147,7 +147,7 @@ export const toolData: { [key: string]: ToolSet[] } = {
 					name: "Tailwind",
 					category: "CSS Framework",
 					descr:
-						"The speed and flexibility of working with Tailwind makes it an invaluable part of my toolkit. I also appreciate how closely it’s syntax maps to CSS. Whenever I do need to write vanilla CSS, I don’t feel like my skills have atrophied.",
+						"The speed and flexibility of working with Tailwind has made it an invaluable part of my toolkit over the past few years. I also appreciate how closely it’s syntax (mostly) maps to standard CSS. That said, with all of recent leaps forward in CSS, I have considered trying out a new CSS workflow on upcoming projects.",
 				},
 			],
 		},
@@ -160,7 +160,7 @@ export const toolData: { [key: string]: ToolSet[] } = {
 					name: "Typescript",
 					category: "Javascript Superset",
 					descr:
-						"I was hesitant about switching to Typescript, and I have lost hours of my life troubleshooting issues, but its myriad benefits more than make up for the occasional headache. As a side effect, it has also deepened my understanding of Javascript.",
+						"I was hesitant about switching to Typescript, and I have lost hours of my life troubleshooting issues, but its myriad benefits make up for the occasional headaches. As a side effect, it has also deepened my understanding of Javascript, which was unexpected but appreciated.",
 				},
 			],
 		},
@@ -174,7 +174,7 @@ export const toolData: { [key: string]: ToolSet[] } = {
 					name: "Vercel",
 					category: "Serverless Hosting",
 					descr:
-						"I use Vercel to host most of my personal projects (including this site). Netlify is also a great option for serverless hosting, but the fact that Vercel actively funds the development of Svelte and Sveltekit has swayed me to their side.",
+						"I use Vercel to host most of my personal projects (including this site). Netlify is also a great option for serverless hosting, but the fact that Vercel actively funds the development of Svelte and Sveltekit swayed me to their side.",
 				},
 			],
 		},
@@ -187,7 +187,7 @@ export const toolData: { [key: string]: ToolSet[] } = {
 					name: "Arc",
 					category: "Browser",
 					descr:
-						"I’ve avoided void using Chrome proper for several years now. I first switched to Firefox, then Brave, and have more recently landed on Arc. Despite it’s beta status, the team at the Browser Company have put a lot of love and attention into it, and I’ve found it mostly a joy to use.",
+						"I’ve avoided using Chrome proper for several years now. I first switched to Firefox, then Brave, and have more recently landed on Arc. Despite it’s beta status, the team at the Browser Company have put a lot of love and attention into it, and I’ve found it mostly a joy to use.",
 				},
 			],
 		},
@@ -230,19 +230,19 @@ export const toolData: { [key: string]: ToolSet[] } = {
 					name: "Apple Macbook Pro (M2 2022)",
 					category: "Computer",
 					descr:
-						'I tend to hang on to hardware for as long as possible, which is why, until recently, my personal computer was a 2015 Macbook Pro. In January, I upgraded to one of the new 16" M2 Macbooks, which definitely lives up to the hype—and unlike my previous work computer, thankfully doesn’t have a touchbar.',
+						'I tend to hang on to hardware for as long as possible, which is why, until recently, my personal computer was a 2015 Macbook Pro. In January 2023, I upgraded to one of the new 16" M2 Macbooks, which definitely lives up to the hype—and unlike my previous work computer, thankfully doesn’t have a touchbar.',
 				},
 				{
 					name: "iPhone 14 Pro",
 					category: "Smart Phone",
 					descr:
-						"Continuing with the trend of outated-but-still-functioning tech: until Q4 2022, I still rocked an iPhone 6s. Once they officially dropped support for it with the release of IOS 16, though, I finally upgraded to a 14 Pr0.",
+						"Continuing with the trend of outated-but-still-functioning tech: until Q4 2022, I still rocked an iPhone 6s. Once they officially dropped support for it with the release of IOS 16, though, I finally upgraded to a 14 Pro.",
 				},
 				{
 					name: "iPad Pro",
 					category: "Tablet",
 					descr:
-						"I bought an iPad pro when I was working as an independent designer and doing a larger amount of illustration in my day-to-day work. Now, honestly, I use it mostly for reading or quickly sketching out an idea.",
+						"I bought an iPad pro when I was working as an independent designer and doing a larger quantity of illustration in my day-to-day work. Now, honestly, I use it mostly for reading or quickly sketching out an idea, but I'm open to suggestions for how to integrate into my workflow.",
 				},
 				{
 					name: "AirPods Pro",
@@ -293,7 +293,7 @@ export const toolData: { [key: string]: ToolSet[] } = {
 
 					category: "Synthesizer",
 					descr:
-						"I’ve made music on and off throughout my life. Most recently, the OP-1 has been my gateway drug back into recording and producing. It’s a weird little device—especially in how it eschews certain priniciples that we think of as user-friendly design—but it is such a joy to play.",
+						"I’ve made music on and off throughout my life. Most recently, the OP-1 has been my gateway drug back into recording and producing. It’s a weird little device—especially in how it eschews certain priniciples that we think of as integral to user-friendly design—but it is such a joy to play.",
 				},
 				{
 					name: "OB-4",
@@ -327,7 +327,7 @@ export const toolData: { [key: string]: ToolSet[] } = {
 					name: "Beyerdynamic DT 700 Pro X",
 					category: "Headphones",
 					descr:
-						"I wanted a better pair of headphones specifically for writing music. I quickly got way out of my depth wading through the different options and chose these based mostly on some comparison videos on Youtube. They’ve been awesome, though, and I haven’t had any issues with them not being loud enough when plugging straight into a computer or instrument.",
+						"I wanted a better pair of headphones specifically for playing and writing music. I quickly got way out of my depth wading through the different options and chose these based mostly on some comparison videos on Youtube. They’ve been awesome, though, and I haven’t had any issues with them not being loud enough when plugging straight into a computer or instrument.",
 				},
 			],
 		},
