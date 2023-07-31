@@ -32,7 +32,7 @@
 		<Image
 			cloud
 			src="/work/cipher/Cipher-Illustration-03.jpg"
-			alt="lkn"
+			alt="Cipher news hero collage"
 			imageWidths={[800, 1200, 1600, 1920]}
 			class="h-[480px] w-screen object-cover md:h-[800px]"
 		/>
@@ -66,7 +66,15 @@
 	</Container>
 
 	<Container as="section" class="grid gap-4">
-		<Image cloud src="/work/cipher/Cipher-Hero.jpg" alt="lkn" imageWidths={[800, 1200, 1600, 1920]} class="w-full" />
+		<Image
+			cloud
+			src="/work/cipher/Cipher-Hero.jpg"
+			alt="Home screen for the redesigned Cipher website"
+			imageWidths={[800, 1200, 1600, 1920]}
+			class="w-full"
+			width="1920"
+			height="1080"
+		/>
 		<h5 class="font-sm text-center opacity-75">Home screen for the redesigned Cipher website</h5>
 	</Container>
 
@@ -82,10 +90,12 @@
 		<div class="mx-auto w-full max-w-6xl space-y-4 py-4">
 			<Image
 				cloud
-				src="/work/cipher/Cipher-Wireframes.jpg"
-				alt="lkn"
+				src="/work/cipher/Cipher-SiteMap.png"
+				alt="Site map detailing unique pages and templates for the site"
 				imageWidths={[800, 1200, 1600, 1920]}
 				class="w-full"
+				width="2400"
+				height="1080"
 			/>
 			<h5 class="font-sm text-center opacity-75">Site map detailing unique pages and templates for the site</h5>
 		</div>
@@ -125,9 +135,11 @@
 			<Image
 				cloud
 				src="/work/cipher/Cipher-IdentityGuidelines.jpg"
-				alt="lkn"
+				alt="Original brand identity guidelines for Cipher, designed in 2021"
 				imageWidths={[800, 1200, 1600, 1920]}
 				class="w-full"
+				width="1920"
+				height="1080"
 			/>
 			<h5 class="font-sm text-center opacity-75">Original brand identity guidelines for Cipher, designed in 2021</h5>
 		</div>
@@ -142,9 +154,11 @@
 			<Image
 				cloud
 				src="/work/cipher/Cipher-TypographyTokens-01.jpg"
-				alt="lkn"
+				alt="Primitive typographic design tokens"
 				imageWidths={[800, 1200, 1600, 1920]}
 				class="w-full"
+				width="1920"
+				height="1080"
 			/>
 			<h5 class="font-sm text-center opacity-75">Primitive typographic design tokens</h5>
 		</div>
@@ -152,9 +166,11 @@
 			<Image
 				cloud
 				src="/work/cipher/Cipher-DesignSystem-CardVariants.jpg"
-				alt="lkn"
+				alt="Card component variants"
 				imageWidths={[800, 1200, 1600, 1920]}
 				class="w-full"
+				width="2400"
+				height="1770"
 			/>
 			<h5 class="font-sm text-center opacity-75">Card component variants</h5>
 		</div>
@@ -179,9 +195,11 @@
 			<Image
 				cloud
 				src="/work/cipher/Cipher-QuickPosts-01.jpg"
-				alt="lkn"
+				alt="Quick Post Module at small and large breakpoints"
 				imageWidths={[800, 1200, 1600, 1920]}
 				class="w-full"
+				width="1920"
+				height="1080"
 			/>
 			<h5 class="font-sm text-center opacity-75">Quick Post Module at small and large breakpoints</h5>
 		</div>
@@ -194,9 +212,11 @@
 			<Image
 				cloud
 				src="/work/cipher/Cipher-QuickPosts-02.jpg"
-				alt="lkn"
+				alt="Quick Posts landing page and post template"
 				imageWidths={[800, 1200, 1600, 1920]}
 				class="w-full"
+				width="1920"
+				height="1080"
 			/>
 			<h5 class="font-sm text-center opacity-75">Quick Posts landing page and post template</h5>
 		</div>
@@ -213,9 +233,11 @@
 			<Image
 				cloud
 				src="/work/cipher/Cipher-ArticleTemplate-01.jpg"
-				alt="lkn"
+				alt="Article template in light and dark mode"
 				imageWidths={[800, 1200, 1600, 1920]}
 				class="w-full"
+				width="1920"
+				height="1080"
 			/>
 			<h5 class="font-sm text-center opacity-75">Article template in light and dark mode</h5>
 		</div>
@@ -231,18 +253,26 @@
 				<Image
 					cloud
 					src={images[activeIndex === 0 ? 2 : activeIndex === 1 ? 0 : 1]}
-					alt="lkn"
+					alt=""
 					imageWidths={[800, 1200, 1600, 1920]}
 					class="absolute left-0 top-0 h-0 w-0"
 				/>
 				<Image
 					cloud
 					src={images[activeIndex === 0 ? 1 : activeIndex === 1 ? 2 : 0]}
-					alt="lkn"
+					alt=""
 					imageWidths={[800, 1200, 1600, 1920]}
 					class="absolute left-0 top-0 h-0 w-0"
 				/>
-				<Image cloud src={images[activeIndex]} alt="lkn" imageWidths={[800, 1200, 1600, 1920]} class="w-full" />
+				<Image
+					cloud
+					src={images[activeIndex]}
+					alt="Hero layout variants for the article template"
+					imageWidths={[800, 1200, 1600, 1920]}
+					class="w-full"
+					width="1920"
+					height="1080"
+				/>
 			</div>
 			<h5 class="font-sm text-center opacity-75">Hero layout variants for the article template</h5>
 		</div>
@@ -250,9 +280,11 @@
 			<Image
 				cloud
 				src="/work/cipher/Cipher-ArticleTemplate-02.jpg"
-				alt="lkn"
+				alt="Hero and footer from the article template"
 				imageWidths={[800, 1200, 1600, 1920]}
 				class="w-full"
+				width="1920"
+				height="1080"
 			/>
 			<h5 class="font-sm text-center opacity-75">Hero and footer from the article template</h5>
 		</div>
@@ -281,9 +313,11 @@
 			<Image
 				cloud
 				src="/work/cipher/Cipher-Prototye-01.jpg"
-				alt="lkn"
+				alt="Implementation of hover state prototype"
 				imageWidths={[800, 1200, 1600, 1920]}
 				class="w-full"
+				width="1920"
+				height="1080"
 			/>
 			<h5 class="font-sm text-center opacity-75">Implementation of hover state prototype</h5>
 		</div>
