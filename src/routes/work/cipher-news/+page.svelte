@@ -38,8 +38,8 @@
 		/>
 	</div>
 
-	<Container as="section">
-		<h6 class="rounded-md border bg-blue-700 px-4 py-6 text-center font-medium border-light md:text-lg">
+	<Container as="section" class="pt-lg">
+		<h6 class="rounded-md border bg-foreground/15 px-4 py-6 text-center font-medium border-light md:text-lg">
 			Please note, this site is in development and is not yet live
 		</h6>
 	</Container>
