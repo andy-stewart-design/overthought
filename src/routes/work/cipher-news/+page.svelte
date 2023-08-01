@@ -38,6 +38,12 @@
 		/>
 	</div>
 
+	<Container as="section">
+		<h6 class="rounded-md border bg-blue-700 px-4 py-6 text-center font-medium border-light md:text-lg">
+			Please note, this site is in development and is not yet live
+		</h6>
+	</Container>
+
 	<Container as="section" class="grid gap-8 pt-lg md:grid-cols-2 md:pb-lg">
 		<div class="space-y-2 text-lg font-medium lg:text-xl">
 			<h4><span class="opacity-65">Scope:</span> Design System, Web Design</h4>
@@ -57,12 +63,6 @@
 				their content.
 			</p>
 		</div>
-	</Container>
-
-	<Container as="section">
-		<h6 class="rounded-md border bg-foreground/15 px-4 py-6 text-center font-medium border-light md:text-lg">
-			Please note, this site is in development and is not yet live
-		</h6>
 	</Container>
 
 	<Container as="section" class="grid gap-4">
@@ -116,11 +116,35 @@
 				site to begin to tease out specific design patterns and approaches needed on the site.
 			</li>
 		</ul>
-		<h6
+		<div class="mx-auto w-full max-w-6xl space-y-4 py-4">
+			<Image
+				cloud
+				src="/work/cipher/Cipher-CompetitiveAudit.jpg"
+				alt="Site map detailing unique pages and templates for the site"
+				imageWidths={[800, 1200, 1600, 1920]}
+				class="w-full"
+				width="1920"
+				height="1080"
+			/>
+			<h5 class="font-sm text-center opacity-75">Competitive analysis assesing common patterns and conventions</h5>
+		</div>
+		<div class="mx-auto w-full max-w-6xl space-y-4 py-4">
+			<Image
+				cloud
+				src="/work/cipher/Cipher-Wireframes.jpg"
+				alt="Wireframes for various pages and modules on the site"
+				imageWidths={[800, 1200, 1600, 1920]}
+				class="w-full"
+				width="1920"
+				height="1080"
+			/>
+			<h5 class="font-sm text-center opacity-75">Wireframes for various pages and modules on the site</h5>
+		</div>
+		<!-- <h6
 			class="mx-auto !mt-8 max-w-3xl rounded-md border bg-foreground/15 px-4 py-8 text-center font-medium border-light md:text-lg"
 		>
 			Note: I'm working to obtain visual artifacts from this phase of the project
-		</h6>
+		</h6> -->
 	</Container>
 
 	<Container as="section" class="space-y-6 pt-md">
