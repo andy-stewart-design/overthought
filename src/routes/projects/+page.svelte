@@ -6,7 +6,7 @@
 </script>
 
 <main class="bg-background">
-	<header class="mx-auto grid max-w-screen-3xl border-b py-lg uppercase tracking-tighter border-light px-app">
+	<header class="mx-auto grid max-w-screen-3xl border-b pb-lg pt-hero uppercase tracking-tighter border-light px-app">
 		<h1 class="text-8xl md:text-9xl">Recent Work</h1>
 	</header>
 	<div class="mx-auto grid max-w-screen-3xl md:grid-cols-2">

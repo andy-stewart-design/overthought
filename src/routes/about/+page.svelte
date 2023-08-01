@@ -5,7 +5,7 @@
 </script>
 
 <main class="bg-background">
-	<header class="border-b py-lg border-light">
+	<header class="border-b pb-lg pt-hero border-light">
 		<div class="mx-auto grid max-w-screen-3xl px-app lg:grid-cols-2 lg:gap-16">
 			<h1 class="text-8xl uppercase md:text-9xl">About</h1>
 			<div class="flex flex-row-reverse justify-end sm:justify-between">
