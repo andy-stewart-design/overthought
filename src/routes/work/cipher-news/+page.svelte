@@ -126,7 +126,7 @@
 				width="1920"
 				height="1080"
 			/>
-			<h5 class="font-sm text-center opacity-75">Competitive analysis assesing common patterns and conventions</h5>
+			<h5 class="font-sm text-center opacity-75">Competitive analysis assessing common patterns and conventions</h5>
 		</div>
 		<div class="mx-auto w-full max-w-6xl space-y-4 py-4">
 			<Image
