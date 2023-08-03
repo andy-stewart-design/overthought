@@ -1,51 +1,82 @@
 <script lang="ts">
-	import FeedCard from "$lib/components/cards/FeedCard.svelte";
-	import Observer from "@globals/layout/Observer.svelte";
+	import Container from "@globals/layout/Container.svelte";
+	import type { PageData } from "./$types";
 	import Image from "$lib/components/media/Image.svelte";
-	import timeline from "@content/timeline.json";
+
+	export let data: PageData;
 </script>
 
-<Observer let:observe>
-	<main class="border-b bg-background border-light">
-		<div class="mx-auto max-w-screen-3xl lg:grid lg:grid-cols-12">
-			<div class="relative border-b border-light lg:col-span-5 lg:border-b-0 xl:col-span-4">
-				<div class="grid gap-y-5 pb-md pt-md px-app lg:sticky lg:top-20 lg:pb-xl">
-					<div class="flex items-center gap-4">
-						<Image
-							cloud
-							src="/about/andy-headshot-square.jpg"
-							alt="Headshot"
-							class="h-14 w-14 rounded-full bg-surface-mid"
-						/>
-						<div class="flex flex-col items-start justify-start gap-1">
-							<h2 class="text-2xl font-semibold leading-none">Andy Stewart</h2>
-							<h3 class="text-base font-medium opacity-65">Design + Code</h3>
-						</div>
-					</div>
-					<p class="text-foreground/90 md:text-lg lg:text-base">
-						Hi, I'm Andy. I'm a product designer working at the intersection of brand and technology to develop
-						future-focused visual systems — often for screens, sometimes not.
-					</p>
-					<p class="text-foreground/90 md:text-lg lg:text-base">
-						I was most recently the Digital Creative Director at <a
-							class="font-bold text-foreground"
-							href="https://turnstyle.studio/"
-							target="_blank">Turnstyle</a
-						>, a full-service creative studio in Seattle, where I helped bring life to brands through strategic,
-						thoughtful design.
-					</p>
-					<p class="text-foreground/90 md:text-lg lg:text-base">
-						I'm currently available for hire. If you would like to discuss opportunities to collaborate or the types of
-						roles I'm looking for, please
-						<a class="font-bold text-foreground" href="mailto:andy.stewart1170@gmail.com">reach out</a>.
-					</p>
-				</div>
-			</div>
-			<div class="relative min-h-screen border-light lg:col-span-7 lg:border-l xl:col-span-8">
-				{#each timeline.entries as entry, index}
-					<FeedCard content={entry} {observe} {index} />
-				{/each}
+<Container class="min-h-screen bg-background">
+	<section class="grid grid-cols-2 gap-x-8 gap-y-12 pt-xl">
+		<h1 class="text-6xl font-medium">Andy Stewart</h1>
+		<h2 class="text-6xl font-medium opacity-65">Design + Code</h2>
+		<div />
+		<div class="space-y-6">
+			<p>
+				Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis magnam possimus asperiores, exercitationem
+				maxime molestias corrupti ducimus odit tenetur voluptatem excepturi. Veritatis corrupti ipsum laudantium, beatae
+				quis numquam iste reprehenderit.
+			</p>
+			<p>
+				Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis magnam possimus asperiores, exercitationem
+				maxime molestias corrupti ducimus odit tenetur voluptatem excepturi. Veritatis corrupti ipsum laudantium, beatae
+				quis numquam iste reprehenderit.
+			</p>
+			<p>
+				Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis magnam possimus asperiores, exercitationem
+				maxime molestias corrupti ducimus odit tenetur voluptatem excepturi. Veritatis corrupti ipsum laudantium, beatae
+				quis numquam iste reprehenderit.
+			</p>
+			<div class="flex flex-wrap gap-4 pt-1 text-lg font-medium">
+				<a href="https://codepen.io/andystewartdesign" class="whitespace-nowrap leading-none"
+					>LinkedIn <span class="opacity-65">↗</span></a
+				>
+				<a href="https://codepen.io/andystewartdesign" class="whitespace-nowrap leading-none"
+					>Codepen <span class="opacity-65">↗</span></a
+				>
+				<a href="https://github.com/andy-stewart-design" class="whitespace-nowrap leading-none"
+					>Github <span class="opacity-65">↗</span></a
+				>
+				<a href="https://twitter.com/spinbutton" class="whitespace-nowrap leading-none"
+					>Twitter <span class="opacity-65">↗</span></a
+				>
+				<a href="https://www.instagram.com/andystewartdesign/" class="whitespace-nowrap leading-none"
+					>Instagram <span class="opacity-65">↗</span></a
+				>
 			</div>
 		</div>
-	</main>
-</Observer>
+	</section>
+	<section class="grid grid-cols-3 gap-2 gap-y-12 pt-xl md:gap-x-8">
+		<h1 class="col-span-full text-6xl font-medium">Projects</h1>
+		{#each data.projects as project}
+			<div class="space-y-2">
+				<Image
+					cloud
+					class="aspect-[4/5] rounded-xl border border-white/20 object-cover"
+					src={project.metadata.img.src}
+					alt={project.metadata.img.alt}
+					imageWidths={[800, 1200]}
+					sizes={[["769px", "50vh"], ["100vh"]]}
+				/>
+				<div class="space-y-3 pt-4">
+					<div class="flex items-baseline justify-between">
+						{#if project.metadata.link?.external}
+							<a href={project.metadata.link.external} target="_blank">
+								<p class="text-2xl font-medium">{project.metadata.client} <span class="opacity-65">↗</span></p>
+							</a>
+						{:else}
+							<p class="text-2xl font-medium">{project.metadata.client}</p>
+						{/if}
+						<p class="text-sm font-medium slashed-zero">{project.metadata.year}</p>
+					</div>
+					<p class="">{project.metadata.summary}</p>
+					<div class="flex gap-4">
+						{#each project.metadata.tags as tag}
+							<p class="text-sm font-medium slashed-zero">{tag}</p>
+						{/each}
+					</div>
+				</div>
+			</div>
+		{/each}
+	</section>
+</Container>

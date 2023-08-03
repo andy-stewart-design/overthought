@@ -1,4 +1,4 @@
-<script lang="ts">
+<!-- <script lang="ts">
 	import WorkCard from "$lib/components/cards/WorkCard.svelte";
 	import type { PageServerData } from "./$types";
 
@@ -19,4 +19,4 @@
 			<WorkCard grid {project} />
 		{/each}
 	</div>
-</main>
+</main> -->
