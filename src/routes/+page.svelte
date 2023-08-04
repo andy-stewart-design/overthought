@@ -9,7 +9,7 @@
 <main class="bg-background">
 	<Container class="mx-auto w-full max-w-app pb-xl">
 		<section id="home" class="grid gap-x-8 border-b py-xl border-light md:grid-cols-2 md:gap-y-12">
-			<div class="col-span-full">
+			<div class="col-span-full mb-8 md:mb-0">
 				<div class="inline-block rounded-full border py-1 pl-2.5 pr-3 border-light">
 					<span class="mr-2 inline-block h-3 w-3 animate-pulse rounded-full bg-green-500" />
 					Open for work
