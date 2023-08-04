@@ -9,6 +9,12 @@
 <main class="bg-background">
 	<Container class="mx-auto w-full max-w-app pb-xl">
 		<section id="home" class="grid gap-x-8 border-b py-xl border-light md:grid-cols-2 md:gap-y-12">
+			<div class="col-span-full">
+				<div class="inline-block rounded-full border py-1 pl-2.5 pr-3 border-light">
+					<span class="mr-2 inline-block h-3 w-3 animate-pulse rounded-full bg-green-500" />
+					Open for work
+				</div>
+			</div>
 			<h1 class="text-5xl font-medium xs:text-6xl md:text-5xl lg:text-6xl">Andy Stewart</h1>
 			<h2 class="mb-8 text-5xl font-medium opacity-65 xs:text-6xl md:mb-0 md:text-5xl lg:text-6xl">
 				Design <span class="font-light">+</span> Code
