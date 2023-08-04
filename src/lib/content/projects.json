@@ -3,7 +3,7 @@
 		{
 			"metadata": {
 				"client": "Teague",
-				"summary": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis magnam possimus asperiores, exercitationem maxime molestias corrupti ducimus odit tenetur voluptatem excepturi. Veritatis corrupti ipsum laudantium, beatae quis numquam iste reprehenderit.",
+				"summary": "One of my first big projects at Turnstyle (circa 2019) was a total redesign of Teague's website. It was fitting that one of my last projects was evolving and streamlining the design system and CMS we built years prior to remove cruft and make it more flexible, scalable, and future-proof.",
 				"tags": ["Web Design", "Digital Strategy"],
 				"year": 2023,
 				"status": "Case Study",
@@ -83,9 +83,9 @@
 		{
 			"metadata": {
 				"client": "Cipher News",
-				"summary": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis magnam possimus asperiores, exercitationem maxime molestias corrupti ducimus odit tenetur voluptatem excepturi. Veritatis corrupti ipsum laudantium, beatae quis numquam iste reprehenderit.",
+				"summary": "Cipher is a publication covering the global transition to net-zero. Based on our work establishing their brand and visual identity, the Cipher team collaborated with us to translate their identity to a web-native design system and build a bespoke digital experience for their content.",
 				"tags": ["Product Design", "User Experience"],
-				"year": 2023,
+				"year": "WIP",
 				"status": "Work in Progress",
 				"img": {
 					"src": "/work/cipher/Cipher-WorkCard.jpg",
@@ -97,7 +97,7 @@
 		{
 			"metadata": {
 				"client": "Vulcan Real Estate",
-				"summary": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis magnam possimus asperiores, exercitationem maxime molestias corrupti ducimus odit tenetur voluptatem excepturi. Veritatis corrupti ipsum laudantium, beatae quis numquam iste reprehenderit.",
+				"summary": "As part of an effort to reposition themselves in the market, we developed a comprehensive visual identity system for one of Seattle's most notable real estate developers. This work included a new website, rebuilt from first principles, and a virtual artwalk microsite.",
 				"tags": ["Visual Identity", "Web Design"],
 				"year": 2023,
 				"status": "Case Study",
@@ -188,7 +188,7 @@
 		{
 			"metadata": {
 				"client": "GLY",
-				"summary": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis magnam possimus asperiores, exercitationem maxime molestias corrupti ducimus odit tenetur voluptatem excepturi. Veritatis corrupti ipsum laudantium, beatae quis numquam iste reprehenderit.",
+				"summary": "A new website for a PNW general contractor, built from the ground up to elevate and celebrate their outcomes-minded approach to construction and provide them with a modern, dynamic platform to establish credibility, demonstrate leadership, and attract talent.",
 				"tags": ["Web Design", "Digital Strategy"],
 				"year": 2022,
 				"status": "Case Study",
@@ -262,7 +262,7 @@
 		{
 			"metadata": {
 				"client": "AllStock",
-				"summary": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis magnam possimus asperiores, exercitationem maxime molestias corrupti ducimus odit tenetur voluptatem excepturi. Veritatis corrupti ipsum laudantium, beatae quis numquam iste reprehenderit.",
+				"summary": "This Figma plugin is the one-stop shop for finding and using high-quality images inside of your Figma projects, allowing you to browse popular free libraries like Unsplash, Pexels, and Pixabay at the same time without leaving the app. Built with Svelte, Tailwind, and Typescript.",
 				"tags": ["Figma Plugin", "Development"],
 				"year": 2023,
 				"status": "Case Study Coming Soon",
@@ -270,14 +270,16 @@
 					"src": "/work/figma/AllStock-WorkCard.jpg",
 					"alt": "lorem ipsum"
 				},
-
+				"link": {
+					"external": "https://www.figma.com/community/plugin/1235675201027690011/AllStock"
+				},
 				"featured": false
 			}
 		},
 		{
 			"metadata": {
 				"client": "Carbon Direct",
-				"summary": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis magnam possimus asperiores, exercitationem maxime molestias corrupti ducimus odit tenetur voluptatem excepturi. Veritatis corrupti ipsum laudantium, beatae quis numquam iste reprehenderit.",
+				"summary": "Carbon Direct is a purpose-driven carbon management firm enabling organizations to measure, reduce, and remove their emissions. No longer a scrappy startup, they needed a brand and website that better communicated the scale and capabilities of their company.",
 				"tags": ["Identity", "Web Design", "Creative Coding"],
 				"year": 2022,
 				"status": "Case Study",
@@ -285,11 +287,14 @@
 					"src": "/work/carbon-direct/CarbonDirect-WorkCard.jpg",
 					"alt": "lorem ipsum"
 				},
+				"link": {
+					"external": "https://www.carbon-direct.com/"
+				},
 				"featured": false
 			},
 			"content": {
 				"headline": "is standing on the shoulders of science",
-				"description": "Carbon Direct is a purpose-driven carbon management enabling organizations to reduce, remove, and utilize their emissions. No longer a scrappy startup, they needed a brand and digital presence that better communicated the scale and capabilities of their company and matched their approach to business — intelligent, dynamic, and distinctive.",
+				"description": "Carbon Direct is a purpose-driven carbon management firm enabling organizations to reduce, remove, and utilize their emissions. No longer a scrappy startup, they needed a brand and digital presence that better communicated the scale and capabilities of their company and matched their approach to business — intelligent, dynamic, and distinctive.",
 				"scope": ["Visual Identity", "Web Design", "UI/UX", "Prototyping", "Art Direction"],
 				"partners": [
 					{
@@ -387,9 +392,9 @@
 		{
 			"metadata": {
 				"client": "Amazon Icons",
-				"summary": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis magnam possimus asperiores, exercitationem maxime molestias corrupti ducimus odit tenetur voluptatem excepturi. Veritatis corrupti ipsum laudantium, beatae quis numquam iste reprehenderit.",
+				"summary": "During my time at Turnstyle, I drew—or managed the drawing of—over a 1,000 icons for the Amazon Devices design group. In addition to slinging vectors, we worked with team at Amazon to define the system’s design principles and codify them in a comprehensive guidelines document.",
 				"tags": ["Icon Design", "Guidelines Document"],
-				"year": 2023,
+				"year": "2019-23",
 				"status": "Work in Progress",
 				"img": {
 					"src": "/work/amazon-icons/Amazon-WorkCard.jpg",
@@ -401,7 +406,7 @@
 		{
 			"metadata": {
 				"client": "Squiggler",
-				"summary": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis magnam possimus asperiores, exercitationem maxime molestias corrupti ducimus odit tenetur voluptatem excepturi. Veritatis corrupti ipsum laudantium, beatae quis numquam iste reprehenderit.",
+				"summary": "Squiggler is a free generative design tool to help you quickly create random, unique SVG waves and squiggles. Developing it required a lot of research into the technical details of how SVG paths are drawn and the math behind sin waves, but the result is a simple and easy-to-use single-purpose app.",
 				"tags": ["Development", "UI Design"],
 				"year": 2022,
 				"status": "Case Study Coming Soon",
@@ -409,19 +414,25 @@
 					"src": "/work/development/Squiggler-WorkCard.jpg",
 					"alt": "lorem ipsum"
 				},
+				"link": {
+					"external": "https://www.squiggler.app/"
+				},
 				"featured": false
 			}
 		},
 		{
 			"metadata": {
 				"client": "Get Some Ipsum",
-				"summary": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis magnam possimus asperiores, exercitationem maxime molestias corrupti ducimus odit tenetur voluptatem excepturi. Veritatis corrupti ipsum laudantium, beatae quis numquam iste reprehenderit.",
+				"summary": "This is my first Figma plugin—a simple, flexible lorem ipsum generator. It smoothes out the issues I have with other, similar plugins. Specifically, it runs through a bunch of custom logic before outputting the result to make sure that you end up with ipsum that look more like proper sentences.",
 				"tags": ["Figma Plugin", "Development"],
 				"year": 2023,
 				"status": "Case Study Coming Soon",
 				"img": {
 					"src": "/work/figma/GetSomeIpsum-WorkCard.jpg",
 					"alt": "lorem ipsum"
+				},
+				"link": {
+					"external": "https://www.figma.com/community/plugin/1225446981019698507/Get-Some-Ipsum"
 				},
 				"featured": false
 			}

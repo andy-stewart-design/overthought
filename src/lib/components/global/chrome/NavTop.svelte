@@ -34,12 +34,12 @@
 	class="sticky left-0 top-0 z-50 items-center justify-between border-b bg-background/50 backdrop-blur-md transition-transform duration-500 ease-out-3 border-light"
 	style:transform={$footerVisibility > 0.5 ? "translate(0, -110%)" : "translate(0, 0)"}
 >
-	<div class="mx-auto flex h-20 w-full max-w-screen-3xl items-center justify-between px-app">
+	<div class="mx-auto flex h-20 w-full max-w-app items-center justify-between px-app">
 		<a href="/" class="relative w-11" class:pointer-events-none={$page.url.pathname === "/"}>
 			<p class="sr-only">Andy's logo</p>
 			{@html andyLogo}
 		</a>
-		<div class="-mr-3 flex items-center">
+		<div class="flex items-center md:-mr-3">
 			<a
 				href="mailto:andy.stewart1170@gmail.com"
 				class="rounded-full bg-transparent p-3 transition-colors can-hover:hover:bg-foreground/10"

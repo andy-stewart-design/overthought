@@ -43,7 +43,7 @@ const config = {
 				},
 			},
 			maxWidth: {
-				app: "1600px",
+				app: "1480px",
 			},
 			opacity: {
 				15: ".15",

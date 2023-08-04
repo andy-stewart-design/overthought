@@ -1,6 +1,6 @@
 <script lang="ts">
-	import { page } from '$app/stores';
-	import { footerVisibility } from './Footer.svelte';
+	import { page } from "$app/stores";
+	import { footerVisibility } from "./Footer.svelte";
 	// import { Button } from 'neutral-ui';
 	// import NavSettings from './NavSettings.svelte';
 
@@ -10,27 +10,27 @@
 	}
 
 	const links: NavLinks[] = [
-		{ href: '/', text: 'Feed' },
-		{ href: '/projects', text: 'Work' },
+		{ href: "/#home", text: "Home" },
+		{ href: "/#work", text: "Work" },
 		// { href: '/feed', text: 'Feed' },
 		// { href: '/posts', text: 'Posts' },
-		{ href: '/about', text: 'About' }
+		{ href: "/#about", text: "About" },
 	];
 
 	// let isSettingsActive = false;
 
 	function getActivePath(path: string) {
-		const slug = path.split('/').slice(0, 2).join('/');
+		const slug = path.split("/").slice(0, 2).join("/");
 		if (slug) return slug;
-		else console.error('Could not find the active pathname');
+		else console.error("Could not find the active pathname");
 	}
 
 	$: activePath = getActivePath($page.url.pathname);
 </script>
 
 <nav
-	class="before:border-1 fixed bottom-8 left-1/2 z-40 -translate-x-1/2 rounded-full bg-surface-high/50 p-1.5 shadow-xl backdrop-blur transition-transform duration-500 ease-out-3 before:absolute before:-bottom-px before:-left-px before:-right-px before:-top-px before:rounded-full before:border before:border-light"
-	style:transform={$footerVisibility > 0.5 ? 'translate(-50%, 200%)' : 'translate(-50%, 0)'}
+	class="before:border-1 fixed bottom-8 left-1/2 z-40 -translate-x-1/2 rounded-full bg-surface-high/60 p-1.5 shadow-xl backdrop-blur transition-transform duration-500 ease-out-3 before:absolute before:-bottom-px before:-left-px before:-right-px before:-top-px before:rounded-full before:border before:border-light"
+	style:transform={$footerVisibility > 0.5 ? "translate(-50%, 200%)" : "translate(-50%, 0)"}
 >
 	<ul class="flex items-center gap-1">
 		{#each links as link}

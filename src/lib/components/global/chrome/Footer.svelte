@@ -48,7 +48,7 @@
 	<div class="h-screen md:h-[80vh]" />
 	<div class="sticky bottom-0 h-0">
 		<div class="absolute bottom-0 h-screen w-full bg-surface-mid md:h-[80vh]">
-			<Container class="relative flex h-full flex-col pb-md pt-md md:grid md:grid-cols-3 md:pt-xl">
+			<Container class="relative mx-auto flex h-full max-w-app flex-col pb-md pt-md md:grid md:grid-cols-3 md:pt-xl">
 				<div class="md:flex md:items-end">
 					<button
 						on:click={handleClick}

@@ -1,14 +1,18 @@
-import type { Handle } from '@sveltejs/kit';
+import { redirect, type Handle } from "@sveltejs/kit";
 
 export const handle: Handle = async ({ event, resolve }) => {
-	let theme = 'system';
+	if (event.route.id?.startsWith("/projects")) {
+		throw redirect(302, "/");
+	}
 
-	const cookieTheme = event.cookies.get('colorTheme');
+	let theme = "system";
+
+	const cookieTheme = event.cookies.get("colorTheme");
 	if (cookieTheme) theme = cookieTheme;
 	event.locals.theme = cookieTheme ?? theme;
 
 	const response = await resolve(event, {
-		transformPageChunk: ({ html }) => html.replace('%datatheme%', theme)
+		transformPageChunk: ({ html }) => html.replace("%datatheme%", theme),
 	});
 
 	return response;

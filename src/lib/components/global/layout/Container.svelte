@@ -12,6 +12,7 @@
 	export let pt: PaddingValue | null = null;
 	export let pb: PaddingValue | null = null;
 	export let pxNone: boolean = false;
+	export let id: string = "";
 
 	let isPaddingEqual = true;
 	if (pt || pb) isPaddingEqual = false;
@@ -22,7 +23,7 @@
 	if (!isPaddingEqual) py = null;
 </script>
 
-<svelte:element this={as} class={className} class:pad-x={!pxNone}>
+<svelte:element this={as} {id} class={className} class:pad-x={!pxNone}>
 	<slot />
 </svelte:element>
 
