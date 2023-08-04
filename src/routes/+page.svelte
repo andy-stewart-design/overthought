@@ -122,7 +122,10 @@
 						class="font-semibold text-foreground"
 						href="https://turnstyle.studio/"
 						target="_blank">Turnstyle</a
-					>, a full-service creative agency in Seattle, as well as a instructor at the School of Visual Concepts.
+					>, a full-service creative agency in Seattle, as well as a instructor at the
+					<a class="font-semibold text-foreground" href="https://www.svcseattle.com/" target="_blank"
+						>School of Visual Concepts</a
+					>.
 				</p>
 				<p class="text-base text-foreground/90 xs:text-lg md:text-base lg:text-lg">
 					In my work, I enjoy finding opportunities for creativity amidst the constraints of a given project and chasing
