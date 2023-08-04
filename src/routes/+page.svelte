@@ -23,7 +23,7 @@
 			<div class="space-y-6">
 				<p class="text-base text-foreground/90 xs:text-lg md:text-base lg:text-lg">
 					Hi, I’m Andy. I’m a product designer helping to bring life to brands through compelling visual systems and
-					clear interfaces—often for screens, sometimes not.
+					clear interfaces.
 				</p>
 				<p class="text-base text-foreground/90 xs:text-lg md:text-base lg:text-lg">
 					I was most recently the Digital Creative Director at <a
