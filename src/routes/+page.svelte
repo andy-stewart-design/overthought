@@ -122,8 +122,7 @@
 					In my work, I enjoy finding opportunities for creativity amidst the constraints of a given project and chasing
 					ideas that push me to the edge of my abilities. I’m a designer first and foremost, but I’m also a self-taught
 					developer with a background in journalism, and I’m passionate about helping to bridge the gap between
-					disciplines. I’m a practitioner with a dedication to my craft, and a systems-thinker who balances
-					expressiveness with a high degree of structure and organization.
+					disciplines.
 				</p>
 				<p class="text-base text-foreground/90 xs:text-lg md:text-base lg:text-lg">
 					Though I've spent the last 10 years in Seattle, I'm currently traveling and will soon be moving to New York
