@@ -4,7 +4,7 @@
 			"metadata": {
 				"client": "Teague",
 				"summary": "One of my first big projects at Turnstyle (circa 2019) was a total redesign of Teague's website. It was fitting that one of my last projects was evolving and streamlining the design system and CMS we built years prior to remove cruft and make it more flexible, scalable, and future-proof.",
-				"tags": ["Web Design", "Digital Strategy"],
+				"tags": ["Web Design", "UI/UX"],
 				"year": 2023,
 				"status": "Case Study",
 				"img": {
@@ -84,7 +84,7 @@
 			"metadata": {
 				"client": "Cipher News",
 				"summary": "Cipher is a publication covering the global transition to net-zero. Based on our work establishing their brand and visual identity, the Cipher team collaborated with us to translate their identity to a web-native design system and build a bespoke digital experience for their content.",
-				"tags": ["Product Design", "User Experience"],
+				"tags": ["Product Design", "UI/UX"],
 				"year": "WIP",
 				"status": "Work in Progress",
 				"img": {
@@ -98,7 +98,7 @@
 			"metadata": {
 				"client": "Vulcan Real Estate",
 				"summary": "As part of an effort to reposition themselves in the market, we developed a comprehensive visual identity system for one of Seattle's most notable real estate developers. This work included a new website, rebuilt from first principles, and a virtual artwalk microsite.",
-				"tags": ["Visual Identity", "Web Design"],
+				"tags": ["Visual Identity", "Web Design", "UI/UX"],
 				"year": 2023,
 				"status": "Case Study",
 				"link": {
@@ -189,7 +189,7 @@
 			"metadata": {
 				"client": "GLY",
 				"summary": "A new website for a PNW general contractor, built from the ground up to elevate and celebrate their outcomes-minded approach to construction and provide them with a modern, dynamic platform to establish credibility, demonstrate leadership, and attract talent.",
-				"tags": ["Web Design", "Digital Strategy"],
+				"tags": ["Web Design", "UI/UX"],
 				"year": 2022,
 				"status": "Case Study",
 				"img": {

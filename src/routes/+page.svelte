@@ -7,8 +7,8 @@
 </script>
 
 <main class="bg-background">
-	<Container class="mx-auto w-full max-w-app pb-xl">
-		<section id="home" class="grid gap-x-8 border-b py-xl border-light md:grid-cols-2 md:gap-y-12">
+	<Container class="mx-auto w-full max-w-app">
+		<section id="home" class="grid gap-x-8 border-b py-lg border-light md:grid-cols-2 md:gap-y-12 md:py-xl">
 			<div class="col-span-full mb-8 md:mb-0">
 				<div class="inline-block rounded-full border py-1 pl-2.5 pr-3 border-light">
 					<span class="mr-2 inline-block h-3 w-3 animate-pulse rounded-full bg-green-500" />
@@ -21,11 +21,11 @@
 			</h2>
 			<div />
 			<div class="space-y-6">
-				<p class="text-base text-foreground/90 xs:text-lg md:text-base lg:text-lg">
+				<p class="text-base text-foreground/80 xs:text-lg md:text-base lg:text-lg">
 					Hi, I’m Andy. I’m a product designer helping to bring life to brands through compelling visual systems and
 					clear interfaces.
 				</p>
-				<p class="text-base text-foreground/90 xs:text-lg md:text-base lg:text-lg">
+				<p class="text-base text-foreground/80 xs:text-lg md:text-base lg:text-lg">
 					I was most recently the Digital Creative Director at <a
 						class="font-semibold text-foreground"
 						href="https://turnstyle.studio/"
@@ -33,12 +33,12 @@
 					>, a full-service creative studio in Seattle, where I worked end-to-end on projects both as a high-level
 					creative leader and a hands-on contributor (often at the same time).
 				</p>
-				<p class="text-base text-foreground/90 xs:text-lg md:text-base lg:text-lg">
+				<p class="text-base text-foreground/80 xs:text-lg md:text-base lg:text-lg">
 					I'm currently available for hire. If you would like to discuss opportunities to collaborate or the types of
 					roles I'm looking for, please
 					<a class="font-semibold text-foreground" href="mailto:andy.stewart1170@gmail.com">reach out</a>.
 				</p>
-				<div class="flex flex-wrap gap-4 pt-2 text-lg font-medium">
+				<div class="flex flex-wrap gap-4 pt-8 text-lg font-medium">
 					<a href="https://codepen.io/andystewartdesign" class="whitespace-nowrap leading-none"
 						>LinkedIn <span class="opacity-65">↗</span></a
 					>
@@ -54,7 +54,10 @@
 			</div>
 		</section>
 
-		<section id="work" class="grid gap-2 gap-y-12 border-b py-xl border-light sm:grid-cols-2 sm:gap-x-8 lg:grid-cols-3">
+		<section
+			id="work"
+			class="grid gap-2 gap-y-12 border-b py-lg border-light sm:grid-cols-2 sm:gap-x-8 md:py-xl lg:grid-cols-3"
+		>
 			<h1 class="col-span-full text-5xl font-medium xs:text-6xl md:text-5xl lg:text-6xl">Projects</h1>
 			{#each data.projects as project}
 				<div class="space-y-2">
@@ -91,7 +94,7 @@
 							</div>
 						{/if}
 
-						<p class="">{project.metadata.summary}</p>
+						<p class="text-foreground/80">{project.metadata.summary}</p>
 						<ul class="flex flex-wrap gap-1.5 pt-2">
 							{#each project.metadata.tags as tag}
 								<li class="overflow-hidden rounded-full border bg-foreground/10 text-sm font-medium border-light">
@@ -104,7 +107,7 @@
 			{/each}
 		</section>
 
-		<section id="about" class="grid gap-8 pt-xl md:grid-cols-2 md:gap-y-12">
+		<section id="about" class="grid gap-8 py-lg md:grid-cols-2 md:gap-y-12 md:py-xl">
 			<div>
 				<Image
 					cloud
@@ -116,7 +119,7 @@
 			</div>
 			<div class="flex flex-col justify-center gap-6">
 				<h1 class="text-5xl font-medium xs:text-6xl md:text-5xl lg:text-6xl">About Me</h1>
-				<p class="text-base text-foreground/90 xs:text-lg md:text-base lg:text-lg">
+				<p class="text-base text-foreground/80 xs:text-lg md:text-base lg:text-lg">
 					I've been practicing design for over a decade, both as a design leader and a hands-on contributor — often at
 					the same time. Most recently, I was Digital Creative Director at <a
 						class="font-semibold text-foreground"
@@ -127,13 +130,13 @@
 						>School of Visual Concepts</a
 					>.
 				</p>
-				<p class="text-base text-foreground/90 xs:text-lg md:text-base lg:text-lg">
+				<p class="text-base text-foreground/80 xs:text-lg md:text-base lg:text-lg">
 					In my work, I enjoy finding opportunities for creativity amidst the constraints of a given project and chasing
 					ideas that push me to the edge of my abilities. I’m a designer first and foremost, but I’m also a self-taught
 					developer with a background in journalism, and I’m passionate about helping to bridge the gap between
 					disciplines.
 				</p>
-				<p class="text-base text-foreground/90 xs:text-lg md:text-base lg:text-lg">
+				<p class="text-base text-foreground/80 xs:text-lg md:text-base lg:text-lg">
 					Though I've spent the last 10 years in Seattle, I'm currently traveling and will soon be moving to New York
 					City with my partner and our two cats. I'm currently available for hire. If you would like to discuss
 					opportunities to collaborate or the types of roles I'm looking for, please
