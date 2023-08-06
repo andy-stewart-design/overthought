@@ -1,0 +1,32 @@
+{
+	"entries": [
+		{
+			"name": "Ben Graham",
+			"title": "Owner/Creative Director",
+			"company": "Turnstyle",
+			"quote": "Andy’s among the most self-motivated, hard-working, and thoughtful people I’ve ever worked with, and he’s an incredibly fast learner. He’d be an asset to any organization looking for a smart, dynamic, and curious design + tech leader.",
+			"avatar": "/recommendation-headshots/BenGraham.jpg"
+		},
+		{
+			"name": "R.J. LaCount",
+			"title": "Lead Developer",
+			"company": "Turnstyle",
+			"quote": "I cannot overstate the impact Andy has had on both my professional growth and our collective success. Andy possesses a unique blend of creativity and technical expertise, and he consistently goes above and beyond to ensure that our collaborations result in top-quality deliverables.",
+			"avatar": "/recommendation-headshots/RJLacount.jpg"
+		},
+		{
+			"name": "Larry Asher",
+			"title": "Director",
+			"company": "School of Visual Concepts",
+			"quote": "Andy always approached every assignment thoughtfully, artfully, and with a high degree of professionalism and collaboration. There aren’t many folks out there who are as solid at their craft as they are at their ability to clearly explain their approach.",
+			"avatar": "/recommendation-headshots/LarryAsher.jpg"
+		},
+		{
+			"name": "Melanie Cochrun",
+			"title": "Director of Marketing + Communications",
+			"company": "GLY",
+			"quote": "Andy listened patiently as we talked (a lot), didn’t give us what we asked for (it was better), and generally blew our hair back with his endless creativity and virtual meeting stamina (hey, a website project during quarantine isn’t easy)!",
+			"avatar": "/recommendation-headshots/MelanieCochrun.jpg"
+		}
+	]
+}
