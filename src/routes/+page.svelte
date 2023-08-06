@@ -10,7 +10,7 @@
 	<Container class="mx-auto w-full max-w-app">
 		<section id="home" class="grid gap-x-8 border-b py-lg border-light md:grid-cols-2 md:gap-y-12 md:py-xl">
 			<div class="col-span-full mb-8 md:mb-0">
-				<div class="inline-flex items-center gap-2 rounded-full border py-1 pl-2.5 pr-3 border-light">
+				<div class="inline-flex items-center gap-2 rounded-full border bg-surface-mid py-1 pl-2.5 pr-3 border-light">
 					<span class="relative flex h-3 w-3">
 						<span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-400 opacity-75" />
 						<span class="relative inline-flex h-3 w-3 rounded-full bg-green-500" />
@@ -66,50 +66,48 @@
 		>
 			<h2 class="col-span-full text-5xl font-medium xs:text-6xl md:text-5xl lg:text-6xl">Projects</h2>
 			{#each data.projects as project, index}
-				<div class="space-y-2">
-					<div class="space-y-3 pt-4">
-						{#if project.metadata.link?.external}
-							<a href={project.metadata.link.external} target="_blank" class="group space-y-4">
-								<Image
-									cloud
-									class="aspect-[4/5] w-full rounded-xl border border-white/20 bg-foreground/10 object-cover transition-opacity duration-500 ease-out-3 group-hover:opacity-60"
-									src={project.metadata.img.src}
-									alt={project.metadata.img.alt}
-									imageWidths={[800, 1200]}
-									sizes={[["769px", "50vh"], ["100vh"]]}
-									loading={index >= 3 ? "lazy" : "eager"}
-								/>
-								<div class="flex items-baseline justify-between">
-									<p class="text-2xl font-medium">{project.metadata.client} <span class="opacity-65">↗</span></p>
-									<p class="text-sm font-medium slashed-zero">{project.metadata.year}</p>
-								</div>
-							</a>
-						{:else}
-							<div class="space-y-4">
-								<Image
-									cloud
-									class="aspect-[4/5] w-full rounded-xl border border-white/20 bg-foreground/10 object-cover"
-									src={project.metadata.img.src}
-									alt={project.metadata.img.alt}
-									imageWidths={[800, 1200]}
-									sizes={[["769px", "50vh"], ["100vh"]]}
-								/>
-								<div class="flex items-baseline justify-between">
-									<p class="text-2xl font-medium">{project.metadata.client}</p>
-									<p class="text-sm font-medium slashed-zero">{project.metadata.year}</p>
-								</div>
+				<div class="flex flex-col gap-3 pt-4">
+					{#if project.metadata.link?.external}
+						<a href={project.metadata.link.external} target="_blank" class="group space-y-4">
+							<Image
+								cloud
+								class="aspect-[4/5] w-full rounded-xl border border-white/20 bg-foreground/10 object-cover transition-opacity duration-500 ease-out-3 group-hover:opacity-60"
+								src={project.metadata.img.src}
+								alt={project.metadata.img.alt}
+								imageWidths={[800, 1200]}
+								sizes={[["769px", "50vh"], ["100vh"]]}
+								loading={index >= 3 ? "lazy" : "eager"}
+							/>
+							<div class="flex items-baseline justify-between">
+								<p class="text-2xl font-medium">{project.metadata.client} <span class="opacity-65">↗</span></p>
+								<p class="text-sm font-medium slashed-zero">{project.metadata.year}</p>
 							</div>
-						{/if}
+						</a>
+					{:else}
+						<div class="space-y-4">
+							<Image
+								cloud
+								class="aspect-[4/5] w-full rounded-xl border border-white/20 bg-foreground/10 object-cover"
+								src={project.metadata.img.src}
+								alt={project.metadata.img.alt}
+								imageWidths={[800, 1200]}
+								sizes={[["769px", "50vh"], ["100vh"]]}
+							/>
+							<div class="flex items-baseline justify-between">
+								<p class="text-2xl font-medium">{project.metadata.client}</p>
+								<p class="text-sm font-medium slashed-zero">{project.metadata.year}</p>
+							</div>
+						</div>
+					{/if}
 
-						<p class="text-foreground/80">{project.metadata.summary}</p>
-						<ul class="flex flex-wrap gap-1.5 pt-2">
-							{#each project.metadata.tags as tag}
-								<li class="overflow-hidden rounded-full border bg-foreground/10 text-sm font-medium border-light">
-									<span class="inline-block px-2.5 pb-1 pt-[3px]">{tag}</span>
-								</li>
-							{/each}
-						</ul>
-					</div>
+					<p class="grow text-foreground/80">{project.metadata.summary}</p>
+					<ul class="flex flex-wrap gap-1.5 pt-2">
+						{#each project.metadata.tags as tag}
+							<li class="overflow-hidden rounded-full border bg-surface-mid text-sm font-medium border-light">
+								<span class="inline-block px-2.5 pb-1 pt-[3px]">{tag}</span>
+							</li>
+						{/each}
+					</ul>
 				</div>
 			{/each}
 		</section>
@@ -121,7 +119,7 @@
 			<h2 class="col-span-full mb-8 text-center text-3xl font-medium md:mb-4">Kind words from some kind people</h2>
 
 			{#each data.recos as reco}
-				<div class="space-y-4 rounded-xl border bg-foreground/10 p-4 border-light">
+				<div class="space-y-4 rounded-xl border bg-surface-mid p-4 border-light">
 					<div class="flex items-center gap-4">
 						<Image
 							cloud
