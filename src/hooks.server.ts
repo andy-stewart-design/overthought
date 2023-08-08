@@ -1,10 +1,10 @@
-// import { redirect, type Handle } from "@sveltejs/kit";
-import type { Handle } from "@sveltejs/kit";
+import { redirect, type Handle } from "@sveltejs/kit";
+// import type { Handle } from "@sveltejs/kit";
 
 export const handle: Handle = async ({ event, resolve }) => {
-	// if (event.route.id?.startsWith("/projects")) {
-	// 	throw redirect(302, "/#work");
-	// }
+	if (event.route.id === "/projects") {
+		throw redirect(302, "/#work");
+	}
 
 	let theme = "system";
 
