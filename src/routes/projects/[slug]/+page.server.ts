@@ -5,9 +5,9 @@ import type { CaseStudy } from "$lib/types/projects";
 
 export const load: PageServerLoad = ({ params }) => {
 	const { slug } = params;
-	const projects = projectData.entries as CaseStudy[];
+	const projects = projectData.entries;
 
-	const [project] = projects.filter((p) => p.metadata.link?.href === slug);
+	const [project] = projects.filter((p) => p.metadata.link?.internal === slug);
 
 	if (!project) {
 		const fallbackProjects = projects
@@ -18,10 +18,10 @@ export const load: PageServerLoad = ({ params }) => {
 			})
 			.map((p) => p.metadata);
 
-		throw error(404, {
-			message: "Project not found.",
-			projects: fallbackProjects,
-		});
+		// throw error(404, {
+		// 	message: "Project not found.",
+		// 	projects: fallbackProjects,
+		// });
 	}
 
 	const { content, metadata } = project;

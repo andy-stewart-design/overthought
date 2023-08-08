@@ -81,6 +81,7 @@
 						</div>
 					</div>
 					<p class="text-sm font-medium">© Andy Stewart Design {year}</p>
+					<a href="/projects">Projects</a>
 				</div>
 				<!-- <div class="flex grow items-center justify-center">
 					<button

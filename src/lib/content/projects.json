@@ -12,7 +12,8 @@
 					"alt": "lorem ipsum"
 				},
 				"link": {
-					"external": "https://teague.com/"
+					"external": "https://teague.com/",
+					"internal": "teague"
 				},
 				"featured": true
 			},
@@ -102,7 +103,8 @@
 				"year": 2023,
 				"status": "Case Study",
 				"link": {
-					"external": "https://vulcanrealestate.com/"
+					"external": "https://vulcanrealestate.com/",
+					"internal": "vulcan-real-estate"
 				},
 				"img": {
 					"src": "/work/vulcan-real-estate/VRE-WorkCard.jpg",
@@ -197,7 +199,8 @@
 					"alt": "lorem ipsum"
 				},
 				"link": {
-					"external": "https://www.gly.com/"
+					"external": "https://www.gly.com/",
+					"internal": "gly"
 				},
 				"featured": true
 			},
@@ -288,7 +291,8 @@
 					"alt": "lorem ipsum"
 				},
 				"link": {
-					"external": "https://www.carbon-direct.com/"
+					"external": "https://www.carbon-direct.com/",
+					"internal": "carbon-direct"
 				},
 				"featured": false
 			},
