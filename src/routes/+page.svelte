@@ -101,6 +101,15 @@
 					{/if}
 
 					<p class="grow text-foreground/80">{project.metadata.summary}</p>
+					<div class="flex gap-3">
+						{#if project.metadata.link?.internal}
+							<a href={`/projects/${project.metadata.link.internal}`} class="font-semibold">Case Study</a>
+							<span class="h-full w-px bg-foreground/25"></span>
+						{/if}
+						{#if project.metadata.link?.external}
+							<a href={project.metadata.link.external} target="_blank" class="font-semibold">Live Site</a>
+						{/if}
+					</div>
 					<ul class="flex flex-wrap gap-1.5 pt-2">
 						{#each project.metadata.tags as tag}
 							<li class="overflow-hidden rounded-full border bg-surface-mid text-sm font-medium border-light">

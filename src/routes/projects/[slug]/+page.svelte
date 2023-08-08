@@ -13,7 +13,7 @@
 	<div class="mx-auto max-w-screen-3xl lg:grid lg:grid-cols-12">
 		<div class="relative border-b border-light lg:col-span-5 lg:border-b-0 xl:col-span-4">
 			<div class="grid gap-y-5 pb-md pt-md px-app lg:sticky lg:top-20 lg:pb-xl">
-				<a href="/projects" class="font-medium transition-opacity hover:opacity-60">← All Projects</a>
+				<!-- <a href="/projects" class="font-medium transition-opacity hover:opacity-60">← All Projects</a> -->
 				<h1 class="text-3xl font-semibold">
 					{data.client}
 					{data.headline}
@@ -51,7 +51,7 @@
 				{/if}
 				{#if data.liveLink}
 					<div class="mt-4">
-						<Button link external href={data.liveLink}>View Live Site <span class="font-normal">↗</span></Button>
+						<Button link href={data.liveLink}>View Live Site <span class="font-normal">↗</span></Button>
 					</div>
 				{/if}
 			</div>
