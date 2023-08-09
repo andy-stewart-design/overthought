@@ -6,7 +6,7 @@
 	export let data: PageData;
 </script>
 
-<main class="bg-background">
+<main class="bg-background border-b border-light">
 	<Container class="mx-auto w-full max-w-app">
 		<section id="home" class="grid gap-x-8 border-b py-lg border-light md:grid-cols-2 md:gap-y-12 md:py-xl">
 			<div class="col-span-full mb-8 md:mb-0">
@@ -133,13 +133,14 @@
 		</section>
 
 		<section
-			id="work"
-			class="mx-auto grid max-w-6xl gap-3 border-b py-lg border-light sm:grid-cols-2 md:gap-6 md:py-xl"
+			id="recos"
+			class="border-b border-light"
 		>
+		<div class="mx-auto grid max-w-6xl gap-3 py-lg sm:grid-cols-2 md:gap-6 md:py-xl">
 			<h2 class="col-span-full mb-8 text-center text-3xl font-medium md:mb-4">Kind words from some kind people</h2>
 
 			{#each data.recos as reco}
-				<div class="space-y-4 rounded-xl border bg-surface-mid p-4 border-light">
+				<div class="space-y-4 rounded-xl border bg-surface-mid p-4 border-light shadow-lg">
 					<div class="flex items-center gap-4">
 						<Image
 							cloud
@@ -158,6 +159,7 @@
 					<p>{reco.quote}</p>
 				</div>
 			{/each}
+		</div>
 		</section>
 
 		<section id="about" class="grid gap-8 py-lg md:grid-cols-2 md:gap-y-12 md:py-xl">
