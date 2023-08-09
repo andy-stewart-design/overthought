@@ -66,7 +66,7 @@
 		>
 			<h2 class="col-span-full text-5xl font-medium xs:text-6xl md:text-5xl lg:text-6xl">Projects</h2>
 			{#each data.projects as project, index}
-				<div class="flex flex-col gap-3 pt-4">
+				<div class="flex flex-col gap-4 pt-4">
 					{#if project.metadata.link?.external}
 						<a href={project.metadata.link.external} target="_blank" class="group space-y-4">
 							<Image
@@ -100,23 +100,34 @@
 						</div>
 					{/if}
 
-					<p class="grow text-foreground/80">{project.metadata.summary}</p>
-					<div class="flex gap-3">
-						{#if project.metadata.link?.internal}
-							<a href={`/projects/${project.metadata.link.internal}`} class="font-semibold">Case Study</a>
-							<span class="h-full w-px bg-foreground/25"></span>
-						{/if}
-						{#if project.metadata.link?.external}
-							<a href={project.metadata.link.external} target="_blank" class="font-semibold">Live Site</a>
-						{/if}
-					</div>
-					<ul class="flex flex-wrap gap-1.5 pt-2">
+					<ul class="flex flex-wrap gap-1.5 pt-2 -mt-1.5">
 						{#each project.metadata.tags as tag}
-							<li class="overflow-hidden rounded-full border bg-surface-mid text-sm font-medium border-light">
-								<span class="inline-block px-2.5 pb-1 pt-[3px]">{tag}</span>
+							<li class="text-sm font-medium after:content-['·'] after:opacity-60 last-of-type:after:content-none">
+								<span class="pr-0.5 group-last-of-type:p-0">{tag}</span>
 							</li>
 						{/each}
 					</ul>
+
+					<p class="grow text-foreground/80">{project.metadata.summary}</p>
+					<div class="flex gap-3">
+						{#if project.metadata.link}	
+							{#if project.metadata.link.internal}
+								<a href={`/projects/${project.metadata.link.internal}`} class="font-semibold">Case Study</a>
+								<span class="h-full w-px bg-foreground/25"></span>
+							{/if}
+							{#if project.metadata.link.external}
+								<a href={project.metadata.link.external} target="_blank" class="font-semibold">See Live <span class="opacity-65">↗</span></a>
+							{/if}
+						{:else} 
+							<a class="flex items-center gap-1 font-semibold text-foreground" href="mailto:andy.stewart1170@gmail.com">
+								<svg width="16" height="16" viewBox="0 0 16 16" opacity="0.6" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M5 6V4C5 2.34315 6.34315 1 8 1C9.65685 1 11 2.34315 11 4V6H12C12.5523 6 13 6.44772 13 7V13C13 13.5523 12.5523 14 12 14H4C3.44772 14 3 13.5523 3 13V7C3 6.44772 3.44772 6 4 6H5ZM7 4C7 3.44772 7.44772 3 8 3C8.55228 3 9 3.44772 9 4V6H7V4Z" fill="currentColor"/>
+								</svg>  
+								Contact Me
+							</a>
+						{/if}
+					</div>
+					
 				</div>
 			{/each}
 		</section>
