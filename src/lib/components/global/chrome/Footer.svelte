@@ -45,10 +45,10 @@
 </script>
 
 <footer bind:this={ref} class="relative z-0" style:opacity={footerOpacity}>
-	<div class="h-screen md:h-[80vh]" />
+	<div class="h-screen md:h-[80vh] md:min-h-[480px]" />
 	<div class="sticky bottom-0 h-0">
-		<div class="absolute bottom-0 h-screen w-full bg-surface-mid md:h-[80vh]">
-			<Container class="relative mx-auto flex h-full max-w-app flex-col pb-md pt-md md:grid md:grid-cols-3 md:pt-xl">
+		<div class="absolute bottom-0 h-screen w-full bg-surface-mid md:h-[80vh] md:min-h-[480px]">
+			<Container class="relative mx-auto flex h-full max-w-app flex-col pb-md pt-lg md:grid md:grid-cols-3 md:pt-0">
 				<div class="md:flex md:items-end">
 					<button
 						on:click={handleClick}
@@ -61,7 +61,7 @@
 					</button>
 				</div>
 				<div class="md:pt-none flex grow flex-col justify-between pt-md md:col-span-2 md:pt-0">
-					<div class="space-y-12">
+					<div class="space-y-12 md:grow md:flex md:flex-col md:justify-center md:pb-8">
 						<p
 							class="max-w-xl text-3xl leading-snug text-foreground xs:text-4xl md:max-w-3xl md:text-5xl md:leading-[1.2]"
 						>
@@ -82,38 +82,6 @@
 					</div>
 					<p class="text-sm font-medium">© Andy Stewart Design {year}</p>
 				</div>
-				<!-- <div class="flex grow items-center justify-center">
-					<button
-						on:click={() => {
-							window.scrollTo({
-								top: 0,
-								behavior: "smooth",
-							});
-						}}
-						class="group flex items-center gap-4 md:gap-8 portrait:flex-col landscape:flex-row"
-					>
-						<div
-							class="flex h-32 w-32 items-center justify-center rounded-full border transition-colors duration-300 ease-out-3 border-light can-hover:group-hover:bg-foreground can-hover:group-hover:text-background"
-						>
-							<svg width="80" height="80" viewBox="0 0 80 80" fill="none">
-								<path d="M40 16V64" stroke="currentColor" fill="none" stroke-width="6" />
-								<path d="M16 40L40 16L64 40" stroke="currentColor" fill="none" stroke-width="6" />
-							</svg>
-						</div>
-						<div class="space-y-1">
-							<p class="text-4xl md:text-5xl portrait:text-center landscape:text-left">
-								Thanks for scrolling<span class="portrait:hidden landscape:inline">.</span>
-							</p>
-							<p class="text-4xl md:text-5xl portrait:text-center landscape:text-left">
-								Head back to top<span class="portrait:hidden landscape:inline">.</span>
-							</p>
-						</div>
-					</button>
-				</div>
-				<div class="flex justify-between pb-3">
-					<p>©{year}</p>
-					<a href="mailto:andy.stewart1170@gmail.com">Contact</a>
-				</div> -->
 			</Container>
 		</div>
 	</div>
