@@ -87,7 +87,7 @@
 			I believe that the more my skill set overlaps with those of my colleagues, the easier it is for me to speak with
 			and understand their needs and perspectives, and the more we’re able to accomplish together.
 		</p>
-		<h2>Building as a Form of Thinking</h2>
+		<h2>Thinking by Building</h2>
 		<p>
 			The debate over whether designers should learn to code is exhausting. I cannot give you a definitive answer—no one
 			can. Like most questions posed as binaries, the answer is, “it depends.” Design and development are a spectrum,
