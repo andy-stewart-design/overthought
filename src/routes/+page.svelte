@@ -6,7 +6,7 @@
 	export let data: PageData;
 </script>
 
-<main class="bg-background border-b border-light">
+<main class="border-b bg-background border-light">
 	<Container class="mx-auto w-full max-w-app">
 		<section id="home" class="grid gap-x-8 border-b py-lg border-light md:grid-cols-2 md:gap-y-12 md:py-xl">
 			<div class="col-span-full mb-8 md:mb-0">
@@ -15,7 +15,7 @@
 						<span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-400 opacity-75" />
 						<span class="relative inline-flex h-3 w-3 rounded-full bg-green-500" />
 					</span>
-					Open for work
+					Available for work
 				</div>
 			</div>
 			<h1 class="text-5xl font-medium xs:text-6xl md:text-5xl lg:text-6xl">Andy Stewart</h1>
@@ -67,17 +67,41 @@
 			<h2 class="col-span-full text-5xl font-medium xs:text-6xl md:text-5xl lg:text-6xl">Projects</h2>
 			{#each data.projects as project, index}
 				<div class="flex flex-col gap-4 pt-4">
-					{#if project.metadata.link?.external}
+					{#if project.metadata.link?.internal}
+						<a href={project.metadata.link.internal} class="group space-y-4">
+							<div
+								class="relative overflow-hidden rounded-xl bg-black after:absolute after:bottom-0 after:left-0 after:right-0 after:top-0 after:rounded-xl after:border after:border-light"
+							>
+								<Image
+									cloud
+									class="aspect-[4/5] w-full bg-foreground/10 object-cover transition-opacity duration-500 ease-out-3 group-hover:opacity-60"
+									src={project.metadata.img.src}
+									alt={project.metadata.img.alt}
+									imageWidths={[800, 1200]}
+									sizes={[["769px", "50vh"], ["100vh"]]}
+									loading={index >= 3 ? "lazy" : "eager"}
+								/>
+							</div>
+							<div class="flex items-baseline justify-between">
+								<p class="text-2xl font-medium">{project.metadata.client}</p>
+								<p class="text-sm font-medium slashed-zero">{project.metadata.year}</p>
+							</div>
+						</a>
+					{:else if project.metadata.link?.external}
 						<a href={project.metadata.link.external} target="_blank" class="group space-y-4">
-							<Image
-								cloud
-								class="aspect-[4/5] w-full rounded-xl border border-white/20 bg-foreground/10 object-cover transition-opacity duration-500 ease-out-3 group-hover:opacity-60"
-								src={project.metadata.img.src}
-								alt={project.metadata.img.alt}
-								imageWidths={[800, 1200]}
-								sizes={[["769px", "50vh"], ["100vh"]]}
-								loading={index >= 3 ? "lazy" : "eager"}
-							/>
+							<div
+								class="relative overflow-hidden rounded-xl bg-black after:absolute after:bottom-0 after:left-0 after:right-0 after:top-0 after:rounded-xl after:border after:border-light"
+							>
+								<Image
+									cloud
+									class="aspect-[4/5] w-full bg-foreground/10 object-cover transition-opacity duration-500 ease-out-3 group-hover:opacity-60"
+									src={project.metadata.img.src}
+									alt={project.metadata.img.alt}
+									imageWidths={[800, 1200]}
+									sizes={[["769px", "50vh"], ["100vh"]]}
+									loading={index >= 3 ? "lazy" : "eager"}
+								/>
+							</div>
 							<div class="flex items-baseline justify-between">
 								<p class="text-2xl font-medium">{project.metadata.client} <span class="opacity-65">↗</span></p>
 								<p class="text-sm font-medium slashed-zero">{project.metadata.year}</p>
@@ -87,7 +111,7 @@
 						<div class="space-y-4">
 							<Image
 								cloud
-								class="aspect-[4/5] w-full rounded-xl border border-white/20 bg-foreground/10 object-cover"
+								class="aspect-[4/5] w-full rounded-xl border object-cover border-light"
 								src={project.metadata.img.src}
 								alt={project.metadata.img.alt}
 								imageWidths={[800, 1200]}
@@ -100,69 +124,80 @@
 						</div>
 					{/if}
 
-					<ul class="flex flex-wrap gap-1.5 pt-2 -mt-1.5">
+					<ul class="-mt-1.5 flex flex-wrap gap-1.5 pt-2">
 						{#each project.metadata.tags as tag}
-							<li class="text-sm font-medium after:content-['·'] after:opacity-60 last-of-type:after:content-none">
+							<li class="text-sm font-medium after:opacity-60 after:content-['·'] last-of-type:after:content-none">
 								<span class="pr-0.5 group-last-of-type:p-0">{tag}</span>
 							</li>
 						{/each}
 					</ul>
 
-					<p class="grow text-foreground/80">{project.metadata.summary}</p>
-					<div class="flex gap-3">
-						{#if project.metadata.link}	
+					<p class="text-foreground/80">{project.metadata.summary}</p>
+
+					<div class="flex items-center gap-3">
+						{#if project.metadata.link}
 							{#if project.metadata.link.internal}
-								<a href={`/projects/${project.metadata.link.internal}`} class="font-semibold">Case Study</a>
-								<span class="h-full w-px bg-foreground/25"></span>
+								<a href={`${project.metadata.link.internal}`} class="font-semibold">Case Study</a>
+								<span class="h-4 w-px bg-foreground/25" />
 							{/if}
 							{#if project.metadata.link.external}
-								<a href={project.metadata.link.external} target="_blank" class="font-semibold">See Live <span class="opacity-65">↗</span></a>
+								<a href={project.metadata.link.external} target="_blank" class="font-semibold"
+									>See Live <span class="opacity-65">↗</span></a
+								>
 							{/if}
-						{:else} 
+						{:else}
 							<a class="flex items-center gap-1 font-semibold text-foreground" href="mailto:andy.stewart1170@gmail.com">
-								<svg width="16" height="16" viewBox="0 0 16 16" opacity="0.6" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path fill-rule="evenodd" clip-rule="evenodd" d="M5 6V4C5 2.34315 6.34315 1 8 1C9.65685 1 11 2.34315 11 4V6H12C12.5523 6 13 6.44772 13 7V13C13 13.5523 12.5523 14 12 14H4C3.44772 14 3 13.5523 3 13V7C3 6.44772 3.44772 6 4 6H5ZM7 4C7 3.44772 7.44772 3 8 3C8.55228 3 9 3.44772 9 4V6H7V4Z" fill="currentColor"/>
-								</svg>  
+								<svg
+									width="16"
+									height="16"
+									viewBox="0 0 16 16"
+									opacity="0.6"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										fill-rule="evenodd"
+										clip-rule="evenodd"
+										d="M5 6V4C5 2.34315 6.34315 1 8 1C9.65685 1 11 2.34315 11 4V6H12C12.5523 6 13 6.44772 13 7V13C13 13.5523 12.5523 14 12 14H4C3.44772 14 3 13.5523 3 13V7C3 6.44772 3.44772 6 4 6H5ZM7 4C7 3.44772 7.44772 3 8 3C8.55228 3 9 3.44772 9 4V6H7V4Z"
+										fill="currentColor"
+									/>
+								</svg>
 								Contact Me
 							</a>
 						{/if}
 					</div>
-					
 				</div>
 			{/each}
 		</section>
 
-		<section
-			id="recos"
-			class="border-b border-light"
-		>
-		<div class="mx-auto grid max-w-6xl gap-3 py-lg sm:grid-cols-2 md:gap-6 md:py-xl">
-			<h2 class="col-span-full mb-8 text-center text-3xl font-medium md:mb-4">Kind words from some kind people</h2>
+		<section id="about" class="border-b border-light">
+			<div class="mx-auto grid max-w-6xl gap-3 py-lg sm:grid-cols-2 md:gap-6 md:py-xl">
+				<h2 class="col-span-full mb-8 text-center text-3xl font-medium md:mb-4">Kind words from some kind people</h2>
 
-			{#each data.recos as reco}
-				<div class="space-y-4 rounded-xl border bg-surface-mid p-4 border-light shadow-lg">
-					<div class="flex items-center gap-4">
-						<Image
-							cloud
-							class="h-14 w-14 shrink-0 rounded-full border object-cover border-light"
-							src={reco.avatar}
-							alt={`Headshot of ${reco.name}`}
-							imageWidths={240}
-							sizes={[["56px"]]}
-							loading="lazy"
-						/>
-						<div>
-							<p class="pt-px text-lg font-medium">{reco.name}</p>
-							<p class="text-sm font-medium opacity-65">{reco.title}, {reco.company}</p>
+				{#each data.recos as reco}
+					<div class="space-y-4 rounded-xl border bg-surface-mid p-4 shadow-lg border-light">
+						<div class="flex items-center gap-4">
+							<Image
+								cloud
+								class="h-14 w-14 shrink-0 rounded-full border object-cover border-light"
+								src={reco.avatar}
+								alt={`Headshot of ${reco.name}`}
+								imageWidths={240}
+								sizes={[["56px"]]}
+								loading="lazy"
+							/>
+							<div>
+								<p class="pt-px text-lg font-medium">{reco.name}</p>
+								<p class="text-sm font-medium opacity-65">{reco.title}, {reco.company}</p>
+							</div>
 						</div>
+						<p>{reco.quote}</p>
 					</div>
-					<p>{reco.quote}</p>
-				</div>
-			{/each}
-		</div>
+				{/each}
+			</div>
 		</section>
 
-		<section id="about" class="grid gap-8 py-lg md:grid-cols-2 md:gap-y-12 md:py-xl">
+		<section class="grid gap-8 py-lg md:grid-cols-2 md:gap-y-12 md:py-xl">
 			<div>
 				<Image
 					cloud

@@ -19,6 +19,10 @@ const config = {
 			"2xl": "1536px",
 		},
 		extend: {
+			animation: {
+				cursor: "cursor 2s infinite alternate cubic-bezier(0.65, 0, 0.35, 1)",
+				selection: "selection 2s infinite alternate cubic-bezier(0.65, 0, 0.35, 1)",
+			},
 			borderWidth: {
 				1.5: "1.5px",
 			},
@@ -40,6 +44,16 @@ const config = {
 					700: "rgb(var(--gray-700) / <alpha-value>)",
 					800: "rgb(var(--gray-800) / <alpha-value>)",
 					900: "rgb(var(--gray-900) / <alpha-value>)",
+				},
+			},
+			keyframes: {
+				cursor: {
+					"0%, 20%": { translate: "-160px -160px" },
+					"80%, 100%": { translate: "0px 0px" },
+				},
+				selection: {
+					"0%, 20%": { width: "40px", height: "40px" },
+					"80%, 100%": { width: "200px", height: "200px" },
 				},
 			},
 			maxWidth: {

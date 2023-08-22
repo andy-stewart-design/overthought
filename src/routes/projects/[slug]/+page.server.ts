@@ -5,9 +5,11 @@ import type { CaseStudy } from "$lib/types/projects";
 
 export const load: PageServerLoad = ({ params }) => {
 	const { slug } = params;
+	console.log(params);
+
 	const projects = projectData.entries;
 
-	const [project] = projects.filter((p) => p.metadata.link?.internal === slug);
+	const [project] = projects.filter((p) => p.metadata.link?.internal === `/projects/${slug}`);
 
 	if (!project) {
 		const fallbackProjects = projects

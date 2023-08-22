@@ -8,6 +8,7 @@
 		"/work/cipher/Cipher-ArticleTemplate-Hero-02.jpg",
 		"/work/cipher/Cipher-ArticleTemplate-Hero-03.jpg",
 	];
+
 	let activeIndex = 0;
 
 	function incrementActiveIndex() {

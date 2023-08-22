@@ -13,7 +13,7 @@
 				},
 				"link": {
 					"external": "https://teague.com/",
-					"internal": "teague"
+					"internal": "/projects/teague"
 				},
 				"featured": true
 			},
@@ -104,7 +104,7 @@
 				"status": "Case Study",
 				"link": {
 					"external": "https://vulcanrealestate.com/",
-					"internal": "vulcan-real-estate"
+					"internal": "/projects/vulcan-real-estate"
 				},
 				"img": {
 					"src": "/work/vulcan-real-estate/VRE-WorkCard.jpg",
@@ -200,7 +200,7 @@
 				},
 				"link": {
 					"external": "https://www.gly.com/",
-					"internal": "gly"
+					"internal": "/projects/gly"
 				},
 				"featured": true
 			},
@@ -264,17 +264,18 @@
 		},
 		{
 			"metadata": {
-				"client": "AllStock",
-				"summary": "This Figma plugin is the one-stop shop for finding and using high-quality images inside of your Figma projects, allowing you to browse popular free libraries like Unsplash, Pexels, and Pixabay at the same time without leaving the app. Built with Svelte, Tailwind, and Typescript.",
-				"tags": ["Figma Plugin", "Development"],
+				"client": "Get Some Ipsum",
+				"summary": "This is my first Figma plugin—a simple, flexible lorem ipsum generator. It smoothes out the issues I have with other, similar plugins. Specifically, it runs through a bunch of custom logic before outputting the result to make sure that you end up with ipsum that look more like proper sentences.",
+				"tags": ["Product Design", "Development"],
 				"year": 2023,
 				"status": "Case Study Coming Soon",
 				"img": {
-					"src": "/work/figma/AllStock-WorkCard.jpg",
+					"src": "/work/figma/GetSomeIpsum-WorkCard.jpg",
 					"alt": "lorem ipsum"
 				},
 				"link": {
-					"external": "https://www.figma.com/community/plugin/1235675201027690011/AllStock"
+					"internal": "/work/get-some-ipsum",
+					"external": "https://www.figma.com/community/plugin/1225446981019698507/Get-Some-Ipsum"
 				},
 				"featured": false
 			}
@@ -283,7 +284,7 @@
 			"metadata": {
 				"client": "Carbon Direct",
 				"summary": "Carbon Direct is a purpose-driven carbon management firm enabling organizations to measure, reduce, and remove their emissions. No longer a scrappy startup, they needed a brand and website that better communicated the scale and capabilities of their company.",
-				"tags": ["Identity", "Web Design", "Creative Coding"],
+				"tags": ["Visual Identity", "Web Design", "Development"],
 				"year": 2022,
 				"status": "Case Study",
 				"img": {
@@ -292,7 +293,7 @@
 				},
 				"link": {
 					"external": "https://www.carbon-direct.com/",
-					"internal": "carbon-direct"
+					"internal": "/projects/carbon-direct"
 				},
 				"featured": false
 			},
@@ -426,17 +427,17 @@
 		},
 		{
 			"metadata": {
-				"client": "Get Some Ipsum",
-				"summary": "This is my first Figma plugin—a simple, flexible lorem ipsum generator. It smoothes out the issues I have with other, similar plugins. Specifically, it runs through a bunch of custom logic before outputting the result to make sure that you end up with ipsum that look more like proper sentences.",
+				"client": "AllStock",
+				"summary": "This Figma plugin is the one-stop shop for finding and using high-quality images inside of your Figma projects, allowing you to browse popular free libraries like Unsplash, Pexels, and Pixabay at the same time without leaving the app. Built with Svelte, Tailwind, and Typescript.",
 				"tags": ["Figma Plugin", "Development"],
 				"year": 2023,
 				"status": "Case Study Coming Soon",
 				"img": {
-					"src": "/work/figma/GetSomeIpsum-WorkCard.jpg",
+					"src": "/work/figma/AllStock-WorkCard.jpg",
 					"alt": "lorem ipsum"
 				},
 				"link": {
-					"external": "https://www.figma.com/community/plugin/1225446981019698507/Get-Some-Ipsum"
+					"external": "https://www.figma.com/community/plugin/1235675201027690011/AllStock"
 				},
 				"featured": false
 			}

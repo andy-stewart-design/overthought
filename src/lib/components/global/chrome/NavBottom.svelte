@@ -45,8 +45,10 @@
 					class:active={activePath === link.href}
 					class:pointer-events-none={$page.url.pathname === link.href}
 					href={link.href}
-					data-sveltekit-preload-data="hover">{link.text}</a
+					data-sveltekit-preload-data="hover"
 				>
+					{link.text}
+				</a>
 			</li>
 		{/each}
 		<!-- <li class="relative border-l pl-1 border-light">
