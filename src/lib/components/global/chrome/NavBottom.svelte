@@ -10,7 +10,7 @@
 	}
 
 	const links: NavLinks[] = [
-		{ href: "/#home", text: "Home" },
+		{ href: "/", text: "Home" },
 		{ href: "/#work", text: "Work" },
 		// { href: '/feed', text: 'Feed' },
 		// { href: '/posts', text: 'Posts' },
@@ -19,13 +19,15 @@
 
 	// let isSettingsActive = false;
 
-	function getActivePath(path: string) {
-		const slug = path.split("/").slice(0, 2).join("/");
-		if (slug) return slug;
+	function getActivePath(url: URL) {
+		const slug = url.pathname.split("/").slice(0, 2).join("/");
+		console.log("slug", slug + url.hash);
+
+		if (slug) return slug + url.hash;
 		else console.error("Could not find the active pathname");
 	}
 
-	$: activePath = getActivePath($page.url.pathname);
+	// $: activePath = getActivePath($page.url);
 </script>
 
 <nav
@@ -37,12 +39,10 @@
 			<li class="group relative">
 				<div
 					class="absolute left-0 top-0 h-full w-full rounded-full bg-foreground/90 opacity-0 transition-opacity ease-out group-hover:opacity-10 active:opacity-100 group-hover:active:opacity-100"
-					class:active={activePath === link.href}
 					aria-hidden="true"
 				/>
 				<a
 					class="relative block select-none px-5 py-3 font-medium transition-colors active:text-background"
-					class:active={activePath === link.href}
 					class:pointer-events-none={$page.url.pathname === link.href}
 					href={link.href}
 					data-sveltekit-preload-data="hover"
@@ -77,3 +77,6 @@
 		</li> -->
 	</ul>
 </nav>
+
+<!-- class:active={activePath === link.href} -->
+<!-- class:active={activePath === link.href} -->
