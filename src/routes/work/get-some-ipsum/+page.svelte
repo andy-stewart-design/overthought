@@ -17,7 +17,6 @@
 			<Video
 				src="/work/get-some-ipsum/GetSomeIpsum-Walkthrough.mp4"
 				poster="/work/get-some-ipsum/GetSomeIpsum-Walkthrough-Poster.jpg"
-				class="rounded-lg"
 				autoplay
 				controls={false}
 				loop
@@ -28,11 +27,13 @@
 	</Container>
 
 	<Container as="section" class="space-y-6 pb-xl pt-md md:pb-hero md:pt-lg">
-		<div
-			class="mx-auto mb-8 grid max-w-3xl border-b pb-8 text-lg font-medium border-light md:mb-10 md:grid-cols-2 md:pb-10 lg:text-xl"
-		>
-			<h4><span class="opacity-65">Scope:</span> UI/UX, Development</h4>
-			<h4><span class="opacity-65">Time:</span> 1-2 Weeks</h4>
+		<div class="mx-auto mb-12 grid max-w-3xl gap-4 text-lg font-medium md:grid-cols-2 lg:text-xl">
+			<h4 class="flex flex-col gap-2 border p-6 text-center border-light md:p-8">
+				<span class="text-sm opacity-65">Role</span> UI/UX · Development
+			</h4>
+			<h4 class="flex flex-col gap-2 border p-6 text-center border-light md:p-8">
+				<span class="text-sm opacity-65">Time</span> 1-2 Weeks
+			</h4>
 		</div>
 
 		<p>
@@ -94,21 +95,23 @@
 					width="960"
 					height="1080"
 				/>
-				<div class="grid place-items-center bg-gradient-to-br from-purple-800 to-fuchsia-700">
-					<svg viewBox="0 0 260 260" fill="none" class="max-w-[200px] text-white opacity-75">
-						<path class="animate-cursor" d="M192 192L212 252L222.833 222.833L252 212L192 192Z" fill="currentColor" />
-						<rect
-							class="animate-selection"
-							x="9"
-							y="9"
-							width="200"
-							height="200"
-							stroke="currentColor"
-							stroke-width="4"
-							stroke-miterlimit="2.61313"
-							stroke-dasharray="8 8"
-						/>
-					</svg>
+				<div class="grid place-items-center bg-gradient-to-br from-purple-800 to-fuchsia-700 p-6">
+					<div class="w-full max-w-[200px] text-white opacity-75">
+						<svg viewBox="0 0 260 260" fill="none">
+							<path class="animate-cursor" d="M192 192L212 252L222.833 222.833L252 212L192 192Z" fill="currentColor" />
+							<rect
+								class="animate-selection"
+								x="9"
+								y="9"
+								width="200"
+								height="200"
+								stroke="currentColor"
+								stroke-width="4"
+								stroke-miterlimit="2.61313"
+								stroke-dasharray="8 8"
+							/>
+						</svg>
+					</div>
 				</div>
 			</div>
 			<h5 class="font-sm text-center opacity-50">Animated prompt to make sure the user has selected a text frame</h5>
