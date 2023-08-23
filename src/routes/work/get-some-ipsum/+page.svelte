@@ -183,8 +183,8 @@
 		</div>
 
 		<p>
-			To respect and respond to users needs and preferences, the plugin is fully keyboard accessible, including focus
-			states, and features built-in support for both dark and light mode.
+			To be respectful of and responsive to users' needs and preferences, the plugin is fully keyboard accessible,
+			including focus states, and features built-in support for both dark and light mode.
 		</p>
 
 		<div class="mx-auto w-full max-w-6xl space-y-4 pb-4 pt-6">
