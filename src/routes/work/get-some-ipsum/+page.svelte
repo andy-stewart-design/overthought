@@ -203,9 +203,10 @@
 		<p>
 			This was my first Figma plugin, which I built from the ground up using Svelte as my front end framework for
 			templating and state management and Tailwind as my CSS framework for managing styles. It's real, and you can check
-			it out <a href="https://www.figma.com/community/plugin/1225446981019698507/Get-Some-Ipsum"
+			it out <a href="https://www.figma.com/community/plugin/1225446981019698507/Get-Some-Ipsum" target="_blank"
 				>here in the Figma community</a
-			>, or wherever you get your plugins (a.k.a. the Resources panel at the top of your Figma file)
+			>, <a href="https://github.com/andy-stewart-design/get-some-ipsum" target="_blank">here on Github</a>, or wherever
+			you get your plugins (a.k.a. the Resources panel at the top of your Figma file).
 		</p>
 	</Container>
 </article>
