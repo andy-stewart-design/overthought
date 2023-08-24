@@ -77,7 +77,7 @@
 				width="1920"
 				height="1080"
 			/>
-			<h5 class="font-sm text-center opacity-75">Home screen for the redesigned Cipher website</h5>
+			<h5 class="text-center text-xs opacity-75">Home screen for the redesigned Cipher website</h5>
 		</Container>
 
 		<Container as="section" class="space-y-6 pb-sm pt-md">
@@ -99,7 +99,7 @@
 					width="2400"
 					height="1080"
 				/>
-				<h5 class="font-sm text-center opacity-75">Site map detailing unique pages and templates for the site</h5>
+				<h5 class="text-center text-xs opacity-75">Site map detailing unique pages and templates for the site</h5>
 			</div>
 			<p class="font-bold">Specific deliverables from this phase included:</p>
 			<ul>
@@ -128,7 +128,7 @@
 					width="1920"
 					height="1080"
 				/>
-				<h5 class="font-sm text-center opacity-75">Competitive analysis assessing common patterns and conventions</h5>
+				<h5 class="text-center text-xs opacity-75">Competitive analysis assessing common patterns and conventions</h5>
 			</div>
 			<div class="mx-auto w-full max-w-6xl space-y-4 py-4">
 				<Image
@@ -140,7 +140,7 @@
 					width="1920"
 					height="1080"
 				/>
-				<h5 class="font-sm text-center opacity-75">Wireframes for various pages and modules on the site</h5>
+				<h5 class="text-center text-xs opacity-75">Wireframes for various pages and modules on the site</h5>
 			</div>
 			<!-- <h6
 				class="mx-auto !mt-8 max-w-3xl rounded-md border bg-foreground/15 px-4 py-8 text-center font-medium border-light md:text-lg"
@@ -167,7 +167,7 @@
 					width="1920"
 					height="1080"
 				/>
-				<h5 class="font-sm text-center opacity-75">Original brand identity guidelines for Cipher, designed in 2021</h5>
+				<h5 class="text-center text-xs opacity-75">Original brand identity guidelines for Cipher, designed in 2021</h5>
 			</div>
 			<p>
 				Putting the time and effort in up front to define a high-level system for the site was critical to the success
@@ -186,7 +186,7 @@
 					width="1920"
 					height="1080"
 				/>
-				<h5 class="font-sm text-center opacity-75">Primitive typographic design tokens</h5>
+				<h5 class="text-center text-xs opacity-75">Primitive typographic design tokens</h5>
 			</div>
 			<div class="mx-auto w-full max-w-6xl space-y-4 py-4">
 				<Image
@@ -198,7 +198,7 @@
 					width="2400"
 					height="1770"
 				/>
-				<h5 class="font-sm text-center opacity-75">Card component variants</h5>
+				<h5 class="text-center text-xs opacity-75">Card component variants</h5>
 			</div>
 		</Container>
 
@@ -227,7 +227,7 @@
 					width="1920"
 					height="1080"
 				/>
-				<h5 class="font-sm text-center opacity-75">Quick Post Module at small and large breakpoints</h5>
+				<h5 class="text-center text-xs opacity-75">Quick Post Module at small and large breakpoints</h5>
 			</div>
 			<p>
 				For Cipher correspondents, Quick Posts provide a relatively low-effort way to publish frequently without
@@ -244,7 +244,7 @@
 					width="1920"
 					height="1080"
 				/>
-				<h5 class="font-sm text-center opacity-75">Quick Posts landing page and post template</h5>
+				<h5 class="text-center text-xs opacity-75">Quick Posts landing page and post template</h5>
 			</div>
 		</Container>
 
@@ -265,7 +265,7 @@
 					width="1920"
 					height="1080"
 				/>
-				<h5 class="font-sm text-center opacity-75">Article template in light and dark mode</h5>
+				<h5 class="text-center text-xs opacity-75">Article template in light and dark mode</h5>
 			</div>
 			<p class="font-bold">Our specific goals for the article template included:</p>
 			<ul>
@@ -300,7 +300,7 @@
 						height="1080"
 					/>
 				</div>
-				<h5 class="font-sm text-center opacity-75">Hero layout variants for the article template</h5>
+				<h5 class="text-center text-xs opacity-75">Hero layout variants for the article template</h5>
 			</div>
 			<div class="mx-auto w-full max-w-6xl space-y-4 py-4">
 				<Image
@@ -312,7 +312,7 @@
 					width="1920"
 					height="1080"
 				/>
-				<h5 class="font-sm text-center opacity-75">Hero and footer from the article template</h5>
+				<h5 class="text-center text-xs opacity-75">Hero and footer from the article template</h5>
 			</div>
 		</Container>
 
@@ -345,7 +345,7 @@
 					width="1920"
 					height="1080"
 				/>
-				<h5 class="font-sm text-center opacity-75">Implementation of hover state prototype</h5>
+				<h5 class="text-center text-xs opacity-75">Implementation of hover state prototype</h5>
 			</div>
 		</Container>
 

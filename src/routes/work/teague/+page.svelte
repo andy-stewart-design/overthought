@@ -74,7 +74,7 @@
 				width="1920"
 				height="1080"
 			/>
-			<h5 class="font-sm text-center opacity-75">Home hero for the redesigned Teague website</h5>
+			<h5 class="text-center text-sm opacity-75">Home hero for the redesigned Teague website</h5>
 		</Container>
 
 		<Container as="section" class="space-y-6 pb-sm pt-md">
@@ -111,7 +111,7 @@
 					height="1200"
 					loading="lazy"
 				/>
-				<h5 class="font-sm text-center opacity-75">
+				<h5 class="text-center text-sm opacity-75">
 					A snapshot of the CMS/Site audit, completed by developer R.J. LaCount
 				</h5>
 			</div>
@@ -152,7 +152,7 @@
 					width="1920"
 					height="1080"
 				/>
-				<h5 class="font-sm text-center opacity-75">Competitive analysis assessing common patterns and conventions</h5>
+				<h5 class="text-sm text-center opacity-75">Competitive analysis assessing common patterns and conventions</h5>
 			</div> -->
 		</Container>
 
@@ -275,7 +275,7 @@
 					width="1920"
 					height="1080"
 				/>
-				<h5 class="font-sm text-center opacity-75">Loading animation and hover style inspired by Teague's logo mark</h5>
+				<h5 class="text-center text-sm opacity-75">Loading animation and hover style inspired by Teague's logo mark</h5>
 			</div>
 
 			<div class="mx-auto w-full max-w-6xl space-y-4 py-4">
@@ -289,11 +289,11 @@
 					height="1080"
 					loading="lazy"
 				/>
-				<h5 class="font-sm text-center opacity-75">A snapshot of some of our components in Figma</h5>
+				<h5 class="text-center text-sm opacity-75">A snapshot of some of our components in Figma</h5>
 			</div>
 
 			<p>
-				We put a lot of time and effort into creating a system that was both functional with expressive. While we were
+				We put a lot of time and effort into creating a system that was both functional and expressive. While we were
 				intent on fixing the user experience and interaction issues from the previous design direction, we also wanted
 				to be careful not to neutralize Teague's brand or make the site feel generic.
 			</p>
@@ -309,7 +309,7 @@
 					height="1080"
 					loading="lazy"
 				/>
-				<h5 class="font-sm text-center opacity-75">Balancing scalability and expressiveness in the design system</h5>
+				<h5 class="text-center text-sm opacity-75">Balancing scalability and expressiveness in the design system</h5>
 			</div>
 
 			<div class="mx-auto w-full max-w-6xl space-y-4 py-4">
@@ -324,7 +324,7 @@
 					width="1920"
 					height="1080"
 				/>
-				<h5 class="font-sm text-center opacity-75">A selection of expressive layouts inspired by Teague's logo mark</h5>
+				<h5 class="text-center text-sm opacity-75">A selection of expressive layouts inspired by Teague's logo mark</h5>
 			</div>
 
 			<p>
@@ -344,7 +344,7 @@
 					height="768"
 					loading="lazy"
 				/>
-				<h5 class="font-sm text-center opacity-75">Card component variants</h5>
+				<h5 class="text-center text-sm opacity-75">Card component variants</h5>
 			</div>
 
 			<p>
@@ -363,7 +363,7 @@
 					height="1080"
 					loading="lazy"
 				/>
-				<h5 class="font-sm text-center opacity-75">Responsive studies for the insights hero module</h5>
+				<h5 class="text-center text-sm opacity-75">Responsive studies for the insights hero module</h5>
 			</div>
 
 			<div class="mx-auto w-full max-w-6xl space-y-4 py-4">
@@ -377,7 +377,7 @@
 					width="1920"
 					height="1080"
 				/>
-				<h5 class="font-sm text-center opacity-75">A selection of expressive layouts inspired by Teague's logo mark</h5>
+				<h5 class="text-center text-sm opacity-75">A selection of expressive layouts inspired by Teague's logo mark</h5>
 			</div>
 
 			<p>
@@ -397,7 +397,7 @@
 					height="1080"
 					loading="lazy"
 				/>
-				<h5 class="font-sm text-center opacity-75">Design tokens in Figma and Tailwind CSS</h5>
+				<h5 class="text-center text-sm opacity-75">Design tokens in Figma and Tailwind CSS</h5>
 			</div>
 		</Container>
 
