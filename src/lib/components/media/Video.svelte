@@ -1,12 +1,12 @@
 <script lang="ts">
-	import { setCloudSrc } from '$lib/utils/cloudinary';
-	import play from '@svg/play.svg?raw';
-	import pause from '@svg/pause.svg?raw';
+	import { setCloudSrc } from "$lib/utils/cloudinary";
+	import play from "@svg/play.svg?raw";
+	import pause from "@svg/pause.svg?raw";
 
 	// export let cloud = false;
 	export let src: string;
-	export let width: string | number = '1920';
-	export let height: string | number = '1080';
+	export let width: string | number = "1920";
+	export let height: string | number = "1080";
 	export let autoplay = false;
 	export let controls = false;
 	export let muted = false;
@@ -17,8 +17,8 @@
 	export { className as class };
 
 	let paused = !autoplay;
-	let className: string = '';
-	let cloudName = 'v1676297405';
+	let className: string = "";
+	let cloudName = "v1676297405";
 	let cloudSrc = `https://res.cloudinary.com/andystewartdesign/video/upload/f_auto,q_auto/${cloudName}${src}`;
 
 	$: controlsIcon = paused ? play : pause;
