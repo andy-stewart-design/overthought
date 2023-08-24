@@ -204,8 +204,8 @@
 			<h4>Rightsize Complexity</h4>
 
 			<p>
-				Don't make it do everything — focus on making your CMS to be clear and approachable rather than comprehensive.
-				Just because you can give authors the ability to do something doesn't mean you should.
+				Don't make it do everything — focus on making your CMS clear and approachable rather than comprehensive. Just
+				because you can give authors the ability to do something doesn't mean you should.
 			</p>
 
 			<p>
