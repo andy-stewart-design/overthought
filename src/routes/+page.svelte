@@ -74,13 +74,20 @@
 							>
 								<Image
 									cloud
-									class="aspect-[4/5] w-full bg-foreground/10 object-cover transition-opacity duration-500 ease-out-3 group-hover:opacity-60"
+									class="aspect-[4/5] w-full bg-foreground/10 object-cover transition-opacity duration-500 ease-out-3 can-hover:group-hover:opacity-50"
 									src={project.metadata.img.src}
 									alt={project.metadata.img.alt}
 									imageWidths={[800, 1200]}
 									sizes={[["769px", "50vh"], ["100vh"]]}
 									loading={index >= 3 ? "lazy" : "eager"}
 								/>
+								<div class="absolute left-1/2 top-1/2 -translate-x-1/2 overflow-hidden">
+									<p
+										class="translate-y-full text-lg font-semibold text-white transition-transform duration-500 ease-out-3 [text-shadow:_0_1px_2px_rgb(0_0_0_/_40%)] can-hover:group-hover:translate-y-0"
+									>
+										View Case Study
+									</p>
+								</div>
 							</div>
 							<div class="flex items-baseline justify-between">
 								<p class="text-2xl font-medium">{project.metadata.client}</p>
@@ -94,13 +101,20 @@
 							>
 								<Image
 									cloud
-									class="aspect-[4/5] w-full bg-foreground/10 object-cover transition-opacity duration-500 ease-out-3 group-hover:opacity-60"
+									class="aspect-[4/5] w-full bg-foreground/10 object-cover transition-opacity duration-500 ease-out-3 group-hover:opacity-50"
 									src={project.metadata.img.src}
 									alt={project.metadata.img.alt}
 									imageWidths={[800, 1200]}
 									sizes={[["769px", "50vh"], ["100vh"]]}
 									loading={index >= 3 ? "lazy" : "eager"}
 								/>
+								<div class="absolute left-1/2 top-1/2 -translate-x-1/2 overflow-hidden">
+									<p
+										class="translate-y-full text-lg font-semibold text-white transition-transform duration-500 ease-out-3 [text-shadow:_0_1px_2px_rgb(0_0_0_/_40%)] can-hover:group-hover:translate-y-0"
+									>
+										View Live ↗
+									</p>
+								</div>
 							</div>
 							<div class="flex items-baseline justify-between">
 								<p class="text-2xl font-medium">{project.metadata.client} <span class="opacity-65">↗</span></p>

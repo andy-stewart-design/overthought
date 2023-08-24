@@ -398,7 +398,7 @@
 			"metadata": {
 				"client": "Amazon Icons",
 				"summary": "During my time at Turnstyle, I drew—or managed the drawing of—over a 1,000 icons for the Amazon Devices design group. In addition to slinging vectors, we worked with team at Amazon to define the system’s design principles and codify them in a comprehensive guidelines document.",
-				"tags": ["Icon Design", "Guidelines Document"],
+				"tags": ["Icon Design", "System Design"],
 				"year": "2019-23",
 				"status": "Work in Progress",
 				"img": {
@@ -412,7 +412,7 @@
 			"metadata": {
 				"client": "Squiggler",
 				"summary": "Squiggler is a free generative design tool to help you quickly create random, unique SVG waves and squiggles. Developing it required a lot of research into the technical details of how SVG paths are drawn and the math behind sin waves, but the result is a simple and easy-to-use single-purpose app.",
-				"tags": ["Development", "UI Design"],
+				"tags": ["Product Design", "Development"],
 				"year": 2022,
 				"status": "Case Study Coming Soon",
 				"img": {
@@ -429,7 +429,7 @@
 			"metadata": {
 				"client": "AllStock",
 				"summary": "This Figma plugin is the one-stop shop for finding and using high-quality images inside of your Figma projects, allowing you to browse popular free libraries like Unsplash, Pexels, and Pixabay at the same time without leaving the app. Built with Svelte, Tailwind, and Typescript.",
-				"tags": ["Figma Plugin", "Development"],
+				"tags": ["Product Design", "Development"],
 				"year": 2023,
 				"status": "Case Study Coming Soon",
 				"img": {

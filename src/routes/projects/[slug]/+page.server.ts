@@ -5,7 +5,6 @@ import type { CaseStudy } from "$lib/types/projects";
 
 export const load: PageServerLoad = ({ params }) => {
 	const { slug } = params;
-	console.log(params);
 
 	const projects = projectData.entries;
 

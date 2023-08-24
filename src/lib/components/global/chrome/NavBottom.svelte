@@ -21,8 +21,6 @@
 
 	function getActivePath(url: URL) {
 		const slug = url.pathname.split("/").slice(0, 2).join("/");
-		console.log("slug", slug + url.hash);
-
 		if (slug) return slug + url.hash;
 		else console.error("Could not find the active pathname");
 	}
@@ -38,7 +36,7 @@
 		{#each links as link}
 			<li class="group relative">
 				<div
-					class="absolute left-0 top-0 h-full w-full rounded-full bg-foreground/90 opacity-0 transition-opacity ease-out group-hover:opacity-10 active:opacity-100 group-hover:active:opacity-100"
+					class="absolute left-0 top-0 h-full w-full rounded-full bg-foreground/90 opacity-0 transition-opacity ease-out group-hover:opacity-15 active:opacity-100 group-hover:active:opacity-100"
 					aria-hidden="true"
 				/>
 				<a
