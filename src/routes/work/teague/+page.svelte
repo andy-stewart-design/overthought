@@ -112,7 +112,7 @@
 					loading="lazy"
 				/>
 				<h5 class="text-center text-sm opacity-75">
-					A snapshot of the CMS/Site audit, completed by developer R.J. LaCount
+					A snapshot of the CMS/site audit, completed by developer R.J. LaCount
 				</h5>
 			</div>
 
@@ -289,7 +289,7 @@
 					height="1080"
 					loading="lazy"
 				/>
-				<h5 class="text-center text-sm opacity-75">A snapshot of some of our components in Figma</h5>
+				<h5 class="text-center text-sm opacity-75">A snapshot of some of our Figma components</h5>
 			</div>
 
 			<p>
@@ -344,7 +344,9 @@
 					height="768"
 					loading="lazy"
 				/>
-				<h5 class="text-center text-sm opacity-75">Card component variants</h5>
+				<h5 class="text-center text-sm opacity-75">
+					Display options for a module ranging from more functional to more expressive
+				</h5>
 			</div>
 
 			<p>
@@ -371,13 +373,14 @@
 					src="/work/teague/Teague-Mobile.mp4"
 					poster="/work/teague/Teague-Mobile-Poster.jpg"
 					controls
+					autoplay
 					playsinline
 					muted
 					loop
 					width="1920"
 					height="1080"
 				/>
-				<h5 class="text-center text-sm opacity-75">A selection of expressive layouts inspired by Teague's logo mark</h5>
+				<h5 class="text-center text-sm opacity-75">Mobile interactions</h5>
 			</div>
 
 			<p>
