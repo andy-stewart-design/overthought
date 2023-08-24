@@ -69,6 +69,7 @@
 				autoplay={true}
 				loop
 				controls
+				playsinline
 				muted
 				width="1920"
 				height="1080"
@@ -269,6 +270,7 @@
 					autoplay={true}
 					loop
 					controls
+					playsinline
 					muted
 					width="1920"
 					height="1080"
@@ -317,6 +319,7 @@
 					autoplay={true}
 					loop
 					controls
+					playsinline
 					muted
 					width="1920"
 					height="1080"
@@ -368,6 +371,7 @@
 					src="/work/teague/Teague-Mobile.mp4"
 					poster="/work/teague/Teague-Mobile-Poster.jpg"
 					controls
+					playsinline
 					muted
 					loop
 					width="1920"
