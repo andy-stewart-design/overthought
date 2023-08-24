@@ -66,7 +66,7 @@
 			<Video
 				src="/work/teague/Teague-Home-Scroll.mp4"
 				poster="/work/teague/Teague-Home-Scroll-Poster.jpg"
-				autoplay
+				autoplay={true}
 				loop
 				controls
 				width="1920"
@@ -265,7 +265,7 @@
 				<Video
 					src="/work/teague/Teague-Work-Hover.mp4"
 					poster="/work/teague/Teague-Work-Hover-Poster.jpg"
-					autoplay
+					autoplay={true}
 					loop
 					controls
 					width="1920"
@@ -312,7 +312,7 @@
 				<Video
 					src="/work/teague/Teague-Desktop-Screens.mp4"
 					poster="/work/teague/Teague-Desktop-Screens-Poster.jpg"
-					autoplay
+					autoplay={true}
 					loop
 					controls
 					width="1920"
