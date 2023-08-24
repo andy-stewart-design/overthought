@@ -68,6 +68,7 @@
 				poster="/work/teague/Teague-Home-Scroll-Poster.jpg"
 				autoplay
 				loop
+				controls
 				width="1920"
 				height="1080"
 			/>
@@ -266,6 +267,7 @@
 					poster="/work/teague/Teague-Work-Hover-Poster.jpg"
 					autoplay
 					loop
+					controls
 					width="1920"
 					height="1080"
 				/>
@@ -312,6 +314,7 @@
 					poster="/work/teague/Teague-Desktop-Screens-Poster.jpg"
 					autoplay
 					loop
+					controls
 					width="1920"
 					height="1080"
 				/>
