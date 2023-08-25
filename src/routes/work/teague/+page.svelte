@@ -426,10 +426,10 @@
 		<Container as="section" class="space-y-6 pb-xl pt-md md:pb-hero md:pt-lg">
 			<h3>Reflections and Learnings</h3>
 			<p>
-				This was an exciting project for me because it allowed me to revisit a past project and iterate on a system I
-				had built years prior. I found it rewarding to have the opportunity to dive deep on our clients' pain points,
-				analyze how our past design decisions contributed to those frustrations, and iterate on solutions without
-				tearing down the system and starting over.
+				This was an exciting project for me because it allowed me to revisit a past design system, understand its
+				shortcomings, and reimagine it from first principles. I found it rewarding to have the opportunity to dive deep
+				on our clients' pain points, analyze how our past design decisions contributed to those frustrations, and
+				iterate on solutions without tearing down the system and starting over.
 			</p>
 
 			<div class="mx-auto w-full max-w-6xl space-y-4 py-4">
@@ -469,11 +469,11 @@
 	p,
 	ul,
 	h4 {
-		@apply mx-auto max-w-3xl lg:text-xl;
+		@apply mx-auto max-w-3xl text-foreground text-opacity-85 lg:text-xl;
 	}
 
 	h4 {
-		@apply text-2xl font-semibold;
+		@apply text-2xl font-semibold text-foreground text-opacity-100;
 	}
 
 	p {
@@ -485,6 +485,6 @@
 	}
 
 	li {
-		@apply ml-4 list-['→'] pl-3;
+		@apply relative pl-5 before:absolute before:left-0 before:top-0 before:font-medium before:text-foreground before:text-opacity-100 before:content-['→'] lg:pl-7;
 	}
 </style>
