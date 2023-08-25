@@ -68,7 +68,6 @@
 				poster="/work/teague/Teague-Home-Scroll-Poster.jpg"
 				autoplay={true}
 				loop
-				controls
 				playsinline
 				muted
 				width="1920"
@@ -176,7 +175,7 @@
 			</p>
 
 			<p>
-				For example, we made the decision that the footer should always the same color as the module before it. In
+				For example, we made the decision that the footer should always be the same color as the module before it. In
 				practice, that means the footer will be one of three colors — white, light gray, or black — and that its color
 				will change from page to page.
 			</p>
@@ -236,9 +235,10 @@
 			</p>
 
 			<p>
-				Effecticely managing complexity in a project means establishing a baseline for the level of nuance and
-				flexibility a client wants, and using research and testing to determine if additional options/functionality are
-				actually useful and desired.
+				As an example, each of the following modules are essentially different views of the same content that are useful
+				in different contexts. Previously, we might have built these as multiple, separate modules, overwhelming authors
+				with the number of available options. Now, we err on the side of less modules by making these variations of a
+				single module.
 			</p>
 
 			<div class="mx-auto w-full max-w-6xl space-y-4 py-4">
@@ -269,7 +269,6 @@
 					poster="/work/teague/Teague-Work-Hover-Poster.jpg"
 					autoplay={true}
 					loop
-					controls
 					playsinline
 					muted
 					width="1920"
@@ -318,7 +317,6 @@
 					poster="/work/teague/Teague-Desktop-Screens-Poster.jpg"
 					autoplay={true}
 					loop
-					controls
 					playsinline
 					muted
 					width="1920"
@@ -326,6 +324,28 @@
 				/>
 				<h5 class="text-center text-sm opacity-75">A selection of expressive layouts inspired by Teague's logo mark</h5>
 			</div>
+
+			<!-- <p>
+				For each module, we took care to include every possible permutation authors could need when laying out pages.
+				Our intent was to build a system flexible enough to handle anything that was thrown at it — where any module
+				could be placed before or after any other one, and the system would just work.
+			</p>
+
+			<div class="mx-auto w-full max-w-6xl space-y-4 py-4">
+				<Image
+					cloud
+					src="/work/teague/Teague-Modules-02.jpg"
+					alt="Card component variants"
+					imageWidths={[800, 1200, 1600, 1920]}
+					class="w-full"
+					width="1920"
+					height="768"
+					loading="lazy"
+				/>
+				<h5 class="text-center text-sm opacity-75">
+					Display options for a module ranging from more functional to more expressive
+				</h5>
+			</div> -->
 
 			<p>
 				In addition to designing a comprehensive set of workhorse modules, we looked for a few places where we could
@@ -372,7 +392,6 @@
 				<Video
 					src="/work/teague/Teague-Mobile.mp4"
 					poster="/work/teague/Teague-Mobile-Poster.jpg"
-					controls
 					autoplay
 					playsinline
 					muted
