@@ -25,13 +25,13 @@
 <article class="bg-background">
 	<div class="mx-auto max-w-app">
 		<header>
-			<Container class="md: space-y-6 pb-lg pt-xl md:pb-lg md:pt-hero">
+			<Container class="pb-md pt-xl sm:pb-lg md:space-y-6 md:pb-lg md:pt-hero">
 				<h1 class="text-center font-medium md:text-lg">Teague</h1>
 				<h2 class="text-center text-5xl font-medium xs:text-6xl md:text-8xl">Design Refined</h2>
 			</Container>
 		</header>
 
-		<div class="bg-foreground/10">
+		<div class="mt-sm bg-foreground/10 sm:mt-0">
 			<Image
 				cloud
 				src="/work/teague/Teague-ProjectPage-02.jpg"
