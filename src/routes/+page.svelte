@@ -152,6 +152,8 @@
 						{#if project.metadata.link}
 							{#if project.metadata.link.internal}
 								<a href={`${project.metadata.link.internal}`} class="font-semibold">Case Study</a>
+							{/if}
+							{#if project.metadata.link.internal && project.metadata.link.external}
 								<span class="h-4 w-px bg-foreground/25" />
 							{/if}
 							{#if project.metadata.link.external}
