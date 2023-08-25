@@ -59,6 +59,15 @@
 					streamline the design system and CMS we built years prior to remove cruft and make it more flexible, scalable,
 					and future-proof.
 				</p>
+				<div class="!mt-8 flex justify-start">
+					<a
+						href="https://teague.com/"
+						target="_blank"
+						class="rounded border border-foreground/25 px-3.5 pb-2.5 pt-2 text-base font-medium text-foreground transition-colors duration-200 ease-out hover:border-foreground"
+					>
+						View Live ↗
+					</a>
+				</div>
 			</div>
 		</Container>
 
