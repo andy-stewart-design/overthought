@@ -92,6 +92,9 @@
 					"src": "/work/cipher/Cipher-WorkCard.jpg",
 					"alt": "lorem ipsum"
 				},
+				"link": {
+					"internal": "/work/cipher-news"
+				},
 				"featured": false
 			}
 		},
