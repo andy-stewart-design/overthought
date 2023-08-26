@@ -77,19 +77,21 @@
 				width="1920"
 				height="1080"
 			/>
-			<h5 class="text-center text-xs opacity-75">Home screen for the redesigned Cipher website</h5>
+			<h5 class="text-center text-sm opacity-75">Home screen for the redesigned Cipher website</h5>
 		</Container>
 
 		<Container as="section" class="space-y-6 pb-sm pt-md">
-			<h3>Discovery: Strategy + User Experience</h3>
+			<h3>Strategy + User Experience</h3>
+
 			<p>
 				Based on the dynamic, content-heavy nature of the product, the bulk of our early work centered around defining a
 				model for the site’s user experience. Working closely with the Cipher and Breakthrough Energy teams, our primary
-				goals for this phase of the project were: to codify the site's information architecture and navigational model;
-				to develop a structure for organizing and categorizing their content; and to understand the breadth of
-				modules/pages required for the site.
+				goals for this phase of the project included: codifying the site's information architecture and navigational
+				model; developing a structure for organizing and categorizing their content; and to understanding the breadth of
+				modules/patterns required for the site.
 			</p>
-			<div class="mx-auto w-full max-w-6xl space-y-4 py-4">
+
+			<!-- <div class="mx-auto w-full max-w-6xl space-y-4 py-4">
 				<Image
 					cloud
 					src="/work/cipher/Cipher-SiteMap.png"
@@ -99,25 +101,9 @@
 					width="2400"
 					height="1080"
 				/>
-				<h5 class="text-center text-xs opacity-75">Site map detailing unique pages and templates for the site</h5>
-			</div>
-			<p class="font-bold">Specific deliverables from this phase included:</p>
-			<ul>
-				<li>
-					<span class="font-bold">Competitive Analysis:</span> we dove deep on the products of other news organizations—both
-					within and outside of the climate space—to familiarize ourselves with the competitive landscape and seek out inspiration
-					and opportunity.
-				</li>
-				<li>
-					<span class="font-bold">Site Map:</span> based on our initial conversations and interviews with the teams, we built
-					a site map to visualize the high-level structure and organization of pages and help us define the scope of work
-					for the site.
-				</li>
-				<li>
-					<span class="font-bold">Low-Fidelity Prototype:</span> we developed wireframes for all pages and templates on the
-					site to begin to tease out specific design patterns and approaches needed on the site.
-				</li>
-			</ul>
+				<h5 class="text-center text-sm opacity-75">Site map detailing unique pages and templates for the site</h5>
+			</div> -->
+
 			<div class="mx-auto w-full max-w-6xl space-y-4 py-4">
 				<Image
 					cloud
@@ -128,8 +114,32 @@
 					width="1920"
 					height="1080"
 				/>
-				<h5 class="text-center text-xs opacity-75">Competitive analysis assessing common patterns and conventions</h5>
+				<h5 class="text-center text-sm opacity-75">Competitive analysis assessing common patterns and conventions</h5>
 			</div>
+
+			<p class="font-bold">Specific deliverables from this phase included:</p>
+			<ul>
+				<li>
+					<span class="font-bold">Stakeholder Interviews:</span> We spoke with members of the client teams to better understand
+					their goals and motivations for the project. This provided us with a solid foundation on which to begin to build
+					and test our assumptions.
+				</li>
+				<li>
+					<span class="font-bold">Competitive Analysis:</span> we dove deep on the product design of other news organizations—both
+					within and outside of the climate space—to familiarize ourselves with the competitive landscape and seek out inspiration
+					and opportunity.
+				</li>
+				<li>
+					<span class="font-bold">Site Map:</span> based on our initial conversations and interviews with the teams, we built
+					a site map to visualize the high-level structure and organization of pages and help us define the scope of work
+					for the site.
+				</li>
+				<li>
+					<span class="font-bold">Low-Fidelity Prototype:</span> we developed wireframes for all pages and templates on the
+					site to begin to tease out necessary design patterns and approaches.
+				</li>
+			</ul>
+
 			<div class="mx-auto w-full max-w-6xl space-y-4 py-4">
 				<Image
 					cloud
@@ -140,17 +150,72 @@
 					width="1920"
 					height="1080"
 				/>
-				<h5 class="text-center text-xs opacity-75">Wireframes for various pages and modules on the site</h5>
+				<h5 class="text-center text-sm opacity-75">Wireframes for various pages and modules on the site</h5>
 			</div>
-			<!-- <h6
-				class="mx-auto !mt-8 max-w-3xl rounded-md border bg-foreground/15 px-4 py-8 text-center font-medium border-light md:text-lg"
-			>
-				Note: I'm working to obtain visual artifacts from this phase of the project
-			</h6> -->
 		</Container>
 
 		<Container as="section" class="space-y-6 pt-md">
-			<h3>Design System: Building a Foundation</h3>
+			<h3>Navigation</h3>
+
+			<p>
+				Early in the process, we focused on defining the site’s navigational model — a feature which would also help us
+				better understand how stories should be categorized across the site. We tested three options with the team,
+				which each took a distinct approach to promoting categories and guiding users through the content.
+			</p>
+
+			<ul>
+				<li>
+					<span class="font-bold">Curated:</span> this direction requires Cipher to identify a finite number of categories
+					that would be elevated above all others. This is by far the most opinionated approach, but has the benefits of
+					giving users clear entry points into the content and also sends a signal about Cipher’s areas of focus.
+				</li>
+				<li>
+					<span class="font-bold">Segmented:</span> this direction is less heavy-handed than the first, but does create distinction
+					and hierarchy between two types of categories: topic and content type. Especially with regard to topics, though,
+					it still takes a less-is-more approach.
+				</li>
+				<li>
+					<span class="font-bold">Flat:</span> this direction is the most open-ended in terms of organization and hierarchy,
+					combining topic and content type together and being less restrictive in terms of the number categories displayed.
+					Based on our research, this was the most common approach among other news outlets.
+				</li>
+			</ul>
+
+			<div class="mx-auto w-full max-w-6xl space-y-4 py-4">
+				<Image
+					cloud
+					src="/work/cipher/Cipher-Navigation-Wires.jpg"
+					alt="Original brand identity guidelines for Cipher, designed in 2021"
+					imageWidths={[800, 1200, 1600, 1920]}
+					class="w-full"
+					width="1920"
+					height="1080"
+				/>
+				<h5 class="text-center text-sm opacity-75">Three distinct approaches for the site's primary navigation</h5>
+			</div>
+
+			<p>
+				Based on testing and conversations with the client teams, we determined that the third direction would be the
+				most maintainable and meaningful. Cipher’s stories are cross-cutting, and trying to organize them into separate,
+				distinct categories had the effect of creating arbitrary and often false dichotomies.
+			</p>
+
+			<div class="mx-auto w-full max-w-6xl space-y-4 py-4">
+				<Image
+					cloud
+					src="/work/cipher/Cipher-Navigation-Final.jpg"
+					alt="Primitive typographic design tokens"
+					imageWidths={[800, 1200, 1600, 1920]}
+					class="w-full"
+					width="1920"
+					height="1080"
+				/>
+				<h5 class="text-center text-sm opacity-75">Final navigation design at small and large breakpoints</h5>
+			</div>
+		</Container>
+
+		<Container as="section" class="space-y-6 pt-md">
+			<h3>Design System</h3>
 			<p>
 				Rather than rotely translating their existing brand to a new medium, we used the development of the Cipher News
 				design system as a way to push and evolve their visual identity. Leveraging Figma's native features, we
@@ -167,7 +232,7 @@
 					width="1920"
 					height="1080"
 				/>
-				<h5 class="text-center text-xs opacity-75">Original brand identity guidelines for Cipher, designed in 2021</h5>
+				<h5 class="text-center text-sm opacity-75">Original brand identity guidelines for Cipher, designed in 2021</h5>
 			</div>
 			<p>
 				Putting the time and effort in up front to define a high-level system for the site was critical to the success
@@ -186,7 +251,7 @@
 					width="1920"
 					height="1080"
 				/>
-				<h5 class="text-center text-xs opacity-75">Primitive typographic design tokens</h5>
+				<h5 class="text-center text-sm opacity-75">Primitive typographic design tokens</h5>
 			</div>
 			<div class="mx-auto w-full max-w-6xl space-y-4 py-4">
 				<Image
@@ -198,7 +263,7 @@
 					width="2400"
 					height="1770"
 				/>
-				<h5 class="text-center text-xs opacity-75">Card component variants</h5>
+				<h5 class="text-center text-sm opacity-75">Card component variants</h5>
 			</div>
 		</Container>
 
@@ -227,7 +292,7 @@
 					width="1920"
 					height="1080"
 				/>
-				<h5 class="text-center text-xs opacity-75">Quick Post Module at small and large breakpoints</h5>
+				<h5 class="text-center text-sm opacity-75">Final homepage Quick Post module at small and large breakpoints</h5>
 			</div>
 			<p>
 				For Cipher correspondents, Quick Posts provide a relatively low-effort way to publish frequently without
@@ -244,7 +309,7 @@
 					width="1920"
 					height="1080"
 				/>
-				<h5 class="text-center text-xs opacity-75">Quick Posts landing page and post template</h5>
+				<h5 class="text-center text-sm opacity-75">Quick Posts landing page and post template</h5>
 			</div>
 		</Container>
 
@@ -265,7 +330,7 @@
 					width="1920"
 					height="1080"
 				/>
-				<h5 class="text-center text-xs opacity-75">Article template in light and dark mode</h5>
+				<h5 class="text-center text-sm opacity-75">Article template in light and dark mode</h5>
 			</div>
 			<p class="font-bold">Our specific goals for the article template included:</p>
 			<ul>
@@ -300,7 +365,7 @@
 						height="1080"
 					/>
 				</div>
-				<h5 class="text-center text-xs opacity-75">Hero layout variants for the article template</h5>
+				<h5 class="text-center text-sm opacity-75">Hero layout variants for the article template</h5>
 			</div>
 			<div class="mx-auto w-full max-w-6xl space-y-4 py-4">
 				<Image
@@ -312,7 +377,7 @@
 					width="1920"
 					height="1080"
 				/>
-				<h5 class="text-center text-xs opacity-75">Hero and footer from the article template</h5>
+				<h5 class="text-center text-sm opacity-75">Hero and footer from the article template</h5>
 			</div>
 		</Container>
 
@@ -345,7 +410,7 @@
 					width="1920"
 					height="1080"
 				/>
-				<h5 class="text-center text-xs opacity-75">Implementation of hover state prototype</h5>
+				<h5 class="text-center text-sm opacity-75">Implementation of hover state prototype</h5>
 			</div>
 		</Container>
 
