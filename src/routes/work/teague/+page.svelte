@@ -174,7 +174,7 @@
 				mirroring the design and performance integrity of the site's front-end.
 			</p>
 
-			<p>Each CMS is unique, but there are some principles that we apply to all of the systems we build.</p>
+			<p>Each CMS is unique, but there are a few heuristics that we leverage when building a new system.</p>
 
 			<h4>Do It for Me</h4>
 
@@ -236,18 +236,19 @@
 				/>
 			</div>
 
-			<h4>Consolidate Views</h4>
+			<h4>Minimize the Number of Upfront Options</h4>
 
 			<p>
-				Don't subject your users to the paradox of choice. Instead, look for ways to reduce the total number of
-				available modules by grouping views together based on content/functionality rather than layout.
+				Don't paralyze users with a paradox of choice. Grouping views together based on content/functionality can help
+				reduce the perceived number of options a user has up front and establishes a better pacing/rhythm for
+				decision-making.
 			</p>
 
 			<p>
-				As an example, each of the following modules are essentially different views of the same content that are useful
-				in different contexts. Previously, we might have built these as multiple, separate modules, overwhelming authors
-				with the number of available options. Now, we err on the side of less modules by making these variations of a
-				single module.
+				As an example, each of the following modules are essentially different views of the same content, which are
+				useful in different contexts. Previously, we might have built these as multiple separate modules, overwhelming
+				authors with the total number of available options. Now, we err on the side of less top-level modules by making
+				these variations of a single module.
 			</p>
 
 			<div class="mx-auto w-full max-w-6xl space-y-4 py-4">
@@ -378,6 +379,20 @@
 				</h5>
 			</div>
 
+			<div class="mx-auto w-full max-w-6xl space-y-4 py-4">
+				<Image
+					cloud
+					src="/work/teague/Teague-DesktopCollage.jpg"
+					alt="Card component variants"
+					imageWidths={[800, 1200, 1600, 1920]}
+					class="w-full"
+					width="1920"
+					height="1080"
+					loading="lazy"
+				/>
+				<h5 class="text-center text-sm opacity-75">On overview of various modules on the site</h5>
+			</div>
+
 			<p>
 				And of course, everything on the site needed to work responsively to provide a compelling experience regardless
 				of where and how it is viewed.
@@ -445,19 +460,6 @@
 				<Image
 					cloud
 					src="/work/teague/Teague-AboutPage.jpg"
-					alt="Card component variants"
-					imageWidths={[800, 1200, 1600, 1920]}
-					class="w-full"
-					width="1920"
-					height="1080"
-					loading="lazy"
-				/>
-			</div>
-
-			<div class="mx-auto w-full max-w-6xl space-y-4 py-4">
-				<Image
-					cloud
-					src="/work/teague/Teague-DesktopCollage.jpg"
 					alt="Card component variants"
 					imageWidths={[800, 1200, 1600, 1920]}
 					class="w-full"
