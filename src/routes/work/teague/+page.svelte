@@ -41,7 +41,7 @@
 			/>
 		</div>
 
-		<Container as="section" class="grid gap-8  pt-lg md:grid-cols-2 md:pb-lg">
+		<Container as="section" class="grid gap-8 pt-lg md:grid-cols-2 md:pb-lg">
 			<div class="space-y-2 text-lg font-medium lg:text-xl">
 				<p class="!my-2 !mt-0"><span class="opacity-65">Scope:</span> Web Design, Design System</p>
 				<p class="!my-2"><span class="opacity-65">Role:</span> Design Director, Lead Designer</p>
@@ -59,7 +59,7 @@
 					streamline the design system and CMS we built years prior to remove cruft and make it more flexible, scalable,
 					and future-proof.
 				</p>
-				<div class="!mb-12 !mt-8 flex justify-start">
+				<div class="!mb-12 !mt-8 flex justify-start md:!mb-0">
 					<a
 						href="https://teague.com/"
 						target="_blank"
