@@ -64,7 +64,7 @@
 			id="work"
 			class="grid gap-2 gap-y-12 border-b py-lg border-light sm:grid-cols-2 sm:gap-x-8 md:py-xl lg:grid-cols-3"
 		>
-			<h2 class="col-span-full text-5xl font-medium xs:text-6xl md:text-5xl lg:text-6xl">Projects</h2>
+			<h2 class="col-span-full text-5xl font-medium xs:text-6xl md:text-5xl lg:text-6xl">Recent Work</h2>
 			{#each data.projects as project, index}
 				<div class="flex flex-col gap-4 pt-4">
 					{#if project.metadata.link?.internal}

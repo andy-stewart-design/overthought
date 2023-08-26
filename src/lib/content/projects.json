@@ -295,7 +295,6 @@
 					"alt": "lorem ipsum"
 				},
 				"link": {
-					"external": "https://www.carbon-direct.com/",
 					"internal": "/projects/carbon-direct"
 				},
 				"featured": false
@@ -399,14 +398,17 @@
 		},
 		{
 			"metadata": {
-				"client": "Amazon Icons",
-				"summary": "During my time at Turnstyle, I drew—or managed the drawing of—over a 1,000 icons for the Amazon Devices design group. In addition to slinging vectors, we worked with team at Amazon to define the system’s design principles and codify them in a comprehensive guidelines document.",
-				"tags": ["Icon Design", "System Design"],
-				"year": "2019-23",
+				"client": "Wildtype",
+				"summary": "Wildtype is an agtech company working to create the cleanest, most sustainable seafood on the planet. We worked with them create a bespoke digital experience that would allow them to promote their mission, connect with chefs and restaurateurs, and appeal to consumers who may be skeptical of lab-grown meat.",
+				"tags": ["Web Design", "Development"],
+				"year": "2021",
 				"status": "Work in Progress",
 				"img": {
-					"src": "/work/amazon-icons/Amazon-WorkCard.jpg",
+					"src": "/work/wildtype/Wildtype-WorkCard.jpg",
 					"alt": "lorem ipsum"
+				},
+				"link": {
+					"external": "https://www.wildtypefoods.com/"
 				},
 				"featured": false
 			}

@@ -43,8 +43,8 @@
 
 		<Container as="section" class="grid gap-8  pt-lg md:grid-cols-2 md:pb-lg">
 			<div class="space-y-2 text-lg font-medium lg:text-xl">
-				<p class="!my-2 !mt-0"><span class="opacity-65">Scope:</span> Design System, Web Design</p>
-				<p class="!my-2"><span class="opacity-65">Role:</span> Lead Designer</p>
+				<p class="!my-2 !mt-0"><span class="opacity-65">Scope:</span> Web Design, Design System</p>
+				<p class="!my-2"><span class="opacity-65">Role:</span> Design Director, Lead Designer</p>
 				<p class="!my-2"><span class="opacity-65">Year:</span> Q1-2 2023</p>
 				<p class="!my-2"><span class="opacity-65">Agency:</span> Turnstyle</p>
 			</div>

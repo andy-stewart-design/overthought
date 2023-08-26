@@ -26,7 +26,7 @@
 		<header>
 			<Container class="space-y-6 pb-lg pt-xl md:pt-hero">
 				<h1 class="text-center font-medium">Cipher News</h1>
-				<h2 class="text-center text-5xl font-medium xs:text-6xl md:text-7xl">Covering the transition to net-zero</h2>
+				<h2 class="text-center text-5xl font-medium xs:text-6xl md:text-8xl">Designing the News</h2>
 			</Container>
 		</header>
 
@@ -48,8 +48,8 @@
 
 		<Container as="section" class="grid gap-8 pt-lg md:grid-cols-2 md:pb-lg">
 			<div class="space-y-2 text-lg font-medium lg:text-xl">
-				<h4><span class="opacity-65">Scope:</span> Design System, Web Design</h4>
-				<h4><span class="opacity-65">Role:</span> Creative Director, Lead Designer</h4>
+				<h4><span class="opacity-65">Scope:</span> Product Design, Design System</h4>
+				<h4><span class="opacity-65">Role:</span> Design Director, Lead Designer</h4>
 				<h4><span class="opacity-65">Year:</span> Q1-2 2023</h4>
 			</div>
 			<div class="space-y-6">
