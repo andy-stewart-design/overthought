@@ -24,9 +24,13 @@
 <article class="bg-background">
 	<div class="mx-auto max-w-app">
 		<header>
-			<Container class="space-y-6 pb-lg pt-xl md:pt-hero">
+			<Container class="space-y-4 pb-md pt-xl sm:pb-lg md:space-y-6 md:pb-lg md:pt-hero">
 				<h1 class="text-center font-medium">Cipher News</h1>
-				<h2 class="text-center text-5xl font-medium xs:text-6xl md:text-8xl">Designing the News</h2>
+				<h2
+					class="text-center text-5xl font-medium leading-[1.1] xs:text-6xl xs:leading-[1.1] md:text-8xl md:leading-[1.1]"
+				>
+					Designing the News
+				</h2>
 			</Container>
 		</header>
 

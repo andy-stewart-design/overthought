@@ -25,7 +25,7 @@
 <article class="bg-background">
 	<div class="mx-auto max-w-app">
 		<header>
-			<Container class="pb-md pt-xl sm:pb-lg md:space-y-6 md:pb-lg md:pt-hero">
+			<Container class="space-y-4 pb-md pt-xl sm:pb-lg md:space-y-6 md:pb-lg md:pt-hero">
 				<h1 class="text-center font-medium md:text-lg">Teague</h1>
 				<h2 class="text-center text-5xl font-medium xs:text-6xl md:text-8xl">Design Refined</h2>
 			</Container>
@@ -59,7 +59,7 @@
 					streamline the design system and CMS we built years prior to remove cruft and make it more flexible, scalable,
 					and future-proof.
 				</p>
-				<div class="!mt-8 flex justify-start">
+				<div class="!mb-12 !mt-8 flex justify-start">
 					<a
 						href="https://teague.com/"
 						target="_blank"
