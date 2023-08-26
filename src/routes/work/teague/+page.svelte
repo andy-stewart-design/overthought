@@ -146,7 +146,7 @@
 			</ul>
 
 			<p>
-				These issues warranted two distinct strategies for the font- and back-ends of the site. Whereas the problems
+				These issues warranted two distinct strategies for the front- and back-ends of the site. Whereas the problems
 				with the front-end of the site warranted a more evolutionary approach, the back-end of the site would need to be
 				rebuilt from the ground up.
 			</p>
