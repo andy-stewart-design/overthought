@@ -43,7 +43,7 @@
 
 		<Container as="section" class="grid gap-8 pt-lg md:grid-cols-2 md:pb-lg">
 			<div class="space-y-2 text-lg font-medium lg:text-xl">
-				<p class="!my-2 !mt-0"><span class="opacity-65">Scope:</span> Visual Identity, Web Design</p>
+				<p class="!my-2 !mt-0"><span class="opacity-65">Scope:</span> Visual Identity, UI/UX</p>
 				<p class="!my-2"><span class="opacity-65">Role:</span> Design Director, Lead Designer</p>
 				<p class="!my-2"><span class="opacity-65">Year:</span> Q2 2022-Q2 2023</p>
 				<p class="!my-2"><span class="opacity-65">Agency:</span> Turnstyle</p>
