@@ -279,9 +279,7 @@
 					width="1920"
 					height="1080"
 				/>
-				<h5 class="text-center text-sm opacity-75">
-					Video walkthrough of various modules from the Vulcan design system
-				</h5>
+				<h5 class="text-center text-sm opacity-75">Video walkthrough of a Figma component API</h5>
 			</div>
 
 			<div class="mx-auto w-full max-w-6xl space-y-4 py-4">
