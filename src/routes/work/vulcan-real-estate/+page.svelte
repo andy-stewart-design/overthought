@@ -410,15 +410,17 @@
 
 			<p>
 				I love projects like this, where I am able to be involved from end-to-end and can help develop holistic
-				solutions. It allowed me to flex my full range of skills and experiences: identity design, UX/UI, prototyping,
-				front-end development, icon design, QA testing, project management, presentation, and more.
+				solutions to wide-ranging. This one in particular allowed me to flex my full range of skills and experiences:
+				identity design, UX/UI, prototyping, motion, front-end development, icon design, QA testing, project management,
+				presentation, and more.
 			</p>
 
 			<p>
-				One thing I'm constantly trying to improve with projects as wide-ranging as this one, though, is how to make to
-				process more efficient. In a perfect world, we would be able to parallelize work so that phases that are not
-				dependent of each other can be worked on at the same time. People are messy, though, and the challenge becomes
-				putting the tools and processes in place to help stakeholders on all sides of the project engaged and on track.
+				One thing I'm constantly trying to improve with projects as big as this one, though, is how to make the process
+				more efficient. In a perfect world, we would be able to parallelize work so that phases that are not dependent
+				of each other could be worked on at the same time without issue. People are messy, though, and timeline don't
+				always hold. I'm excited to think more about tools and processes that could be put in place to help stakeholders
+				on all sides of the project stay engaged and on track.
 			</p>
 
 			<div class="mx-auto w-full max-w-6xl space-y-4 py-4">
