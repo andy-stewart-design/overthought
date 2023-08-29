@@ -25,8 +25,8 @@
 			<div />
 			<div class="space-y-6">
 				<p class="text-base text-foreground/80 xs:text-lg md:text-base lg:text-lg">
-					Hi, I’m Andy. I’m a product designer with over a decade of experience helping to bring life to brands through
-					compelling experiences and clear interfaces.
+					Hi, I’m Andy. I’m an interactive designer with over a decade of experience helping to bring life to brands
+					through compelling experiences and clear interfaces.
 				</p>
 				<p class="text-base text-foreground/80 xs:text-lg md:text-base lg:text-lg">
 					I was most recently the Digital Creative Director at <a
