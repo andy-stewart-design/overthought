@@ -165,107 +165,6 @@
 		</Container>
 
 		<Container as="section" class="space-y-6 pt-md">
-			<h3>Redefining the Author Experience</h3>
-
-			<p>
-				One of the primary drivers for this project — and an underappreciated part of building maintainable websites in
-				general — was the need for a more efficient, intuitive author experience. Rather than pulling in a bloated,
-				off-the-shelf solution, we leveraged Craft CMS as the foundation for a highly-customized CMS capable of
-				mirroring the design and performance integrity of the site's front-end.
-			</p>
-
-			<p>Each CMS is unique, but there are a few heuristics that we leverage when building a new system.</p>
-
-			<h4>Do It for Me</h4>
-
-			<p>
-				Don’t force users to act like computers. Instead, increase the resiliency of your system by looking for ways to
-				automate repetitive or nuanced tasks.
-			</p>
-
-			<p>
-				For example, we made the decision that the footer should always be the same color as the module before it. In
-				practice, that means the footer will be one of three colors — white, light gray, or black — and that its color
-				will change from page to page.
-			</p>
-
-			<p>
-				In the original build of the site, we made this a manual task, which meant that the footer was, more often than
-				not, the wrong color. The task was too nuanced for most authors to remember. In the new build, we automated this
-				process so that if the color of the last module on a page is changed in the CMS, the footer color will
-				automatically update as well.
-			</p>
-
-			<div class="mx-auto w-full max-w-6xl space-y-4 py-4">
-				<Image
-					cloud
-					src="/work/teague/Teague-CMS-Footer.jpg"
-					alt="Increasing resiliency of the system by automating tasks when possible"
-					imageWidths={[800, 1200, 1600, 1920]}
-					class="w-full"
-					width="1920"
-					height="1080"
-					loading="lazy"
-				/>
-			</div>
-
-			<h4>Rightsize Complexity</h4>
-
-			<p>
-				Don't make it do everything — focus on making your CMS clear and approachable rather than comprehensive. Just
-				because you can give authors the ability to do something doesn't mean you should.
-			</p>
-
-			<p>
-				Instead, manage complexity by establishing a baseline for the level of nuance and flexibility a client wants,
-				and use testing and research to determine if additional options/functionality are actually useful and desired.
-				Alternatively, you can keep the primary interface of a module tidy by moving niche/power-user features into a
-				secondary tab.
-			</p>
-
-			<div class="mx-auto w-full max-w-6xl space-y-4 py-4">
-				<Image
-					cloud
-					src="/work/teague/Teague-CMS-RightsizeComplexity.jpg"
-					alt="Increasing resiliency of the system by automating tasks when possible"
-					imageWidths={[800, 1200, 1600, 1920]}
-					class="w-full"
-					width="1920"
-					height="1080"
-					loading="lazy"
-				/>
-			</div>
-
-			<h4>Minimize the Number of Upfront Options</h4>
-
-			<p>
-				Don't paralyze users with a paradox of choice. Grouping views together based on content/functionality can help
-				reduce the perceived number of options a user has up front and establishes a better pacing/rhythm for
-				decision-making.
-			</p>
-
-			<p>
-				As an example, each of the following modules are essentially different views of the same content, which are
-				useful in different contexts. Previously, we might have built these as multiple separate modules, overwhelming
-				authors with the total number of available options. Now, we err on the side of less top-level modules by making
-				these variations of a single module.
-			</p>
-
-			<div class="mx-auto w-full max-w-6xl space-y-4 py-4">
-				<Image
-					cloud
-					src="/work/teague/Teague-CMS-ConsolidateViews.jpg"
-					alt="Increasing resiliency of the system by automating tasks when possible"
-					imageWidths={[800, 1200, 1600, 1920]}
-					class="w-full"
-					width="1920"
-					height="1080"
-					loading="lazy"
-				/>
-			</div>
-		</Container>
-
-		<Container as="section" class="space-y-6 pt-md">
 			<h3>Refining the Design System</h3>
 			<p>
 				We used Teague's logo mark — a stack of four staggered, magenta speed lines — as the starting point for our
@@ -444,6 +343,107 @@
 					loading="lazy"
 				/>
 				<h5 class="text-center text-sm opacity-75">Design tokens in Figma and Tailwind CSS</h5>
+			</div>
+		</Container>
+
+		<Container as="section" class="space-y-6 pt-md">
+			<h3>Redefining the Author Experience</h3>
+
+			<p>
+				One of the primary drivers for this project — and an underappreciated part of building maintainable websites in
+				general — was the need for a more efficient, intuitive author experience. Rather than pulling in a bloated,
+				off-the-shelf solution, we leveraged Craft CMS as the foundation for a highly-customized CMS capable of
+				mirroring the design and performance integrity of the site's front-end.
+			</p>
+
+			<p>Each CMS is unique, but there are a few heuristics that we leverage when building a new system.</p>
+
+			<h4>Do It for Me</h4>
+
+			<p>
+				Don’t force users to act like computers. Instead, increase the resiliency of your system by looking for ways to
+				automate repetitive or nuanced tasks.
+			</p>
+
+			<p>
+				For example, we made the decision that the footer should always be the same color as the module before it. In
+				practice, that means the footer will be one of three colors — white, light gray, or black — and that its color
+				will change from page to page.
+			</p>
+
+			<p>
+				In the original build of the site, we made this a manual task, which meant that the footer was, more often than
+				not, the wrong color. The task was too nuanced for most authors to remember. In the new build, we automated this
+				process so that if the color of the last module on a page is changed in the CMS, the footer color will
+				automatically update as well.
+			</p>
+
+			<div class="mx-auto w-full max-w-6xl space-y-4 py-4">
+				<Image
+					cloud
+					src="/work/teague/Teague-CMS-Footer.jpg"
+					alt="Increasing resiliency of the system by automating tasks when possible"
+					imageWidths={[800, 1200, 1600, 1920]}
+					class="w-full"
+					width="1920"
+					height="1080"
+					loading="lazy"
+				/>
+			</div>
+
+			<h4>Rightsize Complexity</h4>
+
+			<p>
+				Don't make it do everything — focus on making your CMS clear and approachable rather than comprehensive. Just
+				because you can give authors the ability to do something doesn't mean you should.
+			</p>
+
+			<p>
+				Instead, manage complexity by establishing a baseline for the level of nuance and flexibility a client wants,
+				and use testing and research to determine if additional options/functionality are actually useful and desired.
+				Alternatively, you can keep the primary interface of a module tidy by moving niche/power-user features into a
+				secondary tab.
+			</p>
+
+			<div class="mx-auto w-full max-w-6xl space-y-4 py-4">
+				<Image
+					cloud
+					src="/work/teague/Teague-CMS-RightsizeComplexity.jpg"
+					alt="Increasing resiliency of the system by automating tasks when possible"
+					imageWidths={[800, 1200, 1600, 1920]}
+					class="w-full"
+					width="1920"
+					height="1080"
+					loading="lazy"
+				/>
+			</div>
+
+			<h4>Minimize the Number of Upfront Options</h4>
+
+			<p>
+				Don't paralyze users with a paradox of choice. Grouping views together based on content/functionality can help
+				reduce the perceived number of options a user has up front and establishes a better pacing/rhythm for
+				decision-making.
+			</p>
+
+			<p>
+				As an example, each of the following modules are essentially different views of the same content, which are
+				useful in different contexts. Previously, we might have built these as multiple separate modules, overwhelming
+				authors with the total number of available options. Now, we err on the side of less top-level modules by making
+				these variations of a single module.
+			</p>
+
+			<div class="mx-auto w-full max-w-6xl space-y-4 py-4">
+				<Image
+					cloud
+					src="/work/teague/Teague-CMS-ConsolidateViews.jpg"
+					alt="Increasing resiliency of the system by automating tasks when possible"
+					imageWidths={[800, 1200, 1600, 1920]}
+					class="w-full"
+					width="1920"
+					height="1080"
+					loading="lazy"
+				/>
 			</div>
 		</Container>
 
