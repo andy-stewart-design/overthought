@@ -4,7 +4,7 @@
 			"metadata": {
 				"client": "Teague",
 				"summary": "One of my first big projects at Turnstyle (circa 2019) was a total redesign of Teague's website. It was fitting that one of my last projects was evolving and streamlining the design system and CMS we built years prior to remove cruft and make it more flexible, scalable, and future-proof.",
-				"tags": ["Web Design", "UI/UX"],
+				"tags": ["Interactive Design", "UI/UX"],
 				"year": 2023,
 				"status": "Case Study",
 				"img": {
@@ -102,7 +102,7 @@
 			"metadata": {
 				"client": "Vulcan Real Estate",
 				"summary": "As part of an effort to reposition themselves in the market, we developed a comprehensive visual identity system for one of Seattle's most notable real estate developers. This work included a new website, rebuilt from first principles, and a virtual artwalk microsite.",
-				"tags": ["Visual Identity", "Web Design", "UI/UX"],
+				"tags": ["Visual Identity", "Interactive Design", "UI/UX"],
 				"year": 2023,
 				"status": "Case Study",
 				"link": {
@@ -118,7 +118,7 @@
 			"content": {
 				"headline": "is laying foundations for great futures",
 				"description": "A brainchild of Microsoft co-founder Paul Allen and the engine behind Seattle's vibrant South Lake Union neighborhood, Vulcan Real Estate is one of the Pacific Northwest’s most respected developers. After Allen’s passing, the team at Vulcan saw a need to reposition themselves in the market and reimagine their vision for the future. Alongside our partners at Stoke Strategy and Metric Media, we helped breathe new life into Vulcan’s brand with a revitalized strategy, visual identity, and website.",
-				"scope": ["Visual Identity", "Web Design", "UI/UX", "Prototyping", "Art Direction"],
+				"scope": ["Visual Identity", "Interactive Design", "UI/UX", "Prototyping", "Art Direction"],
 				"partners": [
 					{
 						"type": "Agency",
@@ -212,7 +212,7 @@
 			"metadata": {
 				"client": "Carbon Direct",
 				"summary": "Carbon Direct is a purpose-driven carbon management firm enabling organizations to measure, reduce, and remove their emissions. No longer a scrappy startup, they needed a brand and website that better communicated the scale and capabilities of their company.",
-				"tags": ["Visual Identity", "Web Design", "Development"],
+				"tags": ["Visual Identity", "Interactive Design", "Development"],
 				"year": 2022,
 				"status": "Case Study",
 				"img": {
@@ -227,7 +227,7 @@
 			"content": {
 				"headline": "is standing on the shoulders of science",
 				"description": "Carbon Direct is a purpose-driven carbon management firm enabling organizations to reduce, remove, and utilize their emissions. No longer a scrappy startup, they needed a brand and digital presence that better communicated the scale and capabilities of their company and matched their approach to business — intelligent, dynamic, and distinctive.",
-				"scope": ["Visual Identity", "Web Design", "UI/UX", "Prototyping", "Art Direction"],
+				"scope": ["Visual Identity", "Interactive Design", "UI/UX", "Prototyping", "Art Direction"],
 				"partners": [
 					{
 						"type": "Agency",
@@ -325,7 +325,7 @@
 			"metadata": {
 				"client": "GLY",
 				"summary": "A new website for a PNW general contractor, built from the ground up to elevate and celebrate their outcomes-minded approach to construction and provide them with a modern, dynamic platform to establish credibility, demonstrate leadership, and attract talent.",
-				"tags": ["Web Design", "UI/UX"],
+				"tags": ["Interactive Design", "UI/UX"],
 				"year": 2022,
 				"status": "Case Study",
 				"img": {
@@ -400,7 +400,7 @@
 			"metadata": {
 				"client": "Wildtype",
 				"summary": "Wildtype is an agtech company working to create the cleanest, most sustainable seafood on the planet. We worked with them create a bespoke digital experience that would allow them to promote their mission, connect with chefs and restaurateurs, and appeal to consumers who may be skeptical of lab-grown meat.",
-				"tags": ["Web Design", "Development"],
+				"tags": ["Interactive Design", "Development"],
 				"year": "2021",
 				"status": "Work in Progress",
 				"img": {
