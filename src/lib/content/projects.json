@@ -100,116 +100,6 @@
 		},
 		{
 			"metadata": {
-				"client": "Vulcan Real Estate",
-				"summary": "As part of an effort to reposition themselves in the market, we developed a comprehensive visual identity system for one of Seattle's most notable real estate developers. This work included a new website, rebuilt from first principles, and a virtual artwalk microsite.",
-				"tags": ["Visual Identity", "Interactive Design", "UI/UX"],
-				"year": 2023,
-				"status": "Case Study",
-				"link": {
-					"external": "https://vulcanrealestate.com/",
-					"internal": "/work/vulcan-real-estate"
-				},
-				"img": {
-					"src": "/work/vulcan-real-estate/VRE-WorkCard.jpg",
-					"alt": "lorem ipsum"
-				},
-				"featured": false
-			},
-			"content": {
-				"headline": "is laying foundations for great futures",
-				"description": "A brainchild of Microsoft co-founder Paul Allen and the engine behind Seattle's vibrant South Lake Union neighborhood, Vulcan Real Estate is one of the Pacific Northwest’s most respected developers. After Allen’s passing, the team at Vulcan saw a need to reposition themselves in the market and reimagine their vision for the future. Alongside our partners at Stoke Strategy and Metric Media, we helped breathe new life into Vulcan’s brand with a revitalized strategy, visual identity, and website.",
-				"scope": ["Visual Identity", "Interactive Design", "UI/UX", "Prototyping", "Art Direction"],
-				"partners": [
-					{
-						"type": "Agency",
-						"name": "Turnstyle",
-						"href": "https://turnstyle.studio/"
-					},
-					{
-						"type": "Dev",
-						"name": "Metric Media",
-						"href": "https://www.metricmedia.com/"
-					}
-				],
-				"liveLink": "https://vulcanrealestate.com/",
-				"media": [
-					{
-						"type": "image",
-						"src": "/work/vulcan-real-estate/VRE-Logo-Primary.png",
-						"alt": "The primary logo for the redesigned Vulcan Real Estate visual identity",
-						"cloud": true
-					},
-					{
-						"type": "image",
-						"src": "/work/vulcan-real-estate/VRE-Logo-Comparison.png",
-						"alt": "Side-by-side comparison of the old and new Vulcan Real Estate logos",
-						"cloud": true
-					},
-					{
-						"type": "video",
-						"src": "/work/vulcan-real-estate/VRE-Logo-Animation.mp4",
-						"poster": "/work/vulcan-real-estate/VRE-Logo-Animation-Poster.jpg",
-						"autoplay": true
-					},
-					{
-						"type": "image",
-						"src": "/work/vulcan-real-estate/VRE-WaterBottle.jpg",
-						"alt": "Close up shot of a water bottle with the new Vulcan Real Estate Logo",
-						"cloud": true
-					},
-					{
-						"type": "image",
-						"src": "/work/vulcan-real-estate/VRE-BusinessCards.jpg",
-						"alt": "The front and back of Vulcan Real Estate's business cards on a two-tone emerald background",
-						"cloud": true
-					},
-					{
-						"type": "image",
-						"src": "/work/vulcan-real-estate/VRE-Guidelines.jpg",
-						"alt": "Several pages from the Vulcan Real Estate brand guidelines arranged in a grid",
-						"cloud": true
-					},
-					{
-						"type": "video",
-						"src": "/work/vulcan-real-estate/VRE-Home-Desktop.mp4",
-						"poster": "/work/vulcan-real-estate/VRE-Home-Desktop-Poster.jpg",
-						"autoplay": false
-					},
-					{
-						"type": "image",
-						"src": "/work/vulcan-real-estate/VRE-Mobile-Collage.jpg",
-						"alt": "A row of mobile screenshots showing off the design of the Vulcan Real Estate Website",
-						"cloud": true
-					},
-					{
-						"type": "image",
-						"src": "/work/vulcan-real-estate/VRE-Home-Desktop-Collage.jpg",
-						"alt": "A grid of desktop screenshots showing off the design of the Vulcan Real Estate Website",
-						"cloud": true
-					}
-				]
-			}
-		},
-		{
-			"metadata": {
-				"client": "Get Some Ipsum",
-				"summary": "This is my first Figma plugin—a simple, flexible lorem ipsum generator. It smoothes out the issues I have with other, similar plugins. Specifically, it runs through a bunch of custom logic before outputting the result to make sure that you end up with ipsum that look more like proper sentences.",
-				"tags": ["Product Design", "Development"],
-				"year": 2023,
-				"status": "Case Study Coming Soon",
-				"img": {
-					"src": "/work/figma/GetSomeIpsum-WorkCard.jpg",
-					"alt": "lorem ipsum"
-				},
-				"link": {
-					"internal": "/work/get-some-ipsum",
-					"external": "https://www.figma.com/community/plugin/1225446981019698507/Get-Some-Ipsum"
-				},
-				"featured": false
-			}
-		},
-		{
-			"metadata": {
 				"client": "Carbon Direct",
 				"summary": "Carbon Direct is a purpose-driven carbon management firm enabling organizations to measure, reduce, and remove their emissions. No longer a scrappy startup, they needed a brand and website that better communicated the scale and capabilities of their company.",
 				"tags": ["Visual Identity", "Interactive Design", "Development"],
@@ -220,7 +110,7 @@
 					"alt": "lorem ipsum"
 				},
 				"link": {
-					"internal": "/projects/carbon-direct"
+					"internal": "/work/carbon-direct"
 				},
 				"featured": false
 			},
@@ -316,6 +206,116 @@
 						"type": "image",
 						"src": "/work/carbon-direct/CarbonDirect-Mobile-Collage.jpg",
 						"alt": "A grid of mobile screenshots showing off the design of the Carbon Direct Website",
+						"cloud": true
+					}
+				]
+			}
+		},
+		{
+			"metadata": {
+				"client": "Get Some Ipsum",
+				"summary": "This is my first Figma plugin—a simple, flexible lorem ipsum generator. It smoothes out the issues I have with other, similar plugins. Specifically, it runs through a bunch of custom logic before outputting the result to make sure that you end up with ipsum that look more like proper sentences.",
+				"tags": ["Product Design", "Development"],
+				"year": 2023,
+				"status": "Case Study Coming Soon",
+				"img": {
+					"src": "/work/figma/GetSomeIpsum-WorkCard.jpg",
+					"alt": "lorem ipsum"
+				},
+				"link": {
+					"internal": "/work/get-some-ipsum",
+					"external": "https://www.figma.com/community/plugin/1225446981019698507/Get-Some-Ipsum"
+				},
+				"featured": false
+			}
+		},
+		{
+			"metadata": {
+				"client": "Vulcan Real Estate",
+				"summary": "As part of an effort to reposition themselves in the market, we developed a comprehensive visual identity system for one of Seattle's most notable real estate developers. This work included a new website, rebuilt from first principles, and a virtual artwalk microsite.",
+				"tags": ["Visual Identity", "Interactive Design", "UI/UX"],
+				"year": 2023,
+				"status": "Case Study",
+				"link": {
+					"external": "https://vulcanrealestate.com/",
+					"internal": "/work/vulcan-real-estate"
+				},
+				"img": {
+					"src": "/work/vulcan-real-estate/VRE-WorkCard.jpg",
+					"alt": "lorem ipsum"
+				},
+				"featured": false
+			},
+			"content": {
+				"headline": "is laying foundations for great futures",
+				"description": "A brainchild of Microsoft co-founder Paul Allen and the engine behind Seattle's vibrant South Lake Union neighborhood, Vulcan Real Estate is one of the Pacific Northwest’s most respected developers. After Allen’s passing, the team at Vulcan saw a need to reposition themselves in the market and reimagine their vision for the future. Alongside our partners at Stoke Strategy and Metric Media, we helped breathe new life into Vulcan’s brand with a revitalized strategy, visual identity, and website.",
+				"scope": ["Visual Identity", "Interactive Design", "UI/UX", "Prototyping", "Art Direction"],
+				"partners": [
+					{
+						"type": "Agency",
+						"name": "Turnstyle",
+						"href": "https://turnstyle.studio/"
+					},
+					{
+						"type": "Dev",
+						"name": "Metric Media",
+						"href": "https://www.metricmedia.com/"
+					}
+				],
+				"liveLink": "https://vulcanrealestate.com/",
+				"media": [
+					{
+						"type": "image",
+						"src": "/work/vulcan-real-estate/VRE-Logo-Primary.png",
+						"alt": "The primary logo for the redesigned Vulcan Real Estate visual identity",
+						"cloud": true
+					},
+					{
+						"type": "image",
+						"src": "/work/vulcan-real-estate/VRE-Logo-Comparison.png",
+						"alt": "Side-by-side comparison of the old and new Vulcan Real Estate logos",
+						"cloud": true
+					},
+					{
+						"type": "video",
+						"src": "/work/vulcan-real-estate/VRE-Logo-Animation.mp4",
+						"poster": "/work/vulcan-real-estate/VRE-Logo-Animation-Poster.jpg",
+						"autoplay": true
+					},
+					{
+						"type": "image",
+						"src": "/work/vulcan-real-estate/VRE-WaterBottle.jpg",
+						"alt": "Close up shot of a water bottle with the new Vulcan Real Estate Logo",
+						"cloud": true
+					},
+					{
+						"type": "image",
+						"src": "/work/vulcan-real-estate/VRE-BusinessCards.jpg",
+						"alt": "The front and back of Vulcan Real Estate's business cards on a two-tone emerald background",
+						"cloud": true
+					},
+					{
+						"type": "image",
+						"src": "/work/vulcan-real-estate/VRE-Guidelines.jpg",
+						"alt": "Several pages from the Vulcan Real Estate brand guidelines arranged in a grid",
+						"cloud": true
+					},
+					{
+						"type": "video",
+						"src": "/work/vulcan-real-estate/VRE-Home-Desktop.mp4",
+						"poster": "/work/vulcan-real-estate/VRE-Home-Desktop-Poster.jpg",
+						"autoplay": false
+					},
+					{
+						"type": "image",
+						"src": "/work/vulcan-real-estate/VRE-Mobile-Collage.jpg",
+						"alt": "A row of mobile screenshots showing off the design of the Vulcan Real Estate Website",
+						"cloud": true
+					},
+					{
+						"type": "image",
+						"src": "/work/vulcan-real-estate/VRE-Home-Desktop-Collage.jpg",
+						"alt": "A grid of desktop screenshots showing off the design of the Vulcan Real Estate Website",
 						"cloud": true
 					}
 				]
