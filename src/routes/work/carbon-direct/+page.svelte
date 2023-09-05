@@ -41,7 +41,7 @@
 			/>
 		</div>
 
-		<Container as="section" class="grid gap-8 pt-lg md:grid-cols-2 md:pb-lg">
+		<Container as="section" class="grid gap-8 pb-lg pt-lg md:grid-cols-2">
 			<div class="space-y-2 text-lg font-medium lg:text-xl">
 				<p class="!my-2 !mt-0"><span class="opacity-65">Scope:</span> Identity, Design System, UI/UX</p>
 				<p class="!my-2"><span class="opacity-65">Role:</span> Lead Designer, Creative Developer</p>
@@ -212,21 +212,21 @@
 				<Image
 					cloud
 					src="/work/carbon-direct/CarbonDirect-Imagery.jpg"
-					alt="Pattern and image treatment"
+					alt="Pattern and image treatments"
 					imageWidths={[800, 1200, 1600, 1920]}
 					class="w-full"
 					width="1920"
 					height="1080"
 					loading="lazy"
 				/>
-				<h5 class="text-center text-sm opacity-75">Pattern and image treatment</h5>
+				<h5 class="text-center text-sm opacity-75">Pattern and image treatments</h5>
 			</div>
 
 			<p>
 				One benefit of a comprehensive design system is built-in accessibility. We developed a relatively large color
-				palette to prevent designers from needing to deviate from the established system, but more options also means
-				more opportunities for error. I tested every combination of color and typography tokens to clearly establish
-				which color combinatinos meet WCAG standards.
+				palette to prevent designers from needing to deviate from the established system. But more options means more
+				opportunities for error. I tested every combination of color and typography tokens to clearly establish which
+				color combinations do and do not meet WCAG standards.
 			</p>
 
 			<div class="mx-auto w-full max-w-6xl space-y-4 py-4">
@@ -251,11 +251,11 @@
 				Far and away the most significant deliverable from our scope of work was their new website. In order to
 				establish a foundation that other designers could leverage and build upon, we established a consistent set of
 				standards, patterns, and components in Figma and collaborated with our engineering team to ensure cohesion
-				between out designa and dev environments.
+				between out design and dev environments.
 			</p>
 
 			<p>
-				As a note, this porject was completed some time ago. Since then, Figma’s capabilities—and my own knowledge and
+				As a note, this project was completed over a year ago. Since then, Figma’s capabilities—and my own knowledge and
 				skills—have developed significantly. In terms of implementation, I would certainly approach this project
 				differently today. But what I wouldn't change is my dedication to creating a functional, usable design system.
 			</p>
@@ -344,9 +344,9 @@
 			<p>
 				The homepage hero experience—which has now, sadly, been sunsetted—was one of my favorite parts of the site and
 				combined generative art, SVG animation, and scroll-based storytelling. Because of the somewhat unconventional
-				nature of the design, the path to approval was rocky and required a lot of work on my end to prove out the
-				concept. I started in Figma to get preliminary approval, but eventually moved into After Effects to create a
-				higher fidelity version of our design vision.
+				nature of the design, the path to approval was long and required a lot of work on my end to prove the
+				feasability of the concept. I started in Figma to get preliminary approval, but eventually moved into After
+				Effects to create a higher fidelity version of our design vision.
 			</p>
 
 			<p>
