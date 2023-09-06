@@ -93,7 +93,8 @@
 					"alt": "lorem ipsum"
 				},
 				"link": {
-					"internal": "/work/cipher-news"
+					"internal": "/work/cipher-news",
+					"external": "https://ciphernews.com/"
 				},
 				"featured": false
 			}

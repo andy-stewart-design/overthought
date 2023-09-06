@@ -44,11 +44,11 @@
 			/>
 		</div>
 
-		<Container as="section" class="pt-lg">
+		<!-- <Container as="section" class="pt-lg">
 			<h6 class="rounded-md border bg-foreground/15 px-4 py-6 text-center font-medium border-light md:text-lg">
 				Please note, this site is in development and is not yet live
 			</h6>
-		</Container>
+		</Container> -->
 
 		<Container as="section" class="grid gap-8 pt-lg md:grid-cols-2 md:pb-lg">
 			<div class="space-y-2 text-lg font-medium lg:text-xl">
@@ -68,6 +68,15 @@
 					collaborate with us to expand their visual identity to a web-native design system and build a bespoke digital
 					experience for their content.
 				</p>
+				<div class="!mb-12 !mt-8 flex justify-start md:!mb-0">
+					<a
+						href="https://teague.com/"
+						target="_blank"
+						class="rounded border border-foreground/25 px-3.5 pb-2.5 pt-2 text-base font-medium text-foreground transition-colors duration-200 ease-out hover:border-foreground"
+					>
+						View Live ↗
+					</a>
+				</div>
 			</div>
 		</Container>
 
