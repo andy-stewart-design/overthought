@@ -219,7 +219,7 @@
 					height="1080"
 					loading="lazy"
 				/>
-				<h5 class="text-center text-sm opacity-75">Pattern and image treatments</h5>
+				<h5 class="text-center text-sm opacity-75">Explorations of pattern, typography, and layout</h5>
 			</div>
 
 			<p id="ally">
