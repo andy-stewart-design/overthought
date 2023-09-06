@@ -70,7 +70,7 @@
 				</p>
 				<div class="!mb-12 !mt-8 flex justify-start md:!mb-0">
 					<a
-						href="https://teague.com/"
+						href="https://ciphernews.com/"
 						target="_blank"
 						class="rounded border border-foreground/25 px-3.5 pb-2.5 pt-2 text-base font-medium text-foreground transition-colors duration-200 ease-out hover:border-foreground"
 					>
