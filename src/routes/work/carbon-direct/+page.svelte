@@ -222,7 +222,7 @@
 				<h5 class="text-center text-sm opacity-75">Pattern and image treatments</h5>
 			</div>
 
-			<p>
+			<p id="ally">
 				One benefit of a comprehensive design system is built-in accessibility. We developed a relatively large color
 				palette to prevent designers from needing to deviate from the established system. But more options means more
 				opportunities for error. I tested every combination of color and typography tokens to clearly establish which
