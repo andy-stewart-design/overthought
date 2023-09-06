@@ -398,6 +398,16 @@
 				to everyone involved for being willing to sit down, discuss their issues and frustrations openly and honestly, a
 				work together to find a path forward.
 			</p>
+			<p>
+				On the more technical side, I'm excited about all of the work being done to make the web a more powerful,
+				flexible, and expressive platform. Specifically related to our work on this project, I'm excited that the
+				<a href="https://developer.mozilla.org/en-US/docs/Web/API/OffscreenCanvas" target="_blank"
+					>Offscreen Canvas API</a
+				> is now stable across across all browsers. This allows us to move the heavy lifting for canvas-based animations
+				off the main thread, which would have helped with some of the performance issues we had to resolve when developing
+				the home hero experience.
+			</p>
+
 			<div class="mx-auto w-full max-w-6xl space-y-4 py-4">
 				<Image
 					cloud
