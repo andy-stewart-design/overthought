@@ -145,11 +145,6 @@
 				</li>
 			</ul>
 
-			<p>
-				These issues warranted two distinct strategies for the front- and back-ends of the site. Whereas the problems
-				with the front-end of the site warranted a more evolutionary approach, the back-end of the site would need to be
-				rebuilt from the ground up.
-			</p>
 			<!-- <div class="mx-auto w-full max-w-6xl space-y-4 py-4">
 				<Image
 					cloud
@@ -167,7 +162,22 @@
 		<Container as="section" class="space-y-6 pt-md">
 			<h3>Refining the Design System</h3>
 			<p>
-				We used Teague's logo mark — a stack of four staggered, magenta speed lines — as the starting point for our
+				These issues warranted two distinct strategies for the front- and back-ends of the site. Whereas the issues with
+				the back-end meant we would need to rebuild it from the ground up, the front-end of the site warranted a more
+				evolutionary approach. Some of our goals for the redesign included:
+			</p>
+			<ul>
+				<li>
+					Leveraging new tools and strategies to make our approach to design more rational, scalable, and consistent.
+				</li>
+				<li>
+					Identifying the full range of states and contexts individual modules may have to ensure we are designing for
+					all possible needs and use cases.
+				</li>
+				<li>Fixing user and author experience issues without making the site feel generic or cookie-cutter.</li>
+			</ul>
+			<p>
+				We used Teague's logo mark — a stack of four asymmetrical, magenta speed lines — as the starting point for our
 				design system. As simple as it may be, the asymmetry, sense of motion, and vibrancy inherent to the logo became
 				the foundation of many of our design decisions — from styling and layout to animation and interactivity.
 			</p>
@@ -187,23 +197,24 @@
 			</div>
 
 			<div class="mx-auto w-full max-w-6xl space-y-4 py-4">
-				<Image
-					cloud
-					src="/work/teague/Teague-FigmaComponents.jpg"
-					alt="A snapshot of some of our components in Figma"
-					imageWidths={[800, 1200, 1600, 1920]}
-					class="w-full"
+				<Video
+					src="/work/teague/Teague-Desktop-Screens.mp4"
+					poster="/work/teague/Teague-Desktop-Screens-Poster.jpg"
+					autoplay={true}
+					loop
+					playsinline
+					muted
 					width="1920"
 					height="1080"
-					loading="lazy"
 				/>
-				<h5 class="text-center text-sm opacity-75">A snapshot of some of our Figma components</h5>
+				<h5 class="text-center text-sm opacity-75">A selection of expressive layouts inspired by Teague's logo mark</h5>
 			</div>
 
 			<p>
-				We put a lot of time and effort into creating a system that was both functional and expressive. While we were
-				intent on fixing the user experience and interaction issues from the previous design direction, we also wanted
-				to be careful not to neutralize Teague's brand or make the site feel generic.
+				While we were careful not to neutralize Teague’s brand voice in the process, our primary goal for the project
+				was to redesign the system to be as functional and composable as it is expressive. In addition to finding places
+				to amplify and reinforces Teague's brand, we developed a comprehensive set of workhorse modules, which make up
+				the bulk of the site.
 			</p>
 
 			<div class="mx-auto w-full max-w-6xl space-y-4 py-4">
@@ -220,24 +231,9 @@
 				<h5 class="text-center text-sm opacity-75">Balancing scalability and expressiveness in the design system</h5>
 			</div>
 
-			<div class="mx-auto w-full max-w-6xl space-y-4 py-4">
-				<Video
-					src="/work/teague/Teague-Desktop-Screens.mp4"
-					poster="/work/teague/Teague-Desktop-Screens-Poster.jpg"
-					autoplay={true}
-					loop
-					playsinline
-					muted
-					width="1920"
-					height="1080"
-				/>
-				<h5 class="text-center text-sm opacity-75">A selection of expressive layouts inspired by Teague's logo mark</h5>
-			</div>
-
-			<!-- <p>
-				For each module, we took care to include every possible permutation authors could need when laying out pages.
-				Our intent was to build a system flexible enough to handle anything that was thrown at it — where any module
-				could be placed before or after any other one, and the system would just work.
+			<p>
+				Balancing the need for the site to be both functional and expressive, we even in some instances built display
+				options into modules to allow them to either be more simple and understated or more bold and expressive.
 			</p>
 
 			<div class="mx-auto w-full max-w-6xl space-y-4 py-4">
@@ -254,29 +250,33 @@
 				<h5 class="text-center text-sm opacity-75">
 					Display options for a module ranging from more functional to more expressive
 				</h5>
-			</div> -->
+			</div>
 
 			<p>
-				In addition to designing a comprehensive set of workhorse modules, we looked for a few places where we could
-				amplify and reinforces Teague's brand voice. In some instances, we even built display options into modules to
-				allow them to be more simple or more expressive.
+				While we weren’t totally redesigning the system from an aesthetic standpoint, we did take the opportunity to
+				overhaul our approach to implementation. We leveraged Figma’s native features to establish a modular, scalable
+				set of styles and components to serve as the foundation for our system.
 			</p>
 
 			<div class="mx-auto w-full max-w-6xl space-y-4 py-4">
 				<Image
 					cloud
-					src="/work/teague/Teague-Modules-02.jpg"
-					alt="Card component variants"
+					src="/work/teague/Teague-FigmaComponents.jpg"
+					alt="A snapshot of some of our components in Figma"
 					imageWidths={[800, 1200, 1600, 1920]}
 					class="w-full"
 					width="1920"
-					height="768"
+					height="1080"
 					loading="lazy"
 				/>
-				<h5 class="text-center text-sm opacity-75">
-					Display options for a module ranging from more functional to more expressive
-				</h5>
+				<h5 class="text-center text-sm opacity-75">A snapshot of some of our Figma components</h5>
 			</div>
+
+			<p>
+				After establishing a core set of patterns and styles, we rolled out the refined design system across the site.
+				In collaboration with the team at Teague, we worked to streamline the CMS, making sure that each module we added
+				served a purpose and fulfilled a need.
+			</p>
 
 			<div class="mx-auto w-full max-w-6xl space-y-4 py-4">
 				<Image
@@ -293,8 +293,8 @@
 			</div>
 
 			<p>
-				And of course, everything on the site needed to work responsively to provide a compelling experience regardless
-				of where and how it is viewed.
+				And of course, everything from layout to interaction needed to work responsively and provide a compelling
+				experience regardless of where and how the site is viewed.
 			</p>
 
 			<div class="mx-auto w-full max-w-6xl space-y-4 py-4">
@@ -322,13 +322,13 @@
 					width="1920"
 					height="1080"
 				/>
-				<h5 class="text-center text-sm opacity-75">Mobile interactions</h5>
+				<h5 class="text-center text-sm opacity-75">Mobile layouts and interactions</h5>
 			</div>
 
 			<p>
 				I'm passionate about bridging the gap between design and development through my work and collaborating closely
 				with engineering teams to define a shared language and process. As I build out a design system in Figma, I work
-				closely with development to make sure our systems are tightly aligned.
+				closely with development to make sure our respective environments are tightly aligned.
 			</p>
 
 			<div class="mx-auto w-full max-w-6xl space-y-4 py-4">
@@ -418,19 +418,24 @@
 				/>
 			</div>
 
-			<h4>Minimize the Number of Upfront Options</h4>
+			<h4>Set an Intentional Pace for Decision-Making</h4>
 
 			<p>
-				Don't paralyze users with a paradox of choice. Grouping views together based on content/functionality can help
-				reduce the perceived number of options a user has up front and establishes a better pacing/rhythm for
-				decision-making.
+				Don't paralyze users with a paradox of choice. Instead, look for ways to establish a consistent pace and rhythm
+				for decision-making and avoid overloading users with all of the options up front.
 			</p>
 
 			<p>
-				As an example, each of the following modules are essentially different views of the same content, which are
-				useful in different contexts. Previously, we might have built these as multiple separate modules, overwhelming
-				authors with the total number of available options. Now, we err on the side of less top-level modules by making
-				these variations of a single module.
+				When it comes to organizing and defining module sets, for example, grouping views together based on
+				content/functionality can help reduce the perceived number of options a user has up front and establish a better
+				pacing/rhythm for decision-making.
+			</p>
+
+			<p>
+				Each of the following modules are essentially different views of the same content, which are useful in different
+				contexts. Previously, we might have built these as multiple separate modules, overwhelming authors with the
+				total number of available options. Now, we err on the side of less top-level modules by making these variations
+				of a single module.
 			</p>
 
 			<div class="mx-auto w-full max-w-6xl space-y-4 py-4">
@@ -450,10 +455,10 @@
 		<Container as="section" class="space-y-6 pb-xl pt-md md:pb-hero md:pt-lg">
 			<h3>Reflections and Learnings</h3>
 			<p>
-				This was an exciting project for me because it allowed me to revisit a past design system, understand its
-				shortcomings, and reimagine it from first principles. I found it rewarding to have the opportunity to dive deep
-				on our clients' pain points, analyze how our past design decisions contributed to those frustrations, and
-				iterate on solutions without tearing down the system and starting over.
+				This was an exciting project because it allowed me to revisit a past design system, understand its shortcomings,
+				and reimagine it from first principles. I found it rewarding to have the opportunity to dive deep on our
+				clients' pain points, analyze how our past design decisions contributed to those frustrations, and iterate on
+				solutions without tearing down the system and starting over.
 			</p>
 
 			<div class="mx-auto w-full max-w-6xl space-y-4 py-4">
