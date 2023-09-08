@@ -90,7 +90,7 @@
 
 			<p>
 				Collaborating with our development team, we worked to uncover the scope and scale of the problem through a
-				series of excercises and audits:
+				series of exercises and audits:
 			</p>
 
 			<ul>
