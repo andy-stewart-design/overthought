@@ -251,7 +251,7 @@
 				Far and away the most significant deliverable from our scope of work was their new website. In order to
 				establish a foundation that other designers could leverage and build upon, we established a consistent set of
 				standards, patterns, and components in Figma and collaborated with our engineering team to ensure cohesion
-				between out design and dev environments.
+				between our design and dev environments.
 			</p>
 
 			<p>
