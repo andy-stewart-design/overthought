@@ -201,7 +201,7 @@
 
 			<p>
 				With any web project, our primary goal is to understand why we were hired in the first place. We worked closely
-				with the team at Vulcan to articulate their needs, wants, and dreams for the site using a variety of tatics:
+				with the team at Vulcan to articulate their needs, wants, and dreams for the site using a variety of tactics:
 			</p>
 
 			<ul>

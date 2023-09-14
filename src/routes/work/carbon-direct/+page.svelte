@@ -84,7 +84,7 @@
 				width="1920"
 				height="1080"
 			/>
-			<h5 class="text-center text-sm opacity-75">Homepage of the redesigned Vulcan Real Estate website</h5>
+			<h5 class="text-center text-sm opacity-75">Mobile interactions on the redesigned Carbon Direct site</h5>
 		</Container>
 
 		<Container as="section" class="space-y-6 pt-md">
@@ -97,8 +97,8 @@
 			<p>
 				With that in mind, we evolved Carbon Direct’s logo to be more simple, memorable, and functional while still
 				staying true to their founding story—highlighting multiple paths to decarbonization and emphasizing the
-				necessity of carbon removal in our fight against climate change. The new colorway, a vibrant blue-to-green
-				gradient, symbolizes the optimisim and pursuit of progress that is central to Carbon Direct’s work.
+				necessity of carbon removal in our fight against climate change. The new color way, a vibrant blue-to-green
+				gradient, symbolizes the optimism and pursuit of progress that is central to Carbon Direct’s work.
 			</p>
 
 			<div class="mx-auto w-full max-w-6xl space-y-4 py-4">
@@ -345,7 +345,7 @@
 				The homepage hero experience—which has now, sadly, been sunsetted—was one of my favorite parts of the site and
 				combined generative art, SVG animation, and scroll-based storytelling. Because of the somewhat unconventional
 				nature of the design, the path to approval was long and required a lot of work on my end to prove the
-				feasability of the concept. I started in Figma to get preliminary approval, but eventually moved into After
+				feasibility of the concept. I started in Figma to get preliminary approval, but eventually moved into After
 				Effects to create a higher fidelity version of our design vision.
 			</p>
 
