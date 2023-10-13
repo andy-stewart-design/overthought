@@ -12,10 +12,10 @@
 			<div class="col-span-full mb-8 md:mb-0">
 				<div class="inline-flex items-center gap-2 rounded-full border bg-surface-mid py-1 pl-2.5 pr-3 border-light">
 					<span class="relative flex h-3 w-3">
-						<span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-400 opacity-75" />
-						<span class="relative inline-flex h-3 w-3 rounded-full bg-green-500" />
+						<span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-red-400 opacity-75" />
+						<span class="relative inline-flex h-3 w-3 rounded-full bg-red-500" />
 					</span>
-					Available for work
+					Not available for work
 				</div>
 			</div>
 			<h1 class="text-5xl font-medium xs:text-6xl md:text-5xl lg:text-6xl">Andy Stewart</h1>
