@@ -25,23 +25,23 @@
 			<div />
 			<div class="space-y-6">
 				<p class="text-base text-foreground/80 xs:text-lg md:text-base lg:text-lg">
-					Hi, I’m Andy. I’m an interactive designer with over a decade of experience helping to bring life to brands
-					through compelling experiences and clear interfaces.
+					Hi, I’m Andy. I’m an Brooklyn-based interactive designer with over a decade of experience helping to bring
+					life to brands through compelling experiences and clear interfaces.
 				</p>
 				<p class="text-base text-foreground/80 xs:text-lg md:text-base lg:text-lg">
-					I was most recently the Digital Creative Director at <a
+					I'm currently a Design Director with a focus on product at <a
 						class="font-semibold text-foreground"
-						href="https://turnstyle.studio/"
-						target="_blank">Turnstyle</a
-					>, a full-service creative studio in Seattle, where I worked end-to-end on projects as both a high-level
-					creative leader and a hands-on contributor (often at the same time). I also taught design at the
+						href="https://www.goods.services/"
+						target="_blank">Goods & Services</a
+					>. I enjoy working at the intersection of design and technology, combining interaction design, systems
+					thinking, and front-end development into an integrated, holistic approach. I have also taught design, most
+					recently at the
 					<a class="font-semibold text-foreground" href="https://www.svcseattle.com/" target="_blank"
 						>School of Visual Concepts</a
 					>.
 				</p>
 				<p class="text-base text-foreground/80 xs:text-lg md:text-base lg:text-lg">
-					I'm currently available for hire. If you would like to discuss opportunities to collaborate or the types of
-					roles I'm looking for, please
+					If you would like to discuss opportunities to collaborate, please
 					<a class="font-semibold text-foreground" href="mailto:andy.stewart1170@gmail.com">reach out</a>.
 				</p>
 				<div class="flex flex-wrap gap-4 pt-8 text-lg font-medium">
