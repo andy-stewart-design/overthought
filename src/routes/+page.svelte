@@ -9,7 +9,7 @@
 <main class="border-b bg-background border-light">
 	<Container class="mx-auto w-full max-w-app">
 		<section id="home" class="grid gap-x-8 border-b py-lg border-light md:grid-cols-2 md:gap-y-12 md:py-xl">
-			<div class="col-span-full mb-8 md:mb-0">
+			<!-- <div class="col-span-full mb-8 md:mb-0">
 				<div class="inline-flex items-center gap-2 rounded-full border bg-surface-mid py-1 pl-2.5 pr-3 border-light">
 					<span class="relative flex h-3 w-3">
 						<span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-red-400 opacity-75" />
@@ -17,7 +17,7 @@
 					</span>
 					Not available for work
 				</div>
-			</div>
+			</div> -->
 			<h1 class="text-5xl font-medium xs:text-6xl md:text-5xl lg:text-6xl">Andy Stewart</h1>
 			<h2 class="mb-8 text-5xl font-medium opacity-65 xs:text-6xl md:mb-0 md:text-5xl lg:text-6xl">
 				Design <span class="font-light">+</span> Code
@@ -29,13 +29,13 @@
 					life to brands through compelling experiences and clear interfaces.
 				</p>
 				<p class="text-base text-foreground/80 xs:text-lg md:text-base lg:text-lg">
-					I'm currently a Design Director with a focus on product at <a
+					I'm currently a Product Design Director with at <a
 						class="font-semibold text-foreground"
 						href="https://www.goods.services/"
 						target="_blank">Goods & Services</a
 					>. I enjoy working at the intersection of design and technology, combining interaction design, systems
-					thinking, and front-end development into an integrated, holistic approach. I have also taught design, most
-					recently at the
+					thinking, and front-end development into an integrated, holistic approach to building digital goods. In
+					addition to my professional experiences, I have also taught design—most recently at the
 					<a class="font-semibold text-foreground" href="https://www.svcseattle.com/" target="_blank"
 						>School of Visual Concepts</a
 					>.

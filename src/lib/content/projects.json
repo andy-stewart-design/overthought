@@ -214,18 +214,34 @@
 		},
 		{
 			"metadata": {
-				"client": "Get Some Ipsum",
-				"summary": "This is my first Figma plugin—a simple, flexible lorem ipsum generator. It smoothes out the issues I have with other, similar plugins. Specifically, it runs through a bunch of custom logic before outputting the result to make sure that you end up with ipsum that look more like proper sentences.",
+				"client": "Lexicons",
+				"summary": "Lexicons is a free, open source vector icon system distributed through a custom React dashboard built with Next JS, Prisma, and PlanetScale. The icon set and website are actively in development and have a target release date of Q1 2024.",
+				"tags": ["Development", "Product Design", "Design System"],
+				"year": "Work in Progress",
+				"status": "Work in Progress",
+				"img": {
+					"src": "/work/development/Lexicons-WorkCard.jpg",
+					"alt": "lorem ipsum"
+				},
+				"link": {
+					"external": "https://lexicons-nxt.vercel.app/"
+				},
+				"featured": false
+			}
+		},
+		{
+			"metadata": {
+				"client": "AllStock",
+				"summary": "The one-stop shop plugin (with nearly 2K unique users) enabling you to find high-quality, free images from libraries like Unsplash, Pexels, and Pixabay without leaving your Figma projects. Version 2.0, shown above, is scheduled to be released in January 2024.",
 				"tags": ["Product Design", "Development"],
 				"year": 2023,
 				"status": "Case Study Coming Soon",
 				"img": {
-					"src": "/work/figma/GetSomeIpsum-WorkCard.jpg",
+					"src": "/work/development/AllStock-WorkCard.jpg",
 					"alt": "lorem ipsum"
 				},
 				"link": {
-					"internal": "/work/get-some-ipsum",
-					"external": "https://www.figma.com/community/plugin/1225446981019698507/Get-Some-Ipsum"
+					"external": "https://www.figma.com/community/plugin/1235675201027690011/AllStock"
 				},
 				"featured": false
 			}
@@ -399,23 +415,6 @@
 		},
 		{
 			"metadata": {
-				"client": "Wildtype",
-				"summary": "Wildtype is an agtech company working to create the cleanest, most sustainable seafood on the planet. We worked with them create a bespoke digital experience that would allow them to promote their mission, connect with chefs and restaurateurs, and appeal to consumers who may be skeptical of lab-grown meat.",
-				"tags": ["Interactive Design", "Development"],
-				"year": "2021",
-				"status": "Work in Progress",
-				"img": {
-					"src": "/work/wildtype/Wildtype-WorkCard.jpg",
-					"alt": "lorem ipsum"
-				},
-				"link": {
-					"external": "https://www.wildtypefoods.com/"
-				},
-				"featured": false
-			}
-		},
-		{
-			"metadata": {
 				"client": "Squiggler",
 				"summary": "Squiggler is a free generative design tool to help you quickly create random, unique SVG waves and squiggles. Developing it required a lot of research into the technical details of how SVG paths are drawn and the math behind sin waves, but the result is a simple and easy-to-use single-purpose app.",
 				"tags": ["Product Design", "Development"],
@@ -433,17 +432,18 @@
 		},
 		{
 			"metadata": {
-				"client": "AllStock",
-				"summary": "This Figma plugin is the one-stop shop for finding and using high-quality images inside of your Figma projects, allowing you to browse popular free libraries like Unsplash, Pexels, and Pixabay at the same time without leaving the app. Built with Svelte, Tailwind, and Typescript.",
+				"client": "Get Some Ipsum",
+				"summary": "This is my first Figma plugin—a simple, flexible lorem ipsum generator. It smoothes out the issues I have with other, similar plugins. Specifically, it runs through a bunch of custom logic before outputting the result to make sure that you end up with ipsum that look more like proper sentences.",
 				"tags": ["Product Design", "Development"],
 				"year": 2023,
 				"status": "Case Study Coming Soon",
 				"img": {
-					"src": "/work/figma/AllStock-WorkCard.jpg",
+					"src": "/work/figma/GetSomeIpsum-WorkCard.jpg",
 					"alt": "lorem ipsum"
 				},
 				"link": {
-					"external": "https://www.figma.com/community/plugin/1235675201027690011/AllStock"
+					"internal": "/work/get-some-ipsum",
+					"external": "https://www.figma.com/community/plugin/1225446981019698507/Get-Some-Ipsum"
 				},
 				"featured": false
 			}
