@@ -25,8 +25,8 @@
 			<div />
 			<div class="space-y-6">
 				<p class="text-base text-foreground/80 xs:text-lg md:text-base lg:text-lg">
-					Hi, I’m Andy. I’m an Brooklyn-based interactive designer with over a decade of experience helping to bring
-					life to brands through compelling experiences and clear interfaces.
+					Hey, stranger. I’m an Brooklyn-based product designer and creative technologist with over a decade of
+					experience helping bring life to brands through compelling experiences and clear interfaces.
 				</p>
 				<p class="text-base text-foreground/80 xs:text-lg md:text-base lg:text-lg">
 					I'm currently a Product Design Director with at <a
