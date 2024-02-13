@@ -232,16 +232,16 @@
 		{
 			"metadata": {
 				"client": "AllStock",
-				"summary": "The one-stop shop plugin (with nearly 2K unique users) enabling you to find high-quality, free images from libraries like Unsplash, Pexels, and Pixabay without leaving your Figma projects. Version 2.0, shown above, is scheduled to be released in January 2024.",
+				"summary": "The one-stop shop (with over 2K unique users) for finding and using high-quality images directly inside of Figma. Browse popular free photo libraries like Unsplash, Pexels, and Pixabay without needing to leave their design file. Redesigned and rebuilt in 2024.",
 				"tags": ["Product Design", "Development"],
-				"year": 2023,
+				"year": 2024,
 				"status": "Case Study Coming Soon",
 				"img": {
 					"src": "/work/development/AllStock-WorkCard.jpg",
 					"alt": "lorem ipsum"
 				},
 				"link": {
-					"external": "https://www.figma.com/community/plugin/1235675201027690011/AllStock"
+					"external": "https://dotdesign-2024.vercel.app/posts/allstock-announcement"
 				},
 				"featured": false
 			}
