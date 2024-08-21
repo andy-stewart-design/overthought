@@ -9,15 +9,6 @@
 <main class="border-b bg-background border-light">
 	<Container class="mx-auto w-full max-w-app">
 		<section id="home" class="grid gap-x-8 border-b py-lg border-light md:grid-cols-2 md:gap-y-12 md:py-xl">
-			<!-- <div class="col-span-full mb-8 md:mb-0">
-				<div class="inline-flex items-center gap-2 rounded-full border bg-surface-mid py-1 pl-2.5 pr-3 border-light">
-					<span class="relative flex h-3 w-3">
-						<span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-red-400 opacity-75" />
-						<span class="relative inline-flex h-3 w-3 rounded-full bg-red-500" />
-					</span>
-					Not available for work
-				</div>
-			</div> -->
 			<h1 class="text-5xl font-medium xs:text-6xl md:text-5xl lg:text-6xl">Andy Stewart</h1>
 			<h2 class="mb-8 text-5xl font-medium opacity-65 xs:text-6xl md:mb-0 md:text-5xl lg:text-6xl">
 				Design <span class="font-light">+</span> Code
@@ -29,11 +20,11 @@
 					experience helping bring life to brands through compelling experiences and clear interfaces.
 				</p>
 				<p class="text-base text-foreground/80 xs:text-lg md:text-base lg:text-lg">
-					I'm currently a Product Design Director with at <a
+					I'm currently a Staff Design Technologist at <a
 						class="font-semibold text-foreground"
-						href="https://www.goods.services/"
-						target="_blank">Goods & Services</a
-					>. I enjoy working at the intersection of design and technology, combining interaction design, systems
+						href="https://www.ebay.com/"
+						target="_blank">eBay</a
+					>. I enjoy working at the intersection of design and engineering, combining interaction design, systems
 					thinking, and front-end development into an integrated, holistic approach to building digital goods. In
 					addition to my professional experiences, I have also taught design—most recently at the
 					<a class="font-semibold text-foreground" href="https://www.svcseattle.com/" target="_blank"
@@ -45,7 +36,7 @@
 					<a class="font-semibold text-foreground" href="mailto:andy.stewart1170@gmail.com">reach out</a>.
 				</p>
 				<div class="flex flex-wrap gap-4 pt-8 text-lg font-medium">
-					<a href="https://codepen.io/andystewartdesign" class="whitespace-nowrap leading-none"
+					<a href="https://www.linkedin.com/in/andystewartdesign/" class="whitespace-nowrap leading-none"
 						>LinkedIn <span class="opacity-65">↗</span></a
 					>
 					<a href="https://codepen.io/andystewartdesign" class="whitespace-nowrap leading-none"
@@ -54,8 +45,9 @@
 					<a href="https://github.com/andy-stewart-design" class="whitespace-nowrap leading-none"
 						>Github <span class="opacity-65">↗</span></a
 					>
-					<a href="/about" class="whitespace-nowrap leading-none">Twitter <span class="opacity-65">↗</span></a>
-					<a href="/projects" class="whitespace-nowrap leading-none">Instagram <span class="opacity-65">↗</span></a>
+					<a href="https://twitter.com/spinbutton" class="whitespace-nowrap leading-none"
+						>Twitter <span class="opacity-65">↗</span></a
+					>
 				</div>
 			</div>
 		</section>
