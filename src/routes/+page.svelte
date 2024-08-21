@@ -16,8 +16,8 @@
 			<div />
 			<div class="space-y-6">
 				<p class="text-base text-foreground/80 xs:text-lg md:text-base lg:text-lg">
-					Hey, stranger. I’m an Brooklyn-based product designer and creative technologist with over a decade of
-					experience helping bring life to brands through compelling experiences and clear interfaces.
+					Hey, stranger. I’m a Brooklyn-based product designer and creative technologist with over a decade of
+					experience helping bring life to brands through effective experiences and clear interfaces.
 				</p>
 				<p class="text-base text-foreground/80 xs:text-lg md:text-base lg:text-lg">
 					I'm currently a Staff Design Technologist at <a
@@ -25,8 +25,8 @@
 						href="https://www.ebay.com/"
 						target="_blank">eBay</a
 					>. I enjoy working at the intersection of design and engineering, combining interaction design, systems
-					thinking, and front-end development into an integrated, holistic approach to building digital goods. In
-					addition to my professional experiences, I have also taught design—most recently at the
+					thinking, and front-end development into an integrated, holistic approach to building digital goods. Outside
+					of my day job, I have also taught design—most recently at the
 					<a class="font-semibold text-foreground" href="https://www.svcseattle.com/" target="_blank"
 						>School of Visual Concepts</a
 					>.
